@@ -1,0 +1,40 @@
+{
+  "name": "GIB Menuiseries Services",
+  "short_name": "GIB",
+  "tagline": "Menuiseries aluminium, renovation et amenagement exterieur en Martinique.",
+  "hero_promise": "Projetez votre futur ouvrage, montrez des references reelles, puis transformez en devis.",
+  "phone_display": "06 96 90 51 64",
+  "phone_international": "+596696905164",
+  "email": "contact@gibmenuiseries.com",
+  "location_label": "Ducos, Martinique",
+  "service_area": "Interventions en Martinique pour l'habitat, l'exterieur et les projets professionnels.",
+  "whatsapp_url": "https://wa.me/596696905164?text=Bonjour%20GIB%2C%20je%20souhaite%20echanger%20sur%20mon%20projet.",
+  "instagram_url": "https://instagram.com/gibmenuiseries/",
+  "facebook_url": "https://facebook.com/gibmenuiseriesservices/",
+  "youtube_url": "https://youtube.com/watch?v=STxu2NOsGv8?si=sXOu4_CBziLD-8MF",
+  "contact_note": "Coordonnees publiques reprises du site officiel GIB et structurees pour la demo.",
+  "proof_points": [
+    {
+      "label": "Ancrage local",
+      "value": "Martinique"
+    },
+    {
+      "label": "Approche",
+      "value": "Sur mesure"
+    },
+    {
+      "label": "Tunnel",
+      "value": "Simulation puis devis"
+    },
+    {
+      "label": "Canal rapide",
+      "value": "WhatsApp direct"
+    }
+  ],
+  "commitments": [
+    "Priorite a la projection visuelle avant le devis.",
+    "Pas de prix public ferme : qualification puis chiffrage.",
+    "Compatibilite climat tropical et usages ext\u00e9rieurs.",
+    "Demonstrateur statique robuste, pr\u00eat pour GitHub Pages."
+  ]
+}
