@@ -1,13 +1,13 @@
 import { useMemo, useState } from 'react'
 import type { FormEvent } from 'react'
-import { CheckCircle2, FileImage, MessageCircle } from 'lucide-react'
+import { CheckCircle2, FileImage, MessageCircle, PhoneCall } from 'lucide-react'
 import { useSearchParams } from 'react-router-dom'
 import { MediaImage } from '../components/MediaImage'
 import { SectionHeading } from '../components/SectionHeading'
-import { categoryMeta, getAssetById, getProductBySlug } from '../lib/content'
+import { categoryMeta, company, getAssetById, getProductBySlug } from '../lib/content'
 import { saveLead } from '../lib/storage'
 
-const projectTypes = ['Habitat', 'Renovation', 'Depannage', 'Projet professionnel']
+const projectTypes = ['Habitat principal', 'Renovation', 'Depannage', 'Projet professionnel', 'Copropriete']
 const contexts = ['Neuf', 'Renovation', 'Remplacement', 'Besoin de conseil']
 
 export function QuotePage() {
@@ -19,14 +19,17 @@ export function QuotePage() {
   const asset = getAssetById(requestedAsset)
   const category = product?.category ?? asset?.category ?? 'renovation'
   const meta = categoryMeta[category]
+  const defaultTypeProjet = projectTypes[0]
+  const defaultProduit = product?.name ?? asset?.product_type.replaceAll('-', ' ') ?? ''
+  const defaultContexte = contexts[1]
 
   const [status, setStatus] = useState<'idle' | 'saved'>('idle')
-  const [typeProjet, setTypeProjet] = useState(projectTypes[0])
-  const [produit, setProduit] = useState(product?.name ?? asset?.product_type.replaceAll('-', ' ') ?? '')
+  const [typeProjet, setTypeProjet] = useState(defaultTypeProjet)
+  const [produit, setProduit] = useState(defaultProduit)
   const [contact, setContact] = useState('')
   const [commune, setCommune] = useState('')
   const [dimensions, setDimensions] = useState('')
-  const [contexte, setContexte] = useState(contexts[1])
+  const [contexte, setContexte] = useState(defaultContexte)
   const [commentaire, setCommentaire] = useState('')
   const [photos, setPhotos] = useState<string[]>([])
 
@@ -58,16 +61,23 @@ export function QuotePage() {
     })
 
     setStatus('saved')
-    event.currentTarget.reset()
+    setTypeProjet(defaultTypeProjet)
+    setProduit(defaultProduit)
+    setContact('')
+    setCommune('')
+    setDimensions('')
+    setContexte(defaultContexte)
+    setCommentaire('')
+    setPhotos([])
   }
 
   return (
     <div className="shell space-y-10 pt-8 sm:pt-12">
       <section className="surface-panel px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
         <SectionHeading
-          description="Le devis reste l issue logique : on qualifie le type de projet, les dimensions, la commune et les contraintes. Pas de prix public ferme sur cette demo."
-          eyebrow="Demande de devis"
-          title="Un formulaire premium, simple a relancer et sans backend obligatoire."
+          eyebrow="Devis personnalise"
+          title="Un formulaire de devis plus utile, plus rassurant et plus proche du terrain."
+          description="On cadre le type de projet, la commune, les dimensions approximatives et les photos. Cette demo n affiche aucun prix public ferme : elle sert a qualifier avant chiffrage."
         />
       </section>
 
@@ -84,18 +94,32 @@ export function QuotePage() {
             <span className="eyebrow">Reference selectionnee</span>
             <h2 className="text-2xl font-semibold text-white">{summaryTitle}</h2>
             <p className="text-sm leading-7 text-white/72">
-              {product?.summary ?? 'Projet a qualifier avec visuels, dimensions et contexte terrain.'}
+              {product?.summary ?? 'Projet a qualifier avec visuels, dimensions, commune et contraintes terrain.'}
             </p>
             <div className="rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-5 text-sm text-white/70">
-              <p className="font-semibold text-white">Cadre commercial</p>
+              <p className="font-semibold text-white">Comment aller plus vite</p>
               <p className="mt-3">
-                Cette demo peut donner une enveloppe ou un niveau de projet, mais ne publie pas de prix public ferme. L etape suivante reste le devis contextualise.
+                Envoyez les photos, la commune, les dimensions approximatives et le besoin principal.
+                GIB peut ensuite cadrer l etude et la prochaine action.
               </p>
             </div>
-            <a className="cta-whatsapp w-full" href="https://wa.me/596696905164?text=Bonjour%20GIB%2C%20je%20souhaite%20vous%20envoyer%20mon%20brief%20pour%20un%20devis." rel="noreferrer" target="_blank">
-              <MessageCircle className="size-4" />
-              Basculer vers WhatsApp
-            </a>
+            <div className="rounded-[1.6rem] border border-[color:var(--line-strong)] bg-[color:var(--gold-soft)]/40 p-5 text-sm text-white/74">
+              <p className="font-semibold text-white">Aucun prix public ferme dans la demo</p>
+              <p className="mt-3">
+                La logique reste volontairement simple : qualification, photos, projection,
+                puis devis adapte au vrai chantier.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <a className="cta-whatsapp w-full" href={company.whatsapp_url} rel="noreferrer" target="_blank">
+                <MessageCircle className="size-4" />
+                Basculer vers WhatsApp
+              </a>
+              <a className="cta-secondary w-full" href={`tel:${company.phone_international}`}>
+                <PhoneCall className="size-4" />
+                Appeler directement
+              </a>
+            </div>
           </div>
         </aside>
 
@@ -113,7 +137,7 @@ export function QuotePage() {
             </div>
             <div>
               <p className="text-xs uppercase tracking-[0.24em] text-white/45">Produit</p>
-              <input className="field mt-3" onChange={(event) => setProduit(event.target.value)} placeholder="Portail, baie vitree, renovation..." value={produit} />
+              <input className="field mt-3" onChange={(event) => setProduit(event.target.value)} placeholder="Portail, baie vitree, pergola, renovation..." value={produit} />
             </div>
             <div>
               <p className="text-xs uppercase tracking-[0.24em] text-white/45">Commune</p>
@@ -121,11 +145,11 @@ export function QuotePage() {
             </div>
             <div>
               <p className="text-xs uppercase tracking-[0.24em] text-white/45">Contact rapide</p>
-              <input className="field mt-3" onChange={(event) => setContact(event.target.value)} placeholder="Telephone, email ou WhatsApp du prospect" value={contact} />
+              <input className="field mt-3" onChange={(event) => setContact(event.target.value)} placeholder="Telephone, email ou WhatsApp" value={contact} />
             </div>
             <div>
               <p className="text-xs uppercase tracking-[0.24em] text-white/45">Dimensions approximatives</p>
-              <input className="field mt-3" onChange={(event) => setDimensions(event.target.value)} placeholder="Ex. 3m x 2,2m" value={dimensions} />
+              <input className="field mt-3" onChange={(event) => setDimensions(event.target.value)} placeholder="Ex. 3 m x 2,2 m" value={dimensions} />
             </div>
             <div>
               <p className="text-xs uppercase tracking-[0.24em] text-white/45">Contexte</p>
@@ -137,17 +161,15 @@ export function QuotePage() {
                 ))}
               </select>
             </div>
-            <div>
-              <p className="text-xs uppercase tracking-[0.24em] text-white/45">Photos</p>
+            <div className="md:col-span-2">
+              <p className="text-xs uppercase tracking-[0.24em] text-white/45">Photos ou captures</p>
               <label className="field mt-3 flex cursor-pointer items-center gap-3">
                 <FileImage className="size-4" />
-                <span>{photos.length > 0 ? `${photos.length} fichier(s) selectionne(s)` : 'Joindre des photos'}</span>
+                <span>{photos.length > 0 ? `${photos.length} fichier(s) selectionne(s)` : 'Joindre des photos du chantier ou de l existant'}</span>
                 <input
                   className="hidden"
                   multiple
-                  onChange={(event) =>
-                    setPhotos(Array.from(event.target.files ?? []).map((file) => file.name))
-                  }
+                  onChange={(event) => setPhotos(Array.from(event.target.files ?? []).map((file) => file.name))}
                   type="file"
                   accept="image/*"
                 />
@@ -160,16 +182,20 @@ export function QuotePage() {
             <textarea
               className="field mt-3 min-h-36"
               onChange={(event) => setCommentaire(event.target.value)}
-              placeholder="Expose le besoin, l urgence, les contraintes de pose, les inspirations ou le probleme a traiter."
+              placeholder="Precisez le besoin, l urgence, les contraintes, l exposition, le style recherche ou le probleme a resoudre."
               value={commentaire}
             />
           </div>
 
           <div className="mt-6 flex flex-wrap gap-3">
-            <button className="cta-primary" type="submit">
-              Envoyer la demande demo
+            <button className="cta-primary w-full sm:w-auto" type="submit">
+              Enregistrer la demande demo
             </button>
-            <a className="cta-secondary" href="mailto:contact@gibmenuiseries.com">
+            <a className="cta-whatsapp w-full sm:w-auto" href={company.whatsapp_url} rel="noreferrer" target="_blank">
+              <MessageCircle className="size-4" />
+              Envoyer sur WhatsApp
+            </a>
+            <a className="cta-secondary w-full sm:w-auto" href={`mailto:${company.email}`}>
               Envoyer par email
             </a>
           </div>
@@ -180,7 +206,10 @@ export function QuotePage() {
                 <CheckCircle2 className="size-4" />
                 Demande sauvegardee localement dans le navigateur.
               </p>
-              <p className="mt-2 text-white/72">Cette base peut ensuite etre branchee sur Supabase ou un back-office quand tu voudras sortir du mode statique.</p>
+              <p className="mt-2 text-white/72">
+                La base reste statique pour la demo, mais le parcours est deja pret a etre branche
+                ensuite sur un vrai stockage ou un back-office.
+              </p>
             </div>
           ) : null}
         </form>
