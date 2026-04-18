@@ -156,13 +156,13 @@ export function HomePage() {
                 <div className="rounded-[1.8rem] border border-[color:var(--line-strong)] bg-[color:var(--gold-soft)]/70 p-5">
                   <p className="text-xs uppercase tracking-[0.24em] text-white/48">Prestations</p>
                   <p className="mt-3 text-base font-semibold text-white">
-Portails, volets roulants, fenetres, baies, pergolas, clotures, garde-corps, renovation et depannage.
+                    Portails, volets roulants, fenetres, baies, pergolas, clotures, garde-corps, renovation, depannage, remplacement et reglage.
                   </p>
                 </div>
                 <div className="rounded-[1.8rem] border border-white/8 bg-white/[0.04] p-5">
                   <p className="text-xs uppercase tracking-[0.24em] text-white/48">Reference officielle</p>
                   <p className="mt-3 text-base font-semibold text-white">
-GIB intervient depuis Ducos sur toute la Martinique, avec un savoir-faire reconnu en pose, renovation et depannage.
+                    GIB intervient depuis Ducos sur toute la Martinique, avec un savoir-faire reconnu en pose, renovation, depannage et remplacement.
                   </p>
                 </div>
               </div>
@@ -218,6 +218,24 @@ Appeler, envoyer des photos, demander un devis.
                 <p className="mt-4 text-sm leading-7 text-black/72">{item}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="shell">
+        <div className="surface-panel px-6 py-8 sm:px-8 lg:px-10">
+          <SectionHeading
+            eyebrow="Offre connexe"
+            title="Un premier niveau d orientation peut aussi ouvrir vers le diagnostic immobilier."
+            description="Quand le besoin depasse la menuiserie seule, la demonstration mentionne proprement un relai possible vers un diagnostic immobilier connexe, sans brouiller le coeur de metier GIB."
+          />
+          <div className="mt-8 grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
+            <div className="rounded-[1.8rem] border border-black/8 bg-black/[0.02] p-5 text-sm leading-7 text-black/72">
+              Cette mention sert de passerelle utile pour certains projets de renovation, vente, mise en location ou remise a niveau, tout en gardant le coeur du site centre sur la menuiserie aluminium, le depannage, le remplacement et le reglage.
+            </div>
+            <div className="rounded-[1.8rem] border border-[color:var(--line-strong)] bg-[color:var(--gold-soft)]/40 p-5 text-sm leading-7 text-black/76">
+              Le parcours principal ne change pas : appel, WhatsApp, photos, visite si necessaire, puis devis ou orientation vers le bon interlocuteur.
+            </div>
           </div>
         </div>
       </section>
