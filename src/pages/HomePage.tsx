@@ -1,14 +1,15 @@
 import {
   ArrowRight,
+  BadgeCheck,
+  Camera,
   CheckCircle2,
-  DraftingCompass,
-  GalleryVerticalEnd,
-  Mail,
-  MapPin,
   MessageCircle,
   PhoneCall,
+  PlayCircle,
   ShieldCheck,
-  Sparkles,
+  SunMedium,
+  Trees,
+  Waves,
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { MediaImage } from '../components/MediaImage'
@@ -20,77 +21,163 @@ const heroAssets = ['portail-dallas', 'baie-coulissante', 'pergola-ambiance-1']
   .map((id) => assets.find((asset) => asset.id === id))
   .filter(Boolean)
 
-const homeFeatured = featuredAssets.slice(0, 4)
-const homeProducts = products.slice(0, 4)
+const spotlightProducts = products.filter((product) =>
+  ['portails', 'baies-vitrees', 'pergolas', 'renovation-depannage'].includes(product.slug),
+)
+
+const audienceSegments = [
+  {
+    title: 'Particuliers et familles',
+    description:
+      'Pour mieux vivre chez soi, gagner en confort, proteger les ouvertures et remettre en valeur la facade.',
+  },
+  {
+    title: 'Villas et locations saisonnieres',
+    description:
+      'Pour soigner l image du bien, fluidifier le dedans-dehors et mieux encaisser soleil, humidite et usage intensif.',
+  },
+  {
+    title: 'Pros, commerces et coproprietes',
+    description:
+      'Pour securiser les acces, clarifier les parcours, valoriser l accueil client et fiabiliser l existant.',
+  },
+]
+
+const climateProofs = [
+  {
+    icon: SunMedium,
+    title: 'Protection solaire',
+    description: 'Mieux gerer la chaleur, la lumiere et l ombrage selon l exposition du projet.',
+  },
+  {
+    icon: Waves,
+    title: 'Humidite et littoral',
+    description: 'Parler durabilite, finitions adaptees et entretien dans un environnement tropical reel.',
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Securite et serenite',
+    description: 'Rassurer sur l usage quotidien, la fermeture, la renovation et la protection des acces.',
+  },
+  {
+    icon: Trees,
+    title: 'Esthetique locale',
+    description: 'Conserver une lecture elegante, lumineuse et premium sans casser l identite de l habitat.',
+  },
+]
+
+const beforeAfterStories = [
+  {
+    title: 'Entree a revaloriser',
+    description:
+      'Quand l entree semble datee ou peu rassurante, le portail et la cloture redonnent un niveau immediat au bien.',
+    existing: 'Avant : acces peu lisible, facade qui manque de presence.',
+    result: 'Apres : entree plus claire, plus nette, plus coherente avec le style de la maison.',
+    assetId: 'portail-dallas',
+  },
+  {
+    title: 'Terrasse peu exploitee',
+    description:
+      'La pergola bioclimatique sert a montrer un exterieur plus vivant, plus confortable et plus premium.',
+    existing: 'Avant : terrasse trop exposee au soleil ou sous-utilisee.',
+    result: 'Apres : espace d ombre, confort d usage et perception haut de gamme.',
+    assetId: 'pergola-ambiance-1',
+  },
+  {
+    title: 'Ouverture a repenser',
+    description:
+      'Les baies et grandes ouvertures aident a projeter une renovation plus lumineuse et mieux valorisee.',
+    existing: 'Avant : circulation coupee, lumiere moins presente.',
+    result: 'Apres : dedans-dehors plus fluide, vue ouverte, piece plus valorisee.',
+    assetId: 'baie-coulissante',
+  },
+]
+
+const socialRelay = [
+  {
+    title: 'Facebook',
+    description: 'Relais simple pour rassurer, publier les realisations et appuyer la preuve sociale locale.',
+    href: company.facebook_url,
+  },
+  {
+    title: 'Instagram',
+    description: 'Bloc inspiration et realisations recentes, sans rendre le site dependant d un flux externe.',
+    href: company.instagram_url,
+  },
+  {
+    title: 'Video',
+    description: 'Espace prevu pour avant/apres, details de finition, chantiers et demonstration de pose.',
+    href: company.youtube_url,
+  },
+]
 
 export function HomePage() {
   return (
     <div className="space-y-16 sm:space-y-24">
       <section className="shell pt-8 sm:pt-12 lg:pt-16">
         <div className="glass-panel-strong overflow-hidden px-5 py-6 sm:px-8 sm:py-8 lg:px-10 lg:py-10">
-          <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+          <div className="grid gap-8 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
             <div className="space-y-7">
               <div className="space-y-4">
-                <span className="eyebrow">Martinique · vitrine premium · GitHub Pages ready</span>
-                <h1 className="headline max-w-3xl text-[var(--text)]">
-                  Montrez le projet. Qualifiez le besoin. Passez au devis sans tunnel fragile.
+                <span className="eyebrow">Menuiserie aluminium · renovation · Martinique</span>
+                <h1 className="headline max-w-4xl text-[var(--text)]">
+                  Menuiseries aluminium, renovation et amenagement exterieur en Martinique.
                 </h1>
-                <p className="max-w-2xl text-base leading-8 text-white/72 sm:text-lg">
-                  {company.hero_promise} Cette base front absorbe d abord les visuels officiels GIB,
-                  garde un fallback local embarque et reste deployable sans backend bloquant.
+                <p className="max-w-2xl text-base leading-8 text-white/74 sm:text-lg">
+                  {company.hero_promise} Le parcours met en avant les gammes, les realisations, les usages terrain et les prises de contact qui comptent vraiment : appel, WhatsApp, photos et devis personnalise.
                 </p>
               </div>
 
               <div className="flex flex-wrap gap-3">
-                <Link className="cta-primary" to="/devis">
-                  <DraftingCompass className="size-4" />
-                  Demander un devis
-                </Link>
-                <Link className="cta-secondary" to="/simulation">
-                  <Sparkles className="size-4" />
-                  Lancer une simulation
-                </Link>
+                <a className="cta-primary" href={`tel:${company.phone_international}`}>
+                  <PhoneCall className="size-4" />
+                  Appeler GIB
+                </a>
                 <a className="cta-whatsapp" href={company.whatsapp_url} rel="noreferrer" target="_blank">
                   <MessageCircle className="size-4" />
                   WhatsApp direct
                 </a>
-              </div>
-
-              <div className="grid gap-3 sm:grid-cols-3">
-                <div className="metric-card">
-                  <p className="text-xs uppercase tracking-[0.24em] text-white/45">Pas de prix vitrine</p>
-                  <p className="mt-2 text-lg font-semibold text-white">Qualification puis chiffrage</p>
-                </div>
-                <div className="metric-card">
-                  <p className="text-xs uppercase tracking-[0.24em] text-white/45">Sources</p>
-                  <p className="mt-2 text-lg font-semibold text-white">Site officiel + fallback local</p>
-                </div>
-                <div className="metric-card">
-                  <p className="text-xs uppercase tracking-[0.24em] text-white/45">Canal rapide</p>
-                  <p className="mt-2 text-lg font-semibold text-white">WhatsApp et devis guide</p>
-                </div>
+                <Link className="cta-secondary" to="/devis">
+                  <ArrowRight className="size-4" />
+                  Demander un devis
+                </Link>
               </div>
 
               <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
                 {company.proof_points.map((item) => (
-                  <div key={item.label} className="rounded-[1.6rem] border border-white/8 bg-white/[0.03] p-4">
+                  <div key={item.label} className="metric-card">
                     <p className="text-xs uppercase tracking-[0.24em] text-white/45">{item.label}</p>
-                    <p className="mt-3 text-lg font-semibold text-white">{item.value}</p>
+                    <p className="mt-2 text-lg font-semibold text-white">{item.value}</p>
                   </div>
                 ))}
               </div>
+
+              <div className="grid gap-3 sm:grid-cols-2">
+                <div className="rounded-[1.8rem] border border-[color:var(--line-strong)] bg-[color:var(--gold-soft)]/70 p-5">
+                  <p className="text-xs uppercase tracking-[0.24em] text-white/48">Savoir-faire</p>
+                  <p className="mt-3 text-base font-semibold text-white">
+                    Portails, volets roulants, fenetres, baies, pergolas, clotures, garde-corps, renovation et depannage.
+                  </p>
+                </div>
+                <div className="rounded-[1.8rem] border border-white/8 bg-white/[0.04] p-5">
+                  <p className="text-xs uppercase tracking-[0.24em] text-white/48">Reference officielle</p>
+                  <p className="mt-3 text-base font-semibold text-white">
+                    GIB intervient depuis Ducos sur toute la Martinique, avec un savoir-faire reconnu en pose, renovation et depannage.
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <div className="relative grid gap-4 md:grid-cols-[0.9fr_1.1fr] md:grid-rows-2">
-              <div className="glass-panel absolute -left-4 -top-4 hidden rounded-[2rem] px-4 py-3 text-sm text-white/72 md:block lg:-left-8 lg:-top-6">
-                Tropical, sur mesure, demonstrable.
+            <div className="relative grid gap-4 md:grid-cols-[0.82fr_1.18fr] md:grid-rows-2">
+              <div className="floating-note absolute -left-3 top-4 hidden md:block lg:-left-10">
+                Appeler, envoyer des photos, demander un devis.
               </div>
               {heroAssets[0] ? (
                 <MediaImage
                   alt={heroAssets[0].alt_text}
                   className="overflow-hidden rounded-[2rem] border border-white/10 md:row-span-2"
                   fallbackSrc={categoryMeta[heroAssets[0].category].fallback}
-                  imgClassName="h-full min-h-[320px] w-full object-cover"
+                  imgClassName="h-full min-h-[360px] w-full object-cover"
                   src={heroAssets[0].image_url}
                 />
               ) : null}
@@ -99,7 +186,7 @@ export function HomePage() {
                   alt={heroAssets[1].alt_text}
                   className="overflow-hidden rounded-[2rem] border border-white/10"
                   fallbackSrc={categoryMeta[heroAssets[1].category].fallback}
-                  imgClassName="h-full min-h-[155px] w-full object-cover"
+                  imgClassName="h-full min-h-[170px] w-full object-cover"
                   src={heroAssets[1].image_url}
                 />
               ) : null}
@@ -108,7 +195,7 @@ export function HomePage() {
                   alt={heroAssets[2].alt_text}
                   className="overflow-hidden rounded-[2rem] border border-white/10"
                   fallbackSrc={categoryMeta[heroAssets[2].category].fallback}
-                  imgClassName="h-full min-h-[155px] w-full object-cover"
+                  imgClassName="h-full min-h-[170px] w-full object-cover"
                   src={heroAssets[2].image_url}
                 />
               ) : null}
@@ -120,9 +207,9 @@ export function HomePage() {
       <section className="shell">
         <div className="surface-panel px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
           <SectionHeading
-            description="Un cockpit commercial simple : galerie de references, fiches produits claires, simulation locale et devis guide. L architecture reste statique, mais deja branchable plus tard sur Supabase si tu le souhaites."
-            eyebrow="Socle demonstrable"
-            title="Une home premium qui vend la qualite sans partir dans l usine a gaz."
+            eyebrow="Ce que le site clarifie"
+            title="Le message devient plus direct, plus rassurant et plus utile commercialement."
+            description="Le discours se recentre sur les vrais besoins du marche martiniquais : confort, securite, renovation, protection solaire, valorisation du bien et adaptation au climat tropical."
           />
           <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {company.commitments.map((item) => (
@@ -136,10 +223,53 @@ export function HomePage() {
       </section>
 
       <section className="shell">
+        <div className="grid gap-6 lg:grid-cols-[1.02fr_0.98fr]">
+          <div className="glass-panel px-6 py-8 sm:px-8">
+            <SectionHeading
+              eyebrow="Profils clients"
+              title="Une home qui parle clairement aux particuliers, pros et coproprietes."
+              description="La page d accueil distingue mieux les usages pour particuliers, villas, commerces, coproprietes et projets touristiques."
+              light
+            />
+            <div className="mt-8 grid gap-4">
+              {audienceSegments.map((segment) => (
+                <article key={segment.title} className="story-card">
+                  <p className="text-lg font-semibold text-white">{segment.title}</p>
+                  <p className="mt-3 text-sm leading-7 text-white/70">{segment.description}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+
+          <div className="surface-panel px-6 py-8 sm:px-8">
+            <SectionHeading
+              eyebrow="Pourquoi cela parle ici"
+              title="Le contexte martiniquais devient un argument commercial clair."
+              description="Le site traduit des sujets concrets que le visiteur reconnait immediatement : soleil, humidite, embruns, entretien, securite et usage exterieur."
+            />
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              {climateProofs.map((item) => {
+                const Icon = item.icon
+                return (
+                  <article key={item.title} className="rounded-[1.6rem] border border-black/8 bg-black/[0.02] p-5">
+                    <Icon className="size-5 text-[#b98e45]" />
+                    <p className="mt-4 text-base font-semibold text-black">{item.title}</p>
+                    <p className="mt-3 text-sm leading-7 text-black/68">{item.description}</p>
+                  </article>
+                )
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="shell">
         <div className="flex items-center justify-between gap-4">
           <div>
-            <span className="eyebrow">Produits et parcours</span>
-            <h2 className="section-title mt-4 text-[var(--text)]">Une structure claire pour les gammes et les realisations.</h2>
+            <span className="eyebrow">Produits phares</span>
+            <h2 className="section-title mt-4 text-[var(--text)]">
+              Des gammes mieux presentes, avec un angle plus vendeur et moins generique.
+            </h2>
           </div>
           <Link className="cta-secondary hidden sm:inline-flex" to="/produits">
             Voir tout le catalogue
@@ -147,7 +277,7 @@ export function HomePage() {
           </Link>
         </div>
         <div className="mt-8 grid gap-5 lg:grid-cols-2 xl:grid-cols-4">
-          {homeProducts.map((product) => (
+          {spotlightProducts.map((product) => (
             <ProductCard key={product.slug} product={product} />
           ))}
         </div>
@@ -156,19 +286,139 @@ export function HomePage() {
       <section className="shell">
         <div className="glass-panel-strong px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
           <SectionHeading
+            eyebrow="Avant / apres"
+            title="Un espace pour montrer les transformations et aider le client a se projeter."
+            description="Les visuels servent a rendre les benefices plus lisibles au premier coup d oeil : entree revalorisee, terrasse mieux exploitee, ouverture plus lumineuse."
             action={
               <Link className="cta-primary" to="/galerie">
-                <GalleryVerticalEnd className="size-4" />
-                Ouvrir la galerie
+                <Camera className="size-4" />
+                Voir les realisations
               </Link>
             }
-            description="Les premiers assets proviennent du site officiel GIB et sont maintenant ranges dans une bibliotheque exploitable sur la home, les fiches produits et les CTA de devis."
-            eyebrow="Bibliotheque assets"
             light
-            title="Des references visuelles reelles, structurees pour montrer puis convertir."
+          />
+          <div className="mt-8 grid gap-4 xl:grid-cols-3">
+            {beforeAfterStories.map((story) => {
+              const asset = assets.find((item) => item.id === story.assetId)
+              const meta = asset ? categoryMeta[asset.category] : categoryMeta.renovation
+
+              return (
+                <article key={story.title} className="rounded-[2rem] border border-white/8 bg-white/[0.03] p-4">
+                  <div className="grid gap-4">
+                    <div className="rounded-[1.6rem] border border-dashed border-white/12 bg-black/20 p-4">
+                      <p className="text-xs uppercase tracking-[0.24em] text-white/42">Projection avant</p>
+                      <p className="mt-3 text-sm leading-7 text-white/68">{story.existing}</p>
+                    </div>
+                    {asset ? (
+                      <MediaImage
+                        alt={asset.alt_text}
+                        className="overflow-hidden rounded-[1.6rem] border border-white/10"
+                        fallbackSrc={meta.fallback}
+                        imgClassName="h-[220px] w-full object-cover"
+                        src={asset.image_url}
+                      />
+                    ) : null}
+                    <div className="rounded-[1.6rem] border border-[color:var(--line-strong)] bg-[color:var(--gold-soft)]/40 p-4">
+                      <p className="text-xs uppercase tracking-[0.24em] text-white/42">Resultat vise</p>
+                      <p className="mt-3 text-sm leading-7 text-white/80">{story.result}</p>
+                    </div>
+                    <div>
+                      <p className="text-lg font-semibold text-white">{story.title}</p>
+                      <p className="mt-3 text-sm leading-7 text-white/68">{story.description}</p>
+                    </div>
+                  </div>
+                </article>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="shell">
+        <div className="grid gap-6 lg:grid-cols-[1.04fr_0.96fr]">
+          <div className="surface-panel px-6 py-8 sm:px-8 lg:px-10">
+            <SectionHeading
+              eyebrow="Videos et reseaux"
+              title="Un bloc prevu pour la preuve visuelle, sans dependre d un flux fragile."
+              description="Des emplacements restent prevus pour les videos, reels, details de finition et realisations vues sur les reseaux, sans rendre le site dependant d un flux externe."
+            />
+            <div className="mt-8 grid gap-4 md:grid-cols-3">
+              {socialRelay.map((item) => (
+                <a
+                  key={item.title}
+                  className="rounded-[1.6rem] border border-black/8 bg-black/[0.02] p-5 transition duration-300 hover:-translate-y-0.5"
+                  href={item.href}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <p className="text-base font-semibold text-black">{item.title}</p>
+                  <p className="mt-3 text-sm leading-7 text-black/66">{item.description}</p>
+                </a>
+              ))}
+            </div>
+          </div>
+
+          <div className="glass-panel px-6 py-8 sm:px-8">
+            <SectionHeading
+              eyebrow="Parcours commercial"
+              title="La home pousse partout vers une prise de contact utile."
+              description="Le visiteur peut appeler, envoyer un WhatsApp, demander un devis ou transmettre des photos sans passer par un tunnel complexe."
+              light
+            />
+            <div className="mt-8 space-y-4">
+              <div className="story-card">
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#d8c189]">1. Rassurer</p>
+                <p className="mt-3 text-sm leading-7 text-white/72">
+                  Certifications, experience, adaptation locale, visuels reels et pages plus lisibles.
+                </p>
+              </div>
+              <div className="story-card">
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#d8c189]">2. Projeter</p>
+                <p className="mt-3 text-sm leading-7 text-white/72">
+                  Produits phares, realisations, logique avant/apres et renvoi vers les reseaux.
+                </p>
+              </div>
+              <div className="story-card">
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#d8c189]">3. Convertir</p>
+                <p className="mt-3 text-sm leading-7 text-white/72">
+                  Appel, WhatsApp, devis guide, envoi de photos et qualification du besoin sans afficher de prix ferme.
+                </p>
+              </div>
+            </div>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a className="cta-primary" href={`tel:${company.phone_international}`}>
+                <PhoneCall className="size-4" />
+                Appeler
+              </a>
+              <Link className="cta-secondary" to="/devis">
+                <BadgeCheck className="size-4" />
+                Lancer un devis
+              </Link>
+              <a className="cta-whatsapp" href={company.whatsapp_url} rel="noreferrer" target="_blank">
+                <MessageCircle className="size-4" />
+                Envoyer des photos
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="shell">
+        <div className="glass-panel-strong px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
+          <SectionHeading
+            eyebrow="Realisations et inspirations"
+            title="Des visuels reels deja reutilises comme preuve, pas comme simple decoration."
+            description="La bibliotheque media sert a illustrer les fiches, la home et les demandes de devis similaires avec des visuels reels deja utilises par GIB."
+            action={
+              <a className="cta-secondary" href={company.youtube_url} rel="noreferrer" target="_blank">
+                <PlayCircle className="size-4" />
+                Ouvrir la video
+              </a>
+            }
+            light
           />
           <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            {homeFeatured.map((asset) => (
+            {featuredAssets.slice(0, 4).map((asset) => (
               <article key={asset.id} className="overflow-hidden rounded-[1.8rem] border border-white/8 bg-white/[0.03]">
                 <MediaImage
                   alt={asset.alt_text}
@@ -188,65 +438,6 @@ export function HomePage() {
                 </div>
               </article>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="shell">
-        <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
-          <div className="glass-panel p-6 sm:p-8">
-            <span className="eyebrow">Tunnel de conversion</span>
-            <h2 className="section-title mt-4 text-[var(--text)]">Un parcours court, comprehensible et relancable.</h2>
-            <div className="mt-6 space-y-4 text-sm leading-7 text-white/72">
-              <div>
-                <p className="font-semibold text-white">1. Montrer</p>
-                <p>Home premium et galerie pour inspirer sans dependre d un backend.</p>
-              </div>
-              <div>
-                <p className="font-semibold text-white">2. Projeter</p>
-                <p>Simulation locale avec upload photo ou fallback visuel par categorie.</p>
-              </div>
-              <div>
-                <p className="font-semibold text-white">3. Qualifier</p>
-                <p>Formulaire de devis sans prix public ferme, avec contexte, dimensions et commune.</p>
-              </div>
-              <div>
-                <p className="font-semibold text-white">4. Relancer</p>
-                <p>Stockage local de demonstration pret a etre remplace plus tard par un vrai back-office.</p>
-              </div>
-            </div>
-          </div>
-          <div className="surface-panel p-6 sm:p-8 lg:p-10">
-            <div className="grid gap-4 md:grid-cols-2">
-              <div className="rounded-[1.6rem] border border-black/8 bg-black/[0.02] p-5">
-                <PhoneCall className="size-5 text-[#b98e45]" />
-                <p className="mt-4 text-xs uppercase tracking-[0.24em] text-black/44">Contact rapide</p>
-                <a className="mt-2 block text-lg font-semibold text-black" href={`tel:${company.phone_international}`}>
-                  {company.phone_display}
-                </a>
-                <p className="mt-2 text-sm text-black/60">Appel direct ou WhatsApp pour cadrer la prochaine action.</p>
-              </div>
-              <div className="rounded-[1.6rem] border border-black/8 bg-black/[0.02] p-5">
-                <Mail className="size-5 text-[#b98e45]" />
-                <p className="mt-4 text-xs uppercase tracking-[0.24em] text-black/44">Email public</p>
-                <a className="mt-2 block text-lg font-semibold text-black" href={`mailto:${company.email}`}>
-                  {company.email}
-                </a>
-                <p className="mt-2 text-sm text-black/60">Transmission de brief, plans, photos ou contraintes de pose.</p>
-              </div>
-              <div className="rounded-[1.6rem] border border-black/8 bg-black/[0.02] p-5">
-                <MapPin className="size-5 text-[#b98e45]" />
-                <p className="mt-4 text-xs uppercase tracking-[0.24em] text-black/44">Zone</p>
-                <p className="mt-2 text-lg font-semibold text-black">{company.location_label}</p>
-                <p className="mt-2 text-sm text-black/60">{company.service_area}</p>
-              </div>
-              <div className="rounded-[1.6rem] border border-black/8 bg-black/[0.02] p-5">
-                <ShieldCheck className="size-5 text-[#b98e45]" />
-                <p className="mt-4 text-xs uppercase tracking-[0.24em] text-black/44">Cadre commercial</p>
-                <p className="mt-2 text-lg font-semibold text-black">Pas de prix ferme en front</p>
-                <p className="mt-2 text-sm text-black/60">On montre, on simule, puis on enclenche une demande de devis contextualisee.</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
