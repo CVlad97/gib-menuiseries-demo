@@ -27,7 +27,7 @@ export function ProductCard({ product }: ProductCardProps) {
           {product.simulation_eligible ? (
             <span className="tag bg-emerald-500/15 text-emerald-100">
               <Sparkles className="size-3.5" />
-              simulation
+              projection
             </span>
           ) : null}
         </div>
