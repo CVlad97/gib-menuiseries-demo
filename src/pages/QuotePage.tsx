@@ -77,7 +77,7 @@ export function QuotePage() {
         <SectionHeading
           eyebrow="Demande de devis"
           title="Un formulaire de devis simple, rassurant et plus proche du terrain."
-          description="On cadre le type de projet, la commune, les dimensions approximatives et les photos. Aucun prix public ferme n est affiche : le but est de qualifier avant chiffrage."
+          description="On cadre le type de projet, la commune, les dimensions approximatives et les photos. Aucun prix public ferme n est affiche : le but est de qualifier avant chiffrage, remplacement, reglage ou depannage."
         />
       </section>
 
@@ -100,7 +100,7 @@ export function QuotePage() {
               <p className="font-semibold text-white">Comment aller plus vite</p>
               <p className="mt-3">
                 Envoyez les photos, la commune, les dimensions approximatives et le besoin principal.
-                GIB peut ensuite cadrer l etude et la prochaine action.
+                GIB peut ensuite cadrer l etude, le depannage, le remplacement, le reglage ou la prochaine action.
               </p>
             </div>
             <div className="rounded-[1.6rem] border border-[color:var(--line-strong)] bg-[color:var(--gold-soft)]/40 p-5 text-sm text-white/74">
@@ -108,6 +108,12 @@ export function QuotePage() {
               <p className="mt-3">
                 La logique reste volontairement simple : qualification, photos, projection,
                 puis devis adapte au vrai chantier.
+              </p>
+            </div>
+            <div className="rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-5 text-sm text-white/70">
+              <p className="font-semibold text-white">Besoin connexe</p>
+              <p className="mt-3">
+                Si la situation releve aussi d un diagnostic immobilier ou d une orientation complementaire, la demande peut etre requalifiee sans casser le parcours principal.
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
