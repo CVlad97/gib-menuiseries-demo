@@ -37,8 +37,8 @@ export function SiteLayout() {
     <div className="pb-28 lg:pb-14">
       <div className="border-b border-white/6 bg-black/30">
         <div className="shell flex flex-wrap items-center justify-between gap-3 py-2 text-[0.72rem] uppercase tracking-[0.18em] text-white/56">
-          <span>Demo remasterisee du site officiel GIB</span>
-          <span>Plus premium, plus locale, plus orientee conversion</span>
+          <span>Menuiserie aluminium · renovation · depannage express</span>
+          <span>Ducos · Martinique · appel, WhatsApp et devis</span>
         </div>
       </div>
 
@@ -155,15 +155,13 @@ export function SiteLayout() {
         <div className="glass-panel-strong overflow-hidden px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
           <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr]">
             <div className="space-y-5">
-              <span className="eyebrow">GIB en demonstration</span>
+              <span className="eyebrow">Contact GIB</span>
               <div className="space-y-4">
                 <h2 className="section-title text-[var(--text)]">
-                  Une base montrable au dirigeant avant toute integration sur le site officiel.
+                  GIB Menuiseries Services accompagne vos projets de pose, renovation et amenagement exterieur.
                 </h2>
                 <p className="body-copy max-w-2xl">
-                  Cette version remasterisee conserve l identite GIB, renforce les CTA, clarifie les
-                  gammes et met mieux en avant l adaptation au marche martiniquais. Elle sert a
-                  valider le fond, la forme et le parcours avant passage en production.
+                  Le site met en avant les produits, les realisations, les coordinnees utiles et un parcours de contact simple pour qualifier un besoin, envoyer des photos et demander un devis personnalise.
                 </p>
               </div>
               <div className="flex flex-wrap gap-3">
@@ -182,7 +180,7 @@ export function SiteLayout() {
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="metric-card space-y-3">
-                <p className="text-xs uppercase tracking-[0.24em] text-white/45">Coordonnees</p>
+                <p className="text-xs uppercase tracking-[0.24em] text-white/45">Coordonnees directes</p>
                 <a className="block text-lg font-semibold text-white" href={`tel:${company.phone_international}`}>
                   {company.phone_display}
                 </a>
