@@ -11,6 +11,14 @@ interface ProductCardProps {
 export function ProductCard({ product }: ProductCardProps) {
   const heroAsset = getAssetById(product.hero_asset_id)
   const meta = categoryMeta[product.category]
+  const highlight =
+    product.slug === 'renovation-depannage'
+      ? 'Depannage, reglage et remplacement'
+      : product.slug === 'volets-roulants'
+        ? 'Reglage, motorisation et remplacement'
+        : product.slug === 'fenetres-portes'
+          ? 'Renovation et remplacement d ouvrants'
+          : null
 
   return (
     <article className="glass-panel group overflow-hidden transition duration-300 hover:-translate-y-1">
@@ -30,6 +38,7 @@ export function ProductCard({ product }: ProductCardProps) {
               projection
             </span>
           ) : null}
+          {highlight ? <span className="tag bg-[color:var(--gold-soft)] text-[#f4dfb3]">{highlight}</span> : null}
         </div>
         <div className="space-y-3">
           <h3 className="text-2xl font-semibold text-white">{product.name}</h3>
