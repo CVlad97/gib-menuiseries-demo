@@ -3,21 +3,21 @@
     "slug": "portails",
     "name": "Portails aluminium",
     "category": "portail",
-    "summary": "Portails battants ou coulissants pour valoriser l'entree, securiser l'acces et garder une ligne contemporaine.",
+    "summary": "Portails battants ou coulissants pour signer l entree, securiser l acces et valoriser immediatement la facade.",
     "hero_asset_id": "portail-dallas",
     "simulation_eligible": true,
-    "climate_note": "Finition adaptee au soleil, a l'humidite et aux embruns selon implantation.",
+    "climate_note": "Conception pensee pour l exposition au soleil, l humidite et les environnements littoraux selon l implantation du chantier.",
     "benefits": [
-      "Acces plus fluide",
-      "Design valorisant",
+      "Entree plus statutaire",
+      "Confort d usage au quotidien",
       "Entretien simplifie",
-      "Lecture claire du niveau de gamme"
+      "Accord visuel avec cloture, portillon et facade"
     ],
     "use_cases": [
       "Maison individuelle",
-      "Entree de lotissement",
+      "Villa en renovation",
       "Acces lateral",
-      "Renovation de portail existant"
+      "Entree de residence ou lotissement"
     ],
     "reassurance": [
       "Photos de realisations GIB",
@@ -29,66 +29,71 @@
     "slug": "fenetres-portes",
     "name": "Fenetres et portes",
     "category": "fenetre",
-    "summary": "Ouvertures pour ventilation, luminosite et confort d'usage dans le contexte martiniquais.",
+    "summary": "Fenetres et portes aluminium pour renover proprement, remplacer un existant fatigue, corriger les reglages et retrouver confort, lumiere et ventilation.",
     "hero_asset_id": "fenetre-fallback",
     "simulation_eligible": true,
-    "climate_note": "Conception orientee confort thermique, lumiere et tenue en environnement tropical.",
+    "climate_note": "Approche orientee confort thermique, ventilation, protection et tenue en environnement tropical.",
     "benefits": [
-      "Luminosite maitrisee",
+      "Luminosite mieux maitrisee",
       "Ventilation naturelle",
-      "Renovation lisible",
-      "Finitions coherentes"
+      "Renovation plus propre",
+      "Reglage et remplacement plus lisibles"
     ],
     "use_cases": [
-      "Maison principale",
+      "Habitat principal",
       "Appartement",
-      "Renovation d'ouvertures",
-      "Projet professionnel"
+      "Renovation d ouvertures",
+      "Projet professionnel ou locatif",
+      "Remplacement d ouvrants fatigues"
     ],
     "reassurance": [
-      "Fallback local si source distante indisponible",
-      "Pret a brancher un catalogue structure plus tard",
-      "Page detaillee pour qualification"
+      "Photos et inspirations reutilisables en rendez-vous",
+      "Qualification projet avant chiffrage",
+      "Page detaillee pour demandes de devis",
+      "Lecture terrain entre reglage, depannage et remplacement"
     ]
   },
   {
     "slug": "volets-roulants",
     "name": "Volets roulants",
     "category": "volet-roulant",
-    "summary": "Volets pour maitriser la lumiere, le confort et la securisation des ouvertures.",
+    "summary": "Volets roulants pour mieux gerer le soleil, l intimite et la securite, avec une approche concrete de depannage, reglage, motorisation et remplacement.",
     "hero_asset_id": "volet-ambiance-1",
     "simulation_eligible": true,
-    "climate_note": "Approche orientee protection solaire et confort d'usage au quotidien.",
+    "climate_note": "Approche orientee protection solaire, confort thermique et serenite d usage au quotidien.",
     "benefits": [
       "Confort thermique",
-      "Gestion de l'ensoleillement",
+      "Gestion de l ensoleillement",
       "Sensation de securite",
-      "Lecture de niveau de projet"
+      "Meilleur controle de l intimite",
+      "Depannage et remplacement plus rapides a cadrer"
     ],
     "use_cases": [
       "Maison renovee",
       "Baie sur terrasse",
       "Chambres exposees",
-      "Projet locatif"
+      "Projet locatif ou saisonnier",
+      "Volet a regler ou a remplacer"
     ],
     "reassurance": [
       "Visuels de reference",
       "CTA WhatsApp direct",
-      "Estimation d'enveloppe possible sans engagement"
+      "Estimation d enveloppe possible sans engagement",
+      "Qualification simple entre reglage, panne et remplacement"
     ]
   },
   {
     "slug": "baies-vitrees",
     "name": "Baies vitrees",
     "category": "baie-vitree",
-    "summary": "Baies coulissantes et grands ouvrants pour ouvrir les volumes et gagner en lumiere.",
+    "summary": "Baies coulissantes et grands ouvrants pour ouvrir les volumes, prolonger la terrasse et valoriser le dedans-dehors.",
     "hero_asset_id": "baie-coulissante",
     "simulation_eligible": true,
-    "climate_note": "Priorite a la lumiere, a l'ouverture sur l'exterieur et a la fluidite des circulations.",
+    "climate_note": "Priorite a la lumiere, a l ouverture sur l exterieur et a la fluidite des circulations dans un contexte tropical.",
     "benefits": [
       "Gain de luminosite",
       "Vue ouverte",
-      "Continuit\u00e9 dedans-dehors",
+      "Continuite dedans-dehors",
       "Valorisation du bien"
     ],
     "use_cases": [
@@ -100,54 +105,54 @@
     "reassurance": [
       "Galerie dediee",
       "CTA devis similaire",
-      "Compatibilite GitHub Pages sans backend"
+      "Visuels reels pour la projection"
     ]
   },
   {
     "slug": "pergolas",
     "name": "Pergolas bioclimatiques",
     "category": "pergola",
-    "summary": "Pergolas pour prolonger l'usage des exterieurs et structurer une terrasse premium.",
+    "summary": "Pergolas bioclimatiques pour rendre la terrasse plus vivable, plus premium et mieux adaptee au climat local.",
     "hero_asset_id": "pergola-ambiance-1",
     "simulation_eligible": true,
-    "climate_note": "Concue pour rendre les exterieurs plus habitables malgre chaleur et pluies tropicales.",
+    "climate_note": "Concue pour mieux vivre dehors malgre chaleur, pluies tropicales et besoins d ombrage au quotidien.",
     "benefits": [
-      "Exterieur exploitable",
+      "Exterieur exploitable plus longtemps",
       "Signature premium",
-      "Confort d'ombre",
+      "Confort d ombre",
       "Valeur percue immediate"
     ],
     "use_cases": [
       "Terrasse",
       "Jardin",
       "Restaurant",
-      "Zone d'attente exterieure"
+      "Hotel, restaurant ou zone d attente"
     ],
     "reassurance": [
       "Assets officiels integres localement",
-      "Simulation non contractuelle",
-      "Compatible futur branchement Supabase"
+      "Demonstration visuelle simple",
+      "Demande de devis personnalisee"
     ]
   },
   {
     "slug": "clotures-portillons",
     "name": "Clotures et portillons",
     "category": "cloture",
-    "summary": "Clotures et portillons pour cadrer les limites, s\u00e9curiser les abords et garder une lecture nette de la facade.",
+    "summary": "Clotures et portillons pour structurer les limites, proteger les abords et garder une facade propre et coherente.",
     "hero_asset_id": "cloture-ranch-2",
     "simulation_eligible": false,
-    "climate_note": "Approche orientee durabilite exterieure et coherence avec portail ou facade existants.",
+    "climate_note": "Approche orientee durabilite exterieure et coherence avec portail, facade ou amenagements existants.",
     "benefits": [
-      "Coh\u00e9rence d'ensemble",
-      "D\u00e9limitation claire",
-      "S\u00e9curisation des abords",
+      "Coherence d ensemble",
+      "Delimitation claire",
+      "Securisation des abords",
       "Lecture premium du bien"
     ],
     "use_cases": [
       "Maison individuelle",
       "Abords de piscine",
       "Lotissement",
-      "Projet pro"
+      "Projet pro ou copropriete"
     ],
     "reassurance": [
       "Photos reelles GIB",
@@ -159,52 +164,55 @@
     "slug": "garde-corps",
     "name": "Garde-corps",
     "category": "garde-corps",
-    "summary": "Garde-corps pour securiser une difference de niveau en gardant une presence sobre et elegante.",
+    "summary": "Garde-corps pour securiser une difference de niveau en gardant une ligne propre, sobre et rassurante.",
     "hero_asset_id": "garde-corps-portillon",
     "simulation_eligible": false,
-    "climate_note": "Pense pour l'usage exterieur et la lisibilite architecturale du projet.",
+    "climate_note": "Pense pour l usage exterieur, la securisation durable et la lisibilite architecturale du projet.",
     "benefits": [
       "Securisation",
       "Finition propre",
-      "Continuit\u00e9 architecturale",
+      "Continuite architecturale",
       "Adaptation aux zones exterieures"
     ],
     "use_cases": [
       "Balcon",
       "Escalier exterieur",
       "Terrasse",
-      "ERP et projet pro"
+      "ERP, copropriete et projet pro"
     ],
     "reassurance": [
       "Galerie filtrable",
       "Demande de devis similaire",
-      "Pas de dependance backend"
+      "Qualification simple du besoin"
     ]
   },
   {
     "slug": "renovation-depannage",
     "name": "Renovation et depannage",
     "category": "renovation",
-    "summary": "Interventions de renovation et depannage pour remettre a niveau un ouvrage existant ou preparer une transformation plus large.",
+    "summary": "Renovation, depannage, reglage et remplacement pour repartir d un existant fatigue vers une solution plus fiable, plus lisible et plus valorisante.",
     "hero_asset_id": "terrasse-thermotop",
     "simulation_eligible": false,
-    "climate_note": "Lecture projet orientee terrain : existant, contraintes, priorites et prochaine action.",
+    "climate_note": "Lecture projet orientee terrain : existant, contraintes, urgence, priorites et prochaine action.",
     "benefits": [
       "Diagnostic plus clair",
       "Priorisation des actions",
       "Accompagnement au cas reel",
-      "Trajectoire devis plus fiable"
+      "Trajectoire devis plus fiable",
+      "Arbitrage utile entre reparation et remplacement"
     ],
     "use_cases": [
       "Renovation facade",
       "Mise a niveau exterieure",
       "Urgence legere",
-      "Preparation avant remplacement"
+      "Preparation avant remplacement",
+      "Reglage ou remise a niveau d ouvrages existants"
     ],
     "reassurance": [
       "Tunnel de qualification simple",
       "WhatsApp en canal rapide",
-      "Google Pages deployable immediatement"
+      "Demande contextualisee sans prix public",
+      "Lecture terrain du plus urgent au plus durable"
     ]
   }
 ]
