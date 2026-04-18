@@ -75,9 +75,9 @@ export function QuotePage() {
     <div className="shell space-y-10 pt-8 sm:pt-12">
       <section className="surface-panel px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
         <SectionHeading
-          eyebrow="Devis personnalise"
-          title="Un formulaire de devis plus utile, plus rassurant et plus proche du terrain."
-          description="On cadre le type de projet, la commune, les dimensions approximatives et les photos. Cette demo n affiche aucun prix public ferme : elle sert a qualifier avant chiffrage."
+          eyebrow="Demande de devis"
+          title="Un formulaire de devis simple, rassurant et plus proche du terrain."
+          description="On cadre le type de projet, la commune, les dimensions approximatives et les photos. Aucun prix public ferme n est affiche : le but est de qualifier avant chiffrage."
         />
       </section>
 
@@ -104,7 +104,7 @@ export function QuotePage() {
               </p>
             </div>
             <div className="rounded-[1.6rem] border border-[color:var(--line-strong)] bg-[color:var(--gold-soft)]/40 p-5 text-sm text-white/74">
-              <p className="font-semibold text-white">Aucun prix public ferme dans la demo</p>
+              <p className="font-semibold text-white">Aucun prix public ferme</p>
               <p className="mt-3">
                 La logique reste volontairement simple : qualification, photos, projection,
                 puis devis adapte au vrai chantier.
@@ -189,7 +189,7 @@ export function QuotePage() {
 
           <div className="mt-6 flex flex-wrap gap-3">
             <button className="cta-primary w-full sm:w-auto" type="submit">
-              Enregistrer la demande demo
+              Enregistrer la demande
             </button>
             <a className="cta-whatsapp w-full sm:w-auto" href={company.whatsapp_url} rel="noreferrer" target="_blank">
               <MessageCircle className="size-4" />
@@ -207,8 +207,7 @@ export function QuotePage() {
                 Demande sauvegardee localement dans le navigateur.
               </p>
               <p className="mt-2 text-white/72">
-                La base reste statique pour la demo, mais le parcours est deja pret a etre branche
-                ensuite sur un vrai stockage ou un back-office.
+                La demande est enregistree localement pour la demonstration du parcours. En production, elle pourra etre reliee a un suivi commercial ou a un stockage centralise.
               </p>
             </div>
           ) : null}
