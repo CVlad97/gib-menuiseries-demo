@@ -18,9 +18,9 @@ export function ProductsPage() {
     <div className="shell space-y-10 pt-8 sm:pt-12">
       <div className="surface-panel px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
         <SectionHeading
-          eyebrow="Catalogue remasterise"
-          title="Des pages produits qui montrent mieux, rassurent mieux et convertissent mieux."
-          description="Le catalogue reste simple a parcourir, mais chaque fiche parle plus clairement des usages, des benefices, de l adaptation au climat local et de la prochaine action commerciale."
+          eyebrow="Catalogue GIB"
+          title="Des pages produits plus claires, plus solides et plus credibles commercialement."
+          description="Le catalogue reste simple a parcourir et chaque fiche aide mieux a comprendre l usage, la finition, l adaptation locale et la prochaine action a engager."
         />
         <div className="mt-6 flex flex-wrap gap-2">
           {audienceFocus.map((item) => (
@@ -49,11 +49,11 @@ export function ProductsPage() {
           <div className="max-w-3xl space-y-4">
             <span className="eyebrow">Besoin d aller plus vite</span>
             <h2 className="section-title text-[var(--text)]">
-              Le catalogue sert a qualifier. La conversion passe ensuite par le bon canal.
+              Le catalogue sert a qualifier le besoin. La conversion passe ensuite par le bon canal.
             </h2>
             <p className="body-copy">
               Appel pour cadrer, WhatsApp pour envoyer des photos, devis pour formaliser le besoin.
-              La demo garde ce parcours volontairement court.
+              Le parcours reste volontairement court pour aller vers un appel, un WhatsApp ou un devis.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
