@@ -119,12 +119,12 @@ export function HomePage() {
           <div className="grid gap-8 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
             <div className="space-y-7">
               <div className="space-y-4">
-                <span className="eyebrow">Menuiserie aluminium · renovation · Martinique</span>
+                <span className="eyebrow">Ducos · Martinique · RGE · Qualicoat · +20 ans</span>
                 <h1 className="headline max-w-4xl text-[var(--text)]">
-                  Menuiseries aluminium, renovation et amenagement exterieur en Martinique.
+                  Menuiserie aluminium, renovation et depannage en Martinique.
                 </h1>
                 <p className="max-w-2xl text-base leading-8 text-white/74 sm:text-lg">
-                  {company.hero_promise} Le parcours met en avant les gammes, les realisations, les usages terrain et les prises de contact qui comptent vraiment : appel, WhatsApp, photos et devis personnalise.
+                  {company.hero_promise} GIB intervient depuis Ducos sur toute la Martinique pour la pose de menuiseries aluminium, la renovation, le depannage, le remplacement et le reglage de vos ouvrages.
                 </p>
               </div>
 
@@ -154,15 +154,15 @@ export function HomePage() {
 
               <div className="grid gap-3 sm:grid-cols-2">
                 <div className="rounded-[1.8rem] border border-[color:var(--line-strong)] bg-[color:var(--gold-soft)]/70 p-5">
-                  <p className="text-xs uppercase tracking-[0.24em] text-white/48">Savoir-faire</p>
+                  <p className="text-xs uppercase tracking-[0.24em] text-white/48">Prestations</p>
                   <p className="mt-3 text-base font-semibold text-white">
-                    Portails, volets roulants, fenetres, baies, pergolas, clotures, garde-corps, renovation et depannage.
+Portails, volets roulants, fenetres, baies, pergolas, clotures, garde-corps, renovation et depannage.
                   </p>
                 </div>
                 <div className="rounded-[1.8rem] border border-white/8 bg-white/[0.04] p-5">
                   <p className="text-xs uppercase tracking-[0.24em] text-white/48">Reference officielle</p>
                   <p className="mt-3 text-base font-semibold text-white">
-                    GIB intervient depuis Ducos sur toute la Martinique, avec un savoir-faire reconnu en pose, renovation et depannage.
+GIB intervient depuis Ducos sur toute la Martinique, avec un savoir-faire reconnu en pose, renovation et depannage.
                   </p>
                 </div>
               </div>
@@ -170,7 +170,7 @@ export function HomePage() {
 
             <div className="relative grid gap-4 md:grid-cols-[0.82fr_1.18fr] md:grid-rows-2">
               <div className="floating-note absolute -left-3 top-4 hidden md:block lg:-left-10">
-                Appeler, envoyer des photos, demander un devis.
+Appeler, envoyer des photos, demander un devis.
               </div>
               {heroAssets[0] ? (
                 <MediaImage
@@ -228,7 +228,7 @@ export function HomePage() {
             <SectionHeading
               eyebrow="Profils clients"
               title="Une home qui parle clairement aux particuliers, pros et coproprietes."
-              description="La page d accueil distingue mieux les usages pour particuliers, villas, commerces, coproprietes et projets touristiques."
+              description="La page d accueil distingue mieux les usages pour particuliers, villas, commerces, coproprietes et projets touristiques, sans s eloigner du ton du site GIB d origine."
               light
             />
             <div className="mt-8 grid gap-4">
@@ -245,7 +245,7 @@ export function HomePage() {
             <SectionHeading
               eyebrow="Pourquoi cela parle ici"
               title="Le contexte martiniquais devient un argument commercial clair."
-              description="Le site traduit des sujets concrets que le visiteur reconnait immediatement : soleil, humidite, embruns, entretien, securite et usage exterieur."
+              description="Le site reprend les arguments concrets du site original : soleil, humidite, embruns, entretien, securite, renovation et usage exterieur."
             />
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {climateProofs.map((item) => {
