@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #161b1c;
-  --bg-soft: #1d2324;
-  --panel: rgba(31, 38, 39, 0.78);
-  --panel-strong: rgba(22, 28, 29, 0.88);
+  --bg: #182021;
+  --bg-soft: #22292a;
+  --panel: rgba(37, 44, 45, 0.76);
+  --panel-strong: rgba(27, 34, 35, 0.86);
   --surface: #f4efe5;
   --surface-soft: rgba(244, 239, 229, 0.08);
   --line: rgba(255, 255, 255, 0.12);
@@ -43,7 +43,7 @@ body {
   background:
     radial-gradient(circle at top left, rgba(127, 180, 155, 0.12), transparent 26%),
     radial-gradient(circle at 80% 20%, rgba(199, 168, 106, 0.14), transparent 28%),
-    linear-gradient(180deg, #182021 0%, #1a2324 46%, #151d1e 100%);
+    linear-gradient(180deg, #1b2425 0%, #1d2728 46%, #182122 100%);
   color: var(--text);
 }
 
@@ -125,7 +125,7 @@ img {
     @apply rounded-[2rem] border backdrop-blur-xl;
     background: var(--panel-strong);
     border-color: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 22px 52px rgba(0, 0, 0, 0.18);
   }
 
   .surface-panel {
