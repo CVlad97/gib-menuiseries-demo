@@ -37,7 +37,7 @@ export function SiteLayout() {
     <div className="pb-28 lg:pb-14">
       <div className="border-b border-white/6 bg-black/30">
         <div className="shell flex flex-wrap items-center justify-between gap-3 py-2 text-[0.72rem] uppercase tracking-[0.18em] text-white/56">
-          <span>Menuiserie aluminium · renovation · depannage</span>
+          <span>Menuiserie aluminium · renovation · depannage · remplacement</span>
           <span>Zone Cocotte, Ducos · intervention Martinique</span>
         </div>
       </div>
@@ -161,7 +161,7 @@ export function SiteLayout() {
                   GIB Menuiseries Services accompagne vos projets de menuiserie aluminium, renovation et depannage.
                 </h2>
                 <p className="body-copy max-w-2xl">
-                  Le site met en avant les produits, les realisations, les coordonnees utiles et un parcours de contact simple pour qualifier un besoin, envoyer des photos et demander un devis personnalise.
+                  Le site met en avant les produits, les realisations, les coordonnees utiles et un parcours de contact simple pour qualifier un besoin, envoyer des photos, demander un devis personnalise et orienter si necessaire vers un diagnostic immobilier connexe.
                 </p>
               </div>
               <div className="flex flex-wrap gap-3">
