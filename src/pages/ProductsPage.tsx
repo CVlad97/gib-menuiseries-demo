@@ -5,9 +5,9 @@ import { SectionHeading } from '../components/SectionHeading'
 import { company, products } from '../lib/content'
 
 const pageHighlights = [
-  'Portails, volets roulants, fenetres, baies vitrees, pergolas, clotures, garde-corps.',
-  'Renovation et depannage pour repartir d un existant plus proprement.',
-  'Messages plus vendeurs, plus lisibles et plus adaptes a la Martinique.',
+  'Portails, volets roulants, fenetres, baies vitrees, pergolas, clotures et garde-corps en menuiserie aluminium.',
+  'Renovation, depannage, remplacement et reglage pour repartir d un existant plus proprement.',
+  'Discours plus frontal sur Ducos, la Martinique, la pose, la finition et la lecture terrain.',
   'CTA renforces vers appel, WhatsApp et devis personnalise.',
 ]
 
@@ -20,7 +20,7 @@ export function ProductsPage() {
         <SectionHeading
           eyebrow="Catalogue GIB"
           title="Des pages produits plus claires, plus solides et plus credibles commercialement."
-          description="Le catalogue reste simple a parcourir et chaque fiche aide mieux a comprendre l usage, la finition, l adaptation locale et la prochaine action a engager."
+          description="Le catalogue reste simple a parcourir et chaque fiche aide mieux a comprendre l usage, la finition, l adaptation locale, la logique de remplacement ou de depannage et la prochaine action a engager."
         />
         <div className="mt-6 flex flex-wrap gap-2">
           {audienceFocus.map((item) => (
@@ -53,7 +53,7 @@ export function ProductsPage() {
             </h2>
             <p className="body-copy">
               Appel pour cadrer, WhatsApp pour envoyer des photos, devis pour formaliser le besoin.
-              Le parcours reste volontairement court pour aller vers un appel, un WhatsApp ou un devis.
+              Le parcours reste volontairement court pour aller vers un appel, un WhatsApp ou un devis, avec mention possible d un diagnostic immobilier connexe si le projet l exige.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
