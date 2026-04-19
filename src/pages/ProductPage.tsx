@@ -30,6 +30,11 @@ const decisionChecklist: Record<string, string[]> = {
     'Quel niveau de confort, d ombre et d image le lieu doit atteindre.',
     'Comment rendre l exterieur plus utile pour la famille ou les clients.',
   ],
+  'avancee-terrasse': [
+    'Comment proteger durablement une zone de passage ou une terrasse.',
+    'Quelles dimensions et quelle avancee sont pertinentes sur la facade.',
+    'Comment articuler protection solaire, pluie et rendu de la maison.',
+  ],
   'clotures-portillons': [
     'Comment securiser les abords sans alourdir l esthetique.',
     'Quelle coherence garder avec portail, facade et limites du terrain.',
@@ -44,6 +49,11 @@ const decisionChecklist: Record<string, string[]> = {
     'Ce qui doit etre repare, remplace ou simplement remis a niveau.',
     'Ce qui est urgent et ce qui peut etre planifie proprement.',
     'Quelle trajectoire proposer entre depannage, renovation et remplacement.',
+  ],
+  'diagnostic-immobilier': [
+    'Quel type de diagnostic est necessaire avant vente ou travaux.',
+    'Quel niveau d urgence ou de priorite doit etre traite.',
+    'Comment orienter ensuite le client vers la bonne suite de projet.',
   ],
 }
 
