@@ -135,6 +135,32 @@
     ]
   },
   {
+    "slug": "avancee-terrasse",
+    "name": "Avancee de terrasse",
+    "category": "pergola",
+    "summary": "Avancees de terrasse pour proteger les ouvertures, mieux vivre dehors et donner un effet plus fini a l habitat.",
+    "hero_asset_id": "pergola-ambiance-2",
+    "simulation_eligible": false,
+    "climate_note": "Solution pensee pour le soleil, les pluies tropicales et la protection durable des zones de passage.",
+    "benefits": [
+      "Protection des ouvertures",
+      "Confort d usage exterieur",
+      "Lecture plus propre de la facade",
+      "Valorisation immediate de l exterieur"
+    ],
+    "use_cases": [
+      "Terrasse",
+      "Entree de maison",
+      "Zone de passage exterieure",
+      "Renovation d habitat"
+    ],
+    "reassurance": [
+      "Offre visible sur le site officiel GIB",
+      "Demande de devis personnalisee",
+      "Conseil simple sur mesures et contraintes"
+    ]
+  },
+  {
     "slug": "clotures-portillons",
     "name": "Clotures et portillons",
     "category": "cloture",
@@ -213,6 +239,32 @@
       "WhatsApp en canal rapide",
       "Demande contextualisee sans prix public",
       "Lecture terrain du plus urgent au plus durable"
+    ]
+  },
+  {
+    "slug": "diagnostic-immobilier",
+    "name": "Diagnostic immobilier",
+    "category": "projet-pro",
+    "summary": "Diagnostics immobiliers avant vente ou travaux : amiante, termites, electricite et energie sur toute la Martinique.",
+    "hero_asset_id": "depannage-fallback",
+    "simulation_eligible": false,
+    "climate_note": "Service connexe utile pour controler l integrite d un bien avant une vente, une renovation ou des travaux.",
+    "benefits": [
+      "Lecture plus claire de l etat du bien",
+      "Moins d incertitude avant travaux",
+      "Orientation simple vers le bon diagnostic",
+      "Service local depuis Ducos"
+    ],
+    "use_cases": [
+      "Avant vente immobiliere",
+      "Avant renovation",
+      "Controle d integrite du bien",
+      "Besoin de diagnostic reglementaire"
+    ],
+    "reassurance": [
+      "Offre historique visible sur le site officiel",
+      "Contact direct par telephone ou e-mail",
+      "Intervention sur toute l ile"
     ]
   }
 ]
