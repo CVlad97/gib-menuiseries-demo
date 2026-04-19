@@ -5,22 +5,22 @@ import { SectionHeading } from '../components/SectionHeading'
 import { company, products } from '../lib/content'
 
 const pageHighlights = [
-  'Portails, volets roulants, fenetres, baies vitrees, pergolas, clotures et garde-corps en menuiserie aluminium.',
-  'Renovation, depannage, remplacement et reglage pour repartir d un existant plus proprement.',
-  'Discours plus frontal sur Ducos, la Martinique, la pose, la finition et la lecture terrain.',
-  'CTA renforces vers appel, WhatsApp et devis personnalise.',
+  'Volet roulant, fenetre et porte, portail, cloture et garde-corps, baie vitree, pergola bioclimatique.',
+  'Avancee de terrasse, renovation d habitat, depannage express et diagnostic immobilier.',
+  'Produits sur mesure, accompagnement de chantier, prise de mesures et devis precis.',
+  'Contact simple par telephone, e-mail, WhatsApp ou demande de devis.',
 ]
 
-const audienceFocus = ['Particuliers', 'Pros', 'Coproprietes', 'Locations saisonnieres']
+const audienceFocus = ['Particuliers', 'Professionnels', 'Coproprietes', 'Toute la Martinique']
 
 export function ProductsPage() {
   return (
     <div className="shell space-y-10 pt-8 sm:pt-12">
       <div className="surface-panel px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
         <SectionHeading
-          eyebrow="Catalogue GIB"
-          title="Des pages produits plus claires, plus solides et plus credibles commercialement."
-          description="Le catalogue reste simple a parcourir et chaque fiche aide mieux a comprendre l usage, la finition, l adaptation locale, la logique de remplacement ou de depannage et la prochaine action a engager."
+          eyebrow="Menuiserie aluminium"
+          title="L installation de vos menuiseries en aluminium, du volet roulant au portail."
+          description="Nos experts travaillent avec un fournisseur francais, pionnier dans la fabrication de menuiserie aluminium. Ce catalogue remet en avant les vraies offres du site officiel GIB avec une lecture plus nette."
         />
         <div className="mt-6 flex flex-wrap gap-2">
           {audienceFocus.map((item) => (
@@ -44,16 +44,15 @@ export function ProductsPage() {
         ))}
       </div>
 
-      <div className="glass-panel-strong px-6 py-8 sm:px-8 lg:px-10">
+      <div className="surface-panel px-6 py-8 sm:px-8 lg:px-10">
         <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
           <div className="max-w-3xl space-y-4">
             <span className="eyebrow">Besoin d aller plus vite</span>
-            <h2 className="section-title text-[var(--text)]">
-              Le catalogue sert a qualifier le besoin. La conversion passe ensuite par le bon canal.
+            <h2 className="section-title text-[var(--text-dark)]">
+              Appelez, ecrivez, demandez un devis : le parcours reste volontairement simple.
             </h2>
-            <p className="body-copy">
-              Appel pour cadrer, WhatsApp pour envoyer des photos, devis pour formaliser le besoin.
-              Le parcours reste volontairement court pour aller vers un appel, un WhatsApp ou un devis, avec mention possible d un diagnostic immobilier connexe si le projet l exige.
+            <p className="text-sm leading-7 text-black/68 sm:text-base">
+              Comme sur le site officiel, le but n est pas de complexifier le parcours. Le catalogue sert a comprendre l offre puis a passer rapidement vers un appel, un e-mail, WhatsApp ou une demande de devis.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
