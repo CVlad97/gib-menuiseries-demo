@@ -1,8 +1,6 @@
 import {
-  CircleFadingArrowUp,
   FileText,
   Globe,
-  LayoutGrid,
   Mail,
   MapPin,
   Menu,
@@ -12,60 +10,66 @@ import {
   X,
 } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import { NavLink, Outlet, useLocation } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router-dom'
 import { company } from '../lib/content'
+
+const logoSrc =
+  'https://le-de.cdn-website.com/179f7a3a04c5410bb41d060e3efd0cfd/dms3rep/multi/opt/logo+gib-fe923f67-381w.PNG'
 
 const navItems = [
   { to: '/', label: 'Accueil', end: true },
-  { to: '/produits', label: 'Produits' },
+  { to: '/a-propos', label: 'A propos' },
+  { to: '/produits', label: 'Menuiserie aluminium' },
+  { to: '/produits/renovation-depannage', label: 'Renovation d habitat' },
+  { to: '/produits/renovation-depannage', label: 'Depannage express' },
+  { to: '/diagnostic-immobilier', label: 'Diagnostic immobilier' },
+  { to: '/contact', label: 'Contact' },
+]
+
+const secondaryItems = [
   { to: '/galerie', label: 'Realisations' },
-  { to: '/simulation', label: 'Projection' },
-  { to: '/devis', label: 'Devis' },
+  { to: '/devis', label: 'Demander un devis' },
 ]
 
 export function SiteLayout() {
   const [menuOpen, setMenuOpen] = useState(false)
-  const location = useLocation()
 
   const closeMenu = () => setMenuOpen(false)
 
   useEffect(() => {
     closeMenu()
-  }, [location.pathname, location.search])
+  }, [])
 
   return (
-    <div className="pb-28 lg:pb-14">
-      <div className="border-b border-white/6 bg-black/30">
-        <div className="shell flex flex-wrap items-center justify-between gap-3 py-2 text-[0.72rem] uppercase tracking-[0.18em] text-white/56">
-          <span>Menuiserie aluminium · renovation · depannage · remplacement</span>
-          <span>Zone Cocotte, Ducos · intervention Martinique</span>
+    <div className="pb-28 lg:pb-10">
+      <div className="border-b border-black/8 bg-white text-[0.78rem] text-black/72">
+        <div className="shell flex flex-wrap items-center justify-between gap-3 py-3">
+          <div className="flex flex-wrap items-center gap-4">
+            <a className="inline-flex items-center gap-2 font-semibold text-black" href={`tel:${company.phone_international}`}>
+              <Phone className="size-4 text-[#e12726]" />
+              Appelez-nous
+            </a>
+            <a className="inline-flex items-center gap-2 font-semibold text-black" href={`mailto:${company.email}`}>
+              <Mail className="size-4 text-[#1398db]" />
+              Ecrivez-nous
+            </a>
+          </div>
+          <span className="inline-flex items-center gap-2">
+            <MapPin className="size-4 text-[#ffd400]" />
+            Zone Cocotte, Ducos · Martinique
+          </span>
         </div>
       </div>
 
-      <header className="sticky top-0 z-40 border-b border-white/8 bg-[#182021]/86 backdrop-blur-xl">
+      <header className="sticky top-0 z-40 border-b border-black/8 bg-white/95 backdrop-blur-xl">
         <div className="shell py-4">
-          <div className="flex items-start justify-between gap-4 lg:hidden">
-            <div className="flex min-w-0 flex-col gap-3">
-              <div>
-                <p className="text-2xl tracking-[-0.08em] text-white" style={{ fontFamily: 'Marcellus, serif' }}>
-                  GIB
-                </p>
-                <p className="text-xs uppercase tracking-[0.24em] text-white/50">Menuiseries Services</p>
-              </div>
-              <div className="flex flex-wrap items-center gap-3 text-xs text-white/62">
-                <a className="inline-flex items-center gap-2" href={`tel:${company.phone_international}`}>
-                  <Phone className="size-4" />
-                  {company.phone_display}
-                </a>
-                <span className="inline-flex items-center gap-2">
-                  <MapPin className="size-4" />
-                  {company.location_label}
-                </span>
-              </div>
-            </div>
+          <div className="flex items-center justify-between gap-4 lg:hidden">
+            <NavLink className="min-w-0" onClick={closeMenu} to="/">
+              <img alt="Logo GIB Menuiseries Services" className="h-12 w-auto" src={logoSrc} />
+            </NavLink>
             <button
               aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
-              className="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/[0.04] p-3 text-white transition hover:bg-white/[0.08]"
+              className="inline-flex items-center justify-center rounded-full border border-black/10 bg-white p-3 text-black transition hover:bg-black/[0.04]"
               onClick={() => setMenuOpen((value) => !value)}
               type="button"
             >
@@ -73,58 +77,71 @@ export function SiteLayout() {
             </button>
           </div>
 
-          <div className="hidden lg:flex lg:flex-row lg:items-center lg:justify-between">
-            <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:gap-8">
-              <div>
-                <p className="text-2xl tracking-[-0.08em] text-white sm:text-3xl" style={{ fontFamily: 'Marcellus, serif' }}>
-                  GIB
-                </p>
-                <p className="text-xs uppercase tracking-[0.24em] text-white/50">Menuiseries Services</p>
-              </div>
-              <div className="flex flex-wrap items-center gap-2 text-xs text-white/62 sm:gap-4 sm:text-sm">
+          <div className="hidden lg:flex lg:flex-col lg:gap-4">
+            <div className="flex items-center justify-between gap-6">
+              <NavLink className="shrink-0" onClick={closeMenu} to="/">
+                <img alt="Logo GIB Menuiseries Services" className="h-16 w-auto" src={logoSrc} />
+              </NavLink>
+              <div className="flex flex-wrap items-center gap-3 text-sm text-black/70">
                 <a className="inline-flex items-center gap-2" href={`tel:${company.phone_international}`}>
-                  <Phone className="size-4" />
+                  <Phone className="size-4 text-[#e12726]" />
                   {company.phone_display}
                 </a>
                 <a className="inline-flex items-center gap-2" href={`mailto:${company.email}`}>
-                  <Mail className="size-4" />
+                  <Mail className="size-4 text-[#1398db]" />
                   {company.email}
                 </a>
                 <span className="inline-flex items-center gap-2">
-                  <MapPin className="size-4" />
+                  <MapPin className="size-4 text-[#ffd400]" />
                   {company.location_label}
                 </span>
               </div>
             </div>
-            <div className="flex flex-wrap items-center gap-2">
-              {navItems.map((item) => (
-                <NavLink
-                  key={item.to}
-                  className={({ isActive }) => `nav-link ${isActive ? 'nav-link-active' : ''}`}
-                  end={item.end}
-                  onClick={closeMenu}
-                  to={item.to}
-                >
-                  {item.label}
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <nav className="flex flex-wrap items-center gap-2">
+                {navItems.map((item) => (
+                  <NavLink
+                    key={`${item.to}-${item.label}`}
+                    className={({ isActive }) => `nav-link !text-black/74 ${isActive ? 'nav-link-active !bg-black/[0.04] !text-black' : '!bg-transparent'}`}
+                    end={item.end}
+                    onClick={closeMenu}
+                    to={item.to}
+                  >
+                    {item.label}
+                  </NavLink>
+                ))}
+              </nav>
+              <div className="flex flex-wrap items-center gap-3">
+                <a className="cta-whatsapp !px-4 !py-2" href={company.whatsapp_url} rel="noreferrer" target="_blank">
+                  <MessageCircle className="size-4" />
+                  WhatsApp
+                </a>
+                <NavLink className="cta-primary !px-4 !py-2" to="/devis">
+                  <FileText className="size-4" />
+                  Devis
                 </NavLink>
-              ))}
-              <a className="cta-whatsapp !px-4 !py-2" href={company.whatsapp_url} rel="noreferrer" target="_blank">
-                <MessageCircle className="size-4" />
-                WhatsApp
-              </a>
+              </div>
             </div>
           </div>
 
           {menuOpen ? (
-            <div className="mt-4 rounded-[1.8rem] border border-white/10 bg-white/[0.04] p-4 lg:hidden">
+            <div className="mt-4 rounded-[1.8rem] border border-black/8 bg-white p-4 shadow-[0_20px_50px_rgba(17,22,21,0.08)] lg:hidden">
               <div className="grid gap-2">
                 {navItems.map((item) => (
                   <NavLink
-                    key={item.to}
-                    className={({ isActive }) =>
-                      `nav-link flex items-center justify-between ${isActive ? 'nav-link-active' : ''}`
-                    }
+                    key={`${item.to}-${item.label}`}
+                    className={({ isActive }) => `nav-link flex items-center justify-between !text-black/74 ${isActive ? 'nav-link-active !bg-black/[0.04] !text-black' : '!bg-transparent'}`}
                     end={item.end}
+                    onClick={closeMenu}
+                    to={item.to}
+                  >
+                    {item.label}
+                  </NavLink>
+                ))}
+                {secondaryItems.map((item) => (
+                  <NavLink
+                    key={item.to}
+                    className={({ isActive }) => `nav-link flex items-center justify-between !text-black/74 ${isActive ? 'nav-link-active !bg-black/[0.04] !text-black' : '!bg-transparent'}`}
                     onClick={closeMenu}
                     to={item.to}
                   >
@@ -137,10 +154,10 @@ export function SiteLayout() {
                   <MessageCircle className="size-4" />
                   WhatsApp direct
                 </a>
-                <a className="cta-secondary w-full justify-center" href={`mailto:${company.email}`}>
-                  <Mail className="size-4" />
-                  Email
-                </a>
+                <NavLink className="cta-primary w-full justify-center" onClick={closeMenu} to="/devis">
+                  <FileText className="size-4" />
+                  Demander un devis
+                </NavLink>
               </div>
             </div>
           ) : null}
@@ -152,80 +169,63 @@ export function SiteLayout() {
       </main>
 
       <footer className="shell mt-16">
-        <div className="glass-panel-strong overflow-hidden px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
-          <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr]">
+        <div className="surface-panel overflow-hidden px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
+          <div className="grid gap-8 lg:grid-cols-[1fr_0.95fr]">
             <div className="space-y-5">
-              <span className="eyebrow">Contact GIB</span>
-              <div className="space-y-4">
-                <h2 className="section-title text-[var(--text)]">
-                  GIB Menuiseries Services accompagne vos projets de menuiserie aluminium, renovation et depannage.
-                </h2>
-                <p className="body-copy max-w-2xl">
-                  Le site met en avant les produits, les realisations, les coordonnees utiles et un parcours de contact simple pour qualifier un besoin, envoyer des photos, demander un devis personnalise et orienter si necessaire vers un diagnostic immobilier connexe.
+              <img alt="Logo GIB Menuiseries Services" className="h-16 w-auto" src={logoSrc} />
+              <div className="space-y-3 text-sm leading-7 text-black/70">
+                <p>
+                  GIB Menuiseries Services intervient depuis Zone Cocotte a Ducos sur toute la Martinique pour la menuiserie aluminium, la renovation d habitat, le depannage express et le diagnostic immobilier.
+                </p>
+                <p>
+                  Plus de 20 ans d experience, certification RGE, Qualicoat et accompagnement sur mesure.
                 </p>
               </div>
               <div className="flex flex-wrap gap-3">
                 <a className="cta-primary" href={`tel:${company.phone_international}`}>
-                  Appeler GIB
+                  <Phone className="size-4" />
+                  Appeler
                 </a>
-                <a className="cta-whatsapp" href={company.whatsapp_url} rel="noreferrer" target="_blank">
-                  <MessageCircle className="size-4" />
-                  WhatsApp direct
-                </a>
-                <a className="cta-secondary" href={`mailto:${company.email}`}>
-                  <Mail className="size-4" />
-                  Envoyer un email
+                <a className="cta-secondary !border-[#1398db]/30 !text-black" href={`mailto:${company.email}`}>
+                  <Mail className="size-4 text-[#1398db]" />
+                  Ecrire
                 </a>
               </div>
             </div>
+
             <div className="grid gap-4 sm:grid-cols-2">
-              <div className="metric-card space-y-3">
-                <p className="text-xs uppercase tracking-[0.24em] text-white/45">Coordonnees directes</p>
-                <a className="block text-lg font-semibold text-white" href={`tel:${company.phone_international}`}>
-                  {company.phone_display}
-                </a>
-                <a className="block text-sm text-white/72" href={`mailto:${company.email}`}>
-                  {company.email}
-                </a>
-                <p className="text-sm text-white/62">{company.location_label}</p>
-                <p className="text-sm text-white/52">{company.service_area}</p>
+              <div className="rounded-[1.5rem] border border-black/8 bg-white p-5">
+                <p className="text-xs uppercase tracking-[0.24em] text-black/45">Contactez-nous</p>
+                <div className="mt-4 space-y-3 text-sm text-black/72">
+                  <a className="block font-semibold text-black" href={`tel:${company.phone_international}`}>{company.phone_display}</a>
+                  <a className="block" href={`mailto:${company.email}`}>{company.email}</a>
+                  <p>{company.location_label}, 97224, FR</p>
+                </div>
               </div>
-              <div className="metric-card space-y-3">
-                <p className="text-xs uppercase tracking-[0.24em] text-white/45">Relais visuels</p>
-                <div className="flex flex-col gap-3 text-sm text-white/74">
-                  <a className="inline-flex items-center gap-2" href={company.instagram_url} rel="noreferrer" target="_blank">
-                    <CircleFadingArrowUp className="size-4" />
-                    Instagram
-                  </a>
+              <div className="rounded-[1.5rem] border border-black/8 bg-white p-5">
+                <p className="text-xs uppercase tracking-[0.24em] text-black/45">Suivez-nous</p>
+                <div className="mt-4 flex flex-col gap-3 text-sm text-black/72">
                   <a className="inline-flex items-center gap-2" href={company.facebook_url} rel="noreferrer" target="_blank">
-                    <Globe className="size-4" />
-                    Facebook
+                    <Globe className="size-4 text-[#1398db]" /> Facebook
+                  </a>
+                  <a className="inline-flex items-center gap-2" href={company.instagram_url} rel="noreferrer" target="_blank">
+                    <Globe className="size-4 text-[#1398db]" /> Instagram
                   </a>
                   <a className="inline-flex items-center gap-2" href={company.youtube_url} rel="noreferrer" target="_blank">
-                    <PlayCircle className="size-4" />
-                    Video
+                    <PlayCircle className="size-4 text-[#e12726]" /> Video
                   </a>
                 </div>
-                <p className="text-sm text-white/52">{company.contact_note}</p>
               </div>
-              <div className="metric-card space-y-3 sm:col-span-2">
-                <p className="text-xs uppercase tracking-[0.24em] text-white/45">Acces directs</p>
-                <div className="grid gap-2 sm:grid-cols-2">
-                  <NavLink className="nav-link justify-start !bg-white/[0.04]" to="/produits">
-                    <LayoutGrid className="size-4" />
-                    Catalogue produits
-                  </NavLink>
-                  <NavLink className="nav-link justify-start !bg-white/[0.04]" to="/galerie">
-                    <CircleFadingArrowUp className="size-4" />
-                    Realisations
-                  </NavLink>
-                  <NavLink className="nav-link justify-start !bg-white/[0.04]" to="/simulation">
-                    <PlayCircle className="size-4" />
-                    Projection
-                  </NavLink>
-                  <NavLink className="nav-link justify-start !bg-white/[0.04]" to="/devis">
-                    <FileText className="size-4" />
-                    Devis personnalise
+              <div className="rounded-[1.5rem] border border-black/8 bg-white p-5 sm:col-span-2">
+                <p className="text-xs uppercase tracking-[0.24em] text-black/45">Acces directs</p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {secondaryItems.map((item) => (
+                    <NavLink key={item.to} className="nav-link !bg-black/[0.04] !text-black/76" to={item.to}>
+                      {item.label}
+                    </NavLink>
+                  ))}
+                  <NavLink className="nav-link !bg-black/[0.04] !text-black/76" to="/contact">
+                    Contact
                   </NavLink>
                 </div>
               </div>
@@ -234,7 +234,7 @@ export function SiteLayout() {
         </div>
       </footer>
 
-      <div className="fixed inset-x-0 bottom-0 z-50 border-t border-white/8 bg-[#0b0f10]/94 px-3 py-3 backdrop-blur-xl lg:hidden">
+      <div className="fixed inset-x-0 bottom-0 z-50 border-t border-black/8 bg-white/95 px-3 py-3 backdrop-blur-xl lg:hidden">
         <div className="mx-auto grid max-w-[1440px] grid-cols-3 gap-2">
           <a className="cta-primary !px-3 !py-3 text-xs" href={`tel:${company.phone_international}`}>
             <Phone className="size-4" />
@@ -244,7 +244,7 @@ export function SiteLayout() {
             <MessageCircle className="size-4" />
             WhatsApp
           </a>
-          <NavLink className="cta-secondary !px-3 !py-3 text-xs" onClick={closeMenu} to="/devis">
+          <NavLink className="cta-secondary !border-black/12 !px-3 !py-3 !text-black text-xs" onClick={closeMenu} to="/devis">
             <FileText className="size-4" />
             Devis
           </NavLink>
