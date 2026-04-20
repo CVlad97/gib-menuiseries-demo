@@ -54,10 +54,14 @@ export function SiteLayout() {
               Ecrivez-nous
             </a>
           </div>
-          <span className="inline-flex items-center gap-2">
-            <MapPin className="size-4 text-[#ffd400]" />
-            Zone Cocotte, Ducos · Martinique
-          </span>
+          <div className="flex flex-wrap items-center gap-2 text-[0.72rem] font-medium">
+            <span className="topbar-pill">Intervention Martinique</span>
+            <span className="topbar-pill">WhatsApp direct</span>
+            <span className="inline-flex items-center gap-2 text-black/72">
+              <MapPin className="size-4 text-[#ffd400]" />
+              Zone Cocotte, Ducos · Martinique
+            </span>
+          </div>
         </div>
       </div>
 
@@ -95,6 +99,7 @@ export function SiteLayout() {
                   <MapPin className="size-4 text-[#ffd400]" />
                   {company.location_label}
                 </span>
+                <span className="topbar-pill hidden xl:inline-flex">Intervention locale</span>
               </div>
             </div>
             <div className="flex flex-wrap items-center justify-between gap-3">

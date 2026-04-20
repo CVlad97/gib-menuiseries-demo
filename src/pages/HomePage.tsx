@@ -20,17 +20,24 @@ const offerOrder = [
 ]
 
 const trustPoints = [
-  { title: 'Certifiee RGE', description: 'Des artisans formes et qualifies pour vos projets de construction et de renovation.' },
-  { title: 'Qualicoat (vernis marin)', description: 'Une finition adaptee a l humidite, aux embruns et a la perennite des ouvrages exterieurs.' },
-  { title: '+ 20 ans d experience', description: 'Un savoir-faire terrain reconnu a Ducos et sur toute la Martinique.' },
-  { title: 'Accompagnement sur mesure', description: 'Prise de mesures, contraintes chantier, conseil et devis precis.' },
+  { title: 'Intervention Martinique', description: 'Une entreprise locale basee a Ducos, joignable rapidement pour vos besoins sur l ile.' },
+  { title: 'Climat tropical', description: 'Des solutions pensees pour le soleil, l humidite, les embruns et l usage exterieur.' },
+  { title: '+ 20 ans d experience', description: 'Un savoir-faire terrain reconnu pour la pose, le remplacement, le reglage et la renovation.' },
+  { title: 'Accompagnement clair', description: 'Photos, rappel, diagnostic, devis, intervention : le parcours reste simple et lisible.' },
 ]
 
 const heroMarkers = [
-  'Menuiserie aluminium sur mesure',
+  'Menuiserie aluminium',
   'Renovation d habitat',
   'Depannage, reglage et remplacement',
   'Intervention Martinique',
+]
+
+const processSteps = [
+  { title: 'Vous nous contactez', description: 'Telephone, WhatsApp ou demande de devis avec vos photos et votre besoin.' },
+  { title: 'Nous analysons', description: 'Rappel, diagnostic et orientation vers la bonne solution : pose, reglage, remplacement ou renovation.' },
+  { title: 'Nous chiffrons', description: 'Devis clair et personnalise selon vos contraintes, vos dimensions et votre usage.' },
+  { title: 'Nous intervenons', description: 'Fabrication, pose ou depannage avec un suivi simple jusqu a la remise en service.' },
 ]
 
 const visibleOffers = offerOrder
@@ -48,10 +55,10 @@ export function HomePage() {
               <div className="space-y-4">
                 <p className="eyebrow !bg-[#1398db]/10 !text-[#0f6ea7] !border-[#1398db]/20">Zone Cocotte · Ducos · Martinique</p>
                 <h1 className="section-title text-[var(--text-dark)]">
-                  GIB Menuiseries Services : la menuiserie aluminium, la renovation et le depannage avec un impact plus fort au premier regard.
+                  Menuiserie aluminium, renovation et depannage pour l habitat en Martinique.
                 </h1>
                 <p className="max-w-3xl text-base leading-8 text-black/72 sm:text-lg">
-                  Concretisez vos projets de construction et de renovation en faisant appel a nos experts. Artisans depuis plus de 20 ans, nos equipes interviennent en Martinique pour la pose, le depannage, le reglage, le remplacement et le diagnostic immobilier.
+                  Depuis Ducos, GIB accompagne les particuliers, les professionnels et les coproprietes pour la pose, le reglage, le remplacement et la remise en etat de menuiseries adaptees au climat tropical, a l exterieur et a l usage reel du terrain.
                 </p>
               </div>
 
@@ -64,7 +71,7 @@ export function HomePage() {
               <div className="flex flex-wrap gap-3">
                 <a className="cta-primary" href={`tel:${company.phone_international}`}>
                   <PhoneCall className="size-4" />
-                  Appelez-nous
+                  Appel immediat
                 </a>
                 <a className="cta-whatsapp" href={company.whatsapp_url} rel="noreferrer" target="_blank">
                   <MessageCircle className="size-4" />
@@ -75,6 +82,12 @@ export function HomePage() {
                   Demander un devis
                 </Link>
               </div>
+
+              <div className="flex flex-wrap gap-3 text-sm text-black/66">
+                <span className="contact-pill">Reponse rapide</span>
+                <span className="contact-pill">Photos et besoin par WhatsApp</span>
+                <span className="contact-pill">Diagnostic et devis sur mesure</span>
+              </div>
             </div>
 
             <div className="grid gap-4">
@@ -82,10 +95,10 @@ export function HomePage() {
                 <p className="text-xs uppercase tracking-[0.24em] text-[#0f6ea7]/80">Repere metier</p>
                 <div className="mt-4 space-y-4 text-sm leading-7 text-black/72">
                   <p>
-                    Menuiserie aluminium, volet roulant, fenetre et porte, portail, cloture et garde-corps, baie vitree, pergola bioclimatique, avancee de terrasse, renovation d habitat, depannage express et diagnostic immobilier.
+                    Menuiserie aluminium, volet roulant, fenetre et porte, portail, cloture, garde-corps, baie vitree, pergola, renovation, depannage et diagnostic immobilier.
                   </p>
                   <p>
-                    Le bleu plus vivant redonne un effet piscine, lagon et exterieur martiniquais, tout en gardant le fond serieux d une entreprise reelle a Ducos.
+                    Le message reste simple : vous contactez GIB, vous expliquez votre besoin, nous vous orientons vers la bonne prise en charge et nous vous rappelons rapidement.
                   </p>
                 </div>
               </div>
@@ -95,15 +108,15 @@ export function HomePage() {
                   <div className="inline-flex size-10 items-center justify-center rounded-full bg-[#1398db]/10 text-[#1398db]">
                     <Waves className="size-5" />
                   </div>
-                  <p className="mt-4 text-sm font-semibold text-black">Climat tropical et littoral</p>
-                  <p className="mt-2 text-sm leading-6 text-black/66">Des ouvrages penses pour le soleil, l humidite, les embruns et l usage exterieur.</p>
+                  <p className="mt-4 text-sm font-semibold text-black">Climat tropical et exterieur</p>
+                  <p className="mt-2 text-sm leading-6 text-black/66">Des solutions pensees pour le soleil, l humidite, le sel, l air marin et l usage quotidien.</p>
                 </div>
                 <div className="rounded-[1.5rem] border border-[#1398db]/14 bg-white p-5">
                   <div className="inline-flex size-10 items-center justify-center rounded-full bg-[#1398db]/10 text-[#1398db]">
                     <Wrench className="size-5" />
                   </div>
-                  <p className="mt-4 text-sm font-semibold text-black">Depannage visible tout de suite</p>
-                  <p className="mt-2 text-sm leading-6 text-black/66">Reglage, remplacement et depannage restent frontaux, pas caches dans le parcours.</p>
+                  <p className="mt-4 text-sm font-semibold text-black">Prise en charge concrete</p>
+                  <p className="mt-2 text-sm leading-6 text-black/66">Reglage, remplacement, depannage ou pose : le type d intervention est compris rapidement.</p>
                 </div>
               </div>
 
@@ -124,8 +137,8 @@ export function HomePage() {
         <div className="surface-panel px-6 py-8 sm:px-8 lg:px-10">
           <SectionHeading
             eyebrow="Menuiserie aluminium"
-            title="L installation de vos menuiseries avec l intervention d artisans certifies RGE."
-            description="GIB est a votre ecoute pour la pose de menuiserie en aluminium sur toute l ile. Nous prenons les mesures et les contraintes de vos menuiseries afin de vous etablir un devis precis, avec un large choix de produits grace a notre fournisseur SEPALUMIC."
+            title="Des solutions lisibles, durables et adaptees a l habitat en Martinique."
+            description="GIB prend les mesures, evalue les contraintes et vous oriente vers la bonne reponse : pose neuve, renovation, reglage, remplacement ou depannage selon votre situation."
           />
           <div className="mt-8 grid gap-5 lg:grid-cols-2 xl:grid-cols-3">
             {visibleOffers.map((product) => (
@@ -136,12 +149,31 @@ export function HomePage() {
       </section>
 
       <section className="shell">
+        <div className="surface-panel px-6 py-8 sm:px-8 lg:px-10">
+          <SectionHeading
+            eyebrow="Prise en charge"
+            title="Un parcours simple pour etre rassure vite."
+            description="Le but est de vous donner un contact rapide, une lecture claire du besoin et une prise en charge adaptee au terrain, sans complexite inutile."
+          />
+          <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            {processSteps.map((step, index) => (
+              <article key={step.title} className="process-step">
+                <span className="process-index">0{index + 1}</span>
+                <p className="mt-4 text-base font-semibold text-black">{step.title}</p>
+                <p className="mt-3 text-sm leading-7 text-black/66">{step.description}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="shell">
         <div className="grid gap-6 lg:grid-cols-[1.02fr_0.98fr]">
           <div className="surface-panel px-6 py-8 sm:px-8 lg:px-10">
             <SectionHeading
               eyebrow="Renovation d habitat"
-              title="La renovation interieure et exterieure de vos habitations par notre equipe d artisans."
-              description="L equipe d artisans de GIB intervient sur toute l ile pour des maisons et des bungalows. Nous effectuons la renovation d habitat pour assurer votre confort toute l annee : toiture, menuiseries, salles de bains et revetements de sol."
+              title="Renovation, remplacement et remise en etat avec une lecture terrain plus claire."
+              description="L equipe GIB intervient sur l ile pour l habitat principal, les villas, les bungalows et certains sites professionnels avec une logique concrete : proteger, remettre en etat, fiabiliser et ameliorer le confort."
             />
             <div className="mt-8 grid gap-4">
               {[
@@ -161,8 +193,8 @@ export function HomePage() {
           <div className="surface-panel px-6 py-8 sm:px-8 lg:px-10">
             <SectionHeading
               eyebrow="Confiance"
-              title="Faites confiance a une equipe d experts formes et qualifies."
-              description="Les marqueurs historiques du site officiel restent au premier plan, mais avec un contraste plus vivant et plus memorisable."
+              title="Des reperes concrets pour vous sentir en confiance plus vite."
+              description="Au lieu de promesses vagues, GIB met en avant ce qui compte vraiment pour un prospect local : presence reelle, prise en charge simple, adaptation climat et contact direct."
             />
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {trustPoints.map((item) => (
@@ -204,8 +236,8 @@ export function HomePage() {
         <div className="surface-panel px-6 py-8 sm:px-8 lg:px-10">
           <SectionHeading
             eyebrow="Contact direct"
-            title="Appelez-nous, ecrivez-nous, demandez un devis."
-            description="Comme sur le site officiel, le bon modele reste direct et local : telephone, e-mail, devis, puis prise de rendez-vous si necessaire."
+            title="Telephone, WhatsApp, devis : un contact simple et local."
+            description="Le bon modele reste direct : vous appelez, vous envoyez vos photos ou vous demandez un devis, puis GIB vous recontacte pour cadrer l intervention."
             action={
               <a className="cta-secondary !border-[#1398db]/18 !text-[#0f6ea7]" href={company.youtube_url} rel="noreferrer" target="_blank">
                 <PlayCircle className="size-4 text-[#1398db]" />
