@@ -16,21 +16,21 @@ const diagnosticItems = ['Amiante', 'Termites', 'Electricite', 'Energie']
 
 export function HomePage() {
   return (
-    <div className="space-y-10 sm:space-y-12">
-      <section className="shell pt-8 sm:pt-12 lg:pt-14">
-        <div className="hero-panel px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
-          <div className="grid gap-8 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
-            <div className="space-y-5">
-              <img alt="Logo GIB Menuiseries Services" className="h-16 w-auto max-w-full sm:h-18" src={logoSrc} />
+    <div className="space-y-7 sm:space-y-8">
+      <section className="shell pt-6 sm:pt-8 lg:pt-10">
+        <div className="hero-panel rounded-[1.55rem] px-5 py-6 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
+          <div className="grid gap-6 lg:grid-cols-[1.04fr_0.96fr] lg:items-start">
+            <div className="space-y-4">
+              <img alt="Logo GIB Menuiseries Services" className="h-14 w-auto max-w-full sm:h-16" src={logoSrc} />
               <p className="eyebrow !bg-[#1398db]/10 !text-[#0f6ea7] !border-[#1398db]/20">Accueil</p>
-              <h1 className="section-title max-w-4xl text-[var(--text-dark)]">
+              <h1 className="max-w-4xl font-[Marcellus] text-[2.1rem] leading-[1.08] tracking-[-0.03em] text-[var(--text-dark)] sm:text-[2.55rem] lg:text-[2.95rem]">
                 GIB Menuiseries Services : notre equipe de menuisiers situee a Ducos 97200
               </h1>
-              <p className="max-w-3xl text-base leading-8 text-black/72 sm:text-lg">
+              <p className="max-w-3xl text-[0.98rem] leading-7 text-black/72 sm:text-[1.03rem]">
                 Concretisez vos projets de construction et de renovation en faisant appel a nos experts ! Artisans depuis 20 ans, nos menuisiers sont a votre ecoute.
               </p>
 
-              <div className="flex flex-wrap gap-3">
+              <div className="pt-1 flex flex-wrap gap-3">
                 <Link className="cta-primary" to="/contact">
                   <ArrowRight className="size-4" />
                   Prendre un rendez-vous
@@ -38,7 +38,7 @@ export function HomePage() {
               </div>
             </div>
 
-            <div className="rounded-[2rem] border border-[#1398db]/14 bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(233,247,255,0.94))] p-6 shadow-[0_18px_42px_rgba(19,122,186,0.1)]">
+            <div className="rounded-[1.45rem] border border-[#1398db]/18 bg-[linear-gradient(180deg,rgba(247,252,255,1),rgba(231,246,255,0.96))] p-5 shadow-[0_12px_28px_rgba(19,122,186,0.08)]">
               <p className="text-xs uppercase tracking-[0.24em] text-[#0f6ea7]/80">Menuiserie aluminium</p>
               <div className="mt-4 space-y-4 text-sm leading-7 text-black/72">
                 <p>GIB est a votre ecoute pour la pose de menuiserie en aluminium sur toute l ile !</p>
@@ -55,12 +55,12 @@ export function HomePage() {
       </section>
 
       <section className="shell">
-        <div className="surface-panel px-6 py-8 sm:px-8 lg:px-10">
+        <div className="surface-panel rounded-[1.45rem] px-5 py-6 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
           <span className="eyebrow">Menuiserie aluminium</span>
-          <h2 className="section-title mt-4 text-[var(--text-dark)]">
+          <h2 className="mt-3 font-[Marcellus] text-[1.95rem] leading-[1.1] tracking-[-0.03em] text-[var(--text-dark)] sm:text-[2.35rem]">
             L installation de vos menuiseries avec l intervention d artisans certifies RGE
           </h2>
-          <div className="mt-5 space-y-4 text-sm leading-7 text-black/72 sm:text-base">
+          <div className="mt-4 space-y-3 text-[0.96rem] leading-7 text-black/72">
             <p>GIB est a votre ecoute pour la pose de menuiserie en aluminium sur toute l ile !</p>
             <p>
               Avec plus de 20 ans d experience, un large savoir-faire et de nombreuses connaissances, notre professionnel GIB vous propose la pose et la renovation de vos ouvrages exterieurs.
@@ -75,9 +75,9 @@ export function HomePage() {
               De plus, nous sommes certifies RGE et Qualicoat (vernis marin) pour vous garantir la perennite de nos ouvrages. GIB intervient rapidement pour :
             </p>
           </div>
-          <ul className="mt-5 grid gap-3 text-sm leading-7 text-black/72 sm:grid-cols-3 sm:text-base">
+          <ul className="mt-4 grid gap-2.5 text-[0.95rem] leading-7 text-black/72 sm:grid-cols-3">
             {['le remplacement', 'le depannage', 'le reglage de vos appareils'].map((item) => (
-              <li key={item} className="rounded-[1.35rem] border border-[#1398db]/12 bg-[linear-gradient(180deg,rgba(255,255,255,1),rgba(239,249,255,0.92))] px-4 py-4">
+              <li key={item} className="rounded-[1.1rem] border border-[#1398db]/14 bg-[linear-gradient(180deg,rgba(255,255,255,1),rgba(241,250,255,0.94))] px-4 py-3.5">
                 {item}
               </li>
             ))}
@@ -86,12 +86,12 @@ export function HomePage() {
       </section>
 
       <section className="shell">
-        <div className="surface-panel px-6 py-8 sm:px-8 lg:px-10">
+        <div className="surface-panel rounded-[1.45rem] px-5 py-6 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
           <span className="eyebrow">Renovation d habitat</span>
-          <h2 className="section-title mt-4 text-[var(--text-dark)]">
+          <h2 className="mt-3 font-[Marcellus] text-[1.95rem] leading-[1.1] tracking-[-0.03em] text-[var(--text-dark)] sm:text-[2.35rem]">
             La renovation interieure et exterieure de vos habitations par notre equipe d artisans
           </h2>
-          <div className="mt-5 space-y-4 text-sm leading-7 text-black/72 sm:text-base">
+          <div className="mt-4 space-y-3 text-[0.96rem] leading-7 text-black/72">
             <p>L equipe d artisans de GIB intervient sur toute l ile pour des maisons et des bungalows !</p>
             <p>
               Nous effectuons la renovation d habitat pour assurer votre confort toute l annee ! En effet, nous vous proposons le diagnostic de votre couverture, mais aussi des elements qui la constituent afin de preserver votre confort thermique.
@@ -107,18 +107,18 @@ export function HomePage() {
       </section>
 
       <section className="shell">
-        <div className="surface-panel px-6 py-8 sm:px-8 lg:px-10">
+        <div className="surface-panel rounded-[1.45rem] px-5 py-6 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
           <span className="eyebrow">Confiance</span>
-          <h2 className="section-title mt-4 text-[var(--text-dark)]">
+          <h2 className="mt-3 font-[Marcellus] text-[1.95rem] leading-[1.1] tracking-[-0.03em] text-[var(--text-dark)] sm:text-[2.35rem]">
             Faites confiance a une equipe d experts formes et qualifies
           </h2>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
             {trustItems.map((item) => (
-              <article key={item} className="rounded-[1.5rem] border border-[#1398db]/12 bg-[linear-gradient(180deg,rgba(255,255,255,1),rgba(233,246,255,0.92))] p-5 text-center">
-                <div className="mx-auto inline-flex size-11 items-center justify-center rounded-full bg-[#1398db]/10 text-[#1398db]">
+              <article key={item} className="rounded-[1.1rem] border border-[#1398db]/14 bg-[linear-gradient(180deg,rgba(255,255,255,1),rgba(236,248,255,0.94))] p-4 text-center">
+                <div className="mx-auto inline-flex size-10 items-center justify-center rounded-full bg-[#1398db]/12 text-[#1398db]">
                   <BadgeCheck className="size-5" />
                 </div>
-                <p className="mt-4 text-base font-semibold text-black">{item}</p>
+                <p className="mt-3 text-[0.98rem] font-semibold leading-6 text-black">{item}</p>
               </article>
             ))}
           </div>
@@ -126,21 +126,21 @@ export function HomePage() {
       </section>
 
       <section className="shell">
-        <div className="glass-panel-strong px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
+        <div className="glass-panel-strong rounded-[1.45rem] px-5 py-6 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
           <span className="eyebrow !border-white/18 !bg-white/10 !text-white/86">Diagnostic immobilier</span>
-          <h2 className="section-title mt-4 text-[var(--text)]">
+          <h2 className="mt-3 font-[Marcellus] text-[1.95rem] leading-[1.1] tracking-[-0.03em] text-[var(--text)] sm:text-[2.35rem]">
             Nous diagnostiquons l ensemble de vos biens immobiliers avant une vente ou des travaux
           </h2>
-          <div className="mt-5 space-y-4 text-sm leading-7 text-white/78 sm:text-base">
+          <div className="mt-4 space-y-3 text-[0.96rem] leading-7 text-white/78">
             <p>GIB intervient dans le diagnostic immobilier de vos biens sur toute l ile !</p>
             <p>
               Il est primordial de s assurer de l integrite d un bien lorsque celui-ci est destine a etre vendu ou renove. Le but est d eviter d eventuels problemes a l avenir. Pour cela, notre entreprise GIB vous propose d effectuer un diagnostic immobilier complet.
             </p>
             <p>Nous realisons divers diagnostics pour :</p>
           </div>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
             {diagnosticItems.map((item) => (
-              <div key={item} className="rounded-[1.5rem] border border-white/12 bg-white/[0.12] p-5 text-center">
+              <div key={item} className="rounded-[1.1rem] border border-white/12 bg-white/[0.12] p-4 text-center">
                 <p className="text-base font-semibold text-white">{item}</p>
               </div>
             ))}
@@ -149,18 +149,18 @@ export function HomePage() {
       </section>
 
       <section className="shell pb-4">
-        <div className="surface-panel px-6 py-8 sm:px-8 lg:px-10">
+        <div className="surface-panel rounded-[1.45rem] px-5 py-6 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
           <span className="eyebrow">Contact</span>
-          <h2 className="section-title mt-4 text-[var(--text-dark)]">
+          <h2 className="mt-3 font-[Marcellus] text-[1.95rem] leading-[1.1] tracking-[-0.03em] text-[var(--text-dark)] sm:text-[2.35rem]">
             GIB Menuiserie, situe a Ducos, intervient sur toute la Martinique.
           </h2>
-          <div className="mt-5 space-y-4 text-sm leading-7 text-black/72 sm:text-base">
+          <div className="mt-4 space-y-3 text-[0.96rem] leading-7 text-black/72">
             <p>
               Votre professionnel GIB est disponible par telephone au numero suivant 0596737219 ou par e-mail contact@gibmenuiseries.com pour concretiser l ensemble de vos projets.
             </p>
             <p>Vous souhaitez profiter des services de nos menuisiers pour un projet de construction ou de renovation ?</p>
           </div>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-6 flex flex-wrap gap-3">
             <a className="cta-primary" href={`tel:${company.phone_international}`}>
               <PhoneCall className="size-4" />
               0596737219
@@ -177,7 +177,7 @@ export function HomePage() {
               Contactez nous
             </Link>
           </div>
-          <div className="mt-6 flex flex-wrap gap-3 text-sm text-black/66">
+          <div className="mt-5 flex flex-wrap gap-3 text-sm text-black/66">
             <span className="contact-pill">Zone Cocotte, Ducos</span>
             <span className="contact-pill">Martinique</span>
             <a className="cta-secondary !px-4 !py-2 !text-sm !font-semibold !border-[#1398db]/18 !text-[#0f6ea7]" href={company.youtube_url} rel="noreferrer" target="_blank">
