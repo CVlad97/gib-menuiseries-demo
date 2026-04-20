@@ -1,4 +1,4 @@
-import { ArrowRight, BadgeCheck, Mail, MessageCircle, PhoneCall, PlayCircle } from 'lucide-react'
+import { ArrowRight, BadgeCheck, Mail, MessageCircle, PhoneCall, PlayCircle, Waves, Wrench } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { ProductCard } from '../components/ProductCard'
 import { SectionHeading } from '../components/SectionHeading'
@@ -21,9 +21,16 @@ const offerOrder = [
 
 const trustPoints = [
   { title: 'Certifiee RGE', description: 'Des artisans formes et qualifies pour vos projets de construction et de renovation.' },
-  { title: 'Qualicoat (vernis marin)', description: 'Une finition adaptee pour garantir la perennite des ouvrages exterieurs.' },
+  { title: 'Qualicoat (vernis marin)', description: 'Une finition adaptee a l humidite, aux embruns et a la perennite des ouvrages exterieurs.' },
   { title: '+ 20 ans d experience', description: 'Un savoir-faire terrain reconnu a Ducos et sur toute la Martinique.' },
   { title: 'Accompagnement sur mesure', description: 'Prise de mesures, contraintes chantier, conseil et devis precis.' },
+]
+
+const heroMarkers = [
+  'Menuiserie aluminium sur mesure',
+  'Renovation d habitat',
+  'Depannage, reglage et remplacement',
+  'Intervention Martinique',
 ]
 
 const visibleOffers = offerOrder
@@ -34,49 +41,76 @@ export function HomePage() {
   return (
     <div className="space-y-10 sm:space-y-14">
       <section className="shell pt-8 sm:pt-12 lg:pt-14">
-        <div className="surface-panel overflow-hidden px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
-          <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+        <div className="hero-panel px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
+          <div className="grid gap-8 lg:grid-cols-[1.08fr_0.92fr] lg:items-center">
             <div className="space-y-6">
               <img alt="Logo GIB Menuiseries Services" className="h-18 w-auto max-w-full sm:h-20" src={logoSrc} />
               <div className="space-y-4">
-                <p className="eyebrow !bg-[#e12726]/[0.08] !text-[#e12726] !border-[#e12726]/20">Zone Cocotte · Ducos · Martinique</p>
+                <p className="eyebrow !bg-[#1398db]/10 !text-[#0f6ea7] !border-[#1398db]/20">Zone Cocotte · Ducos · Martinique</p>
                 <h1 className="section-title text-[var(--text-dark)]">
-                  GIB Menuiseries Services : notre equipe de menuisiers situee a Ducos.
+                  GIB Menuiseries Services : la menuiserie aluminium, la renovation et le depannage avec un impact plus fort au premier regard.
                 </h1>
                 <p className="max-w-3xl text-base leading-8 text-black/72 sm:text-lg">
-                  Concretisez vos projets de construction et de renovation en faisant appel a nos experts. Artisans depuis 20 ans, nos menuisiers sont a votre ecoute pour la pose, la renovation, le depannage, le remplacement, le reglage et le diagnostic immobilier.
+                  Concretisez vos projets de construction et de renovation en faisant appel a nos experts. Artisans depuis plus de 20 ans, nos equipes interviennent en Martinique pour la pose, le depannage, le reglage, le remplacement et le diagnostic immobilier.
                 </p>
               </div>
+
+              <div className="flex flex-wrap gap-2">
+                {heroMarkers.map((item) => (
+                  <span key={item} className="tag !bg-[#1398db]/10 !text-[#0f6ea7]">{item}</span>
+                ))}
+              </div>
+
               <div className="flex flex-wrap gap-3">
                 <a className="cta-primary" href={`tel:${company.phone_international}`}>
                   <PhoneCall className="size-4" />
                   Appelez-nous
                 </a>
-                <a className="cta-secondary !border-[#1398db]/30 !text-black" href={`mailto:${company.email}`}>
-                  <Mail className="size-4 text-[#1398db]" />
-                  Ecrivez-nous
+                <a className="cta-whatsapp" href={company.whatsapp_url} rel="noreferrer" target="_blank">
+                  <MessageCircle className="size-4" />
+                  WhatsApp direct
                 </a>
-                <Link className="cta-whatsapp" to="/devis">
+                <Link className="cta-secondary" to="/devis">
                   <ArrowRight className="size-4" />
                   Demander un devis
                 </Link>
               </div>
             </div>
 
-            <div className="rounded-[2rem] border border-black/8 bg-[#f8f9fb] p-6 shadow-[0_24px_60px_rgba(17,22,21,0.08)]">
-              <p className="text-xs uppercase tracking-[0.24em] text-black/45">Repere metier</p>
-              <div className="mt-4 space-y-4 text-sm leading-7 text-black/72">
-                <p>
-                  Menuiserie aluminium, volet roulant, fenetre et porte, portail, cloture et garde-corps, baie vitree, pergola bioclimatique, avancee de terrasse, renovation d habitat, depannage express et diagnostic immobilier.
-                </p>
-                <p>
-                  GIB intervient rapidement sur toute la Martinique et plus particulierement autour de Ducos, Le Lamentin, Fort-de-France, Schoelcher, Riviere-Pilote, Les Trois-Ilets et Le Robert.
-                </p>
+            <div className="grid gap-4">
+              <div className="rounded-[2rem] border border-[#1398db]/14 bg-[linear-gradient(145deg,rgba(19,152,219,0.12),rgba(83,196,216,0.08))] p-6 shadow-[0_24px_60px_rgba(19,122,186,0.12)]">
+                <p className="text-xs uppercase tracking-[0.24em] text-[#0f6ea7]/80">Repere metier</p>
+                <div className="mt-4 space-y-4 text-sm leading-7 text-black/72">
+                  <p>
+                    Menuiserie aluminium, volet roulant, fenetre et porte, portail, cloture et garde-corps, baie vitree, pergola bioclimatique, avancee de terrasse, renovation d habitat, depannage express et diagnostic immobilier.
+                  </p>
+                  <p>
+                    Le bleu plus vivant redonne un effet piscine, lagon et exterieur martiniquais, tout en gardant le fond serieux d une entreprise reelle a Ducos.
+                  </p>
+                </div>
               </div>
-              <div className="mt-6 grid gap-3 sm:grid-cols-2">
+
+              <div className="grid gap-3 sm:grid-cols-2">
+                <div className="rounded-[1.5rem] border border-[#1398db]/14 bg-white p-5">
+                  <div className="inline-flex size-10 items-center justify-center rounded-full bg-[#1398db]/10 text-[#1398db]">
+                    <Waves className="size-5" />
+                  </div>
+                  <p className="mt-4 text-sm font-semibold text-black">Climat tropical et littoral</p>
+                  <p className="mt-2 text-sm leading-6 text-black/66">Des ouvrages penses pour le soleil, l humidite, les embruns et l usage exterieur.</p>
+                </div>
+                <div className="rounded-[1.5rem] border border-[#1398db]/14 bg-white p-5">
+                  <div className="inline-flex size-10 items-center justify-center rounded-full bg-[#1398db]/10 text-[#1398db]">
+                    <Wrench className="size-5" />
+                  </div>
+                  <p className="mt-4 text-sm font-semibold text-black">Depannage visible tout de suite</p>
+                  <p className="mt-2 text-sm leading-6 text-black/66">Reglage, remplacement et depannage restent frontaux, pas caches dans le parcours.</p>
+                </div>
+              </div>
+
+              <div className="grid gap-3 sm:grid-cols-2">
                 {company.proof_points.map((item) => (
-                  <div key={item.label} className="rounded-[1.4rem] border border-black/8 bg-white p-4">
-                    <p className="text-xs uppercase tracking-[0.2em] text-black/42">{item.label}</p>
+                  <div key={item.label} className="rounded-[1.4rem] border border-[#1398db]/12 bg-white p-4 shadow-[0_10px_30px_rgba(19,122,186,0.06)]">
+                    <p className="text-xs uppercase tracking-[0.2em] text-[#0f6ea7]/70">{item.label}</p>
                     <p className="mt-2 text-base font-semibold text-black">{item.value}</p>
                   </div>
                 ))}
@@ -116,8 +150,8 @@ export function HomePage() {
                 'Traitement d etancheite pour preserver le confort thermique',
                 'Renovation complete de salles de bains et revetements de sol',
               ].map((item) => (
-                <div key={item} className="flex items-start gap-3 rounded-[1.5rem] border border-black/8 bg-white p-4 text-sm leading-7 text-black/72">
-                  <BadgeCheck className="mt-1 size-4 text-[#e12726]" />
+                <div key={item} className="flex items-start gap-3 rounded-[1.5rem] border border-[#1398db]/12 bg-[linear-gradient(180deg,rgba(255,255,255,1),rgba(239,249,255,0.92))] p-4 text-sm leading-7 text-black/72">
+                  <BadgeCheck className="mt-1 size-4 text-[#1398db]" />
                   <span>{item}</span>
                 </div>
               ))}
@@ -128,11 +162,11 @@ export function HomePage() {
             <SectionHeading
               eyebrow="Confiance"
               title="Faites confiance a une equipe d experts formes et qualifies."
-              description="Les marqueurs historiques du site officiel restent au premier plan, avec une lecture plus nette et plus immediate."
+              description="Les marqueurs historiques du site officiel restent au premier plan, mais avec un contraste plus vivant et plus memorisable."
             />
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {trustPoints.map((item) => (
-                <article key={item.title} className="rounded-[1.6rem] border border-black/8 bg-black/[0.02] p-5">
+                <article key={item.title} className="rounded-[1.6rem] border border-[#1398db]/12 bg-[linear-gradient(180deg,rgba(255,255,255,1),rgba(233,246,255,0.92))] p-5">
                   <p className="text-base font-semibold text-black">{item.title}</p>
                   <p className="mt-3 text-sm leading-7 text-black/68">{item.description}</p>
                 </article>
@@ -143,7 +177,7 @@ export function HomePage() {
       </section>
 
       <section className="shell">
-        <div className="surface-panel px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
+        <div className="glass-panel-strong px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
           <SectionHeading
             eyebrow="Diagnostic immobilier"
             title="Nous diagnostiquons l ensemble de vos biens immobiliers avant une vente ou des travaux."
@@ -154,11 +188,12 @@ export function HomePage() {
                 Voir le diagnostic immobilier
               </Link>
             }
+            light
           />
           <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
             {['Amiante', 'Termites', 'Electricite', 'Energie'].map((item) => (
-              <div key={item} className="rounded-[1.5rem] border border-black/8 bg-white p-5 text-center">
-                <p className="text-base font-semibold text-black">{item}</p>
+              <div key={item} className="rounded-[1.5rem] border border-white/12 bg-white/[0.12] p-5 text-center">
+                <p className="text-base font-semibold text-white">{item}</p>
               </div>
             ))}
           </div>
@@ -172,8 +207,8 @@ export function HomePage() {
             title="Appelez-nous, ecrivez-nous, demandez un devis."
             description="Comme sur le site officiel, le bon modele reste direct et local : telephone, e-mail, devis, puis prise de rendez-vous si necessaire."
             action={
-              <a className="cta-secondary !border-[#e12726]/20 !text-black" href={company.youtube_url} rel="noreferrer" target="_blank">
-                <PlayCircle className="size-4 text-[#e12726]" />
+              <a className="cta-secondary !border-[#1398db]/18 !text-[#0f6ea7]" href={company.youtube_url} rel="noreferrer" target="_blank">
+                <PlayCircle className="size-4 text-[#1398db]" />
                 Video
               </a>
             }
@@ -183,7 +218,7 @@ export function HomePage() {
               <PhoneCall className="size-4" />
               {company.phone_display}
             </a>
-            <a className="cta-secondary !border-[#1398db]/30 !text-black" href={`mailto:${company.email}`}>
+            <a className="cta-secondary !border-[#1398db]/24 !text-[#0f6ea7]" href={`mailto:${company.email}`}>
               <Mail className="size-4 text-[#1398db]" />
               {company.email}
             </a>
@@ -191,7 +226,7 @@ export function HomePage() {
               <MessageCircle className="size-4" />
               WhatsApp
             </a>
-            <Link className="cta-secondary !text-black" to="/contact">
+            <Link className="cta-secondary !border-[#1398db]/24 !text-[#0f6ea7]" to="/contact">
               Contact
             </Link>
           </div>

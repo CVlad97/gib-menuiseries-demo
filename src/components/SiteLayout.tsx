@@ -42,7 +42,7 @@ export function SiteLayout() {
 
   return (
     <div className="pb-28 lg:pb-10">
-      <div className="border-b border-black/8 bg-white text-[0.78rem] text-black/72">
+      <div className="border-b border-[#1398db]/10 bg-[linear-gradient(90deg,rgba(19,152,219,0.08),rgba(83,196,216,0.06))] text-[0.78rem] text-black/72">
         <div className="shell flex flex-wrap items-center justify-between gap-3 py-3">
           <div className="flex flex-wrap items-center gap-4">
             <a className="inline-flex items-center gap-2 font-semibold text-black" href={`tel:${company.phone_international}`}>
@@ -61,7 +61,7 @@ export function SiteLayout() {
         </div>
       </div>
 
-      <header className="sticky top-0 z-40 border-b border-black/8 bg-white/95 backdrop-blur-xl">
+      <header className="sticky top-0 z-40 border-b border-[#1398db]/10 bg-white/92 backdrop-blur-xl">
         <div className="shell py-4">
           <div className="flex items-center justify-between gap-4 lg:hidden">
             <NavLink className="min-w-0" onClick={closeMenu} to="/">
