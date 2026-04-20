@@ -5,6 +5,22 @@ import { company } from '../lib/content'
 const logoSrc =
   'https://le-de.cdn-website.com/179f7a3a04c5410bb41d060e3efd0cfd/dms3rep/multi/opt/logo+gib-fe923f67-381w.PNG'
 
+const heroMainImage = 'media/gib/pergola-ambiance-1.jpg'
+const heroSupportImages = [
+  {
+    label: 'Garde-corps',
+    src: 'media/gib/garde-corps-portillon.jpg',
+    alt: 'Garde-corps et portillon installes par GIB en Martinique.',
+  },
+  {
+    label: 'Terrasse / toiture',
+    src: 'media/gib/terrasse-thermotop.jpg',
+    alt: 'Terrasse et toiture exterieure realisees par GIB en Martinique.',
+  },
+]
+
+const heroTrustMarkers = ['Ducos', 'Intervention Martinique', 'RGE / Qualicoat']
+
 const trustItems = [
   'Certifiee RGE',
   'Qualicoat (vernis marin)',
@@ -19,7 +35,7 @@ export function HomePage() {
     <div className="space-y-7 sm:space-y-8">
       <section className="shell pt-6 sm:pt-8 lg:pt-10">
         <div className="hero-panel rounded-[1.55rem] px-5 py-6 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
-          <div className="grid gap-6 lg:grid-cols-[1.04fr_0.96fr] lg:items-start">
+          <div className="grid gap-6 lg:grid-cols-[0.94fr_1.06fr] lg:items-start">
             <div className="space-y-4">
               <img alt="Logo GIB Menuiseries Services" className="h-14 w-auto max-w-full sm:h-16" src={logoSrc} />
               <p className="eyebrow !bg-[#1398db]/10 !text-[#0f6ea7] !border-[#1398db]/20">Accueil</p>
@@ -30,24 +46,60 @@ export function HomePage() {
                 Concretisez vos projets de construction et de renovation en faisant appel a nos experts ! Artisans depuis 20 ans, nos menuisiers sont a votre ecoute.
               </p>
 
+              <div className="flex flex-wrap gap-2.5 pt-1">
+                {heroTrustMarkers.map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-full border border-[#1398db]/18 bg-white/80 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-[#0f6ea7] shadow-[0_8px_20px_rgba(19,122,186,0.08)]"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+
               <div className="pt-1 flex flex-wrap gap-3">
                 <Link className="cta-primary" to="/contact">
                   <ArrowRight className="size-4" />
                   Prendre un rendez-vous
                 </Link>
+                <a className="cta-secondary !border-[#1398db]/24 !text-[#0f6ea7]" href={`tel:${company.phone_international}`}>
+                  <PhoneCall className="size-4 text-[#1398db]" />
+                  Appeler
+                </a>
+                <a className="cta-whatsapp" href={company.whatsapp_url} rel="noreferrer" target="_blank">
+                  <MessageCircle className="size-4" />
+                  WhatsApp
+                </a>
               </div>
             </div>
 
-            <div className="rounded-[1.45rem] border border-[#1398db]/18 bg-[linear-gradient(180deg,rgba(247,252,255,1),rgba(231,246,255,0.96))] p-5 shadow-[0_12px_28px_rgba(19,122,186,0.08)]">
-              <p className="text-xs uppercase tracking-[0.24em] text-[#0f6ea7]/80">Menuiserie aluminium</p>
-              <div className="mt-4 space-y-4 text-sm leading-7 text-black/72">
-                <p>GIB est a votre ecoute pour la pose de menuiserie en aluminium sur toute l ile !</p>
-                <p>
-                  Avec plus de 20 ans d experience, un large savoir-faire et de nombreuses connaissances, notre professionnel GIB vous propose la pose et la renovation de vos ouvrages exterieurs.
-                </p>
-                <p>
-                  De plus, nous sommes certifies RGE et Qualicoat (vernis marin) pour vous garantir la perennite de nos ouvrages.
-                </p>
+            <div className="space-y-3">
+              <article className="overflow-hidden rounded-[1.45rem] border border-[#1398db]/18 bg-white shadow-[0_16px_34px_rgba(19,122,186,0.12)]">
+                <img
+                  alt="Pergola bioclimatique et confort exterieur installes par GIB en Martinique."
+                  className="h-[260px] w-full object-cover sm:h-[320px]"
+                  src={heroMainImage}
+                />
+                <div className="space-y-2 px-4 py-4 sm:px-5">
+                  <p className="text-xs uppercase tracking-[0.24em] text-[#0f6ea7]/80">Pergola / toit ouvert</p>
+                  <p className="text-base font-semibold leading-6 text-black sm:text-[1.05rem]">
+                    Une home plus concrete pour montrer le confort exterieur, la renovation et l usage reel en Martinique.
+                  </p>
+                </div>
+              </article>
+
+              <div className="grid gap-3 sm:grid-cols-2">
+                {heroSupportImages.map((image) => (
+                  <article
+                    key={image.label}
+                    className="overflow-hidden rounded-[1.2rem] border border-[#1398db]/16 bg-white shadow-[0_12px_24px_rgba(19,122,186,0.09)]"
+                  >
+                    <img alt={image.alt} className="h-36 w-full object-cover" src={image.src} />
+                    <div className="px-4 py-3">
+                      <p className="text-sm font-semibold text-black">{image.label}</p>
+                    </div>
+                  </article>
+                ))}
               </div>
             </div>
           </div>
