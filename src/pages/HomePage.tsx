@@ -22,8 +22,8 @@ const offerOrder = [
 const trustPoints = [
   { title: 'Intervention Martinique', description: 'Une entreprise locale basee a Ducos, joignable rapidement pour vos besoins sur l ile.' },
   { title: 'Climat tropical', description: 'Des solutions pensees pour le soleil, l humidite, les embruns et l usage exterieur.' },
-  { title: '+ 20 ans d experience', description: 'Un savoir-faire terrain reconnu pour la pose, le remplacement, le reglage et la renovation.' },
-  { title: 'Accompagnement clair', description: 'Photos, rappel, diagnostic, devis, intervention : le parcours reste simple et lisible.' },
+  { title: 'RGE et Qualicoat', description: 'Des reperes deja presents dans le positionnement GIB pour parler durabilite, finition et serieux d execution.' },
+  { title: '+ 20 ans et accompagnement', description: 'Photos, rappel, diagnostic, devis, intervention : le parcours reste simple et lisible avec un vrai savoir-faire terrain.' },
 ]
 
 const heroMarkers = [
@@ -128,6 +128,9 @@ export function HomePage() {
                   </div>
                 ))}
               </div>
+              <p className="rounded-[1.4rem] border border-[#1398db]/12 bg-white/88 px-4 py-3 text-sm leading-6 text-black/66 shadow-[0_10px_28px_rgba(19,122,186,0.05)]">
+                Appel, WhatsApp ou devis : la prise de contact reste directe, locale et rapidement exploitable pour un besoin de pose, de remplacement ou de depannage.
+              </p>
             </div>
           </div>
         </div>
