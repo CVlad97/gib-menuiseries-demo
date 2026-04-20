@@ -20,6 +20,12 @@ export function ProductCard({ product }: ProductCardProps) {
           ? 'Renovation et remplacement d ouvrants'
           : null
 
+  const supportBadges = [
+    'Sur devis',
+    product.slug === 'renovation-depannage' ? 'Intervention locale' : 'Etude sur mesure',
+    'Adapte exterieur',
+  ]
+
   return (
     <article className="surface-panel group overflow-hidden border-[#1398db]/10 transition duration-300 hover:-translate-y-1 hover:shadow-[0_26px_56px_rgba(19,122,186,0.14)]">
       <MediaImage
@@ -40,6 +46,11 @@ export function ProductCard({ product }: ProductCardProps) {
           ) : null}
           {highlight ? <span className="tag !bg-[color:var(--gold-soft)] !text-[#8a671c]">{highlight}</span> : null}
         </div>
+        <div className="flex flex-wrap gap-2">
+          {supportBadges.map((badge) => (
+            <span key={badge} className="micro-badge">{badge}</span>
+          ))}
+        </div>
         <div className="space-y-3">
           <h3 className="text-2xl font-semibold text-black">{product.name}</h3>
           <p className="text-sm leading-7 text-black/70">{product.summary}</p>
@@ -50,11 +61,11 @@ export function ProductCard({ product }: ProductCardProps) {
         </div>
         <div className="flex flex-wrap gap-3">
           <Link className="cta-primary !px-4 !py-2" to={`/produits/${product.slug}`}>
-            Voir la solution
+            Voir le detail
             <ArrowRight className="size-4" />
           </Link>
           <Link className="cta-secondary !border-[#1398db]/20 !px-4 !py-2 !text-[#0f6ea7]" to={`/devis?product=${product.slug}`}>
-            Devis personnalise
+            Demander un devis
           </Link>
         </div>
       </div>
