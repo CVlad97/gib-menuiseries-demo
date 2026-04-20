@@ -31,10 +31,10 @@ export function GalleryPage() {
     <div className="shell space-y-10 pt-8 sm:pt-12">
       <div className="glass-panel-strong px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
         <SectionHeading
-          description="La galerie est alimentee en priorite par les visuels du site officiel GIB. L architecture conserve les champs source, category, product_type et fallback local pour absorber ensuite Instagram sans bloquer l app."
+          description="La galerie s appuie en priorite sur des visuels reels du site officiel GIB pour montrer un habitat, des exterieurs et des menuiseries deja posees. L objectif ici est la credibilite terrain avant la decoration."
           eyebrow="Galerie premium"
           light
-          title="Filtrer, comparer et transformer une inspiration en demande de devis."
+          title="Des visuels plus reels pour aider a se projeter et passer au contact."
         />
 
         <div className="mt-8 grid gap-5 lg:grid-cols-[1.2fr_0.8fr]">
@@ -101,8 +101,8 @@ export function GalleryPage() {
             <p className="mt-2 text-lg font-semibold text-black">Instagram par URLs validees ou export manuel</p>
           </div>
           <div>
-            <p className="text-xs uppercase tracking-[0.24em] text-black/45">Filet de securite</p>
-            <p className="mt-2 text-lg font-semibold text-black">Fallback local embarque par categorie</p>
+            <p className="text-xs uppercase tracking-[0.24em] text-black/45">Objectif</p>
+            <p className="mt-2 text-lg font-semibold text-black">Montrer des poses reelles, lumineuses et credibles</p>
           </div>
         </div>
       </div>
