@@ -215,4 +215,39 @@ img { display:block; max-width:100%; }
   }
   .field-light::placeholder { color: rgba(17, 22, 21, 0.4); }
   .field-light:focus { border-color: rgba(19, 152, 219, 0.3); }
+
+  .topbar-pill {
+    @apply inline-flex items-center rounded-full border px-3 py-1;
+    border-color: rgba(19, 122, 186, 0.14);
+    background: rgba(255, 255, 255, 0.68);
+    color: var(--blue-deep);
+  }
+
+  .contact-pill {
+    @apply inline-flex items-center rounded-full border px-3 py-2 text-xs font-semibold;
+    border-color: rgba(19, 122, 186, 0.16);
+    background: rgba(255, 255, 255, 0.76);
+    color: rgba(19, 37, 52, 0.72);
+    box-shadow: 0 10px 22px rgba(19, 122, 186, 0.08);
+  }
+
+  .process-step {
+    @apply rounded-[1.6rem] border p-5;
+    background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(234,247,255,0.94));
+    border-color: rgba(19, 122, 186, 0.12);
+    box-shadow: 0 14px 30px rgba(19, 122, 186, 0.08);
+  }
+
+  .process-index {
+    @apply inline-flex size-10 items-center justify-center rounded-full text-sm font-semibold;
+    background: linear-gradient(135deg, rgba(19,152,219,0.14), rgba(83,196,216,0.18));
+    color: var(--blue-deep);
+  }
+
+  .micro-badge {
+    @apply inline-flex items-center rounded-full border px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.18em];
+    border-color: rgba(19, 122, 186, 0.12);
+    background: rgba(255, 255, 255, 0.7);
+    color: rgba(19, 37, 52, 0.72);
+  }
 }
