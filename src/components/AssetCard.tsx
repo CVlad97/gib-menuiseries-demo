@@ -11,6 +11,8 @@ interface AssetCardProps {
 
 export function AssetCard({ asset, onOpen }: AssetCardProps) {
   const meta = categoryMeta[asset.category]
+  const trustLabel =
+    asset.source === 'official-site' ? 'visuel reel GIB' : asset.source.replaceAll('-', ' ')
 
   return (
     <article className="glass-panel overflow-hidden">
@@ -31,6 +33,7 @@ export function AssetCard({ asset, onOpen }: AssetCardProps) {
           <div className="absolute left-5 top-5 flex flex-wrap gap-2">
             <span className="tag">{meta.label}</span>
             <span className="tag bg-black/45">{asset.collection.replaceAll('-', ' ')}</span>
+            <span className="tag bg-white/18 text-white">{trustLabel}</span>
           </div>
           <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4">
             <div>
@@ -45,7 +48,7 @@ export function AssetCard({ asset, onOpen }: AssetCardProps) {
       </button>
       <div className="space-y-4 p-5">
         <div className="flex items-center justify-between gap-3 text-xs uppercase tracking-[0.2em] text-white/52">
-          <span>{asset.source === 'official-site' ? 'site officiel' : asset.source}</span>
+          <span>{asset.source === 'official-site' ? 'source officielle GIB' : asset.source}</span>
           {asset.source_url ? (
             <a
               className="inline-flex items-center gap-1 text-white/70 transition hover:text-white"
@@ -60,14 +63,14 @@ export function AssetCard({ asset, onOpen }: AssetCardProps) {
         </div>
         <div className="flex flex-wrap gap-3">
           <button className="cta-secondary !px-4 !py-2" onClick={() => onOpen?.(asset)} type="button">
-            Voir
+            Voir la photo
           </button>
           <Link
             className="cta-primary !px-4 !py-2"
             to={`/devis?product=${asset.product_type}&asset=${asset.id}`}
           >
             <Quote className="size-4" />
-            Devis similaire
+            Demander un devis
           </Link>
         </div>
       </div>
