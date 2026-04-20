@@ -7,8 +7,8 @@ import { company, products } from '../lib/content'
 const pageHighlights = [
   'Volet roulant, fenetre et porte, portail, cloture et garde-corps, baie vitree, pergola bioclimatique.',
   'Avancee de terrasse, renovation d habitat, depannage express et diagnostic immobilier.',
-  'Produits sur mesure, accompagnement de chantier, prise de mesures et devis precis.',
-  'Contact simple par telephone, e-mail, WhatsApp ou demande de devis.',
+  'Prise de mesures, analyse du besoin, devis sur mesure et accompagnement de chantier.',
+  'Telephone, WhatsApp et demande de devis pour passer rapidement du besoin au contact.',
 ]
 
 const audienceFocus = ['Particuliers', 'Professionnels', 'Coproprietes', 'Toute la Martinique']
