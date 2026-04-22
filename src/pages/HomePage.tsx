@@ -21,6 +21,13 @@ const heroSupportImages = [
 
 const heroTrustMarkers = ['Ducos', 'Intervention Martinique', 'RGE / Qualicoat']
 
+const fieldProofs = [
+  'Prise de mesures sur chantier',
+  'Devis precis avant travaux',
+  'Remplacement, depannage et reglage',
+  'Solutions exterieures climat tropical',
+]
+
 const trustItems = [
   'Certifiee RGE',
   'Qualicoat (vernis marin)',
@@ -39,8 +46,8 @@ export function HomePage() {
             <div className="space-y-4">
               <img alt="Logo GIB Menuiseries Services" className="h-14 w-auto max-w-full sm:h-16" src={logoSrc} />
               <p className="eyebrow !bg-[#1398db]/10 !text-[#0f6ea7] !border-[#1398db]/20">Accueil</p>
-              <h1 className="max-w-4xl font-[Marcellus] text-[2.1rem] leading-[1.08] tracking-[-0.03em] text-[var(--text-dark)] sm:text-[2.55rem] lg:text-[2.95rem]">
-                GIB Menuiseries Services : notre equipe de menuisiers situee a Ducos 97200
+              <h1 className="page-title max-w-4xl text-[var(--text-dark)]">
+                GIB Menuiseries Services : notre equipe de menuisiers situee a Ducos, en Martinique
               </h1>
               <p className="max-w-3xl text-[0.98rem] leading-7 text-black/72 sm:text-[1.03rem]">
                 Concretisez vos projets de construction et de renovation en faisant appel a nos experts ! Artisans depuis 20 ans, nos menuisiers sont a votre ecoute.
@@ -70,6 +77,16 @@ export function HomePage() {
                   <MessageCircle className="size-4" />
                   WhatsApp
                 </a>
+              </div>
+              <div className="grid gap-2 pt-2 sm:grid-cols-2">
+                {fieldProofs.map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-[1rem] border border-[#1398db]/14 bg-white/86 px-3 py-2 text-[0.8rem] font-semibold leading-5 text-black/70"
+                  >
+                    {item}
+                  </span>
+                ))}
               </div>
             </div>
 
@@ -109,7 +126,7 @@ export function HomePage() {
       <section className="shell">
         <div className="surface-panel rounded-[1.45rem] px-5 py-6 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
           <span className="eyebrow">Menuiserie aluminium</span>
-          <h2 className="mt-3 font-[Marcellus] text-[1.95rem] leading-[1.1] tracking-[-0.03em] text-[var(--text-dark)] sm:text-[2.35rem]">
+          <h2 className="section-title mt-3 text-[var(--text-dark)]">
             L installation de vos menuiseries avec l intervention d artisans certifies RGE
           </h2>
           <div className="mt-4 space-y-3 text-[0.96rem] leading-7 text-black/72">
@@ -129,7 +146,7 @@ export function HomePage() {
           </div>
           <ul className="mt-4 grid gap-2.5 text-[0.95rem] leading-7 text-black/72 sm:grid-cols-3">
             {['le remplacement', 'le depannage', 'le reglage de vos appareils'].map((item) => (
-              <li key={item} className="rounded-[1.1rem] border border-[#1398db]/14 bg-[linear-gradient(180deg,rgba(255,255,255,1),rgba(241,250,255,0.94))] px-4 py-3.5">
+              <li key={item} className="rounded-[1.1rem] border border-[#1398db]/14 bg-[linear-gradient(180deg,rgba(255,255,255,1),rgba(241,250,255,0.94))] px-4 py-3.5 font-semibold text-[var(--text-dark)]">
                 {item}
               </li>
             ))}
@@ -140,7 +157,7 @@ export function HomePage() {
       <section className="shell">
         <div className="surface-panel rounded-[1.45rem] px-5 py-6 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
           <span className="eyebrow">Renovation d habitat</span>
-          <h2 className="mt-3 font-[Marcellus] text-[1.95rem] leading-[1.1] tracking-[-0.03em] text-[var(--text-dark)] sm:text-[2.35rem]">
+          <h2 className="section-title mt-3 text-[var(--text-dark)]">
             La renovation interieure et exterieure de vos habitations par notre equipe d artisans
           </h2>
           <div className="mt-4 space-y-3 text-[0.96rem] leading-7 text-black/72">
@@ -161,7 +178,7 @@ export function HomePage() {
       <section className="shell">
         <div className="surface-panel rounded-[1.45rem] px-5 py-6 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
           <span className="eyebrow">Confiance</span>
-          <h2 className="mt-3 font-[Marcellus] text-[1.95rem] leading-[1.1] tracking-[-0.03em] text-[var(--text-dark)] sm:text-[2.35rem]">
+          <h2 className="section-title mt-3 text-[var(--text-dark)]">
             Faites confiance a une equipe d experts formes et qualifies
           </h2>
           <div className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
@@ -180,7 +197,7 @@ export function HomePage() {
       <section className="shell">
         <div className="glass-panel-strong rounded-[1.45rem] px-5 py-6 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
           <span className="eyebrow !border-white/18 !bg-white/10 !text-white/86">Diagnostic immobilier</span>
-          <h2 className="mt-3 font-[Marcellus] text-[1.95rem] leading-[1.1] tracking-[-0.03em] text-[var(--text)] sm:text-[2.35rem]">
+          <h2 className="section-title mt-3 text-[var(--text)]">
             Nous diagnostiquons l ensemble de vos biens immobiliers avant une vente ou des travaux
           </h2>
           <div className="mt-4 space-y-3 text-[0.96rem] leading-7 text-white/78">
@@ -203,7 +220,7 @@ export function HomePage() {
       <section className="shell pb-4">
         <div className="surface-panel rounded-[1.45rem] px-5 py-6 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
           <span className="eyebrow">Contact</span>
-          <h2 className="mt-3 font-[Marcellus] text-[1.95rem] leading-[1.1] tracking-[-0.03em] text-[var(--text-dark)] sm:text-[2.35rem]">
+          <h2 className="section-title mt-3 text-[var(--text-dark)]">
             GIB Menuiserie, situe a Ducos, intervient sur toute la Martinique.
           </h2>
           <div className="mt-4 space-y-3 text-[0.96rem] leading-7 text-black/72">
@@ -230,7 +247,7 @@ export function HomePage() {
             </Link>
           </div>
           <div className="mt-5 flex flex-wrap gap-3 text-sm text-black/66">
-            <span className="contact-pill">Zone Cocotte, Ducos</span>
+            <span className="contact-pill">Zone Cocotte, Ducos, 97224</span>
             <span className="contact-pill">Martinique</span>
             <a className="cta-secondary !px-4 !py-2 !text-sm !font-semibold !border-[#1398db]/18 !text-[#0f6ea7]" href={company.youtube_url} rel="noreferrer" target="_blank">
               <PlayCircle className="size-4 text-[#1398db]" />

@@ -40,7 +40,7 @@ export function ContactPage() {
               <p className="text-xs uppercase tracking-[0.24em] text-black/45">Adresse</p>
               <p className="mt-3 inline-flex items-start gap-2 text-base font-semibold text-black">
                 <MapPin className="mt-1 size-4 text-[#ffd400]" />
-                Zone Cocotte, Ducos, 97224, FR
+                Zone Cocotte, Ducos, 97224, Martinique
               </p>
             </div>
           </div>

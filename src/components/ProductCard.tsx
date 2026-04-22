@@ -52,7 +52,7 @@ export function ProductCard({ product }: ProductCardProps) {
           ))}
         </div>
         <div className="space-y-3">
-          <h3 className="text-2xl font-semibold text-black">{product.name}</h3>
+          <h3 className="font-[Marcellus] text-2xl leading-tight tracking-[-0.02em] text-black">{product.name}</h3>
           <p className="text-sm leading-7 text-black/70">{product.summary}</p>
           <p className="text-xs uppercase tracking-[0.2em] text-[#0f6ea7]/70">{meta.description}</p>
           <p className="rounded-[1.2rem] border border-[#1398db]/10 bg-[#1398db]/[0.05] px-3 py-3 text-sm leading-6 text-black/62">

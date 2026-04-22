@@ -9,7 +9,7 @@ import {
   PlayCircle,
   X,
 } from 'lucide-react'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import { company } from '../lib/content'
 
@@ -36,10 +36,6 @@ export function SiteLayout() {
 
   const closeMenu = () => setMenuOpen(false)
 
-  useEffect(() => {
-    closeMenu()
-  }, [])
-
   return (
     <div className="pb-28 lg:pb-10">
       <div className="border-b border-[#1398db]/10 bg-[linear-gradient(90deg,rgba(19,152,219,0.08),rgba(83,196,216,0.06))] text-[0.78rem] text-black/72">
@@ -59,7 +55,7 @@ export function SiteLayout() {
             <span className="topbar-pill">WhatsApp direct</span>
             <span className="inline-flex items-center gap-2 text-black/72">
               <MapPin className="size-4 text-[#ffd400]" />
-              Zone Cocotte, Ducos · Martinique
+              Zone Cocotte, Ducos, 97224 · Martinique
             </span>
           </div>
         </div>
@@ -204,7 +200,7 @@ export function SiteLayout() {
                 <div className="mt-4 space-y-3 text-sm text-black/72">
                   <a className="block font-semibold text-black" href={`tel:${company.phone_international}`}>{company.phone_display}</a>
                   <a className="block" href={`mailto:${company.email}`}>{company.email}</a>
-                  <p>{company.location_label}, 97224, FR</p>
+                  <p>{company.location_label}</p>
                 </div>
               </div>
               <div className="rounded-[1.5rem] border border-black/8 bg-white p-5">
