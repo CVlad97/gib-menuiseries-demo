@@ -3,10 +3,10 @@
     "slug": "portails",
     "name": "Portails aluminium",
     "category": "portail",
-    "summary": "Portails battants ou coulissants pour signer l entree, securiser l acces et valoriser immediatement la facade.",
+    "summary": "Portails aluminium battants ou coulissants pour securiser l entree et valoriser la maison.",
     "hero_asset_id": "portail-dallas",
     "simulation_eligible": true,
-    "climate_note": "Conception pensee pour l exposition au soleil, l humidite et les environnements littoraux selon l implantation du chantier.",
+    "climate_note": "Choix des profils, des finitions et de l ouverture selon le soleil, la pluie, le sel et l usage quotidien.",
     "benefits": [
       "Entree plus statutaire",
       "Confort d usage au quotidien",
@@ -21,18 +21,18 @@
     ],
     "reassurance": [
       "Photos de realisations GIB",
-      "Parcours devis sans prix ferme",
-      "Integration au style de facade"
+      "Prise de mesures sur site",
+      "Devis personnalise sans prix public ferme"
     ]
   },
   {
     "slug": "fenetres-portes",
     "name": "Fenetres et portes",
     "category": "fenetre",
-    "summary": "Fenetres et portes aluminium pour renover proprement, remplacer un existant fatigue, corriger les reglages et retrouver confort, lumiere et ventilation.",
+    "summary": "Fenetres et portes aluminium pour remplacer des ouvrants fatigues, mieux ventiler et gagner en confort.",
     "hero_asset_id": "fenetre-fallback",
     "simulation_eligible": true,
-    "climate_note": "Approche orientee confort thermique, ventilation, protection et tenue en environnement tropical.",
+    "climate_note": "Solution pensee pour la lumiere, la ventilation, l humidite et la tenue dans le temps en Martinique.",
     "benefits": [
       "Luminosite mieux maitrisee",
       "Ventilation naturelle",
@@ -47,20 +47,19 @@
       "Remplacement d ouvrants fatigues"
     ],
     "reassurance": [
-      "Photos et inspirations reutilisables en rendez-vous",
-      "Qualification projet avant chiffrage",
-      "Page detaillee pour demandes de devis",
-      "Lecture terrain entre reglage, depannage et remplacement"
+      "Controle de l existant",
+      "Reglage ou remplacement selon le cas",
+      "Devis apres mesures"
     ]
   },
   {
     "slug": "volets-roulants",
     "name": "Volets roulants",
     "category": "volet-roulant",
-    "summary": "Volets roulants pour mieux gerer le soleil, l intimite et la securite, avec une approche concrete de depannage, reglage, motorisation et remplacement.",
+    "summary": "Volets roulants pour proteger du soleil, renforcer l intimite et retrouver un usage fiable au quotidien.",
     "hero_asset_id": "volet-ambiance-1",
     "simulation_eligible": true,
-    "climate_note": "Approche orientee protection solaire, confort thermique et serenite d usage au quotidien.",
+    "climate_note": "Approche adaptee aux ouvertures exposees, a la chaleur, aux pluies tropicales et a l usage frequent.",
     "benefits": [
       "Confort thermique",
       "Gestion de l ensoleillement",
@@ -76,20 +75,19 @@
       "Volet a regler ou a remplacer"
     ],
     "reassurance": [
-      "Visuels de reference",
-      "CTA WhatsApp direct",
-      "Estimation d enveloppe possible sans engagement",
-      "Qualification simple entre reglage, panne et remplacement"
+      "Depannage possible",
+      "Reglage ou remplacement",
+      "Contact WhatsApp rapide"
     ]
   },
   {
     "slug": "baies-vitrees",
     "name": "Baies vitrees",
     "category": "baie-vitree",
-    "summary": "Baies coulissantes et grands ouvrants pour ouvrir les volumes, prolonger la terrasse et valoriser le dedans-dehors.",
+    "summary": "Baies vitrees et grands ouvrants pour apporter de la lumiere et ouvrir la maison vers la terrasse.",
     "hero_asset_id": "baie-coulissante",
     "simulation_eligible": true,
-    "climate_note": "Priorite a la lumiere, a l ouverture sur l exterieur et a la fluidite des circulations dans un contexte tropical.",
+    "climate_note": "Pose et choix des ouvertures selon l exposition, la circulation d air et le confort interieur/exterieur.",
     "benefits": [
       "Gain de luminosite",
       "Vue ouverte",
@@ -103,22 +101,22 @@
       "Renovation haut de gamme"
     ],
     "reassurance": [
-      "Galerie dediee",
-      "CTA devis similaire",
-      "Visuels reels pour la projection"
+      "Photos de references",
+      "Conseil sur les dimensions",
+      "Devis apres verification"
     ]
   },
   {
     "slug": "pergolas",
     "name": "Pergolas bioclimatiques",
     "category": "pergola",
-    "summary": "Pergolas bioclimatiques pour rendre la terrasse plus vivable, plus premium et mieux adaptee au climat local.",
+    "summary": "Pergolas bioclimatiques pour profiter davantage de la terrasse avec ombre, ventilation et protection.",
     "hero_asset_id": "pergola-ambiance-1",
     "simulation_eligible": true,
-    "climate_note": "Concue pour mieux vivre dehors malgre chaleur, pluies tropicales et besoins d ombrage au quotidien.",
+    "climate_note": "Solution utile pour les terrasses exposees au soleil, a la pluie et aux besoins d ombrage en Martinique.",
     "benefits": [
       "Exterieur exploitable plus longtemps",
-      "Signature premium",
+      "Belle finition",
       "Confort d ombre",
       "Valeur percue immediate"
     ],
@@ -129,19 +127,19 @@
       "Hotel, restaurant ou zone d attente"
     ],
     "reassurance": [
-      "Assets officiels integres localement",
-      "Demonstration visuelle simple",
-      "Demande de devis personnalisee"
+      "Visuels officiels GIB",
+      "Etude sur mesure",
+      "Devis personnalise"
     ]
   },
   {
     "slug": "avancee-terrasse",
     "name": "Avancee de terrasse",
     "category": "pergola",
-    "summary": "Avancees de terrasse pour proteger les ouvertures, mieux vivre dehors et donner un effet plus fini a l habitat.",
+    "summary": "Avancees de terrasse pour proteger une entree, une ouverture ou un passage exterieur.",
     "hero_asset_id": "pergola-ambiance-2",
     "simulation_eligible": false,
-    "climate_note": "Solution pensee pour le soleil, les pluies tropicales et la protection durable des zones de passage.",
+    "climate_note": "Protection adaptee au soleil, aux pluies tropicales et aux zones de passage de la maison.",
     "benefits": [
       "Protection des ouvertures",
       "Confort d usage exterieur",
@@ -155,24 +153,24 @@
       "Renovation d habitat"
     ],
     "reassurance": [
-      "Offre visible sur le site officiel GIB",
-      "Demande de devis personnalisee",
-      "Conseil simple sur mesures et contraintes"
+      "Solution visible sur le site officiel",
+      "Conseil sur mesures",
+      "Devis personnalise"
     ]
   },
   {
     "slug": "clotures-portillons",
     "name": "Clotures et portillons",
     "category": "cloture",
-    "summary": "Clotures et portillons pour structurer les limites, proteger les abords et garder une facade propre et coherente.",
+    "summary": "Clotures et portillons pour delimiter, securiser et donner une finition propre aux abords.",
     "hero_asset_id": "cloture-ranch-2",
     "simulation_eligible": false,
-    "climate_note": "Approche orientee durabilite exterieure et coherence avec portail, facade ou amenagements existants.",
+    "climate_note": "Choix pense pour l exterieur, la pluie, le soleil et la coherence avec portail et facade.",
     "benefits": [
       "Coherence d ensemble",
       "Delimitation claire",
       "Securisation des abords",
-      "Lecture premium du bien"
+      "Maison mieux mise en valeur"
     ],
     "use_cases": [
       "Maison individuelle",
@@ -181,19 +179,19 @@
       "Projet pro ou copropriete"
     ],
     "reassurance": [
-      "Photos reelles GIB",
-      "Fallback local par categorie",
-      "CTA devis contextualise"
+      "Photos de realisations",
+      "Accord avec portail et facade",
+      "Devis sur mesure"
     ]
   },
   {
     "slug": "garde-corps",
     "name": "Garde-corps",
     "category": "garde-corps",
-    "summary": "Garde-corps pour securiser une difference de niveau en gardant une ligne propre, sobre et rassurante.",
+    "summary": "Garde-corps pour securiser balcon, escalier ou terrasse avec une finition sobre et durable.",
     "hero_asset_id": "garde-corps-portillon",
     "simulation_eligible": false,
-    "climate_note": "Pense pour l usage exterieur, la securisation durable et la lisibilite architecturale du projet.",
+    "climate_note": "Solution adaptee aux zones exterieures, aux differences de niveau et aux contraintes de securite.",
     "benefits": [
       "Securisation",
       "Finition propre",
@@ -207,24 +205,24 @@
       "ERP, copropriete et projet pro"
     ],
     "reassurance": [
-      "Galerie filtrable",
-      "Demande de devis similaire",
-      "Qualification simple du besoin"
+      "Galerie de references",
+      "Verification du besoin",
+      "Devis personnalise"
     ]
   },
   {
     "slug": "renovation-depannage",
     "name": "Renovation et depannage",
     "category": "renovation",
-    "summary": "Renovation, depannage, reglage et remplacement pour repartir d un existant fatigue vers une solution plus fiable, plus lisible et plus valorisante.",
+    "summary": "Renovation, depannage, reglage et remplacement pour remettre un ouvrage en etat ou repartir sur une solution fiable.",
     "hero_asset_id": "terrasse-thermotop",
     "simulation_eligible": false,
-    "climate_note": "Lecture projet orientee terrain : existant, contraintes, urgence, priorites et prochaine action.",
+    "climate_note": "GIB identifie ce qui est urgent, ce qui peut etre repare et ce qui doit etre remplace.",
     "benefits": [
       "Diagnostic plus clair",
       "Priorisation des actions",
       "Accompagnement au cas reel",
-      "Trajectoire devis plus fiable",
+      "Devis plus fiable",
       "Arbitrage utile entre reparation et remplacement"
     ],
     "use_cases": [
@@ -235,20 +233,19 @@
       "Reglage ou remise a niveau d ouvrages existants"
     ],
     "reassurance": [
-      "Tunnel de qualification simple",
-      "WhatsApp en canal rapide",
-      "Demande contextualisee sans prix public",
-      "Lecture terrain du plus urgent au plus durable"
+      "Diagnostic simple du besoin",
+      "WhatsApp pour envoyer des photos",
+      "Priorite entre reparation et remplacement"
     ]
   },
   {
     "slug": "diagnostic-immobilier",
     "name": "Diagnostic immobilier",
     "category": "projet-pro",
-    "summary": "Diagnostics immobiliers avant vente ou travaux : amiante, termites, electricite et energie sur toute la Martinique.",
+    "summary": "Diagnostics immobiliers avant vente ou travaux : amiante, termites, electricite et energie.",
     "hero_asset_id": "depannage-fallback",
     "simulation_eligible": false,
-    "climate_note": "Service connexe utile pour controler l integrite d un bien avant une vente, une renovation ou des travaux.",
+    "climate_note": "Service utile avant une vente, une renovation ou des travaux sur un bien en Martinique.",
     "benefits": [
       "Lecture plus claire de l etat du bien",
       "Moins d incertitude avant travaux",
@@ -262,9 +259,9 @@
       "Besoin de diagnostic reglementaire"
     ],
     "reassurance": [
-      "Offre historique visible sur le site officiel",
-      "Contact direct par telephone ou e-mail",
-      "Intervention sur toute l ile"
+      "Service mentionne sur le site officiel",
+      "Contact direct",
+      "Intervention sur toute la Martinique"
     ]
   }
 ]
