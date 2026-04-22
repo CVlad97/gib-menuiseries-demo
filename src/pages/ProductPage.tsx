@@ -1,4 +1,4 @@
-import { ArrowRight, MessageCircle, PhoneCall, PlayCircle, Sparkles } from 'lucide-react'
+import { ArrowRight, MessageCircle, PhoneCall, PlayCircle } from 'lucide-react'
 import { Link, useParams } from 'react-router-dom'
 import { MediaImage } from '../components/MediaImage'
 import { SectionHeading } from '../components/SectionHeading'
@@ -48,7 +48,7 @@ const decisionChecklist: Record<string, string[]> = {
   'renovation-depannage': [
     'Ce qui doit etre repare, remplace ou simplement remis a niveau.',
     'Ce qui est urgent et ce qui peut etre planifie proprement.',
-    'Quelle trajectoire proposer entre depannage, renovation et remplacement.',
+    'Savoir s il faut reparer, regler, remplacer ou planifier une renovation.',
   ],
   'diagnostic-immobilier': [
     'Quel type de diagnostic est necessaire avant vente ou travaux.',
@@ -102,9 +102,9 @@ export function ProductPage() {
               <p className="mt-3 text-sm leading-7 text-white/80">{product.climate_note}</p>
             </div>
             <div className="rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-5">
-              <p className="text-xs uppercase tracking-[0.24em] text-white/42">Lecture chantier</p>
+              <p className="text-xs uppercase tracking-[0.24em] text-white/42">Verification chantier</p>
               <p className="mt-3 text-sm leading-7 text-white/74">
-                GIB cadre d abord le besoin reel : pose, renovation, depannage, remplacement ou reglage, puis oriente vers le bon niveau de reponse depuis Ducos sur toute la Martinique.
+                GIB regarde d abord votre besoin : pose, renovation, depannage, remplacement ou reglage. Ensuite, l equipe vous oriente vers la solution adaptee depuis Ducos, sur toute la Martinique.
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
@@ -120,12 +120,6 @@ export function ProductPage() {
                 <ArrowRight className="size-4" />
                 Demander un devis
               </Link>
-              {product.simulation_eligible ? (
-                <Link className="cta-secondary" to={`/simulation?product=${product.slug}`}>
-                  <Sparkles className="size-4" />
-                  Projection
-                </Link>
-              ) : null}
             </div>
           </div>
         </div>
@@ -134,9 +128,9 @@ export function ProductPage() {
       <section className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr]">
         <div className="surface-panel px-6 py-8 sm:px-8">
           <SectionHeading
-            eyebrow="Ce que la fiche vend mieux"
-            title="Des benefices clairs, des usages concrets et une prochaine action evidente."
-            description="La fiche ne se contente plus de nommer le produit. Elle l aide a se projeter, a comprendre le gain et a passer au devis sans se perdre."
+            eyebrow="Pourquoi choisir cette solution"
+            title="Un produit utile quand le besoin est clair."
+            description="Chaque fiche explique simplement a quoi sert le produit, dans quels cas il est utile et comment demander un devis."
           />
           <div className="mt-8 grid gap-5 md:grid-cols-2">
             <div>
@@ -171,8 +165,8 @@ export function ProductPage() {
         <div className="glass-panel px-6 py-8 sm:px-8">
           <SectionHeading
             eyebrow="Avant de chiffrer"
-            title="Les bonnes questions a cadrer en rendez-vous ou sur WhatsApp."
-            description="Cette section renforce la posture conseil de GIB. Elle aide a qualifier plus vite le besoin sans tomber dans un prix public simpliste."
+            title="Les points a verifier avant le devis."
+            description="GIB verifie le besoin, les mesures, l exposition, l etat de l existant et les priorites avant de chiffrer."
             light
           />
           <div className="mt-8 grid gap-4">
@@ -188,8 +182,8 @@ export function ProductPage() {
       <section className="glass-panel-strong px-6 py-8 sm:px-8 lg:px-10">
         <SectionHeading
           eyebrow="Preuves visuelles"
-          title="Des references locales pour montrer le niveau de finition et enclencher le devis."
-          description="Les visuels servent ici de preuve, d inspiration et de support de conversation. Ils peuvent etre repris ensuite dans les presentations dirigeant, commercial ou Solocal."
+          title="Des references locales pour mieux se projeter."
+          description="Les photos montrent des produits poses, des exterieurs et des finitions proches des besoins en Martinique."
           action={
             <a className="cta-secondary" href={company.youtube_url} rel="noreferrer" target="_blank">
               <PlayCircle className="size-4" />
@@ -224,8 +218,8 @@ export function ProductPage() {
       <section className="surface-panel px-6 py-8 sm:px-8 lg:px-10">
         <SectionHeading
           eyebrow="Prochaine action"
-          title="Le bon modele reste : montrer, rassurer, qualifier, puis chiffrer."
-          description="Pas de prix public ferme. La fiche pousse vers un echange utile, des photos terrain, un appel ou une demande de devis personnalisee, avec relai possible vers un diagnostic immobilier connexe si besoin."
+          title="Envoyez votre besoin, GIB vous recontacte."
+          description="Pas de prix public ferme : un devis depend des mesures, de l etat de l existant, des options et de la pose."
         />
         <div className="mt-8 flex flex-wrap gap-3">
           <Link className="cta-primary" to={`/devis?product=${product.slug}`}>
