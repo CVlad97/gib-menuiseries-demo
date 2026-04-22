@@ -32,9 +32,9 @@ export function GalleryPage() {
       <div className="glass-panel-strong px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
         <SectionHeading
           description="La galerie s appuie en priorite sur des visuels reels du site officiel GIB pour montrer un habitat, des exterieurs et des menuiseries deja posees. L objectif ici est la credibilite terrain avant la decoration."
-          eyebrow="Galerie premium"
+          eyebrow="Realisations"
           light
-          title="Des visuels plus reels pour aider a se projeter et passer au contact."
+          title="Des photos utiles pour choisir et demander un devis."
         />
 
         <div className="mt-8 grid gap-5 lg:grid-cols-[1.2fr_0.8fr]">
