@@ -44,7 +44,7 @@
     "featured": true,
     "published": true,
     "collection": "realisations",
-    "before_after_group": "portail-premium",
+    "before_after_group": "portail-reference",
     "alt_text": "Portail aluminium Dallas presente sur le site officiel GIB."
   },
   {
@@ -60,7 +60,7 @@
     "featured": true,
     "published": true,
     "collection": "inspirations",
-    "before_after_group": "portail-premium",
+    "before_after_group": "portail-reference",
     "alt_text": "Visuel officiel GIB de portail et traitement d entree."
   },
   {
@@ -173,7 +173,7 @@
     "published": true,
     "collection": "inspirations",
     "before_after_group": null,
-    "alt_text": "Visuel ambiance pour travailler la projection client sur les baies vitrees."
+    "alt_text": "Visuel ambiance pour aider le client a choisir une baie vitree."
   },
   {
     "id": "pergola-ambiance-1",
@@ -205,7 +205,7 @@
     "published": true,
     "collection": "inspirations",
     "before_after_group": "pergola-collection",
-    "alt_text": "Pergola bioclimatique secondaire pour la galerie premium."
+    "alt_text": "Pergola bioclimatique secondaire pour la galerie de realisations."
   },
   {
     "id": "pergola-bio12",
