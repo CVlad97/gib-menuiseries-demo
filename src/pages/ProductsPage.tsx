@@ -20,7 +20,7 @@ export function ProductsPage() {
         <SectionHeading
           eyebrow="Menuiserie aluminium"
           title="L installation de vos menuiseries en aluminium, du volet roulant au portail."
-          description="Nos experts travaillent avec un fournisseur francais, pionnier dans la fabrication de menuiserie aluminium. Ce catalogue remet en avant les vraies offres du site officiel GIB avec une lecture plus nette."
+          description="Retrouvez les principaux produits GIB : portails, volets roulants, fenetres, baies vitrees, pergolas, clotures, garde-corps, renovation et depannage."
         />
         <div className="mt-6 flex flex-wrap gap-2">
           {audienceFocus.map((item) => (
@@ -52,7 +52,7 @@ export function ProductsPage() {
               Appelez, ecrivez, demandez un devis : le parcours reste volontairement simple.
             </h2>
             <p className="text-sm leading-7 text-black/68 sm:text-base">
-              Comme sur le site officiel, le but n est pas de complexifier le parcours. Le catalogue sert a comprendre l offre puis a passer rapidement vers un appel, un e-mail, WhatsApp ou une demande de devis.
+              Choisissez une famille de produits, envoyez des photos si besoin, puis passez rapidement vers un appel, WhatsApp ou une demande de devis.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
