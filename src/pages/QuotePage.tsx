@@ -76,8 +76,8 @@ export function QuotePage() {
       <section className="surface-panel px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
         <SectionHeading
           eyebrow="Demande de devis"
-          title="Un formulaire de devis simple, rassurant et plus proche du terrain."
-          description="On cadre le type de projet, la commune, les dimensions approximatives et les photos. Aucun prix public ferme n est affiche : le but est de qualifier avant chiffrage, remplacement, reglage ou depannage."
+          title="Demandez un devis clair, sans prix public approximatif."
+          description="Indiquez le produit, la commune, les dimensions si vous les avez et ajoutez des photos. GIB pourra ensuite vous rappeler ou vous repondre par WhatsApp."
         />
       </section>
 
@@ -100,20 +100,19 @@ export function QuotePage() {
               <p className="font-semibold text-white">Comment aller plus vite</p>
               <p className="mt-3">
                 Envoyez les photos, la commune, les dimensions approximatives et le besoin principal.
-                GIB peut ensuite cadrer l etude, le depannage, le remplacement, le reglage ou la prochaine action.
+                GIB peut ensuite vous dire si le besoin concerne une pose, un depannage, un reglage ou un remplacement.
               </p>
             </div>
             <div className="rounded-[1.6rem] border border-[color:var(--line-strong)] bg-[color:var(--gold-soft)]/40 p-5 text-sm text-white/74">
               <p className="font-semibold text-white">Aucun prix public ferme</p>
               <p className="mt-3">
-                La logique reste volontairement simple : qualification, photos, projection,
-                puis devis adapte au vrai chantier.
+                Le prix depend des mesures, de l etat de l existant, des options et de la pose.
               </p>
             </div>
             <div className="rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-5 text-sm text-white/70">
               <p className="font-semibold text-white">Besoin connexe</p>
               <p className="mt-3">
-                Si la situation releve aussi d un diagnostic immobilier ou d une orientation complementaire, la demande peut etre requalifiee sans casser le parcours principal.
+                Si votre demande concerne aussi un diagnostic immobilier, GIB pourra vous orienter vers le bon service.
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
@@ -213,7 +212,7 @@ export function QuotePage() {
                 Demande sauvegardee localement dans le navigateur.
               </p>
               <p className="mt-2 text-white/72">
-                La demande est enregistree localement pour la demonstration du parcours. En production, elle pourra etre reliee a un suivi commercial ou a un stockage centralise.
+                La demande est conservee dans cette version de presentation. Pour un envoi direct, utilisez aussi WhatsApp ou l e-mail.
               </p>
             </div>
           ) : null}
