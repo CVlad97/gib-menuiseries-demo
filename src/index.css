@@ -83,6 +83,13 @@ img { display:block; max-width:100%; }
     letter-spacing: -0.03em;
   }
 
+  .card-title {
+    font-family: 'Marcellus', serif;
+    @apply text-2xl leading-tight;
+    letter-spacing: -0.02em;
+    color: #000;
+  }
+
   .body-copy {
     @apply text-sm leading-7 sm:text-base;
     color: var(--text-soft);
