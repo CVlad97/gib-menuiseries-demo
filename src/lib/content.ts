@@ -39,7 +39,7 @@ export const categoryMeta: Record<
     label: 'Pergola',
     fallback: 'fallbacks/pergola.svg',
     accent: 'from-[#d8c770] to-[#7ab098]',
-    description: 'Terrasses et usage premium de l exterieur.',
+    description: 'Terrasses, ombre et confort exterieur.',
   },
   cloture: {
     label: 'Cloture',
@@ -57,7 +57,7 @@ export const categoryMeta: Record<
     label: 'Renovation',
     fallback: 'fallbacks/renovation.svg',
     accent: 'from-[#d6c2a0] to-[#8fb6a7]',
-    description: 'Reprise de l existant et trajectoire projet.',
+    description: 'Remise en etat, confort et travaux utiles.',
   },
   depannage: {
     label: 'Depannage',
