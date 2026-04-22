@@ -41,7 +41,7 @@ export function ProductCard({ product }: ProductCardProps) {
           {product.simulation_eligible ? (
             <span className="tag !bg-emerald-500/12 !text-emerald-800">
               <Sparkles className="size-3.5" />
-              projection
+              Devis sur mesure
             </span>
           ) : null}
           {highlight ? <span className="tag !bg-[color:var(--gold-soft)] !text-[#8a671c]">{highlight}</span> : null}
@@ -52,7 +52,7 @@ export function ProductCard({ product }: ProductCardProps) {
           ))}
         </div>
         <div className="space-y-3">
-          <h3 className="font-[Marcellus] text-2xl leading-tight tracking-[-0.02em] text-black">{product.name}</h3>
+          <h3 className="card-title">{product.name}</h3>
           <p className="text-sm leading-7 text-black/70">{product.summary}</p>
           <p className="text-xs uppercase tracking-[0.2em] text-[#0f6ea7]/70">{meta.description}</p>
           <p className="rounded-[1.2rem] border border-[#1398db]/10 bg-[#1398db]/[0.05] px-3 py-3 text-sm leading-6 text-black/62">
