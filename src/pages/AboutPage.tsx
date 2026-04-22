@@ -32,7 +32,7 @@ export function AboutPage() {
           <SectionHeading
             eyebrow="Direction"
             title="Une entreprise locale, directe et orientee resultat."
-            description="M. Olivier GIBOYAU, fort d une experience de plus de 20 ans dans le domaine de la menuiserie aluminium, pilote la direction commerciale avec une logique de confiance, de fidelisation et de concretisation des projets de construction et de renovation."
+            description="M. Olivier GIBOYAU s appuie sur plus de 20 ans d experience en menuiserie aluminium pour accompagner les projets de construction, de renovation et de remplacement en Martinique."
           />
           <div className="mt-8 grid gap-4">
             <article className="rounded-[1.6rem] border border-black/8 bg-black/[0.02] p-5 text-sm leading-7 text-black/72">
@@ -47,7 +47,7 @@ export function AboutPage() {
         <div className="surface-panel px-6 py-8 sm:px-8">
           <SectionHeading
             eyebrow="Certifications"
-            title="Des preuves metier deja connues sur le site officiel."
+            title="Des reperes simples pour faire confiance."
             description="GIB dispose de plusieurs certifications et s appuie sur des produits francais pour garantir qualite, durabilite et serieux d execution."
           />
           <div className="mt-8 grid gap-3">
