@@ -28,6 +28,21 @@ const fieldProofs = [
   'Solutions exterieures climat tropical',
 ]
 
+const beforeAfterSteps = [
+  {
+    label: 'Avant',
+    title: 'Un besoin a clarifier',
+    text: 'Vous envoyez des photos, la commune et le probleme : ouverture abimee, volet bloque, terrasse trop exposee, projet de renovation.',
+    image: 'media/gib/volet-ambiance-2.jpeg',
+  },
+  {
+    label: 'Apres',
+    title: 'Une solution mieux cadree',
+    text: 'GIB vous oriente vers la bonne action : regler, depanner, remplacer, poser ou preparer un devis sur mesure.',
+    image: 'media/gib/baie-coulissante.jpg',
+  },
+]
+
 const trustItems = [
   'Certifiee RGE',
   'Qualicoat (vernis marin)',
@@ -47,10 +62,10 @@ export function HomePage() {
               <img alt="Logo GIB Menuiseries Services" className="h-14 w-auto max-w-full sm:h-16" src={logoSrc} />
               <p className="eyebrow !bg-[#1398db]/10 !text-[#0f6ea7] !border-[#1398db]/20">Accueil</p>
               <h1 className="page-title max-w-4xl text-[var(--text-dark)]">
-                GIB Menuiseries Services : notre equipe de menuisiers situee a Ducos, en Martinique
+                Menuiserie aluminium, renovation et depannage en Martinique
               </h1>
               <p className="max-w-3xl text-[0.98rem] leading-7 text-black/72 sm:text-[1.03rem]">
-                Concretisez vos projets de construction et de renovation en faisant appel a nos experts ! Artisans depuis 20 ans, nos menuisiers sont a votre ecoute.
+                Pour une construction, une renovation ou un depannage, GIB vous accompagne avec plus de 20 ans d experience en Martinique.
               </p>
 
               <div className="flex flex-wrap gap-2.5 pt-1">
@@ -100,7 +115,7 @@ export function HomePage() {
                 <div className="space-y-2 px-4 py-4 sm:px-5">
                   <p className="text-xs uppercase tracking-[0.24em] text-[#0f6ea7]/80">Pergola / toit ouvert</p>
                   <p className="text-base font-semibold leading-6 text-black sm:text-[1.05rem]">
-                    Une home plus concrete pour montrer le confort exterieur, la renovation et l usage reel en Martinique.
+                    Terrasse, ombre, securite et confort exterieur pour une maison mieux adaptee au climat martiniquais.
                   </p>
                 </div>
               </article>
@@ -195,6 +210,41 @@ export function HomePage() {
       </section>
 
       <section className="shell">
+        <div className="surface-panel rounded-[1.45rem] px-5 py-6 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
+          <span className="eyebrow">Avant / apres</span>
+          <div className="mt-3 grid gap-6 lg:grid-cols-[0.82fr_1.18fr] lg:items-end">
+            <div className="space-y-3">
+              <h2 className="section-title text-[var(--text-dark)]">Voir clair avant de lancer les travaux.</h2>
+              <p className="text-[0.96rem] leading-7 text-black/72">
+                Le site aide le client a passer d un besoin flou a une demande claire : photos, probleme, commune, puis appel ou devis.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <Link className="cta-primary" to="/devis">
+                  Demander un devis
+                </Link>
+                <a className="cta-whatsapp" href={company.whatsapp_url} rel="noreferrer" target="_blank">
+                  <MessageCircle className="size-4" />
+                  Envoyer des photos
+                </a>
+              </div>
+            </div>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {beforeAfterSteps.map((step) => (
+                <article key={step.label} className="overflow-hidden rounded-[1.25rem] border border-[#1398db]/14 bg-white shadow-[0_14px_28px_rgba(19,122,186,0.08)]">
+                  <img alt={`${step.label} projet GIB`} className="h-44 w-full object-cover" src={step.image} />
+                  <div className="space-y-2 p-4">
+                    <span className="tag !bg-[#1398db]/10 !text-[#0f6ea7]">{step.label}</span>
+                    <h3 className="font-[Marcellus] text-xl leading-tight text-black">{step.title}</h3>
+                    <p className="text-sm leading-6 text-black/68">{step.text}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="shell">
         <div className="glass-panel-strong rounded-[1.45rem] px-5 py-6 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
           <span className="eyebrow !border-white/18 !bg-white/10 !text-white/86">Diagnostic immobilier</span>
           <h2 className="section-title mt-3 text-[var(--text)]">
@@ -221,11 +271,11 @@ export function HomePage() {
         <div className="surface-panel rounded-[1.45rem] px-5 py-6 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
           <span className="eyebrow">Contact</span>
           <h2 className="section-title mt-3 text-[var(--text-dark)]">
-            GIB Menuiserie, situe a Ducos, intervient sur toute la Martinique.
+            GIB Menuiseries Services, situe a Ducos, intervient sur toute la Martinique.
           </h2>
           <div className="mt-4 space-y-3 text-[0.96rem] leading-7 text-black/72">
             <p>
-              Votre professionnel GIB est disponible par telephone au numero suivant 0596737219 ou par e-mail contact@gibmenuiseries.com pour concretiser l ensemble de vos projets.
+              GIB est disponible par telephone au 0596737219 ou par e-mail a contact@gibmenuiseries.com pour parler de votre projet.
             </p>
             <p>Vous souhaitez profiter des services de nos menuisiers pour un projet de construction ou de renovation ?</p>
           </div>
@@ -252,6 +302,24 @@ export function HomePage() {
             <a className="cta-secondary !px-4 !py-2 !text-sm !font-semibold !border-[#1398db]/18 !text-[#0f6ea7]" href={company.youtube_url} rel="noreferrer" target="_blank">
               <PlayCircle className="size-4 text-[#1398db]" />
               Video
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="shell pb-4">
+        <div className="glass-panel-strong rounded-[1.45rem] px-5 py-6 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
+          <div className="grid gap-5 lg:grid-cols-[1fr_auto] lg:items-center">
+            <div>
+              <span className="eyebrow !border-white/18 !bg-white/10 !text-white/86">Video</span>
+              <h2 className="section-title mt-3 text-white">Voir les realisations et l ambiance GIB.</h2>
+              <p className="mt-4 max-w-3xl text-sm leading-7 text-white/76 sm:text-base">
+                Un espace video permet de montrer les chantiers, les produits poses et le serieux de l entreprise avant un rendez-vous.
+              </p>
+            </div>
+            <a className="cta-secondary !border-white/20 !bg-white/90 !text-[#0f6ea7]" href={company.youtube_url} rel="noreferrer" target="_blank">
+              <PlayCircle className="size-4" />
+              Ouvrir la video
             </a>
           </div>
         </div>
