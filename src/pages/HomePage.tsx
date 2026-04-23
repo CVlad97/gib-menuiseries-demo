@@ -1,23 +1,27 @@
-import { ArrowRight, BadgeCheck, Mail, MessageCircle, PhoneCall, PlayCircle } from 'lucide-react'
+import { ArrowRight, BadgeCheck, Images, Mail, MessageCircle, PhoneCall, PlayCircle } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { company } from '../lib/content'
+import { assets, company } from '../lib/content'
 
 const logoSrc =
   'https://le-de.cdn-website.com/179f7a3a04c5410bb41d060e3efd0cfd/dms3rep/multi/opt/logo+gib-fe923f67-381w.PNG'
 
-const heroMainImage = 'media/gib/pergola-ambiance-1.jpg'
+const heroMainImage = 'media/gib/instagram/villa-sky-pergola.jpg'
 const heroSupportImages = [
   {
-    label: 'Garde-corps',
-    src: 'media/gib/garde-corps-portillon.jpg',
-    alt: 'Garde-corps et portillon installes par GIB en Martinique.',
+    label: 'Entree / portail',
+    src: 'media/gib/instagram/entree-portail.webp',
+    alt: 'Entree personnalisee avec portail aluminium publiee sur Instagram GIB.',
   },
   {
-    label: 'Terrasse / toiture',
-    src: 'media/gib/terrasse-thermotop.jpg',
-    alt: 'Terrasse et toiture exterieure realisees par GIB en Martinique.',
+    label: 'Baie / exterieur',
+    src: 'media/gib/instagram/baie-transparence.webp',
+    alt: 'Baie vitree ouverte sur un exterieur lumineux publiee sur Instagram GIB.',
   },
 ]
+
+const instagramHighlights = assets
+  .filter((asset) => asset.source === 'instagram')
+  .slice(0, 3)
 
 const heroTrustMarkers = ['Ducos', 'Intervention Martinique', 'RGE / Qualicoat']
 
@@ -31,15 +35,15 @@ const fieldProofs = [
 const beforeAfterSteps = [
   {
     label: 'Avant',
-    title: 'Un besoin a clarifier',
-    text: 'Vous envoyez des photos, la commune et le probleme : ouverture abimee, volet bloque, terrasse trop exposee, projet de renovation.',
-    image: 'media/gib/volet-ambiance-2.jpeg',
+    title: 'Un besoin a montrer simplement',
+    text: 'Le client envoie ses photos, sa commune et son besoin : entree a reprendre, volet a remplacer, renovation ou terrasse a proteger.',
+    image: 'media/gib/instagram/entree-portail.webp',
   },
   {
     label: 'Apres',
-    title: 'Une solution mieux cadree',
-    text: 'GIB vous oriente vers la bonne action : regler, depanner, remplacer, poser ou preparer un devis sur mesure.',
-    image: 'media/gib/baie-coulissante.jpg',
+    title: 'Une demande mieux cadree',
+    text: 'GIB oriente vers la bonne solution : devis, remplacement, depannage, reglage ou pose adaptee au climat martiniquais.',
+    image: 'media/gib/instagram/chantier-logement-neuf.webp',
   },
 ]
 
@@ -108,14 +112,14 @@ export function HomePage() {
             <div className="space-y-3">
               <article className="overflow-hidden rounded-[1.45rem] border border-[#1398db]/18 bg-white shadow-[0_16px_34px_rgba(19,122,186,0.12)]">
                 <img
-                  alt="Pergola bioclimatique et confort exterieur installes par GIB en Martinique."
+                  alt="Pergola bioclimatique et confort exterieur publies sur Instagram GIB."
                   className="h-[260px] w-full object-cover sm:h-[320px]"
                   src={heroMainImage}
                 />
                 <div className="space-y-2 px-4 py-4 sm:px-5">
-                  <p className="text-xs uppercase tracking-[0.24em] text-[#0f6ea7]/80">Pergola / toit ouvert</p>
+                  <p className="text-xs uppercase tracking-[0.24em] text-[#0f6ea7]/80">Instagram / pergola</p>
                   <p className="text-base font-semibold leading-6 text-black sm:text-[1.05rem]">
-                    Terrasse, ombre, securite et confort exterieur pour une maison mieux adaptee au climat martiniquais.
+                    Terrasse, ombre, securite et confort exterieur avec un visuel recent issu du compte Instagram GIB.
                   </p>
                 </div>
               </article>
@@ -171,6 +175,39 @@ export function HomePage() {
 
       <section className="shell">
         <div className="surface-panel rounded-[1.45rem] px-5 py-6 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
+          <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+            <div className="max-w-3xl">
+              <span className="eyebrow">Vu sur Instagram</span>
+              <h2 className="section-title mt-3 text-[var(--text-dark)]">Des visuels recents, importes en local pour rester stables.</h2>
+              <p className="mt-3 text-[0.96rem] leading-7 text-black/72">
+                Les visuels retenus du compte Instagram GIB sont importes manuellement dans le projet. Aucun flux live fragile n est necessaire pour les afficher sur le site.
+              </p>
+            </div>
+            <a className="cta-secondary !border-[#1398db]/24 !text-[#0f6ea7]" href={company.instagram_url} rel="noreferrer" target="_blank">
+              <Images className="size-4 text-[#1398db]" />
+              Voir Instagram
+            </a>
+          </div>
+          <div className="mt-6 grid gap-4 md:grid-cols-3">
+            {instagramHighlights.map((asset) => (
+              <article key={asset.id} className="instagram-tile">
+                <img alt={asset.alt_text} className="h-48 w-full object-cover" src={asset.image_url} />
+                <div className="space-y-2 p-4">
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="product-accent-tag">Instagram GIB</span>
+                    <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0f6ea7]/70">{asset.collection.replaceAll('-', ' ')}</span>
+                  </div>
+                  <h3 className="font-[Marcellus] text-xl leading-tight text-black">{asset.title}</h3>
+                  <p className="text-sm leading-6 text-black/68">{asset.location}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="shell">
+        <div className="surface-panel rounded-[1.45rem] px-5 py-6 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
           <span className="eyebrow">Renovation d habitat</span>
           <h2 className="section-title mt-3 text-[var(--text-dark)]">
             La renovation interieure et exterieure de vos habitations par notre equipe d artisans
@@ -184,7 +221,7 @@ export function HomePage() {
               Nous sommes en mesure de remplacer et de poser les differents elements de votre toiture. Nous veillons egalement a ce que cette derniere puisse efficacement remplir son role en realisant un traitement d etancheite.
             </p>
             <p>
-              De plus, en fonction de vos besoins, nos artisans realisent la renovation complete de vos salles de bains ainsi que de vos revetements de sol. Nous vous proposons differentes finitions de carrelage pour un interieur personnalise.
+              De plus, en fonction de vos besoins, nos artisans realisent la renovation complete de vos salles de bains ainsi que de vos revetements de sol. Nous vous proposons differentes finitions de carrelage pour un interieur personalise.
             </p>
           </div>
         </div>
