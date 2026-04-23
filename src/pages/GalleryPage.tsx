@@ -98,7 +98,7 @@ export function GalleryPage() {
           </div>
           <div>
             <p className="text-xs uppercase tracking-[0.24em] text-black/45">Source secondaire</p>
-            <p className="mt-2 text-lg font-semibold text-black">Instagram par URLs validees ou export manuel</p>
+            <p className="mt-2 text-lg font-semibold text-black">Instagram importe en local, sans flux live fragile</p>
           </div>
           <div>
             <p className="text-xs uppercase tracking-[0.24em] text-black/45">Objectif</p>
