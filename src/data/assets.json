@@ -320,22 +320,6 @@
     "alt_text": "Visuel Instagram GIB autour du catalogue pergola aluminium sur mesure."
   },
   {
-    "id": "instagram-baie-transparence",
-    "title": "Baie vitree et transparence",
-    "source": "instagram",
-    "image_url": "media/gib/instagram/baie-transparence.webp",
-    "thumbnail_url": "media/gib/instagram/baie-transparence.webp",
-    "source_url": "https://www.instagram.com/p/C0mLyb5IgkI/",
-    "category": "baie-vitree",
-    "product_type": "baies-vitrees",
-    "location": "Martinique",
-    "featured": true,
-    "published": true,
-    "collection": "inspirations",
-    "before_after_group": "baie-collection",
-    "alt_text": "Visuel Instagram GIB mettant en valeur une baie vitree ouverte sur l exterieur."
-  },
-  {
     "id": "instagram-entree-portail",
     "title": "Entree personnalisee et portail",
     "source": "instagram",
@@ -350,22 +334,6 @@
     "collection": "inspirations",
     "before_after_group": "portail-reference",
     "alt_text": "Visuel Instagram GIB d une entree personnalisee avec portail aluminium."
-  },
-  {
-    "id": "instagram-fenetre-jardin",
-    "title": "Fenetre ouverte sur jardin",
-    "source": "instagram",
-    "image_url": "media/gib/instagram/fenetre-jardin.webp",
-    "thumbnail_url": "media/gib/instagram/fenetre-jardin.webp",
-    "source_url": "https://www.instagram.com/p/CxOBJ2lMOtX/",
-    "category": "fenetre",
-    "product_type": "fenetres-portes",
-    "location": "Martinique",
-    "featured": true,
-    "published": true,
-    "collection": "realisations",
-    "before_after_group": null,
-    "alt_text": "Visuel Instagram GIB d une fenetre ouverte sur jardin tropical."
   },
   {
     "id": "instagram-volet-anticyclonique",
