@@ -24,14 +24,14 @@ export function ProductsPage() {
         />
         <div className="mt-6 flex flex-wrap gap-2">
           {audienceFocus.map((item) => (
-            <span key={item} className="tag bg-black/6 text-black/72">
+            <span key={item} className="product-meta-chip !bg-white/85 !text-[#135987]">
               {item}
             </span>
           ))}
         </div>
         <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {pageHighlights.map((item) => (
-            <div key={item} className="rounded-[1.6rem] border border-black/8 bg-black/[0.02] p-5 text-sm leading-7 text-black/72">
+            <div key={item} className="category-highlight">
               {item}
             </div>
           ))}
