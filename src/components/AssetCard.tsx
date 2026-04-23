@@ -12,7 +12,11 @@ interface AssetCardProps {
 export function AssetCard({ asset, onOpen }: AssetCardProps) {
   const meta = categoryMeta[asset.category]
   const trustLabel =
-    asset.source === 'official-site' ? 'visuel reel GIB' : asset.source.replaceAll('-', ' ')
+    asset.source === 'official-site'
+      ? 'visuel reel GIB'
+      : asset.source === 'instagram'
+        ? 'Instagram GIB'
+        : asset.source.replaceAll('-', ' ')
 
   return (
     <article className="glass-panel overflow-hidden">
@@ -32,8 +36,8 @@ export function AssetCard({ asset, onOpen }: AssetCardProps) {
           <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent" />
           <div className="absolute left-5 top-5 flex flex-wrap gap-2">
             <span className="tag">{meta.label}</span>
-            <span className="tag bg-black/45">{asset.collection.replaceAll('-', ' ')}</span>
-            <span className="tag bg-white/18 text-white">{trustLabel}</span>
+            <span className="tag !bg-[#0f6ea7]/70 !text-white">{asset.collection.replaceAll('-', ' ')}</span>
+            <span className={`tag ${asset.source === 'instagram' ? '!bg-[#dff5f6] !text-[#11687c]' : 'bg-white/18 text-white'}`}>{trustLabel}</span>
           </div>
           <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4">
             <div>
@@ -47,8 +51,8 @@ export function AssetCard({ asset, onOpen }: AssetCardProps) {
         </div>
       </button>
       <div className="space-y-4 p-5">
-        <div className="flex items-center justify-between gap-3 text-xs uppercase tracking-[0.2em] text-white/52">
-          <span>{asset.source === 'official-site' ? 'source officielle GIB' : asset.source}</span>
+        <div className="flex items-center justify-between gap-3 text-xs uppercase tracking-[0.2em] text-white/60">
+          <span>{asset.source === 'official-site' ? 'source officielle GIB' : trustLabel}</span>
           {asset.source_url ? (
             <a
               className="inline-flex items-center gap-1 text-white/70 transition hover:text-white"
