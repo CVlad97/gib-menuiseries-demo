@@ -27,7 +27,7 @@ export function ProductCard({ product }: ProductCardProps) {
   ]
 
   return (
-    <article className="surface-panel group overflow-hidden border-[#1398db]/10 transition duration-300 hover:-translate-y-1 hover:shadow-[0_26px_56px_rgba(19,122,186,0.14)]">
+    <article className="product-card group overflow-hidden transition duration-300 hover:-translate-y-1">
       <MediaImage
         alt={heroAsset?.alt_text ?? product.name}
         className="aspect-[5/4] overflow-hidden"
@@ -37,25 +37,25 @@ export function ProductCard({ product }: ProductCardProps) {
       />
       <div className="space-y-5 p-6">
         <div className="flex flex-wrap items-center gap-2">
-          <span className="tag !bg-[#1398db]/10 !text-[#0f6ea7]">{meta.label}</span>
+          <span className="product-accent-tag">{meta.label}</span>
           {product.simulation_eligible ? (
-            <span className="tag !bg-emerald-500/12 !text-emerald-800">
+            <span className="product-accent-tag !bg-[color:var(--leaf-soft)] !text-[#2f7f61]">
               <Sparkles className="size-3.5" />
               Devis sur mesure
             </span>
           ) : null}
-          {highlight ? <span className="tag !bg-[color:var(--gold-soft)] !text-[#8a671c]">{highlight}</span> : null}
+          {highlight ? <span className="product-accent-tag !bg-[color:var(--gold-soft)] !text-[#8a671c]">{highlight}</span> : null}
         </div>
         <div className="flex flex-wrap gap-2">
           {supportBadges.map((badge) => (
-            <span key={badge} className="micro-badge">{badge}</span>
+            <span key={badge} className="product-meta-chip">{badge}</span>
           ))}
         </div>
         <div className="space-y-3">
           <h3 className="card-title">{product.name}</h3>
           <p className="text-sm leading-7 text-black/70">{product.summary}</p>
           <p className="text-xs uppercase tracking-[0.2em] text-[#0f6ea7]/70">{meta.description}</p>
-          <p className="rounded-[1.2rem] border border-[#1398db]/10 bg-[#1398db]/[0.05] px-3 py-3 text-sm leading-6 text-black/62">
+          <p className="product-climate-panel">
             {product.climate_note}
           </p>
         </div>
