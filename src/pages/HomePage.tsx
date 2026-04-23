@@ -14,8 +14,8 @@ const heroSupportImages = [
   },
   {
     label: 'Baie / exterieur',
-    src: 'media/gib/instagram/baie-transparence.webp',
-    alt: 'Baie vitree ouverte sur un exterieur lumineux publiee sur Instagram GIB.',
+    src: 'media/gib/instagram/volet-anticyclonique.jpg',
+    alt: 'Volet roulant anticyclonique adapte au climat martiniquais publie sur Instagram GIB.',
   },
 ]
 
@@ -37,13 +37,13 @@ const beforeAfterSteps = [
     label: 'Avant',
     title: 'Un besoin a montrer simplement',
     text: 'Le client envoie ses photos, sa commune et son besoin : entree a reprendre, volet a remplacer, renovation ou terrasse a proteger.',
-    image: 'media/gib/instagram/entree-portail.webp',
+    image: 'media/gib/instagram/catalogue-pergola.webp',
   },
   {
     label: 'Apres',
     title: 'Une demande mieux cadree',
     text: 'GIB oriente vers la bonne solution : devis, remplacement, depannage, reglage ou pose adaptee au climat martiniquais.',
-    image: 'media/gib/instagram/chantier-logement-neuf.webp',
+    image: 'media/gib/instagram/volet-anticyclonique.jpg',
   },
 ]
 
