@@ -266,16 +266,23 @@ img { display:block; max-width:100%; }
   .product-card {
     @apply rounded-[2rem] border;
     background:
-      radial-gradient(circle at top right, rgba(83, 196, 216, 0.14), transparent 34%),
+      radial-gradient(circle at top right, color-mix(in srgb, var(--category-border, #53c4d8) 18%, transparent), transparent 34%),
+      linear-gradient(90deg, var(--category-gradient, linear-gradient(135deg, #17a8ef, #0d7cc2))) top/100% 8px no-repeat,
       linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(248, 244, 236, 0.96) 100%);
-    border-color: rgba(18, 117, 179, 0.12);
-    box-shadow: 0 26px 58px rgba(18, 117, 179, 0.1);
+    border-color: color-mix(in srgb, var(--category-border, #1275b3) 34%, transparent);
+    box-shadow: 0 26px 58px color-mix(in srgb, var(--category-border, #1275b3) 14%, transparent);
   }
 
   .product-accent-tag {
     @apply inline-flex items-center gap-2 rounded-full px-3 py-1 text-[0.72rem] font-semibold uppercase tracking-[0.18em];
     background: linear-gradient(135deg, rgba(19, 152, 219, 0.12), rgba(83, 196, 216, 0.16));
     color: var(--blue-deep);
+  }
+
+  .product-accent-tag-themed {
+    background: var(--category-gradient, linear-gradient(135deg, rgba(19,152,219,0.12), rgba(83,196,216,0.16)));
+    color: var(--category-ink, #fff);
+    box-shadow: 0 12px 24px color-mix(in srgb, var(--category-border, #1275b3) 18%, transparent);
   }
 
   .product-meta-chip {
@@ -301,6 +308,16 @@ img { display:block; max-width:100%; }
       linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(245, 238, 225, 0.72));
     color: rgba(19, 37, 52, 0.74);
     box-shadow: 0 16px 36px rgba(18, 117, 179, 0.07);
+  }
+
+  .category-showcase-card {
+    @apply overflow-hidden rounded-[1.6rem] border p-5;
+    border-color: color-mix(in srgb, var(--category-border, #1275b3) 35%, transparent);
+    background:
+      radial-gradient(circle at 86% 18%, color-mix(in srgb, var(--category-border, #1275b3) 28%, transparent), transparent 28%),
+      var(--category-gradient, linear-gradient(135deg, #0f6ea7, #53c4d8));
+    color: var(--category-ink, #fff);
+    box-shadow: 0 20px 44px color-mix(in srgb, var(--category-border, #1275b3) 18%, transparent);
   }
 
   .instagram-tile {

@@ -1,6 +1,7 @@
 import { ArrowRight, Sparkles } from 'lucide-react'
+import type { CSSProperties } from 'react'
 import { Link } from 'react-router-dom'
-import { categoryMeta, getAssetById } from '../lib/content'
+import { buildProjectWhatsAppMessage, buildWhatsAppUrl, categoryMeta, getAssetById } from '../lib/content'
 import type { Product } from '../types/content'
 import { MediaImage } from './MediaImage'
 
@@ -11,6 +12,10 @@ interface ProductCardProps {
 export function ProductCard({ product }: ProductCardProps) {
   const heroAsset = getAssetById(product.hero_asset_id)
   const meta = categoryMeta[product.category]
+  const whatsappLink = buildWhatsAppUrl(buildProjectWhatsAppMessage({
+    product: product.name,
+    assetTitle: heroAsset?.title,
+  }))
   const highlight =
     product.slug === 'renovation-depannage'
       ? 'Depannage, reglage et remplacement'
@@ -27,17 +32,38 @@ export function ProductCard({ product }: ProductCardProps) {
   ]
 
   return (
-    <article className="product-card group overflow-hidden transition duration-300 hover:-translate-y-1">
-      <MediaImage
-        alt={heroAsset?.alt_text ?? product.name}
-        className="aspect-[5/4] overflow-hidden"
-        fallbackSrc={meta.fallback}
-        imgClassName="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]"
-        src={heroAsset?.image_url ?? meta.fallback}
-      />
+    <article
+      className="product-card group overflow-hidden transition duration-300 hover:-translate-y-1"
+      style={{
+        '--category-gradient': meta.gradient,
+        '--category-border': meta.border,
+        '--category-ink': meta.ink,
+      } as CSSProperties}
+    >
+      <div className="relative">
+        <MediaImage
+          alt={heroAsset?.alt_text ?? product.name}
+          className="aspect-[5/4] overflow-hidden"
+          fallbackSrc={meta.fallback}
+          imgClassName="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]"
+          src={heroAsset?.image_url ?? meta.fallback}
+        />
+        <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black/70 to-transparent" />
+        <div className="absolute left-4 top-4 rounded-full border border-white/25 bg-white/14 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-white backdrop-blur">
+          {meta.tone}
+        </div>
+        <a
+          className="absolute bottom-4 right-4 rounded-full bg-white/92 px-3 py-2 text-xs font-black uppercase tracking-[0.16em] text-black shadow-lg"
+          href={whatsappLink}
+          rel="noreferrer"
+          target="_blank"
+        >
+          Photo + devis
+        </a>
+      </div>
       <div className="space-y-5 p-6">
         <div className="flex flex-wrap items-center gap-2">
-          <span className="product-accent-tag">{meta.label}</span>
+          <span className="product-accent-tag product-accent-tag-themed">{meta.label}</span>
           {product.simulation_eligible ? (
             <span className="product-accent-tag !bg-[color:var(--leaf-soft)] !text-[#2f7f61]">
               <Sparkles className="size-3.5" />

@@ -1,8 +1,9 @@
 import { ArrowRight, MessageCircle, PhoneCall } from 'lucide-react'
+import type { CSSProperties } from 'react'
 import { Link } from 'react-router-dom'
 import { ProductCard } from '../components/ProductCard'
 import { SectionHeading } from '../components/SectionHeading'
-import { company, products } from '../lib/content'
+import { buildProjectWhatsAppMessage, buildWhatsAppUrl, categoryMeta, company, products } from '../lib/content'
 
 const pageHighlights = [
   'Volet roulant, fenetre et porte, portail, cloture et garde-corps, baie vitree, pergola bioclimatique.',
@@ -35,6 +36,31 @@ export function ProductsPage() {
               {item}
             </div>
           ))}
+        </div>
+        <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          {products.slice(0, 8).map((product) => {
+            const meta = categoryMeta[product.category]
+            const whatsappLink = buildWhatsAppUrl(buildProjectWhatsAppMessage({ product: product.name }))
+
+            return (
+              <article
+                key={product.slug}
+                className="category-showcase-card"
+                style={{
+                  '--category-gradient': meta.gradient,
+                  '--category-border': meta.border,
+                  '--category-ink': meta.ink,
+                } as CSSProperties}
+              >
+                <p className="text-[0.68rem] font-black uppercase tracking-[0.2em] opacity-75">{meta.tone}</p>
+                <h3 className="mt-3 font-[Marcellus] text-2xl leading-tight">{product.name}</h3>
+                <p className="mt-3 text-sm leading-6 opacity-82">{meta.description}</p>
+                <a className="mt-5 inline-flex rounded-full bg-white/92 px-4 py-2 text-xs font-black uppercase tracking-[0.16em] text-black" href={whatsappLink} rel="noreferrer" target="_blank">
+                  Devis avec photos
+                </a>
+              </article>
+            )
+          })}
         </div>
       </div>
 

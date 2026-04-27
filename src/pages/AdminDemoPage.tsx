@@ -12,7 +12,7 @@ import {
 import { Link } from 'react-router-dom'
 import { MediaImage } from '../components/MediaImage'
 import { SectionHeading } from '../components/SectionHeading'
-import { company } from '../lib/content'
+import { buildWhatsAppUrl, company } from '../lib/content'
 import {
   listLeads,
   listSimulations,
@@ -60,7 +60,7 @@ function buildWhatsAppSummary(lead: LeadDraft) {
     lines.push(`Note: ${lead.commentaire}`)
   }
 
-  return `https://wa.me/596696905164?text=${encodeURIComponent(lines.join('\n'))}`
+  return buildWhatsAppUrl(lines.join('\n'))
 }
 
 export function AdminDemoPage() {

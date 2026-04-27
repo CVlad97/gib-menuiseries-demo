@@ -4,7 +4,7 @@ import { CheckCircle2, FileImage, MessageCircle, PhoneCall } from 'lucide-react'
 import { useSearchParams } from 'react-router-dom'
 import { MediaImage } from '../components/MediaImage'
 import { SectionHeading } from '../components/SectionHeading'
-import { categoryMeta, company, getAssetById, getProductBySlug } from '../lib/content'
+import { buildProjectWhatsAppMessage, buildWhatsAppUrl, categoryMeta, company, getAssetById, getProductBySlug } from '../lib/content'
 import { saveLead } from '../lib/storage'
 
 const projectTypes = ['Habitat principal', 'Renovation', 'Depannage', 'Projet professionnel', 'Copropriete']
@@ -42,6 +42,16 @@ export function QuotePage() {
     }
     return 'Projet sur mesure'
   }, [asset, product])
+  const whatsappMessage = buildProjectWhatsAppMessage({
+    product: produit || summaryTitle,
+    commune,
+    dimensions,
+    contexte,
+    commentaire,
+    assetTitle: asset?.title,
+    photoCount: photos.length,
+  })
+  const whatsappUrl = buildWhatsAppUrl(whatsappMessage)
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -116,9 +126,9 @@ export function QuotePage() {
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
-              <a className="cta-whatsapp w-full" href={company.whatsapp_url} rel="noreferrer" target="_blank">
+              <a className="cta-whatsapp w-full" href={whatsappUrl} rel="noreferrer" target="_blank">
                 <MessageCircle className="size-4" />
-                Basculer vers WhatsApp
+                WhatsApp Business {company.whatsapp_display}
               </a>
               <a className="cta-secondary w-full" href={`tel:${company.phone_international}`}>
                 <PhoneCall className="size-4" />
@@ -196,9 +206,9 @@ export function QuotePage() {
             <button className="cta-primary w-full sm:w-auto" type="submit">
               Enregistrer la demande
             </button>
-            <a className="cta-whatsapp w-full sm:w-auto" href={company.whatsapp_url} rel="noreferrer" target="_blank">
+            <a className="cta-whatsapp w-full sm:w-auto" href={whatsappUrl} rel="noreferrer" target="_blank">
               <MessageCircle className="size-4" />
-              Envoyer sur WhatsApp
+              Preparer WhatsApp avec photos
             </a>
             <a className="cta-secondary w-full sm:w-auto" href={`mailto:${company.email}`}>
               Envoyer par email

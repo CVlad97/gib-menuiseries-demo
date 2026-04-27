@@ -23,6 +23,8 @@ export interface CompanyProfile {
   email: string
   location_label: string
   service_area: string
+  whatsapp_display: string
+  whatsapp_number: string
   whatsapp_url: string
   instagram_url: string
   facebook_url: string

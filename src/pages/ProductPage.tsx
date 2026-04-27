@@ -2,7 +2,7 @@ import { ArrowRight, MessageCircle, PhoneCall, PlayCircle } from 'lucide-react'
 import { Link, useParams } from 'react-router-dom'
 import { MediaImage } from '../components/MediaImage'
 import { SectionHeading } from '../components/SectionHeading'
-import { categoryMeta, company, getAssetById, getAssetsByProduct, getProductBySlug } from '../lib/content'
+import { buildProjectWhatsAppMessage, buildWhatsAppUrl, categoryMeta, company, getAssetById, getAssetsByProduct, getProductBySlug } from '../lib/content'
 
 const decisionChecklist: Record<string, string[]> = {
   portails: [
@@ -79,6 +79,10 @@ export function ProductPage() {
   const productAssets = getAssetsByProduct(product.slug)
   const meta = categoryMeta[product.category]
   const checklist = decisionChecklist[product.slug] ?? []
+  const whatsappUrl = buildWhatsAppUrl(buildProjectWhatsAppMessage({
+    product: product.name,
+    assetTitle: heroAsset?.title,
+  }))
 
   return (
     <div className="shell space-y-10 pt-8 sm:pt-12">
@@ -112,9 +116,9 @@ export function ProductPage() {
                 <PhoneCall className="size-4" />
                 Appeler
               </a>
-              <a className="cta-whatsapp" href={company.whatsapp_url} rel="noreferrer" target="_blank">
+              <a className="cta-whatsapp" href={whatsappUrl} rel="noreferrer" target="_blank">
                 <MessageCircle className="size-4" />
-                WhatsApp
+                WhatsApp photos
               </a>
               <Link className="cta-secondary" to={`/devis?product=${product.slug}`}>
                 <ArrowRight className="size-4" />
@@ -225,7 +229,7 @@ export function ProductPage() {
           <Link className="cta-primary" to={`/devis?product=${product.slug}`}>
             Demander un devis
           </Link>
-          <a className="cta-whatsapp" href={company.whatsapp_url} rel="noreferrer" target="_blank">
+          <a className="cta-whatsapp" href={whatsappUrl} rel="noreferrer" target="_blank">
             <MessageCircle className="size-4" />
             Envoyer des photos
           </a>
