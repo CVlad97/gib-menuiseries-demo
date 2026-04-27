@@ -2,7 +2,7 @@ import { ArrowRight, MessageCircle, PhoneCall, PlayCircle } from 'lucide-react'
 import { Link, useParams } from 'react-router-dom'
 import { MediaImage } from '../components/MediaImage'
 import { SectionHeading } from '../components/SectionHeading'
-import { buildProjectWhatsAppMessage, buildWhatsAppUrl, categoryMeta, company, getAssetById, getAssetsByProduct, getProductBySlug } from '../lib/content'
+import { buildProjectWhatsAppMessage, buildWhatsAppUrl, categoryMeta, company, getAssetById, getAssetsByCategory, getAssetsByProduct, getProductBySlug } from '../lib/content'
 
 const decisionChecklist: Record<string, string[]> = {
   portails: [
@@ -76,7 +76,11 @@ export function ProductPage() {
   }
 
   const heroAsset = getAssetById(product.hero_asset_id)
-  const productAssets = getAssetsByProduct(product.slug)
+  const productRealAssets = getAssetsByProduct(product.slug).filter((asset) => asset.source !== 'fallback-local')
+  const categoryRealAssets = getAssetsByCategory(product.category).filter((asset) => asset.source !== 'fallback-local')
+  const visualAssets = Array.from(
+    new Map([...productRealAssets, ...categoryRealAssets].map((asset) => [asset.id, asset])).values(),
+  ).slice(0, 8)
   const meta = categoryMeta[product.category]
   const checklist = decisionChecklist[product.slug] ?? []
   const whatsappUrl = buildWhatsAppUrl(buildProjectWhatsAppMessage({
@@ -183,39 +187,65 @@ export function ProductPage() {
         </div>
       </section>
 
-      <section className="glass-panel-strong px-6 py-8 sm:px-8 lg:px-10">
-        <SectionHeading
-          eyebrow="Preuves visuelles"
-          title="Des references locales pour mieux se projeter."
-          description="Les photos montrent des produits poses, des exterieurs et des finitions proches des besoins en Martinique."
-          action={
+      <section className="visual-carousel-panel overflow-hidden px-5 py-7 sm:px-8 lg:px-10">
+        <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+          <SectionHeading
+            eyebrow="Inspirations chantier"
+            title="Des photos utiles, pas des visuels de remplissage."
+            description="Le carrousel affiche uniquement les photos disponibles et exploitables pour cadrer le projet. Les fallbacks techniques sont masques pour garder un rendu premium."
+          />
+          <div className="flex flex-wrap gap-3">
+            <a className="cta-whatsapp" href={whatsappUrl} rel="noreferrer" target="_blank">
+              <MessageCircle className="size-4" />
+              Envoyer mes photos
+            </a>
             <a className="cta-secondary" href={company.youtube_url} rel="noreferrer" target="_blank">
               <PlayCircle className="size-4" />
-              Espace video
+              Video GIB
             </a>
-          }
-          light
-        />
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-          {productAssets.map((asset) => (
-            <article key={asset.id} className="overflow-hidden rounded-[1.6rem] border border-white/8 bg-white/[0.04]">
-              <MediaImage
-                alt={asset.alt_text}
-                className="aspect-[4/3] overflow-hidden"
-                fallbackSrc={meta.fallback}
-                imgClassName="h-full w-full object-cover"
-                src={asset.image_url}
-              />
-              <div className="space-y-2 p-4">
-                <p className="text-base font-semibold text-white">{asset.title}</p>
-                <p className="text-sm text-white/62">{asset.location}</p>
-                <Link className="inline-flex items-center gap-2 text-sm font-semibold text-[#d8c189]" to={`/devis?product=${product.slug}&asset=${asset.id}`}>
-                  Devis similaire
-                  <ArrowRight className="size-4" />
-                </Link>
-              </div>
-            </article>
-          ))}
+          </div>
+        </div>
+
+        <div className="visual-carousel mt-7" aria-label="References visuelles GIB">
+          {visualAssets.map((asset, index) => {
+            const assetWhatsAppUrl = buildWhatsAppUrl(buildProjectWhatsAppMessage({
+              product: product.name,
+              assetTitle: asset.title,
+            }))
+
+            return (
+              <article key={asset.id} className="visual-slide group">
+                <MediaImage
+                  alt={asset.alt_text}
+                  className="h-full overflow-hidden"
+                  fallbackSrc={meta.fallback}
+                  imgClassName="h-full w-full object-cover transition duration-700 group-hover:scale-[1.05]"
+                  src={asset.image_url}
+                />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.02),rgba(5,18,24,0.82))]" />
+                <div className="absolute left-4 top-4 flex items-center gap-2">
+                  <span className="rounded-full bg-white/92 px-3 py-1 text-[0.68rem] font-black uppercase tracking-[0.18em] text-black">
+                    {String(index + 1).padStart(2, '0')}
+                  </span>
+                  <span className="rounded-full border border-white/20 bg-white/14 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-white backdrop-blur">
+                    {asset.collection.replaceAll('-', ' ')}
+                  </span>
+                </div>
+                <div className="absolute inset-x-0 bottom-0 space-y-3 p-5">
+                  <p className="text-xl font-black leading-tight text-white">{asset.title}</p>
+                  <p className="text-sm text-white/72">{asset.location}</p>
+                  <div className="flex flex-wrap gap-2">
+                    <Link className="rounded-full bg-white px-4 py-2 text-xs font-black uppercase tracking-[0.15em] text-black" to={`/devis?product=${product.slug}&asset=${asset.id}`}>
+                      Devis similaire
+                    </Link>
+                    <a className="rounded-full border border-white/25 bg-white/12 px-4 py-2 text-xs font-black uppercase tracking-[0.15em] text-white backdrop-blur" href={assetWhatsAppUrl} rel="noreferrer" target="_blank">
+                      WhatsApp photo
+                    </a>
+                  </div>
+                </div>
+              </article>
+            )
+          })}
         </div>
       </section>
 
