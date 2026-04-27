@@ -5,17 +5,17 @@ import { assets, company } from '../lib/content'
 const logoSrc =
   'https://le-de.cdn-website.com/179f7a3a04c5410bb41d060e3efd0cfd/dms3rep/multi/opt/logo+gib-fe923f67-381w.PNG'
 
-const heroMainImage = 'media/gib/instagram/villa-sky-pergola.jpg'
+const heroMainImage = 'media/gib/instagram/volet-anticyclonique.jpg'
 const heroSupportImages = [
   {
-    label: 'Entree / portail',
-    src: 'media/gib/instagram/entree-portail.webp',
-    alt: 'Entree personnalisee avec portail aluminium publiee sur Instagram GIB.',
+    label: 'Catalogue / pergola',
+    src: 'media/gib/instagram/catalogue-pergola.webp',
+    alt: 'Catalogue pergola Sepalumic partage par GIB.',
   },
   {
-    label: 'Baie / exterieur',
-    src: 'media/gib/instagram/volet-anticyclonique.jpg',
-    alt: 'Volet roulant anticyclonique adapte au climat martiniquais publie sur Instagram GIB.',
+    label: 'Chantier / livraison',
+    src: 'media/gib/instagram/chantier-logement-neuf.webp',
+    alt: 'Visuel de chantier professionnel partage par GIB.',
   },
 ]
 
@@ -56,6 +56,27 @@ const trustItems = [
 
 const diagnosticItems = ['Amiante', 'Termites', 'Electricite', 'Energie']
 
+const teamCards = [
+  {
+    role: 'Direction commerciale',
+    title: 'Olivier Giboyau',
+    text: 'Interlocuteur commercial pour cadrer les projets, creer la confiance et orienter les demandes.',
+    image: 'media/gib/instagram/volet-anticyclonique.jpg',
+  },
+  {
+    role: 'Equipe technique',
+    title: 'Artisans menuisiers GIB',
+    text: 'Pose, remplacement, reglage et verification terrain sur les projets de menuiserie aluminium.',
+    image: 'media/gib/instagram/chantier-logement-neuf.webp',
+  },
+  {
+    role: 'Partenaire materiaux',
+    title: 'Solutions aluminium Sepalumic',
+    text: 'Support produit pour les gammes aluminium, pergolas, ouvertures et finitions adaptees.',
+    image: 'media/gib/instagram/catalogue-pergola.webp',
+  },
+]
+
 export function HomePage() {
   return (
     <div className="space-y-7 sm:space-y-8">
@@ -94,7 +115,7 @@ export function HomePage() {
                 </a>
                 <a className="cta-whatsapp" href={company.whatsapp_url} rel="noreferrer" target="_blank">
                   <MessageCircle className="size-4" />
-                  WhatsApp
+                  Commercial WhatsApp
                 </a>
               </div>
               <div className="grid gap-2 pt-2 sm:grid-cols-2">
@@ -119,7 +140,7 @@ export function HomePage() {
                 <div className="space-y-2 px-4 py-4 sm:px-5">
                   <p className="text-xs uppercase tracking-[0.24em] text-[#0f6ea7]/80">Instagram / pergola</p>
                   <p className="text-base font-semibold leading-6 text-black sm:text-[1.05rem]">
-                    Terrasse, ombre, securite et confort exterieur avec un visuel recent issu du compte Instagram GIB.
+                    Visuels Instagram selectionnes pour presenter l activite GIB sans exposer l interieur prive des clients.
                   </p>
                 </div>
               </article>
@@ -180,7 +201,7 @@ export function HomePage() {
               <span className="eyebrow">Vu sur Instagram</span>
               <h2 className="section-title mt-3 text-[var(--text-dark)]">Des visuels recents, importes en local pour rester stables.</h2>
               <p className="mt-3 text-[0.96rem] leading-7 text-black/72">
-                Les visuels retenus du compte Instagram GIB sont importes manuellement dans le projet. Aucun flux live fragile n est necessaire pour les afficher sur le site.
+                Les visuels retenus du compte Instagram GIB sont importes manuellement dans le projet et selectionnes pour eviter les interieurs prives. Aucun flux live fragile n est necessaire pour les afficher sur le site.
               </p>
             </div>
             <a className="cta-secondary !border-[#1398db]/24 !text-[#0f6ea7]" href={company.instagram_url} rel="noreferrer" target="_blank">
@@ -223,6 +244,42 @@ export function HomePage() {
             <p>
               De plus, en fonction de vos besoins, nos artisans realisent la renovation complete de vos salles de bains ainsi que de vos revetements de sol. Nous vous proposons differentes finitions de carrelage pour un interieur personalise.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="shell">
+        <div className="surface-panel rounded-[1.45rem] px-5 py-6 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
+          <div className="grid gap-6 lg:grid-cols-[0.78fr_1.22fr] lg:items-end">
+            <div>
+              <span className="eyebrow">Notre equipe</span>
+              <h2 className="section-title mt-3 text-[var(--text-dark)]">Une equipe commerciale et technique pour cadrer le bon devis.</h2>
+              <p className="mt-4 text-[0.96rem] leading-7 text-black/72">
+                Le site officiel presente Olivier Giboyau a la direction commerciale et une equipe d artisans experimentes. Ici, les photos illustrent l activite, les chantiers et les supports produits sans afficher de portraits non fournis.
+              </p>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <a className="cta-primary" href={`tel:${company.phone_international}`}>
+                  <PhoneCall className="size-4" />
+                  Standard {company.phone_display}
+                </a>
+                <a className="cta-whatsapp" href={company.whatsapp_url} rel="noreferrer" target="_blank">
+                  <MessageCircle className="size-4" />
+                  Commercial {company.whatsapp_display}
+                </a>
+              </div>
+            </div>
+            <div className="grid gap-4 md:grid-cols-3">
+              {teamCards.map((member) => (
+                <article key={member.role} className="team-card">
+                  <img alt={`${member.role} GIB`} className="h-40 w-full object-cover" src={member.image} />
+                  <div className="space-y-2 p-4">
+                    <p className="text-[0.68rem] font-black uppercase tracking-[0.18em] text-[#0f6ea7]/72">{member.role}</p>
+                    <h3 className="font-[Marcellus] text-xl leading-tight text-black">{member.title}</h3>
+                    <p className="text-sm leading-6 text-black/68">{member.text}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -312,7 +369,7 @@ export function HomePage() {
           </h2>
           <div className="mt-4 space-y-3 text-[0.96rem] leading-7 text-black/72">
             <p>
-              GIB est disponible par telephone au 0596737219 ou par e-mail a contact@gibmenuiseries.com pour parler de votre projet.
+              GIB est disponible par telephone au 0596737219 ou par e-mail a contact@gibmenuiseries.com pour parler de votre projet. Le WhatsApp commercial sert a envoyer rapidement photos, commune et description du besoin.
             </p>
             <p>Vous souhaitez profiter des services de nos menuisiers pour un projet de construction ou de renovation ?</p>
           </div>
@@ -327,7 +384,7 @@ export function HomePage() {
             </a>
             <a className="cta-whatsapp" href={company.whatsapp_url} rel="noreferrer" target="_blank">
               <MessageCircle className="size-4" />
-              WhatsApp
+              Commercial {company.whatsapp_display}
             </a>
             <Link className="cta-secondary !border-[#1398db]/24 !text-[#0f6ea7]" to="/contact">
               Contactez nous

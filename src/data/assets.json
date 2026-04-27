@@ -25,8 +25,8 @@
     "category": "cloture",
     "product_type": "clotures-portillons",
     "location": "Martinique",
-    "featured": true,
-    "published": true,
+    "featured": false,
+    "published": false,
     "collection": "realisations",
     "before_after_group": "ranch-collection",
     "alt_text": "Cloture exterieure type ranch issue des visuels officiels GIB."
@@ -270,22 +270,6 @@
     "collection": "inspirations",
     "before_after_group": null,
     "alt_text": "Fallback local pour projet professionnel ou appel d offres simple."
-  },
-  {
-    "id": "instagram-villa-sky-pergola",
-    "title": "Villa Sky - pergola et vue ouverte",
-    "source": "instagram",
-    "image_url": "media/gib/instagram/villa-sky-pergola.jpg",
-    "thumbnail_url": "media/gib/instagram/villa-sky-pergola.jpg",
-    "source_url": "https://www.instagram.com/p/DN0s6XFoZ6D/",
-    "category": "pergola",
-    "product_type": "pergolas",
-    "location": "Le Diamant / Martinique",
-    "featured": true,
-    "published": true,
-    "collection": "projet-du-moment",
-    "before_after_group": null,
-    "alt_text": "Visuel Instagram GIB d une villa avec pergola et vue ouverte en Martinique."
   },
   {
     "id": "instagram-chantier-logement-neuf",

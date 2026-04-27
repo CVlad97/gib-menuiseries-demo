@@ -30,13 +30,13 @@ export function ContactPage() {
               </a>
             </div>
             <div className="rounded-[1.6rem] border border-black/8 bg-white p-5">
-              <p className="text-xs uppercase tracking-[0.24em] text-black/45">WhatsApp Business</p>
+              <p className="text-xs uppercase tracking-[0.24em] text-black/45">Commercial WhatsApp</p>
               <a className="mt-3 inline-flex items-center gap-2 text-lg font-semibold text-black" href={company.whatsapp_url} rel="noreferrer" target="_blank">
                 <MessageCircle className="size-4 text-[#42a97d]" />
                 {company.whatsapp_display}
               </a>
               <p className="mt-3 text-sm leading-6 text-black/62">
-                Envoyez vos photos, la commune, les dimensions approximatives et une courte description du besoin.
+                Contact commercial pour envoyer vos photos, la commune, les dimensions approximatives et une courte description du besoin.
               </p>
             </div>
             <div className="rounded-[1.6rem] border border-black/8 bg-white p-5">

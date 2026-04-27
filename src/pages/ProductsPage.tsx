@@ -88,7 +88,7 @@ export function ProductsPage() {
             </a>
             <a className="cta-whatsapp" href={company.whatsapp_url} rel="noreferrer" target="_blank">
               <MessageCircle className="size-4" />
-              WhatsApp
+              Commercial WhatsApp
             </a>
             <Link className="cta-secondary" to="/devis">
               <ArrowRight className="size-4" />

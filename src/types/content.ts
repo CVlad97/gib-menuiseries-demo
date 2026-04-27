@@ -20,6 +20,8 @@ export interface CompanyProfile {
   hero_promise: string
   phone_display: string
   phone_international: string
+  commercial_phone_display: string
+  commercial_phone_international: string
   email: string
   location_label: string
   service_area: string

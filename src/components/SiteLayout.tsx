@@ -52,7 +52,7 @@ export function SiteLayout() {
           </div>
           <div className="flex flex-wrap items-center gap-2 text-[0.72rem] font-medium">
             <span className="topbar-pill">Intervention Martinique</span>
-            <a className="topbar-pill" href={company.whatsapp_url} rel="noreferrer" target="_blank">WhatsApp {company.whatsapp_display}</a>
+            <a className="topbar-pill" href={company.whatsapp_url} rel="noreferrer" target="_blank">Commercial WhatsApp {company.whatsapp_display}</a>
             <span className="inline-flex items-center gap-2 text-black/72">
               <MapPin className="size-4 text-[#ffd400]" />
               Zone Cocotte, Ducos, 97224 · Martinique
@@ -115,7 +115,7 @@ export function SiteLayout() {
               <div className="flex flex-wrap items-center gap-3">
                 <a className="cta-whatsapp !px-4 !py-2" href={company.whatsapp_url} rel="noreferrer" target="_blank">
                   <MessageCircle className="size-4" />
-                  {company.whatsapp_display}
+                  Commercial {company.whatsapp_display}
                 </a>
                 <NavLink className="cta-primary !px-4 !py-2" to="/devis">
                   <FileText className="size-4" />
@@ -153,7 +153,7 @@ export function SiteLayout() {
               <div className="mt-4 grid gap-2">
                 <a className="cta-whatsapp w-full justify-center" href={company.whatsapp_url} rel="noreferrer" target="_blank">
                   <MessageCircle className="size-4" />
-                  WhatsApp {company.whatsapp_display}
+                  Commercial {company.whatsapp_display}
                 </a>
                 <NavLink className="cta-primary w-full justify-center" onClick={closeMenu} to="/devis">
                   <FileText className="size-4" />
@@ -199,7 +199,7 @@ export function SiteLayout() {
                 <p className="text-xs uppercase tracking-[0.24em] text-black/45">Contactez-nous</p>
                 <div className="mt-4 space-y-3 text-sm text-black/72">
                   <a className="block font-semibold text-black" href={`tel:${company.phone_international}`}>{company.phone_display}</a>
-                  <a className="block font-semibold text-[#1f7a5c]" href={company.whatsapp_url} rel="noreferrer" target="_blank">WhatsApp {company.whatsapp_display}</a>
+                  <a className="block font-semibold text-[#1f7a5c]" href={company.whatsapp_url} rel="noreferrer" target="_blank">Commercial WhatsApp {company.whatsapp_display}</a>
                   <a className="block" href={`mailto:${company.email}`}>{company.email}</a>
                   <p>{company.location_label}</p>
                 </div>
@@ -244,7 +244,7 @@ export function SiteLayout() {
           </a>
           <a className="cta-whatsapp !px-3 !py-3 text-xs" href={company.whatsapp_url} rel="noreferrer" target="_blank">
             <MessageCircle className="size-4" />
-            WhatsApp
+            Commercial
           </a>
           <NavLink className="cta-secondary !border-black/12 !px-3 !py-3 !text-black text-xs" onClick={closeMenu} to="/devis">
             <FileText className="size-4" />

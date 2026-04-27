@@ -328,6 +328,12 @@ img { display:block; max-width:100%; }
     box-shadow: 0 18px 40px rgba(18, 117, 179, 0.09);
   }
 
+  .team-card {
+    @apply overflow-hidden rounded-[1.35rem] border bg-white;
+    border-color: rgba(19, 122, 186, 0.14);
+    box-shadow: 0 18px 38px rgba(12, 60, 94, 0.1);
+  }
+
   .visual-carousel-panel {
     @apply rounded-[2rem] border;
     background:
