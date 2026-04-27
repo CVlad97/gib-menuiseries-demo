@@ -30,7 +30,7 @@
     "name": "Fenetres et portes",
     "category": "fenetre",
     "summary": "Fenetres et portes aluminium pour remplacer des ouvrants fatigues, mieux ventiler et gagner en confort.",
-    "hero_asset_id": "fenetre-fallback",
+    "hero_asset_id": "official-fenetre-jalousie",
     "simulation_eligible": true,
     "climate_note": "Solution pensee pour la lumiere, la ventilation, l humidite et la tenue dans le temps en Martinique.",
     "benefits": [
@@ -57,7 +57,7 @@
     "name": "Volets roulants",
     "category": "volet-roulant",
     "summary": "Volets roulants pour proteger du soleil, renforcer l intimite et retrouver un usage fiable au quotidien.",
-    "hero_asset_id": "volet-ambiance-1",
+    "hero_asset_id": "official-volet-terrasse",
     "simulation_eligible": true,
     "climate_note": "Approche adaptee aux ouvertures exposees, a la chaleur, aux pluies tropicales et a l usage frequent.",
     "benefits": [
@@ -111,7 +111,7 @@
     "name": "Pergolas bioclimatiques",
     "category": "pergola",
     "summary": "Pergolas bioclimatiques pour profiter davantage de la terrasse avec ombre, ventilation et protection.",
-    "hero_asset_id": "pergola-ambiance-1",
+    "hero_asset_id": "official-pergola-elegance",
     "simulation_eligible": true,
     "climate_note": "Solution utile pour les terrasses exposees au soleil, a la pluie et aux besoins d ombrage en Martinique.",
     "benefits": [
@@ -163,7 +163,7 @@
     "name": "Clotures et portillons",
     "category": "cloture",
     "summary": "Clotures et portillons pour delimiter, securiser et donner une finition propre aux abords.",
-    "hero_asset_id": "cloture-ranch-2",
+    "hero_asset_id": "official-ranch-5",
     "simulation_eligible": false,
     "climate_note": "Choix pense pour l exterieur, la pluie, le soleil et la coherence avec portail et facade.",
     "benefits": [
@@ -189,7 +189,7 @@
     "name": "Garde-corps",
     "category": "garde-corps",
     "summary": "Garde-corps pour securiser balcon, escalier ou terrasse avec une finition sobre et durable.",
-    "hero_asset_id": "garde-corps-portillon",
+    "hero_asset_id": "official-depannage-intervention",
     "simulation_eligible": false,
     "climate_note": "Solution adaptee aux zones exterieures, aux differences de niveau et aux contraintes de securite.",
     "benefits": [
@@ -243,7 +243,7 @@
     "name": "Diagnostic immobilier",
     "category": "projet-pro",
     "summary": "Diagnostics immobiliers avant vente ou travaux : amiante, termites, electricite et energie.",
-    "hero_asset_id": "depannage-fallback",
+    "hero_asset_id": "official-support-technique",
     "simulation_eligible": false,
     "climate_note": "Service utile avant une vente, une renovation ou des travaux sur un bien en Martinique.",
     "benefits": [

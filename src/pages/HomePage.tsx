@@ -1,21 +1,21 @@
 import { ArrowRight, BadgeCheck, Images, Mail, MessageCircle, PhoneCall, PlayCircle } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { withBase } from '../lib/base'
 import { assets, company } from '../lib/content'
 
-const logoSrc =
-  'https://le-de.cdn-website.com/179f7a3a04c5410bb41d060e3efd0cfd/dms3rep/multi/opt/logo+gib-fe923f67-381w.PNG'
+const logoSrc = withBase('media/gib/logo-gib.png')
 
-const heroMainImage = 'media/gib/instagram/volet-anticyclonique.jpg'
+const heroMainImage = 'media/gib/official/pergola-elegance.jpg'
 const heroSupportImages = [
   {
-    label: 'Catalogue / pergola',
-    src: 'media/gib/instagram/catalogue-pergola.webp',
-    alt: 'Catalogue pergola Sepalumic partage par GIB.',
+    label: 'Portail / acces',
+    src: 'media/gib/portail-dallas.jpg',
+    alt: 'Portail aluminium Dallas issu du site officiel GIB.',
   },
   {
-    label: 'Chantier / livraison',
-    src: 'media/gib/instagram/chantier-logement-neuf.webp',
-    alt: 'Visuel de chantier professionnel partage par GIB.',
+    label: 'Fenetre / jalousie',
+    src: 'media/gib/official/depannage-atelier.jpg',
+    alt: 'Porte-fenetre avec jalousies issue du site officiel GIB.',
   },
 ]
 
@@ -37,13 +37,31 @@ const beforeAfterSteps = [
     label: 'Avant',
     title: 'Un besoin a montrer simplement',
     text: 'Le client envoie ses photos, sa commune et son besoin : entree a reprendre, volet a remplacer, renovation ou terrasse a proteger.',
-    image: 'media/gib/instagram/catalogue-pergola.webp',
+    image: 'media/gib/official/volet-stock-terrasse.jpeg',
   },
   {
     label: 'Apres',
     title: 'Une demande mieux cadree',
     text: 'GIB oriente vers la bonne solution : devis, remplacement, depannage, reglage ou pose adaptee au climat martiniquais.',
-    image: 'media/gib/instagram/volet-anticyclonique.jpg',
+    image: 'media/gib/official/pergola-elegance.jpg',
+  },
+]
+
+const audienceCards = [
+  {
+    title: 'Particuliers et familles',
+    text: 'Fenetre, volet, portail ou terrasse : un parcours simple pour proteger, ventiler et valoriser la maison.',
+    image: 'media/gib/official/baie-stock-luminosite.jpeg',
+  },
+  {
+    title: 'Renovation et proprietaires',
+    text: 'Remplacement, reglage, depannage et devis apres verification de l existant.',
+    image: 'media/gib/official/depannage-atelier.jpg',
+  },
+  {
+    title: 'Pros, coproprietes, tourisme',
+    text: 'Entrees, garde-corps, pergolas et exterieurs plus fiables pour usages intensifs.',
+    image: 'media/gib/official/depannage-intervention.jpg',
   },
 ]
 
@@ -61,19 +79,19 @@ const teamCards = [
     role: 'Direction commerciale',
     title: 'Olivier Giboyau',
     text: 'Interlocuteur commercial pour cadrer les projets, creer la confiance et orienter les demandes.',
-    image: 'media/gib/instagram/volet-anticyclonique.jpg',
+    image: 'media/gib/official/peigne-atelier.jpg',
   },
   {
     role: 'Equipe technique',
     title: 'Artisans menuisiers GIB',
     text: 'Pose, remplacement, reglage et verification terrain sur les projets de menuiserie aluminium.',
-    image: 'media/gib/instagram/chantier-logement-neuf.webp',
+    image: 'media/gib/official/depannage-atelier.jpg',
   },
   {
     role: 'Partenaire materiaux',
     title: 'Solutions aluminium Sepalumic',
     text: 'Support produit pour les gammes aluminium, pergolas, ouvertures et finitions adaptees.',
-    image: 'media/gib/instagram/catalogue-pergola.webp',
+    image: 'media/gib/official/pergola-elegance.jpg',
   },
 ]
 
@@ -133,14 +151,14 @@ export function HomePage() {
             <div className="space-y-3">
               <article className="overflow-hidden rounded-[1.45rem] border border-[#1398db]/18 bg-white shadow-[0_16px_34px_rgba(19,122,186,0.12)]">
                 <img
-                  alt="Pergola bioclimatique et confort exterieur publies sur Instagram GIB."
+                  alt="Pergola et confort exterieur presentes dans les visuels officiels GIB."
                   className="h-[260px] w-full object-cover sm:h-[320px]"
                   src={heroMainImage}
                 />
                 <div className="space-y-2 px-4 py-4 sm:px-5">
-                  <p className="text-xs uppercase tracking-[0.24em] text-[#0f6ea7]/80">Instagram / pergola</p>
+                  <p className="text-xs uppercase tracking-[0.24em] text-[#0f6ea7]/80">Site officiel / pergola</p>
                   <p className="text-base font-semibold leading-6 text-black sm:text-[1.05rem]">
-                    Visuels Instagram selectionnes pour presenter l activite GIB sans exposer l interieur prive des clients.
+                    Visuels officiels et Instagram stabilises en local pour presenter l activite GIB sans flux fragile.
                   </p>
                 </div>
               </article>
@@ -191,6 +209,34 @@ export function HomePage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      <section className="shell">
+        <div className="surface-panel rounded-[1.45rem] px-5 py-6 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
+          <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+            <div className="max-w-3xl">
+              <span className="eyebrow">Pour qui</span>
+              <h2 className="section-title mt-3 text-[var(--text-dark)]">Une offre lisible pour maison, renovation, pro et tourisme.</h2>
+              <p className="mt-3 text-[0.96rem] leading-7 text-black/72">
+                La version finalisee parle aux usages reels en Martinique : chaleur, humidite, securite, confort de terrasse, entretien et valorisation du bien.
+              </p>
+            </div>
+            <Link className="cta-secondary !border-[#1398db]/24 !text-[#0f6ea7]" to="/produits">
+              Voir les produits
+            </Link>
+          </div>
+          <div className="mt-6 grid gap-4 md:grid-cols-3">
+            {audienceCards.map((item) => (
+              <article key={item.title} className="team-card">
+                <img alt={item.title} className="h-44 w-full object-cover" src={item.image} />
+                <div className="space-y-2 p-4">
+                  <h3 className="font-[Marcellus] text-xl leading-tight text-black">{item.title}</h3>
+                  <p className="text-sm leading-6 text-black/68">{item.text}</p>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 

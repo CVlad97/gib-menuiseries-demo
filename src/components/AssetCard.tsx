@@ -19,7 +19,7 @@ export function AssetCard({ asset, onOpen }: AssetCardProps) {
         : asset.source.replaceAll('-', ' ')
 
   return (
-    <article className="glass-panel overflow-hidden">
+    <article className="instagram-tile overflow-hidden">
       <button
         className="group block w-full text-left"
         onClick={() => onOpen?.(asset)}
@@ -51,11 +51,11 @@ export function AssetCard({ asset, onOpen }: AssetCardProps) {
         </div>
       </button>
       <div className="space-y-4 p-5">
-        <div className="flex items-center justify-between gap-3 text-xs uppercase tracking-[0.2em] text-white/60">
+        <div className="flex items-center justify-between gap-3 text-xs uppercase tracking-[0.2em] text-[#135987]/72">
           <span>{asset.source === 'official-site' ? 'source officielle GIB' : trustLabel}</span>
           {asset.source_url ? (
             <a
-              className="inline-flex items-center gap-1 text-white/70 transition hover:text-white"
+              className="inline-flex items-center gap-1 text-[#0f6ea7] transition hover:text-[#1398db]"
               href={asset.source_url}
               rel="noreferrer"
               target="_blank"

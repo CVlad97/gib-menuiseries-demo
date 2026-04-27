@@ -11,10 +11,10 @@ import {
 } from 'lucide-react'
 import { useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
+import { withBase } from '../lib/base'
 import { company } from '../lib/content'
 
-const logoSrc =
-  'https://le-de.cdn-website.com/179f7a3a04c5410bb41d060e3efd0cfd/dms3rep/multi/opt/logo+gib-fe923f67-381w.PNG'
+const logoSrc = withBase('media/gib/logo-gib.png')
 
 const navItems = [
   { to: '/', label: 'Accueil', end: true },
