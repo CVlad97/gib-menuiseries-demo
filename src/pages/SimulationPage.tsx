@@ -89,9 +89,9 @@ export function SimulationPage() {
             </div>
             <div>
               <p className="text-xs uppercase tracking-[0.24em] text-black/45">Photo du client</p>
-              <label className="mt-3 flex cursor-pointer flex-col items-center justify-center rounded-[1.8rem] border border-dashed border-black/12 bg-black/[0.03] px-4 py-8 text-center text-sm text-black/60">
+              <label className="mt-3 flex cursor-pointer flex-col items-center justify-center rounded-[1.8rem] border border-dashed border-[#1398db]/20 bg-[#eef8ff] px-4 py-8 text-center text-sm text-[#135987]/70">
                 <ImagePlus className="size-6 text-[#b98e45]" />
-                <span className="mt-3 font-medium text-black">Importer une photo facade ou terrasse</span>
+                <span className="mt-3 font-medium text-[#132534]">Importer une photo facade ou terrasse</span>
                 <span className="mt-2">Sinon la simulation utilise un asset GIB comme fallback.</span>
                 <input className="hidden" onChange={handleUpload} type="file" accept="image/*" />
               </label>
@@ -143,11 +143,11 @@ export function SimulationPage() {
                 ambiance === 'clair'
                   ? 'bg-white/6'
                   : ambiance === 'contraste'
-                    ? 'bg-black/24'
+                    ? 'bg-[#0f6ea7]/24'
                     : 'bg-emerald-500/12'
               }`}
             />
-            <div className="absolute inset-x-6 top-6 rounded-[1.7rem] border border-white/14 bg-black/35 px-5 py-4 backdrop-blur">
+            <div className="absolute inset-x-6 top-6 rounded-[1.7rem] border border-white/24 bg-[#0f6ea7]/42 px-5 py-4 backdrop-blur">
               <div className="flex flex-wrap items-center gap-2">
                 <span className="tag">{meta.label}</span>
                 <span className="tag bg-white/10">simulation non contractuelle</span>
@@ -158,7 +158,7 @@ export function SimulationPage() {
               <p className="mt-2 max-w-2xl text-sm leading-7 text-white/74">{product.summary}</p>
             </div>
             <div className="absolute bottom-6 left-6 right-6 grid gap-4 md:grid-cols-[1fr_auto]">
-              <div className="rounded-[1.6rem] border border-white/14 bg-black/40 px-5 py-4 backdrop-blur">
+              <div className="rounded-[1.6rem] border border-white/24 bg-[#0f6ea7]/44 px-5 py-4 backdrop-blur">
                 <p className="text-xs uppercase tracking-[0.24em] text-white/48">Projection</p>
                 <p className="mt-2 text-sm leading-7 text-white/78">
                   {notes || 'Ajoute une note terrain pour contextualiser la simulation avant le devis.'}

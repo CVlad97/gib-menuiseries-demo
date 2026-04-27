@@ -353,7 +353,7 @@ export function HomePage() {
           </div>
           <div className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
             {diagnosticItems.map((item) => (
-              <div key={item} className="rounded-[1.1rem] border border-white/12 bg-white/[0.12] p-4 text-center">
+              <div key={item} className="rounded-[1.1rem] border border-white/24 bg-white/20 p-4 text-center">
                 <p className="text-base font-semibold text-white">{item}</p>
               </div>
             ))}

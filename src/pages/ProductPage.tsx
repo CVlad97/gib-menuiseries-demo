@@ -109,7 +109,7 @@ export function ProductPage() {
               <p className="text-xs uppercase tracking-[0.24em] text-white/42">Adaptation Martinique</p>
               <p className="mt-3 text-sm leading-7 text-white/80">{product.climate_note}</p>
             </div>
-            <div className="rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-5">
+            <div className="rounded-[1.6rem] border border-white/24 bg-white/18 p-5">
               <p className="text-xs uppercase tracking-[0.24em] text-white/42">Verification chantier</p>
               <p className="mt-3 text-sm leading-7 text-white/74">
                 GIB regarde d abord votre besoin : pose, renovation, depannage, remplacement ou reglage. Ensuite, l equipe vous oriente vers la solution adaptee depuis Ducos, sur toute la Martinique.
@@ -158,11 +158,11 @@ export function ProductPage() {
               </ul>
             </div>
           </div>
-          <div className="mt-8 rounded-[1.6rem] border border-black/8 bg-black/[0.02] p-5">
+          <div className="mt-8 rounded-[1.6rem] border border-[#1398db]/12 bg-[#eef8ff] p-5">
             <p className="text-xs uppercase tracking-[0.24em] text-black/45">Reassurance</p>
             <div className="mt-4 flex flex-wrap gap-2">
               {product.reassurance.map((item) => (
-                <span key={item} className="rounded-full bg-black/6 px-3 py-2 text-sm text-black/70">
+                <span key={item} className="rounded-full bg-[#dff7fb] px-3 py-2 text-sm text-[#135987]">
                   {item}
                 </span>
               ))}
@@ -222,12 +222,12 @@ export function ProductPage() {
                   imgClassName="h-full w-full object-cover transition duration-700 group-hover:scale-[1.05]"
                   src={asset.image_url}
                 />
-                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.02),rgba(5,18,24,0.82))]" />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(19,152,219,0.02),rgba(15,110,167,0.76))]" />
                 <div className="absolute left-4 top-4 flex items-center gap-2">
-                  <span className="rounded-full bg-white/92 px-3 py-1 text-[0.68rem] font-black uppercase tracking-[0.18em] text-black">
+                  <span className="rounded-full bg-white/92 px-3 py-1 text-[0.68rem] font-black uppercase tracking-[0.18em] text-[#0f6ea7]">
                     {String(index + 1).padStart(2, '0')}
                   </span>
-                  <span className="rounded-full border border-white/20 bg-white/14 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-white backdrop-blur">
+                  <span className="rounded-full border border-white/30 bg-white/24 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-white backdrop-blur">
                     {asset.collection.replaceAll('-', ' ')}
                   </span>
                 </div>
@@ -235,10 +235,10 @@ export function ProductPage() {
                   <p className="text-xl font-black leading-tight text-white">{asset.title}</p>
                   <p className="text-sm text-white/72">{asset.location}</p>
                   <div className="flex flex-wrap gap-2">
-                    <Link className="rounded-full bg-white px-4 py-2 text-xs font-black uppercase tracking-[0.15em] text-black" to={`/devis?product=${product.slug}&asset=${asset.id}`}>
+                    <Link className="rounded-full bg-white px-4 py-2 text-xs font-black uppercase tracking-[0.15em] text-[#0f6ea7]" to={`/devis?product=${product.slug}&asset=${asset.id}`}>
                       Devis similaire
                     </Link>
-                    <a className="rounded-full border border-white/25 bg-white/12 px-4 py-2 text-xs font-black uppercase tracking-[0.15em] text-white backdrop-blur" href={assetWhatsAppUrl} rel="noreferrer" target="_blank">
+                    <a className="rounded-full border border-white/30 bg-white/22 px-4 py-2 text-xs font-black uppercase tracking-[0.15em] text-white backdrop-blur" href={assetWhatsAppUrl} rel="noreferrer" target="_blank">
                       WhatsApp photo
                     </a>
                   </div>

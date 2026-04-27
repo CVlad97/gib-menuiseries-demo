@@ -33,11 +33,11 @@ export function AssetCard({ asset, onOpen }: AssetCardProps) {
             imgClassName="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]"
             src={asset.image_url}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0f6ea7]/72 via-[#1398db]/16 to-transparent" />
           <div className="absolute left-5 top-5 flex flex-wrap gap-2">
             <span className="tag">{meta.label}</span>
-            <span className="tag !bg-[#0f6ea7]/70 !text-white">{asset.collection.replaceAll('-', ' ')}</span>
-            <span className={`tag ${asset.source === 'instagram' ? '!bg-[#dff5f6] !text-[#11687c]' : 'bg-white/18 text-white'}`}>{trustLabel}</span>
+            <span className="tag !bg-white/86 !text-[#0f6ea7]">{asset.collection.replaceAll('-', ' ')}</span>
+            <span className={`tag ${asset.source === 'instagram' ? '!bg-[#dff5f6] !text-[#11687c]' : '!bg-[#f5eee1]/90 !text-[#8a671c]'}`}>{trustLabel}</span>
           </div>
           <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4">
             <div>

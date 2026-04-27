@@ -32,7 +32,7 @@ export function Lightbox({ asset, onClose }: LightboxProps) {
   const meta = categoryMeta[asset.category]
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/86 p-4 backdrop-blur-sm sm:p-8" role="dialog">
+    <div className="fixed inset-0 z-50 bg-[#0f6ea7]/88 p-4 backdrop-blur-sm sm:p-8" role="dialog">
       <div className="mx-auto flex h-full max-w-6xl flex-col gap-4">
         <div className="flex items-center justify-between gap-3">
           <div className="flex flex-wrap items-center gap-2 text-sm text-white/72">
@@ -46,7 +46,7 @@ export function Lightbox({ asset, onClose }: LightboxProps) {
         <div className="glass-panel-strong grid flex-1 overflow-hidden lg:grid-cols-[1.35fr_0.65fr]">
           <MediaImage
             alt={asset.alt_text}
-            className="h-full bg-black"
+            className="h-full bg-[#eaf4fb]"
             fallbackSrc={meta.fallback}
             imgClassName="h-full w-full object-cover"
             loading="eager"

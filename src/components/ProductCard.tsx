@@ -48,12 +48,12 @@ export function ProductCard({ product }: ProductCardProps) {
           imgClassName="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]"
           src={heroAsset?.image_url ?? meta.fallback}
         />
-        <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black/70 to-transparent" />
-        <div className="absolute left-4 top-4 rounded-full border border-white/25 bg-white/14 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-white backdrop-blur">
+        <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#0f6ea7]/70 via-[#1398db]/20 to-transparent" />
+        <div className="absolute left-4 top-4 rounded-full border border-white/40 bg-white/80 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[#0f6ea7] backdrop-blur">
           {meta.tone}
         </div>
         <a
-          className="absolute bottom-4 right-4 rounded-full bg-white/92 px-3 py-2 text-xs font-black uppercase tracking-[0.16em] text-black shadow-lg"
+          className="absolute bottom-4 right-4 rounded-full bg-white/94 px-3 py-2 text-xs font-black uppercase tracking-[0.16em] text-[#0f6ea7] shadow-lg"
           href={whatsappLink}
           rel="noreferrer"
           target="_blank"

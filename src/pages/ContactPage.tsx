@@ -22,14 +22,14 @@ export function ContactPage() {
             description="La structure reste volontairement simple et fidele au site officiel : appeler, ecrire, situer l entreprise et comprendre la zone d intervention."
           />
           <div className="mt-8 grid gap-4">
-            <div className="rounded-[1.6rem] border border-black/8 bg-white p-5">
+            <div className="rounded-[1.6rem] border border-[#1398db]/12 bg-white p-5">
               <p className="text-xs uppercase tracking-[0.24em] text-black/45">Telephone</p>
               <a className="mt-3 inline-flex items-center gap-2 text-lg font-semibold text-black" href={`tel:${company.phone_international}`}>
                 <PhoneCall className="size-4 text-[#e12726]" />
                 {company.phone_display}
               </a>
             </div>
-            <div className="rounded-[1.6rem] border border-black/8 bg-white p-5">
+            <div className="rounded-[1.6rem] border border-[#1398db]/12 bg-white p-5">
               <p className="text-xs uppercase tracking-[0.24em] text-black/45">Commercial WhatsApp</p>
               <a className="mt-3 inline-flex items-center gap-2 text-lg font-semibold text-black" href={company.whatsapp_url} rel="noreferrer" target="_blank">
                 <MessageCircle className="size-4 text-[#42a97d]" />
@@ -39,14 +39,14 @@ export function ContactPage() {
                 Contact commercial pour envoyer vos photos, la commune, les dimensions approximatives et une courte description du besoin.
               </p>
             </div>
-            <div className="rounded-[1.6rem] border border-black/8 bg-white p-5">
+            <div className="rounded-[1.6rem] border border-[#1398db]/12 bg-white p-5">
               <p className="text-xs uppercase tracking-[0.24em] text-black/45">E-mail</p>
               <a className="mt-3 inline-flex items-center gap-2 text-base font-semibold text-black" href={`mailto:${company.email}`}>
                 <Mail className="size-4 text-[#1398db]" />
                 {company.email}
               </a>
             </div>
-            <div className="rounded-[1.6rem] border border-black/8 bg-white p-5">
+            <div className="rounded-[1.6rem] border border-[#1398db]/12 bg-white p-5">
               <p className="text-xs uppercase tracking-[0.24em] text-black/45">Adresse</p>
               <p className="mt-3 inline-flex items-start gap-2 text-base font-semibold text-black">
                 <MapPin className="mt-1 size-4 text-[#ffd400]" />
@@ -63,13 +63,13 @@ export function ContactPage() {
             description="Notre professionnel GIB intervient sur toute l ile pour l installation de menuiserie en aluminium, la renovation d habitat et les diagnostics immobiliers."
           />
           <div className="mt-8 grid gap-4">
-            <div className="rounded-[1.6rem] border border-black/8 bg-black/[0.02] p-5 text-sm leading-7 text-black/72">
-              <p className="font-semibold text-black">Heures d ouverture</p>
+            <div className="rounded-[1.6rem] border border-[#1398db]/12 bg-[#eef8ff] p-5 text-sm leading-7 text-[#135987]/78">
+              <p className="font-semibold text-[#132534]">Heures d ouverture</p>
               <p className="mt-3">Lun - Jeu : 07:00 - 15:30</p>
               <p>Vendredi : 07:00 - 14:00</p>
               <p>Sam - Dim : Ferme</p>
             </div>
-            <div className="rounded-[1.6rem] border border-black/8 bg-black/[0.02] p-5 text-sm leading-7 text-black/72">
+            <div className="rounded-[1.6rem] border border-[#1398db]/12 bg-[#eef8ff] p-5 text-sm leading-7 text-[#135987]/78">
               Installation de menuiserie en aluminium, renovation d habitat, depannage express, remplacement, reglage et diagnostic immobilier sur toute la Martinique.
             </div>
             <div className="flex flex-wrap gap-3">

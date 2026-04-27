@@ -106,7 +106,7 @@ export function QuotePage() {
             <p className="text-sm leading-7 text-white/72">
               {product?.summary ?? 'Projet a qualifier avec visuels, dimensions, commune et contraintes terrain.'}
             </p>
-            <div className="rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-5 text-sm text-white/70">
+            <div className="rounded-[1.6rem] border border-white/24 bg-white/18 p-5 text-sm text-white/76">
               <p className="font-semibold text-white">Comment aller plus vite</p>
               <p className="mt-3">
                 Envoyez les photos, la commune, les dimensions approximatives et le besoin principal.
@@ -119,7 +119,7 @@ export function QuotePage() {
                 Le prix depend des mesures, de l etat de l existant, des options et de la pose.
               </p>
             </div>
-            <div className="rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-5 text-sm text-white/70">
+            <div className="rounded-[1.6rem] border border-white/24 bg-white/18 p-5 text-sm text-white/76">
               <p className="font-semibold text-white">Besoin connexe</p>
               <p className="mt-3">
                 Si votre demande concerne aussi un diagnostic immobilier, GIB pourra vous orienter vers le bon service.

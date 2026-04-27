@@ -160,12 +160,12 @@ export function AdminDemoPage() {
               <p className="text-sm text-black/60">Aucun lead pour l instant.</p>
             ) : (
               leads.map((lead) => (
-                <article key={lead.id} className="rounded-[1.8rem] border border-black/8 bg-white p-5 shadow-[0_14px_36px_rgba(17,22,21,0.05)]">
+                <article key={lead.id} className="rounded-[1.8rem] border border-[#1398db]/12 bg-white p-5 shadow-[0_14px_36px_rgba(19,122,186,0.06)]">
                   <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
                     <div className="space-y-3">
                       <div className="flex flex-wrap items-center gap-2">
-                        <span className="tag bg-black text-white">{lead.typeProjet}</span>
-                        <span className="rounded-full bg-black/6 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-black/58">
+                        <span className="tag !bg-[#dff7fb] !text-[#0f6ea7]">{lead.typeProjet}</span>
+                        <span className="rounded-full bg-[#f5eee1] px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-[#8a671c]">
                           {formatDate(lead.createdAt)}
                         </span>
                       </div>
@@ -237,7 +237,7 @@ export function AdminDemoPage() {
               <p className="text-sm text-white/62">Aucune simulation pour l instant.</p>
             ) : (
               simulations.map((simulation) => (
-                <article key={simulation.id} className="rounded-[1.8rem] border border-white/8 bg-white/[0.04] p-4">
+                <article key={simulation.id} className="rounded-[1.8rem] border border-white/18 bg-white/16 p-4">
                   <div className="grid gap-4 md:grid-cols-[104px_1fr]">
                     <MediaImage
                       alt={`Simulation ${simulation.produit}`}
@@ -307,7 +307,7 @@ export function AdminDemoPage() {
             </button>
           </div>
         </div>
-        <div className="mt-6 rounded-[1.6rem] border border-white/8 bg-white/[0.04] px-5 py-4 text-sm text-white/70">
+        <div className="mt-6 rounded-[1.6rem] border border-white/18 bg-white/16 px-5 py-4 text-sm text-white/76">
           <p className="inline-flex items-center gap-2 font-semibold text-white">
             <CheckCircle2 className="size-4 text-[#d8c189]" />
             L admin demo lit uniquement localStorage. Aucun backend n a ete ajoute.

@@ -16,8 +16,8 @@ export function DiagnosticPage() {
         />
         <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           {diagnostics.map((item) => (
-            <div key={item} className="rounded-[1.6rem] border border-black/8 bg-black/[0.02] p-5 text-center">
-              <p className="text-base font-semibold text-black">{item}</p>
+            <div key={item} className="rounded-[1.6rem] border border-[#1398db]/12 bg-[#eef8ff] p-5 text-center">
+              <p className="text-base font-semibold text-[#132534]">{item}</p>
             </div>
           ))}
         </div>
@@ -37,7 +37,7 @@ export function DiagnosticPage() {
               'Pour controler l integrite du bien',
               'Pour orienter correctement la suite du projet',
             ].map((item) => (
-              <div key={item} className="flex items-start gap-3 rounded-[1.4rem] border border-black/8 bg-white p-4 text-sm leading-7 text-black/72">
+              <div key={item} className="flex items-start gap-3 rounded-[1.4rem] border border-[#1398db]/12 bg-white p-4 text-sm leading-7 text-black/72">
                 <CheckCircle2 className="mt-1 size-4 text-[#1398db]" />
                 <span>{item}</span>
               </div>

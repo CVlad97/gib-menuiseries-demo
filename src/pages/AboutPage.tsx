@@ -35,10 +35,10 @@ export function AboutPage() {
             description="M. Olivier GIBOYAU s appuie sur plus de 20 ans d experience en menuiserie aluminium pour accompagner les projets de construction, de renovation et de remplacement en Martinique."
           />
           <div className="mt-8 grid gap-4">
-            <article className="rounded-[1.6rem] border border-black/8 bg-black/[0.02] p-5 text-sm leading-7 text-black/72">
+            <article className="rounded-[1.6rem] border border-[#1398db]/12 bg-[#eef8ff] p-5 text-sm leading-7 text-[#135987]/78">
               En relation directe avec les donneurs d ordre publics et prives, GIB accompagne les particuliers, les professionnels et les coproprietes sur toute la Martinique depuis Zone Cocotte a Ducos.
             </article>
-            <article className="rounded-[1.6rem] border border-black/8 bg-black/[0.02] p-5 text-sm leading-7 text-black/72">
+            <article className="rounded-[1.6rem] border border-[#1398db]/12 bg-[#eef8ff] p-5 text-sm leading-7 text-[#135987]/78">
               Notre principal fournisseur SEPALUMIC est base en France depuis plus de 44 ans et fait partie des pionniers de l aluminium. Ce partenariat nous permet de proposer des solutions performantes et durables.
             </article>
           </div>
@@ -52,7 +52,7 @@ export function AboutPage() {
           />
           <div className="mt-8 grid gap-3">
             {certifications.map((item) => (
-              <div key={item} className="flex items-start gap-3 rounded-[1.4rem] border border-black/8 bg-white p-4 text-sm leading-7 text-black/72">
+              <div key={item} className="flex items-start gap-3 rounded-[1.4rem] border border-[#1398db]/12 bg-white p-4 text-sm leading-7 text-black/72">
                 <BadgeCheck className="mt-1 size-4 text-[#e12726]" />
                 <span>{item}</span>
               </div>
