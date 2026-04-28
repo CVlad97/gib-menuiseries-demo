@@ -13,15 +13,21 @@ const heroSupportImages = [
     alt: 'Portail aluminium Dallas issu du site officiel GIB.',
   },
   {
-    label: 'Fenetre / jalousie',
+    label: 'Porte-fenetre / jalousie',
     src: 'media/gib/official/depannage-atelier.jpg',
     alt: 'Porte-fenetre avec jalousies issue du site officiel GIB.',
   },
 ]
 
-const instagramHighlights = assets
-  .filter((asset) => asset.source === 'instagram')
-  .slice(0, 3)
+const instagramHighlightIds = [
+  'instagram-entree-portail',
+  'instagram-catalogue-pergola',
+  'instagram-volet-anticyclonique',
+]
+
+const instagramHighlights = instagramHighlightIds
+  .map((id) => assets.find((asset) => asset.id === id))
+  .filter((asset): asset is (typeof assets)[number] => Boolean(asset))
 
 const heroTrustMarkers = ['Ducos', 'Intervention Martinique', 'RGE / Qualicoat']
 
@@ -35,15 +41,15 @@ const fieldProofs = [
 const beforeAfterSteps = [
   {
     label: 'Avant',
-    title: 'Un besoin a montrer simplement',
-    text: 'Le client envoie ses photos, sa commune et son besoin : entree a reprendre, volet a remplacer, renovation ou terrasse a proteger.',
-    image: 'media/gib/official/volet-stock-terrasse.jpeg',
+    title: 'Entree a reprendre',
+    text: 'Meme sujet, meme projet : une entree a securiser, a remettre au propre et a harmoniser avec la facade.',
+    image: 'media/gib/portail-pic-3.jpg',
   },
   {
     label: 'Apres',
-    title: 'Une demande mieux cadree',
-    text: 'GIB oriente vers la bonne solution : devis, remplacement, depannage, reglage ou pose adaptee au climat martiniquais.',
-    image: 'media/gib/official/pergola-elegance.jpg',
+    title: 'Entree terminee',
+    text: 'Le resultat attendu reste lisible: un portail pose, une finition nette et un rendu coherent avec la maison.',
+    image: 'media/gib/portail-dallas.jpg',
   },
 ]
 
@@ -76,22 +82,22 @@ const diagnosticItems = ['Amiante', 'Termites', 'Electricite', 'Energie']
 
 const teamCards = [
   {
-    role: 'Direction commerciale',
-    title: 'Olivier Giboyau',
-    text: 'Interlocuteur commercial pour cadrer les projets, creer la confiance et orienter les demandes.',
+    role: 'Reperage terrain',
+    title: 'Prise de mesures',
+    text: 'Le besoin est cadre sur site avant le devis, avec lecture de la facade, des contraintes et des dimensions.',
     image: 'media/gib/official/peigne-atelier.jpg',
   },
   {
-    role: 'Equipe technique',
-    title: 'Artisans menuisiers GIB',
-    text: 'Pose, remplacement, reglage et verification terrain sur les projets de menuiserie aluminium.',
+    role: 'Preparation atelier',
+    title: 'Reglage et assemblage',
+    text: 'Les ouvrants et accessoires sont prepares proprement avant la pose pour limiter les mauvaises surprises sur chantier.',
     image: 'media/gib/official/depannage-atelier.jpg',
   },
   {
-    role: 'Partenaire materiaux',
-    title: 'Solutions aluminium Sepalumic',
-    text: 'Support produit pour les gammes aluminium, pergolas, ouvertures et finitions adaptees.',
-    image: 'media/gib/official/pergola-elegance.jpg',
+    role: 'Pose chantier',
+    title: 'Intervention et finition',
+    text: 'La pose sur site reste propre, lisible et coherente avec le projet final attendu par le client.',
+    image: 'media/gib/official/depannage-intervention.jpg',
   },
 ]
 
@@ -276,19 +282,17 @@ export function HomePage() {
       <section className="shell">
         <div className="surface-panel rounded-[1.45rem] px-5 py-6 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
           <span className="eyebrow">Renovation d habitat</span>
-          <h2 className="section-title mt-3 text-[var(--text-dark)]">
-            La renovation interieure et exterieure de vos habitations par notre equipe d artisans
-          </h2>
+          <h2 className="section-title mt-3 text-[var(--text-dark)]">La renovation exterieure et le remplacement des ouvrages aluminium</h2>
           <div className="mt-4 space-y-3 text-[0.96rem] leading-7 text-black/72">
-            <p>L equipe d artisans de GIB intervient sur toute l ile pour des maisons et des bungalows !</p>
+            <p>L equipe GIB intervient sur toute l ile pour remettre en ordre une entree, un volet, une baie vitree, une cloture ou une pergola.</p>
             <p>
-              Nous effectuons la renovation d habitat pour assurer votre confort toute l annee ! En effet, nous vous proposons le diagnostic de votre couverture, mais aussi des elements qui la constituent afin de preserver votre confort thermique.
+              Nous commencons par lire l existant, prendre les mesures et verifier ce qui doit etre regle, repare ou remplace avant de proposer un devis precis.
             </p>
             <p>
-              Nous sommes en mesure de remplacer et de poser les differents elements de votre toiture. Nous veillons egalement a ce que cette derniere puisse efficacement remplir son role en realisant un traitement d etancheite.
+              Le resultat recherche reste simple : une facade plus propre, un usage plus confortable et un ensemble coherent avec le climat martiniquais.
             </p>
             <p>
-              De plus, en fonction de vos besoins, nos artisans realisent la renovation complete de vos salles de bains ainsi que de vos revetements de sol. Nous vous proposons differentes finitions de carrelage pour un interieur personalise.
+              Nous travaillons sur les ouvrages exposes au soleil, aux pluies tropicales et aux besoins de securite du quotidien, avec une logique claire : conseiller, poser, depanner et finir proprement.
             </p>
           </div>
         </div>
@@ -301,7 +305,7 @@ export function HomePage() {
               <span className="eyebrow">Notre equipe</span>
               <h2 className="section-title mt-3 text-[var(--text-dark)]">Une equipe commerciale et technique pour cadrer le bon devis.</h2>
               <p className="mt-4 text-[0.96rem] leading-7 text-black/72">
-                Le site officiel presente Olivier Giboyau a la direction commerciale et une equipe d artisans experimentes. Ici, les photos illustrent l activite, les chantiers et les supports produits sans afficher de portraits non fournis.
+                Quand aucune photo portrait n est fournie, GIB montre le metier plutot que de remplir des cartes vides : reperage terrain, preparation atelier et pose chantier.
               </p>
               <div className="mt-5 flex flex-wrap gap-3">
                 <a className="cta-primary" href={`tel:${company.phone_international}`}>
