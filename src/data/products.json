@@ -189,7 +189,7 @@
     "name": "Garde-corps",
     "category": "garde-corps",
     "summary": "Garde-corps pour securiser balcon, escalier ou terrasse avec une finition sobre et durable.",
-    "hero_asset_id": "official-depannage-intervention",
+    "hero_asset_id": "garde-corps-portillon",
     "simulation_eligible": false,
     "climate_note": "Solution adaptee aux zones exterieures, aux differences de niveau et aux contraintes de securite.",
     "benefits": [
@@ -215,7 +215,7 @@
     "name": "Renovation et depannage",
     "category": "renovation",
     "summary": "Renovation, depannage, reglage et remplacement pour remettre un ouvrage en etat ou repartir sur une solution fiable.",
-    "hero_asset_id": "terrasse-thermotop",
+    "hero_asset_id": "official-depannage-atelier",
     "simulation_eligible": false,
     "climate_note": "GIB identifie ce qui est urgent, ce qui peut etre repare et ce qui doit etre remplace.",
     "benefits": [
