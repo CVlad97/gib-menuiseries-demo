@@ -215,7 +215,7 @@
     "name": "Renovation et depannage",
     "category": "renovation",
     "summary": "Renovation, depannage, reglage et remplacement pour remettre un ouvrage en etat ou repartir sur une solution fiable.",
-    "hero_asset_id": "official-depannage-atelier",
+    "hero_asset_id": "instagram-chantier-logement-neuf",
     "simulation_eligible": false,
     "climate_note": "GIB identifie ce qui est urgent, ce qui peut etre repare et ce qui doit etre remplace.",
     "benefits": [
