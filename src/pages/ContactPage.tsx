@@ -30,6 +30,16 @@ export function ContactPage() {
               </a>
             </div>
             <div className="rounded-[1.6rem] border border-[#1398db]/12 bg-white p-5">
+              <p className="text-xs uppercase tracking-[0.24em] text-black/45">Commercial direct</p>
+              <a className="mt-3 inline-flex items-center gap-2 text-lg font-semibold text-black" href={`tel:${company.commercial_phone_international}`}>
+                <PhoneCall className="size-4 text-[#1398db]" />
+                {company.commercial_phone_display}
+              </a>
+              <p className="mt-3 text-sm leading-6 text-black/62">
+                Numero commercial pour cadrer rapidement un devis, envoyer des photos et lancer une premiere estimation.
+              </p>
+            </div>
+            <div className="rounded-[1.6rem] border border-[#1398db]/12 bg-white p-5">
               <p className="text-xs uppercase tracking-[0.24em] text-black/45">Commercial WhatsApp</p>
               <a className="mt-3 inline-flex items-center gap-2 text-lg font-semibold text-black" href={company.whatsapp_url} rel="noreferrer" target="_blank">
                 <MessageCircle className="size-4 text-[#42a97d]" />

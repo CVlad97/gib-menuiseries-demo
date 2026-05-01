@@ -291,9 +291,9 @@
     "id": "official-fenetre-jalousie",
     "title": "Porte-fenetre et jalousies",
     "source": "official-site",
-    "image_url": "media/gib/official/depannage-atelier.jpg",
-    "thumbnail_url": "media/gib/official/depannage-atelier.jpg",
-    "source_url": "https://www.gibmenuiseries.fr/depannage",
+    "image_url": "media/gib/baie-2-battants.jpg",
+    "thumbnail_url": "media/gib/baie-2-battants.jpg",
+    "source_url": "https://www.gibmenuiseries.fr/baie-vitree",
     "category": "fenetre",
     "product_type": "fenetres-portes",
     "location": "Martinique",
@@ -301,7 +301,7 @@
     "published": true,
     "collection": "realisations",
     "before_after_group": null,
-    "alt_text": "Porte-fenetre avec jalousies issue du site officiel GIB, exploitable pour fenetres et portes."
+    "alt_text": "Porte-fenetre aluminium avec jalousies issue du site officiel GIB, exploitable pour fenetres et portes."
   },
   {
     "id": "official-depannage-intervention",

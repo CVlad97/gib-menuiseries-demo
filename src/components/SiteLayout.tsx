@@ -28,6 +28,7 @@ const navItems = [
 
 const secondaryItems = [
   { to: '/galerie', label: 'Realisations' },
+  { to: '/instagram', label: 'Instagram preview' },
   { to: '/devis', label: 'Demander un devis' },
 ]
 
@@ -44,6 +45,10 @@ export function SiteLayout() {
             <a className="inline-flex items-center gap-2 font-semibold text-black" href={`tel:${company.phone_international}`}>
               <Phone className="size-4 text-[#e12726]" />
               Appelez-nous
+            </a>
+            <a className="inline-flex items-center gap-2 font-semibold text-black" href={`tel:${company.commercial_phone_international}`}>
+              <Phone className="size-4 text-[#1398db]" />
+              Commercial {company.commercial_phone_display}
             </a>
             <a className="inline-flex items-center gap-2 font-semibold text-black" href={`mailto:${company.email}`}>
               <Mail className="size-4 text-[#1398db]" />
@@ -86,6 +91,10 @@ export function SiteLayout() {
                 <a className="inline-flex items-center gap-2" href={`tel:${company.phone_international}`}>
                   <Phone className="size-4 text-[#e12726]" />
                   {company.phone_display}
+                </a>
+                <a className="inline-flex items-center gap-2" href={`tel:${company.commercial_phone_international}`}>
+                  <Phone className="size-4 text-[#1398db]" />
+                  Commercial {company.commercial_phone_display}
                 </a>
                 <a className="inline-flex items-center gap-2" href={`mailto:${company.email}`}>
                   <Mail className="size-4 text-[#1398db]" />
@@ -199,6 +208,7 @@ export function SiteLayout() {
                 <p className="text-xs uppercase tracking-[0.24em] text-black/45">Contactez-nous</p>
                 <div className="mt-4 space-y-3 text-sm text-black/72">
                   <a className="block font-semibold text-black" href={`tel:${company.phone_international}`}>{company.phone_display}</a>
+                  <a className="block font-semibold text-[#0f6ea7]" href={`tel:${company.commercial_phone_international}`}>Commercial {company.commercial_phone_display}</a>
                   <a className="block font-semibold text-[#1f7a5c]" href={company.whatsapp_url} rel="noreferrer" target="_blank">Commercial WhatsApp {company.whatsapp_display}</a>
                   <a className="block" href={`mailto:${company.email}`}>{company.email}</a>
                   <p>{company.location_label}</p>

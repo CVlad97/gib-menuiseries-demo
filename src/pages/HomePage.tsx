@@ -1,9 +1,10 @@
-import { ArrowRight, BadgeCheck, Images, Mail, MessageCircle, PhoneCall, PlayCircle } from 'lucide-react'
+import { ArrowRight, BadgeCheck, Images, Mail, MessageCircle, PhoneCall, PlayCircle, Sparkles } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { withBase } from '../lib/base'
-import { assets, company } from '../lib/content'
+import { assets, company, getAssetById } from '../lib/content'
 
 const logoSrc = withBase('media/gib/logo-gib.png')
+const fenetreJalousieAsset = getAssetById('official-fenetre-jalousie')
 
 const heroMainImage = 'media/gib/official/pergola-elegance.jpg'
 const heroSupportImages = [
@@ -14,8 +15,8 @@ const heroSupportImages = [
   },
   {
     label: 'Porte-fenetre / jalousie',
-    src: 'media/gib/official/depannage-atelier.jpg',
-    alt: 'Porte-fenetre avec jalousies issue du site officiel GIB.',
+    src: fenetreJalousieAsset?.image_url ?? 'media/gib/baie-2-battants.jpg',
+    alt: fenetreJalousieAsset?.alt_text ?? 'Porte-fenetre aluminium avec jalousies issue du site officiel GIB.',
   },
 ]
 
@@ -85,7 +86,7 @@ const teamCards = [
     role: 'Reperage terrain',
     title: 'Prise de mesures',
     text: 'Le besoin est cadre sur site avant le devis, avec lecture de la facade, des contraintes et des dimensions.',
-    image: 'media/gib/official/peigne-atelier.jpg',
+    image: 'media/gib/instagram/entree-portail.webp',
   },
   {
     role: 'Preparation atelier',
@@ -141,6 +142,20 @@ export function HomePage() {
                   <MessageCircle className="size-4" />
                   Commercial WhatsApp
                 </a>
+              </div>
+              <div className="rounded-[1.4rem] border border-[#1398db]/14 bg-white/86 p-4 shadow-[0_14px_30px_rgba(19,122,186,0.07)]">
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#0f6ea7]">Instagram preview</p>
+                    <p className="mt-2 text-sm leading-6 text-black/72">
+                      La refonte Instagram est maintenant visible ici pour validation rapide, avec retour arriere possible.
+                    </p>
+                  </div>
+                  <Link className="cta-secondary !border-[#1398db]/24 !text-[#0f6ea7]" to="/instagram">
+                    <Sparkles className="size-4" />
+                    Ouvrir la preview
+                  </Link>
+                </div>
               </div>
               <div className="grid gap-2 pt-2 sm:grid-cols-2">
                 {fieldProofs.map((item) => (
@@ -250,16 +265,22 @@ export function HomePage() {
         <div className="surface-panel rounded-[1.45rem] px-5 py-6 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
           <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-3xl">
-              <span className="eyebrow">Vu sur Instagram</span>
-              <h2 className="section-title mt-3 text-[var(--text-dark)]">Des visuels recents, importes en local pour rester stables.</h2>
+              <span className="eyebrow">Instagram preview</span>
+              <h2 className="section-title mt-3 text-[var(--text-dark)]">Des visuels reels et une lecture claire du profil GIB.</h2>
               <p className="mt-3 text-[0.96rem] leading-7 text-black/72">
-                Les visuels retenus du compte Instagram GIB sont importes manuellement dans le projet et selectionnes pour eviter les interieurs prives. Aucun flux live fragile n est necessaire pour les afficher sur le site.
+                Les visuels retenus du compte Instagram GIB sont importes manuellement dans le projet et selectionnes pour eviter les interieurs prives. La preview interne aide a valider le wording du profil avant toute mise a jour reelle.
               </p>
             </div>
-            <a className="cta-secondary !border-[#1398db]/24 !text-[#0f6ea7]" href={company.instagram_url} rel="noreferrer" target="_blank">
-              <Images className="size-4 text-[#1398db]" />
-              Voir Instagram
-            </a>
+            <div className="flex flex-wrap gap-3">
+              <a className="cta-secondary !border-[#1398db]/24 !text-[#0f6ea7]" href={company.instagram_url} rel="noreferrer" target="_blank">
+                <Images className="size-4 text-[#1398db]" />
+                Voir Instagram
+              </a>
+              <Link className="cta-primary" to="/instagram">
+                <Sparkles className="size-4" />
+                Ouvrir la preview
+              </Link>
+            </div>
           </div>
           <div className="mt-6 grid gap-4 md:grid-cols-3">
             {instagramHighlights.map((asset) => (
@@ -311,6 +332,10 @@ export function HomePage() {
                 <a className="cta-primary" href={`tel:${company.phone_international}`}>
                   <PhoneCall className="size-4" />
                   Standard {company.phone_display}
+                </a>
+                <a className="cta-secondary !border-[#1398db]/24 !text-[#0f6ea7]" href={`tel:${company.commercial_phone_international}`}>
+                  <PhoneCall className="size-4 text-[#1398db]" />
+                  Commercial {company.commercial_phone_display}
                 </a>
                 <a className="cta-whatsapp" href={company.whatsapp_url} rel="noreferrer" target="_blank">
                   <MessageCircle className="size-4" />
@@ -419,7 +444,7 @@ export function HomePage() {
           </h2>
           <div className="mt-4 space-y-3 text-[0.96rem] leading-7 text-black/72">
             <p>
-              GIB est disponible par telephone au 0596737219 ou par e-mail a contact@gibmenuiseries.com pour parler de votre projet. Le WhatsApp commercial sert a envoyer rapidement photos, commune et description du besoin.
+              GIB est disponible par telephone au 0596737219, en commercial direct au 06 96 65 35 89 ou par e-mail a contact@gibmenuiseries.com pour parler de votre projet. Le WhatsApp commercial sert a envoyer rapidement photos, commune et description du besoin.
             </p>
             <p>Vous souhaitez profiter des services de nos menuisiers pour un projet de construction ou de renovation ?</p>
           </div>

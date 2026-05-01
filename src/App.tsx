@@ -9,6 +9,7 @@ import { NotFoundPage } from './pages/NotFoundPage'
 import { ProductPage } from './pages/ProductPage'
 import { ProductsPage } from './pages/ProductsPage'
 import { QuotePage } from './pages/QuotePage'
+import { InstagramProfilePage } from './pages/InstagramProfilePage'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route element={<HomePage />} index />
           <Route element={<AboutPage />} path="a-propos" />
           <Route element={<DiagnosticPage />} path="diagnostic-immobilier" />
+          <Route element={<InstagramProfilePage />} path="instagram" />
           <Route element={<ContactPage />} path="contact" />
           <Route element={<GalleryPage />} path="galerie" />
           <Route element={<ProductsPage />} path="produits" />
