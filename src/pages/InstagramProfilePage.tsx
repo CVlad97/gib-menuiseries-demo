@@ -1,4 +1,5 @@
-import { BadgeCheck, ChevronLeft, CheckCircle2, Images, Link2, MessageCircle, Sparkles } from 'lucide-react'
+import { BadgeCheck, ChevronLeft, CheckCircle2, Copy, Images, Link2, MessageCircle, Sparkles } from 'lucide-react'
+import { useState } from 'react'
 import { MediaImage } from '../components/MediaImage'
 import { SectionHeading } from '../components/SectionHeading'
 import { withBase } from '../lib/base'
@@ -94,6 +95,44 @@ const instagramReels = [
   },
 ]
 
+const profilePreview = {
+  displayName: 'GIB Menuiserie Martinique',
+  handle: 'gibmenuiseries',
+  bio: [
+    'Menuiserie alu sur mesure en Martinique',
+    'Portails • Volets • Baies • Pergolas',
+    'Ducos • Toute Martinique',
+    'Photos + dimensions = devis rapide',
+  ],
+  linkLabel: 'WhatsApp devis',
+  ctas: ['Appeler', 'E-mail', 'Itinéraire'],
+}
+
+const contentIdeas = [
+  {
+    title: 'Post profil',
+    hook: 'Menuiserie aluminium sur mesure en Martinique',
+    body: 'Présentez clairement le positionnement, la zone et la promesse de réponse rapide.',
+  },
+  {
+    title: 'Reel portail',
+    hook: 'Sécuriser et moderniser une entrée',
+    body: 'Montez une entrée, puis terminez par le CTA photo + dimensions sur WhatsApp.',
+  },
+  {
+    title: 'Reel pergola',
+    hook: 'Plus d ombre, plus de confort',
+    body: 'Montrez la terrasse, la pose et la finition avant/après sur 6 à 8 secondes.',
+  },
+]
+
+const publicationChecklist = [
+  'Remplacer la bio du profil par la version courte.',
+  'Mettre le lien WhatsApp ou la page devis en lien unique.',
+  'Ajouter 3 posts épinglés : qui nous sommes, comment demander un devis, nos prestations.',
+  'Créer les stories à la une : devis, réalisations, portails, volets, baies, pergolas.',
+]
+
 function FieldRow({ label, value, tone = 'default' }: { label: string; value: string; tone?: 'default' | 'muted' | 'strong' }) {
   const toneClass =
     tone === 'strong'
@@ -111,6 +150,18 @@ function FieldRow({ label, value, tone = 'default' }: { label: string; value: st
 }
 
 export function InstagramProfilePage() {
+  const [copied, setCopied] = useState(false)
+
+  async function handleCopyBio() {
+    try {
+      await navigator.clipboard.writeText(profilePreview.bio.join('\n'))
+      setCopied(true)
+      window.setTimeout(() => setCopied(false), 1800)
+    } catch {
+      setCopied(false)
+    }
+  }
+
   return (
     <div className="shell space-y-10 pt-8 sm:pt-12">
       <section className="glass-panel-strong px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
@@ -132,6 +183,118 @@ export function InstagramProfilePage() {
           light
           title="Un profil plus clair, plus vendeur et plus simple a valider."
         />
+      </section>
+
+      <section className="grid gap-6 xl:grid-cols-[0.94fr_1.06fr]">
+        <div className="surface-panel px-6 py-7 sm:px-8">
+          <SectionHeading
+            eyebrow="Apercu mobile"
+            title="Le profil doit se lire en trois secondes sur smartphone."
+            description="Cette maquette reprend la lecture Instagram classique: nom, photo, bio courte, lien unique et accès rapides. Elle sert à valider ce que le client voit avant publication."
+          />
+
+          <div className="mt-6 overflow-hidden rounded-[2rem] border border-[#132534]/10 bg-[linear-gradient(180deg,#132534_0%,#0f6ea7_100%)] p-4 text-white shadow-[0_24px_60px_rgba(15,110,167,0.22)]">
+            <div className="rounded-[1.5rem] border border-white/14 bg-[linear-gradient(180deg,rgba(255,255,255,0.12),rgba(255,255,255,0.06))] p-4">
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <div className="flex size-16 items-center justify-center overflow-hidden rounded-full border border-white/30 bg-white">
+                    <img alt="Logo GIB Menuiseries Services" className="h-full w-full object-cover" src={logoSrc} />
+                  </div>
+                  <div>
+                    <p className="text-[0.72rem] uppercase tracking-[0.28em] text-white/70">Instagram</p>
+                    <h3 className="mt-1 text-lg font-semibold">{profilePreview.displayName}</h3>
+                    <p className="text-sm text-white/68">@{profilePreview.handle}</p>
+                  </div>
+                </div>
+                <span className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-white/86">
+                  Preview
+                </span>
+              </div>
+
+              <div className="mt-5 grid grid-cols-3 gap-2">
+                {company.proof_points.map((item) => (
+                  <div key={item.label} className="rounded-[1rem] border border-white/12 bg-white/10 px-3 py-3 text-center">
+                    <p className="text-[0.62rem] uppercase tracking-[0.2em] text-white/58">{item.label}</p>
+                    <p className="mt-1 text-sm font-semibold text-white">{item.value}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-5 space-y-2 rounded-[1.4rem] border border-white/12 bg-white/8 px-4 py-4">
+                {profilePreview.bio.map((line) => (
+                  <p key={line} className="text-sm leading-6 text-white/88">
+                    {line}
+                  </p>
+                ))}
+              </div>
+
+              <div className="mt-4 flex flex-wrap gap-2">
+                {profilePreview.ctas.map((cta) => (
+                  <span key={cta} className="rounded-full border border-white/14 bg-white/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-white/84">
+                    {cta}
+                  </span>
+                ))}
+              </div>
+
+              <div className="mt-4 flex items-center justify-between rounded-[1.2rem] border border-white/12 bg-white/8 px-4 py-3">
+                <div>
+                  <p className="text-[0.68rem] uppercase tracking-[0.2em] text-white/58">{profilePreview.linkLabel}</p>
+                  <p className="mt-1 text-sm font-semibold text-white">Photo + dimensions = devis plus rapide</p>
+                </div>
+                <Link2 className="size-4 text-white/84" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="surface-panel px-6 py-7 sm:px-8">
+          <SectionHeading
+            eyebrow="Bio prête"
+            title="Le texte à coller et le lien à garder en priorité."
+            description="Le profil doit envoyer directement vers une prise de contact simple. Cette zone aide à valider le wording, puis à copier la bio avant publication."
+            action={
+              <button className="cta-secondary !border-[#1398db]/24 !text-[#0f6ea7]" onClick={handleCopyBio} type="button">
+                <Copy className="size-4" />
+                {copied ? 'Bio copiée' : 'Copier la bio'}
+              </button>
+            }
+          />
+
+          <div className="mt-6 grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
+            <article className="rounded-[1.6rem] border border-[#1398db]/12 bg-white p-5 shadow-[0_14px_30px_rgba(19,122,186,0.05)]">
+              <p className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-black/42">Nom affiche</p>
+              <p className="mt-2 text-lg font-semibold text-black">{profilePreview.displayName}</p>
+              <p className="mt-4 text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-black/42">Bio recommandee</p>
+              <div className="mt-3 rounded-[1.25rem] border border-[#dff7fb] bg-[#f3fbff] p-4 text-sm leading-6 text-black/74">
+                {profilePreview.bio.map((line) => (
+                  <p key={line}>{line}</p>
+                ))}
+              </div>
+              <p className="mt-4 text-sm leading-6 text-black/66">
+                Le CTA doit rester simple: envoyer une photo, ajouter les dimensions et préciser la commune pour obtenir une première orientation.
+              </p>
+            </article>
+
+            <div className="space-y-4">
+              <article className="rounded-[1.6rem] border border-[#1398db]/12 bg-white p-5">
+                <p className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-black/42">Lien unique</p>
+                <a className="mt-2 block break-all text-sm font-semibold text-[#0f6ea7]" href={validatedWhatsAppUrl} rel="noreferrer" target="_blank">
+                  {validatedWhatsAppUrl}
+                </a>
+              </article>
+              <article className="rounded-[1.6rem] border border-[#1398db]/12 bg-white p-5">
+                <p className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-black/42">Stories à la une</p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {storyHighlights.slice(0, 6).map((item) => (
+                    <span key={item} className="rounded-full border border-[#1398db]/14 bg-[#eef8ff] px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-[#0f6ea7]">
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className="grid gap-6 xl:grid-cols-[0.96fr_1.04fr]">
@@ -325,6 +488,36 @@ export function InstagramProfilePage() {
                   </div>
                 </article>
               ))}
+            </div>
+          </div>
+
+          <div className="surface-panel px-6 py-7 sm:px-8">
+            <SectionHeading
+              eyebrow="Contenus"
+              title="Idées de publications déjà cadrées."
+              description="Ces contenus peuvent être publiés tels quels ou ajustés avec un ton plus commercial. Ils couvrent la vitrine du profil, les reels et les messages de conversion."
+            />
+            <div className="mt-6 grid gap-4 lg:grid-cols-3">
+              {contentIdeas.map((item) => (
+                <article key={item.title} className="rounded-[1.5rem] border border-[#1398db]/12 bg-white p-5 shadow-[0_14px_30px_rgba(19,122,186,0.05)]">
+                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-black/42">{item.title}</p>
+                  <h3 className="mt-2 text-xl font-semibold text-black">{item.hook}</h3>
+                  <p className="mt-3 text-sm leading-6 text-black/68">{item.body}</p>
+                  <div className="mt-4 inline-flex rounded-full bg-[#eef8ff] px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-[#0f6ea7]">
+                    Prêt à publier
+                  </div>
+                </article>
+              ))}
+            </div>
+            <div className="mt-6 rounded-[1.5rem] border border-[#1398db]/12 bg-[linear-gradient(180deg,#ffffff,rgba(238,248,255,0.92))] p-5">
+              <p className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-black/42">Checklist de publication</p>
+              <div className="mt-4 grid gap-3 lg:grid-cols-2">
+                {publicationChecklist.map((item) => (
+                  <div key={item} className="rounded-[1.1rem] border border-[#dff7fb] bg-white px-4 py-3 text-sm leading-6 text-black/72">
+                    {item}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
