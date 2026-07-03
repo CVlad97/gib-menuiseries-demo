@@ -70,6 +70,30 @@ const instagramAssets = [
   .map((id) => getAssetById(id))
   .filter((asset): asset is MediaAsset => Boolean(asset))
 
+const instagramReels = [
+  {
+    id: 'reel-portail',
+    title: 'Portail aluminium',
+    description: 'Capsule courte pour montrer une entree, un acces et une finition plus lisible.',
+    src: withBase('media/gib/instagram/videos/gib-menuiseries-portail-demo.mp4'),
+    poster: withBase('media/gib/instagram/entree-portail.webp'),
+  },
+  {
+    id: 'reel-pergola',
+    title: 'Pergola terrasse',
+    description: 'Reel de presentation pour parler confort exterieur, terrasse et ombrage en Martinique.',
+    src: withBase('media/gib/instagram/videos/gib-menuiseries-pergola-demo.mp4'),
+    poster: withBase('media/gib/official/pergola-elegance.jpg'),
+  },
+  {
+    id: 'reel-volet',
+    title: 'Volet roulant',
+    description: 'Format reel simple pour rappeler le role thermique, securite et depannage du volet.',
+    src: withBase('media/gib/instagram/videos/gib-menuiseries-volet-demo.mp4'),
+    poster: withBase('media/gib/instagram/volet-anticyclonique.jpg'),
+  },
+]
+
 function FieldRow({ label, value, tone = 'default' }: { label: string; value: string; tone?: 'default' | 'muted' | 'strong' }) {
   const toneClass =
     tone === 'strong'
@@ -275,6 +299,29 @@ export function InstagramProfilePage() {
                     </div>
                     <h3 className="font-[Marcellus] text-xl leading-tight text-black">{asset.title}</h3>
                     <p className="text-sm leading-6 text-black/66">{asset.location}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+
+          <div className="surface-panel px-6 py-7 sm:px-8">
+            <SectionHeading
+              description="Les reels ci-dessous sont generes a partir des visuels existants. Ils servent de base pour publier des contenus courts, propres et faciles a reprendre sur Instagram."
+              eyebrow="Capsules video"
+              title="Formats reels prets a utiliser."
+            />
+            <div className="mt-6 grid gap-4 lg:grid-cols-3">
+              {instagramReels.map((reel) => (
+                <article key={reel.id} className="overflow-hidden rounded-[1.45rem] border border-[#1398db]/12 bg-white shadow-[0_14px_30px_rgba(19,122,186,0.06)]">
+                  <video className="aspect-[4/5] w-full bg-black object-cover" controls playsInline preload="metadata" poster={reel.poster}>
+                    <source src={reel.src} type="video/mp4" />
+                    Votre navigateur ne prend pas en charge la lecture video.
+                  </video>
+                  <div className="space-y-2 p-4">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0f6ea7]">Reel Instagram</p>
+                    <h3 className="font-[Marcellus] text-xl leading-tight text-black">{reel.title}</h3>
+                    <p className="text-sm leading-6 text-black/66">{reel.description}</p>
                   </div>
                 </article>
               ))}
