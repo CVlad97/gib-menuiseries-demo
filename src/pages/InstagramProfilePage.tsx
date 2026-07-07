@@ -151,6 +151,10 @@ function FieldRow({ label, value, tone = 'default' }: { label: string; value: st
 
 export function InstagramProfilePage() {
   const [copied, setCopied] = useState(false)
+  const [featuredAssetId, setFeaturedAssetId] = useState(instagramAssets[0]?.id ?? '')
+
+  const featuredInstagramAsset =
+    instagramAssets.find((asset) => asset.id === featuredAssetId) ?? instagramAssets[0] ?? null
 
   async function handleCopyBio() {
     try {
@@ -439,32 +443,105 @@ export function InstagramProfilePage() {
 
           <div className="surface-panel px-6 py-7 sm:px-8">
             <SectionHeading
-              description="Les photos publiees sur le site et sur Instagram doivent rester vraies, compactes et lisibles. Ici on montre les visuels reels deja disponibles dans le projet."
+              description="Les visuels publies sur Instagram doivent se lire vite. Ici, la premiere vignette devient un aperçu large, puis les autres s'affichent en miniatures cliquables pour garder du relief."
               eyebrow="Visuels reels"
-              title="Trois posts qui racontent deja le metier GIB."
+              title="Des vignettes plus visibles et plus dynamiques."
             />
-            <div className="mt-6 grid gap-4 md:grid-cols-3">
-              {instagramAssets.map((asset) => (
-                <article key={asset.id} className="instagram-tile overflow-hidden">
-                  <MediaImage
-                    alt={asset.alt_text}
-                    className="aspect-[4/5] w-full overflow-hidden"
-                    fallbackSrc="fallbacks/default.svg"
-                    imgClassName="h-full w-full object-cover"
-                    src={asset.image_url}
-                  />
-                  <div className="space-y-3 p-4">
-                    <div className="flex items-center justify-between gap-3">
-                      <span className="tag !bg-[#dff7fb] !text-[#0f6ea7]">Instagram GIB</span>
-                      <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0f6ea7]/68">
-                        {asset.collection.replaceAll('-', ' ')}
-                      </span>
+            <div className="mt-6 grid gap-5 lg:grid-cols-[1.12fr_0.88fr]">
+              {featuredInstagramAsset ? (
+                <article className="overflow-hidden rounded-[1.8rem] border border-[#1398db]/12 bg-[linear-gradient(180deg,#ffffff,rgba(238,248,255,0.96))] shadow-[0_20px_44px_rgba(19,122,186,0.08)]">
+                  <div className="relative overflow-hidden">
+                    <MediaImage
+                      alt={featuredInstagramAsset.alt_text}
+                      className="aspect-[4/5] w-full overflow-hidden sm:aspect-[3/4]"
+                      fallbackSrc="fallbacks/default.svg"
+                      imgClassName="h-full w-full object-cover transition duration-700 hover:scale-[1.04]"
+                      loading="eager"
+                      src={featuredInstagramAsset.image_url}
+                    />
+                    <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(15,24,33,0.06)_0%,rgba(15,110,167,0.08)_45%,rgba(15,110,167,0.8)_100%)]" />
+                    <div className="absolute left-4 top-4 flex flex-wrap gap-2">
+                      <span className="tag !bg-white/92 !text-[#0f6ea7]">Instagram GIB</span>
+                      <span className="tag !bg-[#0f6ea7]/88 !text-white">{featuredInstagramAsset.collection.replaceAll('-', ' ')}</span>
                     </div>
-                    <h3 className="font-[Marcellus] text-xl leading-tight text-black">{asset.title}</h3>
-                    <p className="text-sm leading-6 text-black/66">{asset.location}</p>
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <div className="rounded-[1.4rem] border border-white/14 bg-black/28 p-4 backdrop-blur-md">
+                        <p className="text-xs uppercase tracking-[0.24em] text-white/72">Vignette mise en avant</p>
+                        <h3 className="mt-2 text-2xl font-semibold leading-tight text-white">{featuredInstagramAsset.title}</h3>
+                        <p className="mt-2 text-sm leading-6 text-white/78">{featuredInstagramAsset.alt_text}</p>
+                      </div>
+                    </div>
                   </div>
                 </article>
-              ))}
+              ) : null}
+
+              <div className="space-y-4">
+                <div className="rounded-[1.6rem] border border-[#1398db]/12 bg-white p-4 shadow-[0_14px_30px_rgba(19,122,186,0.05)]">
+                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-black/42">Miniatures cliquables</p>
+                  <div className="mt-4 grid gap-3">
+                    {instagramAssets.map((asset) => {
+                      const active = asset.id === featuredAssetId
+
+                      return (
+                        <button
+                          key={asset.id}
+                          className={`group grid w-full grid-cols-[92px_1fr] gap-3 rounded-[1.3rem] border p-2.5 text-left transition duration-300 ${
+                            active
+                              ? 'border-[#1398db]/30 bg-[#eef8ff] shadow-[0_14px_30px_rgba(19,122,186,0.08)]'
+                              : 'border-[#1398db]/10 bg-white hover:border-[#1398db]/22 hover:bg-[#f6fbff]'
+                          }`}
+                          onClick={() => setFeaturedAssetId(asset.id)}
+                          type="button"
+                        >
+                          <div className="relative overflow-hidden rounded-[1rem]">
+                            <MediaImage
+                              alt={asset.alt_text}
+                              className="aspect-[1/1] w-full overflow-hidden"
+                              fallbackSrc="fallbacks/default.svg"
+                              imgClassName="h-full w-full object-cover transition duration-500 group-hover:scale-[1.06]"
+                              src={asset.image_url}
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
+                            <span className="absolute bottom-2 left-2 rounded-full bg-white/90 px-2 py-1 text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-[#0f6ea7]">
+                              {asset.collection.replaceAll('-', ' ')}
+                            </span>
+                          </div>
+
+                          <div className="flex min-w-0 flex-col justify-between py-1">
+                            <div>
+                              <div className="flex items-center gap-2">
+                                <span className="inline-flex size-2 rounded-full bg-[#1398db]" />
+                                <p className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-black/42">
+                                  {asset.source === 'instagram' ? 'Instagram' : 'Site officiel'}
+                                </p>
+                              </div>
+                              <h4 className="mt-2 truncate text-[1.02rem] font-semibold leading-tight text-black">{asset.title}</h4>
+                              <p className="mt-1 line-clamp-2 text-sm leading-6 text-black/60">{asset.location}</p>
+                            </div>
+                            <div className="mt-3 flex items-center justify-between gap-2">
+                              <span className={`text-[0.68rem] font-semibold uppercase tracking-[0.18em] ${active ? 'text-[#0f6ea7]' : 'text-black/45'}`}>
+                                {active ? 'Aperçu principal' : 'Cliquer pour afficher'}
+                              </span>
+                              <span className="rounded-full border border-[#1398db]/14 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-[#0f6ea7]">
+                                Voir
+                              </span>
+                            </div>
+                          </div>
+                        </button>
+                      )
+                    })}
+                  </div>
+                </div>
+
+                <div className="rounded-[1.6rem] border border-[#1398db]/12 bg-[linear-gradient(180deg,#ffffff,rgba(238,248,255,0.92))] p-5 shadow-[0_14px_30px_rgba(19,122,186,0.04)]">
+                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-black/42">Lecture rapide</p>
+                  <ul className="mt-3 space-y-2 text-sm leading-6 text-black/68">
+                    <li>La vignette principale est plus grande pour une meilleure visibilité.</li>
+                    <li>Les miniatures sont cliquables et gardent un état actif visible.</li>
+                    <li>Le traitement visuel ajoute du contraste, du relief et un vrai effet galerie.</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
 
