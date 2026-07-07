@@ -134,6 +134,10 @@ export function HomePage() {
                   <ArrowRight className="size-4" />
                   Prendre un rendez-vous
                 </Link>
+                <Link className="cta-secondary !border-[#1398db]/24 !text-[#0f6ea7]" to="/instagram">
+                  <Images className="size-4 text-[#1398db]" />
+                  Voir Instagram
+                </Link>
                 <a className="cta-secondary !border-[#1398db]/24 !text-[#0f6ea7]" href={`tel:${company.phone_international}`}>
                   <PhoneCall className="size-4 text-[#1398db]" />
                   Appeler
@@ -146,14 +150,14 @@ export function HomePage() {
               <div className="rounded-[1.4rem] border border-[#1398db]/14 bg-white/86 p-4 shadow-[0_14px_30px_rgba(19,122,186,0.07)]">
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#0f6ea7]">Instagram preview</p>
+                    <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#0f6ea7]">Presentation Instagram</p>
                     <p className="mt-2 text-sm leading-6 text-black/72">
-                      La refonte Instagram est maintenant visible ici pour validation rapide, avec retour arriere possible.
+                      La page Instagram est separee du site web et reste accessible en un clic pour validation rapide.
                     </p>
                   </div>
                   <Link className="cta-secondary !border-[#1398db]/24 !text-[#0f6ea7]" to="/instagram">
                     <Sparkles className="size-4" />
-                    Ouvrir la preview
+                    Ouvrir la page
                   </Link>
                 </div>
               </div>
@@ -197,6 +201,45 @@ export function HomePage() {
                   </article>
                 ))}
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="shell">
+        <div className="surface-panel overflow-hidden px-5 py-6 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
+          <div className="grid gap-6 lg:grid-cols-[1fr_0.9fr] lg:items-center">
+            <div className="space-y-4">
+              <span className="eyebrow">Presentation Instagram</span>
+              <h2 className="section-title mt-3 text-[var(--text-dark)]">
+                La vitrine Instagram est sur une page dédiée, pas cachée dans le site.
+              </h2>
+              <p className="max-w-2xl text-[0.96rem] leading-7 text-black/72">
+                Ouvrez la page Instagram pour voir le profil, la bio prête à publier, les reels et la checklist de publication.
+                C’est cette page qui sert à la présentation sociale, tandis que le site reste le support commercial.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <Link className="cta-primary" to="/instagram">
+                  <Images className="size-4" />
+                  Ouvrir la page Instagram
+                </Link>
+                <a className="cta-secondary !border-[#1398db]/24 !text-[#0f6ea7]" href={company.instagram_url} rel="noreferrer" target="_blank">
+                  <Sparkles className="size-4" />
+                  Instagram public
+                </a>
+              </div>
+            </div>
+            <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
+              {instagramHighlights.map((asset) => (
+                <article key={asset.id} className="instagram-tile overflow-hidden">
+                  <img alt={asset.alt_text} className="aspect-[4/5] h-full w-full object-cover" src={asset.image_url} />
+                  <div className="space-y-2 p-4">
+                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-[#0f6ea7]">Instagram</p>
+                    <h3 className="font-[Marcellus] text-lg leading-tight text-black">{asset.title}</h3>
+                    <p className="text-sm leading-6 text-black/66">{asset.location}</p>
+                  </div>
+                </article>
+              ))}
             </div>
           </div>
         </div>
