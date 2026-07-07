@@ -487,7 +487,19 @@ export function HomePage() {
           </h2>
           <div className="mt-4 space-y-3 text-[0.96rem] leading-7 text-black/72">
             <p>
-              GIB est disponible par telephone au 0596737219, en commercial direct au 06 96 65 35 89 ou par e-mail a contact@gibmenuiseries.com pour parler de votre projet. Le WhatsApp commercial sert a envoyer rapidement photos, commune et description du besoin.
+              GIB est disponible par telephone au{' '}
+              <a className="font-semibold text-[#0f6ea7] underline decoration-[#1398db]/30 underline-offset-4" href={`tel:${company.phone_international}`}>
+                05 96 73 72 19
+              </a>
+              , en commercial direct au{' '}
+              <a className="font-semibold text-[#0f6ea7] underline decoration-[#1398db]/30 underline-offset-4" href={`tel:${company.commercial_phone_international}`}>
+                06 96 65 35 89
+              </a>{' '}
+              ou par e-mail a{' '}
+              <a className="font-semibold text-[#0f6ea7] underline decoration-[#1398db]/30 underline-offset-4" href={`mailto:${company.email}`}>
+                contact@gibmenuiseries.com
+              </a>{' '}
+              pour parler de votre projet. Le WhatsApp commercial sert a envoyer rapidement photos, commune et description du besoin.
             </p>
             <p>Vous souhaitez profiter des services de nos menuisiers pour un projet de construction ou de renovation ?</p>
           </div>

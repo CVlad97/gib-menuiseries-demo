@@ -57,7 +57,9 @@ export function SiteLayout() {
           </div>
           <div className="flex flex-wrap items-center gap-2 text-[0.72rem] font-medium">
             <span className="topbar-pill">Intervention Martinique</span>
-            <a className="topbar-pill" href={company.whatsapp_url} rel="noreferrer" target="_blank">Commercial WhatsApp {company.whatsapp_display}</a>
+            <a className="topbar-pill" href={company.whatsapp_url} rel="noreferrer" target="_blank">
+              Commercial WhatsApp {company.whatsapp_display}
+            </a>
             <span className="inline-flex items-center gap-2 text-black/72">
               <MapPin className="size-4 text-[#ffd400]" />
               Zone Cocotte, Ducos, 97224 · Martinique
@@ -67,12 +69,14 @@ export function SiteLayout() {
       </div>
 
       <header className="sticky top-0 z-40 border-b border-[#1398db]/10 bg-white/92 backdrop-blur-xl">
-        <div className="shell py-4">
-          <div className="flex items-center justify-between gap-4 lg:hidden">
+        <div className="shell relative py-4">
+          <div className="relative z-20 flex items-center justify-between gap-4 lg:hidden">
             <NavLink className="min-w-0" onClick={closeMenu} to="/">
               <img alt="Logo GIB Menuiseries Services" className="h-12 w-auto" src={logoSrc} />
             </NavLink>
             <button
+              aria-controls="mobile-menu"
+              aria-expanded={menuOpen}
               aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
               className="inline-flex items-center justify-center rounded-full border border-[#1398db]/14 bg-white p-3 text-[#132534] transition hover:bg-[#eef8ff]"
               onClick={() => setMenuOpen((value) => !value)}
@@ -112,7 +116,9 @@ export function SiteLayout() {
                 {navItems.map((item) => (
                   <NavLink
                     key={`${item.to}-${item.label}`}
-                    className={({ isActive }) => `nav-link !text-black/74 ${isActive ? 'nav-link-active !bg-[#eef8ff] !text-[#0f6ea7]' : '!bg-transparent'}`}
+                    className={({ isActive }) =>
+                      `nav-link !text-black/74 ${isActive ? 'nav-link-active !bg-[#eef8ff] !text-[#0f6ea7]' : '!bg-transparent'}`
+                    }
                     end={item.end}
                     onClick={closeMenu}
                     to={item.to}
@@ -134,13 +140,23 @@ export function SiteLayout() {
             </div>
           </div>
 
-          {menuOpen ? (
-            <div className="mt-4 rounded-[1.8rem] border border-[#1398db]/12 bg-white p-4 shadow-[0_20px_50px_rgba(19,122,186,0.08)] lg:hidden">
+          <div
+            aria-hidden={!menuOpen}
+            className={`mobile-menu-panel absolute left-4 right-4 top-[calc(100%-0.2rem)] z-10 lg:hidden ${
+              menuOpen ? 'pointer-events-auto translate-y-0 opacity-100' : 'pointer-events-none -translate-y-3 opacity-0'
+            }`}
+            id="mobile-menu"
+          >
+            <div className="rounded-[1.8rem] border border-[#1398db]/12 bg-white p-4 shadow-[0_20px_50px_rgba(19,122,186,0.08)]">
               <div className="grid gap-2">
                 {navItems.map((item) => (
                   <NavLink
                     key={`${item.to}-${item.label}`}
-                    className={({ isActive }) => `nav-link flex items-center justify-between !text-black/74 ${isActive ? 'nav-link-active !bg-[#eef8ff] !text-[#0f6ea7]' : '!bg-transparent'}`}
+                    className={({ isActive }) =>
+                      `nav-link flex items-center justify-between !text-black/74 ${
+                        isActive ? 'nav-link-active !bg-[#eef8ff] !text-[#0f6ea7]' : '!bg-transparent'
+                      }`
+                    }
                     end={item.end}
                     onClick={closeMenu}
                     to={item.to}
@@ -151,7 +167,11 @@ export function SiteLayout() {
                 {secondaryItems.map((item) => (
                   <NavLink
                     key={item.to}
-                    className={({ isActive }) => `nav-link flex items-center justify-between !text-black/74 ${isActive ? 'nav-link-active !bg-[#eef8ff] !text-[#0f6ea7]' : '!bg-transparent'}`}
+                    className={({ isActive }) =>
+                      `nav-link flex items-center justify-between !text-black/74 ${
+                        isActive ? 'nav-link-active !bg-[#eef8ff] !text-[#0f6ea7]' : '!bg-transparent'
+                      }`
+                    }
                     onClick={closeMenu}
                     to={item.to}
                   >
@@ -170,7 +190,7 @@ export function SiteLayout() {
                 </NavLink>
               </div>
             </div>
-          ) : null}
+          </div>
         </div>
       </header>
 
@@ -185,7 +205,8 @@ export function SiteLayout() {
               <img alt="Logo GIB Menuiseries Services" className="h-16 w-auto" src={logoSrc} />
               <div className="space-y-3 text-sm leading-7 text-black/70">
                 <p>
-                  GIB Menuiseries Services intervient depuis Zone Cocotte a Ducos sur toute la Martinique pour la menuiserie aluminium, la renovation d habitat, le depannage express et le diagnostic immobilier.
+                  GIB Menuiseries Services intervient depuis Zone Cocotte a Ducos sur toute la Martinique pour la menuiserie
+                  aluminium, la renovation d habitat, le depannage express et le diagnostic immobilier.
                 </p>
                 <p>
                   Plus de 20 ans d experience, certification RGE, Qualicoat et accompagnement sur mesure.
@@ -207,10 +228,18 @@ export function SiteLayout() {
               <div className="rounded-[1.5rem] border border-[#1398db]/12 bg-white p-5">
                 <p className="text-xs uppercase tracking-[0.24em] text-black/45">Contactez-nous</p>
                 <div className="mt-4 space-y-3 text-sm text-black/72">
-                  <a className="block font-semibold text-black" href={`tel:${company.phone_international}`}>{company.phone_display}</a>
-                  <a className="block font-semibold text-[#0f6ea7]" href={`tel:${company.commercial_phone_international}`}>Commercial {company.commercial_phone_display}</a>
-                  <a className="block font-semibold text-[#1f7a5c]" href={company.whatsapp_url} rel="noreferrer" target="_blank">Commercial WhatsApp {company.whatsapp_display}</a>
-                  <a className="block" href={`mailto:${company.email}`}>{company.email}</a>
+                  <a className="block font-semibold text-black" href={`tel:${company.phone_international}`}>
+                    {company.phone_display}
+                  </a>
+                  <a className="block font-semibold text-[#0f6ea7]" href={`tel:${company.commercial_phone_international}`}>
+                    Commercial {company.commercial_phone_display}
+                  </a>
+                  <a className="block font-semibold text-[#1f7a5c]" href={company.whatsapp_url} rel="noreferrer" target="_blank">
+                    Commercial WhatsApp {company.whatsapp_display}
+                  </a>
+                  <a className="block" href={`mailto:${company.email}`}>
+                    {company.email}
+                  </a>
                   <p>{company.location_label}</p>
                 </div>
               </div>
@@ -252,16 +281,26 @@ export function SiteLayout() {
             <Phone className="size-4" />
             Appeler
           </a>
-          <a className="cta-whatsapp !px-3 !py-3 text-xs" href={company.whatsapp_url} rel="noreferrer" target="_blank">
-            <MessageCircle className="size-4" />
-            Commercial
-          </a>
           <NavLink className="cta-secondary !border-[#1398db]/18 !px-3 !py-3 !text-[#0f6ea7] text-xs" onClick={closeMenu} to="/devis">
             <FileText className="size-4" />
             Devis
           </NavLink>
+          <a className="cta-whatsapp !px-3 !py-3 text-xs" href={company.whatsapp_url} rel="noreferrer" target="_blank">
+            <MessageCircle className="size-4" />
+            WhatsApp
+          </a>
         </div>
       </div>
+
+      <a
+        className="mobile-fab fixed bottom-32 right-4 z-[60] bg-[#25885b] px-4 py-3 text-sm text-white shadow-[0_20px_40px_rgba(37,136,91,0.26)] lg:hidden"
+        href={company.whatsapp_url}
+        rel="noreferrer"
+        target="_blank"
+      >
+        <MessageCircle className="size-4" />
+        WhatsApp
+      </a>
     </div>
   )
 }
