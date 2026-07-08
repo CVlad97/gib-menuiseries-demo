@@ -57,6 +57,24 @@ const storyHighlights = [
   'Contact',
 ]
 
+const storyCoverAssets = [
+  { title: 'Realisations', src: '01-realisations.png' },
+  { title: 'Portails', src: '02-portails.png' },
+  { title: 'Baies vitrees', src: '03-baies-vitrees.png' },
+  { title: 'Volets', src: '04-volets.png' },
+  { title: 'Fenetres', src: '05-fenetres.png' },
+  { title: 'Pergolas', src: '06-pergolas.png' },
+  { title: 'Clotures', src: '07-clotures.png' },
+  { title: 'Depannage', src: '08-depannage.png' },
+  { title: 'Avant apres', src: '09-avant-apres.png' },
+  { title: 'Devis', src: '10-devis.png' },
+  { title: 'Avis clients', src: '11-avis-clients.png' },
+  { title: 'Contact', src: '12-contact.png' },
+].map((cover) => ({
+  ...cover,
+  image: withBase(`media/gib/instagram/vignettes/${cover.src}`),
+}))
+
 const pinnedPosts = [
   'Qui sommes-nous ?',
   'Comment demander un devis ?',
@@ -438,6 +456,53 @@ export function InstagramProfilePage() {
                   </p>
                 </article>
               ))}
+            </div>
+          </div>
+
+          <div className="surface-panel px-6 py-7 sm:px-8">
+            <SectionHeading
+              description="Les fichiers de couvertures trouves dans le telephone sont maintenant branches ici. La grille sert a valider les stories a la une avant de les importer dans Instagram."
+              eyebrow="Vignettes pretes"
+              title="12 couvertures Instagram a publier."
+            />
+            <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 xl:grid-cols-4">
+              {storyCoverAssets.map((cover) => (
+                <article
+                  key={cover.src}
+                  className="group overflow-hidden rounded-[1.2rem] border border-[#1398db]/12 bg-white shadow-[0_14px_30px_rgba(19,122,186,0.06)]"
+                >
+                  <img
+                    alt={`Couverture story ${cover.title} GIB Menuiseries`}
+                    className="aspect-square w-full object-cover transition duration-500 group-hover:scale-[1.04]"
+                    loading="lazy"
+                    src={cover.image}
+                  />
+                  <div className="border-t border-[#1398db]/10 px-3 py-3">
+                    <p className="truncate text-sm font-semibold text-black">{cover.title}</p>
+                    <p className="mt-1 text-[0.68rem] uppercase tracking-[0.18em] text-black/42">Story a la une</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+            <div className="mt-6 grid gap-5 lg:grid-cols-[0.7fr_1fr] lg:items-start">
+              <div className="overflow-hidden rounded-[1.5rem] border border-[#1398db]/12 bg-white shadow-[0_18px_40px_rgba(19,122,186,0.08)]">
+                <img
+                  alt="Apercu global du profil Instagram GIB"
+                  className="max-h-[620px] w-full object-cover object-top"
+                  loading="lazy"
+                  src={withBase('media/gib/instagram/gib-instagram-preview.png')}
+                />
+              </div>
+              <div className="rounded-[1.5rem] border border-[#1398db]/12 bg-[#eef8ff] p-5">
+                <p className="text-[0.7rem] font-semibold uppercase tracking-[0.24em] text-[#0f6ea7]">Fichiers integres</p>
+                <p className="mt-3 text-sm leading-7 text-black/72">
+                  Les 12 PNG sont disponibles dans le site et peuvent etre recuperes depuis GitHub Pages. Les deux grandes
+                  images de contact et d avis clients sont conservees en 1080 x 1080 pour publication directe.
+                </p>
+                <a className="cta-secondary mt-4 !border-[#1398db]/24 !text-[#0f6ea7]" href={withBase('media/gib/instagram/vignettes/10-devis.png')} target="_blank" rel="noreferrer">
+                  Ouvrir une vignette
+                </a>
+              </div>
             </div>
           </div>
 
