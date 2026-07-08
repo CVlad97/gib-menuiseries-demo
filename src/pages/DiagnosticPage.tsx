@@ -52,7 +52,7 @@ export function DiagnosticPage() {
             description="Comme sur le site officiel, le contact reste volontairement direct et local depuis Zone Cocotte a Ducos."
           />
           <div className="mt-8 flex flex-wrap gap-3">
-            <a className="cta-primary" href={`tel:${company.phone_international}`}>
+            <a className="cta-primary" href={`tel:${company.commercial_phone_international}`}>
               <PhoneCall className="size-4" />
               Appeler
             </a>

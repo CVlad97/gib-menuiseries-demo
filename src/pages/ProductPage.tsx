@@ -116,7 +116,7 @@ export function ProductPage() {
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
-              <a className="cta-primary" href={`tel:${company.phone_international}`}>
+              <a className="cta-primary" href={`tel:${company.commercial_phone_international}`}>
                 <PhoneCall className="size-4" />
                 Appeler
               </a>
@@ -263,7 +263,7 @@ export function ProductPage() {
             <MessageCircle className="size-4" />
             Envoyer des photos
           </a>
-          <a className="cta-secondary" href={`tel:${company.phone_international}`}>
+          <a className="cta-secondary" href={`tel:${company.commercial_phone_international}`}>
             <PhoneCall className="size-4" />
             Etre rappele
           </a>

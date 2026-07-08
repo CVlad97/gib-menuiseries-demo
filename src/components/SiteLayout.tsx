@@ -42,7 +42,7 @@ export function SiteLayout() {
       <div className="border-b border-[#1398db]/10 bg-[linear-gradient(90deg,rgba(19,152,219,0.08),rgba(83,196,216,0.06))] text-[0.78rem] text-black/72">
         <div className="shell flex flex-wrap items-center justify-between gap-3 py-3">
           <div className="flex flex-wrap items-center gap-4">
-            <a className="inline-flex items-center gap-2 font-semibold text-black" href={`tel:${company.phone_international}`}>
+            <a className="inline-flex items-center gap-2 font-semibold text-black" href={`tel:${company.commercial_phone_international}`}>
               <Phone className="size-4 text-[#e12726]" />
               Appelez-nous
             </a>
@@ -92,9 +92,9 @@ export function SiteLayout() {
                 <img alt="Logo GIB Menuiseries Services" className="h-16 w-auto" src={logoSrc} />
               </NavLink>
               <div className="flex flex-wrap items-center gap-3 text-sm text-black/70">
-                <a className="inline-flex items-center gap-2" href={`tel:${company.phone_international}`}>
+                <a className="inline-flex items-center gap-2" href={`tel:${company.commercial_phone_international}`}>
                   <Phone className="size-4 text-[#e12726]" />
-                  {company.phone_display}
+                  {company.commercial_phone_display}
                 </a>
                 <a className="inline-flex items-center gap-2" href={`tel:${company.commercial_phone_international}`}>
                   <Phone className="size-4 text-[#1398db]" />
@@ -213,7 +213,7 @@ export function SiteLayout() {
                 </p>
               </div>
               <div className="flex flex-wrap gap-3">
-                <a className="cta-primary" href={`tel:${company.phone_international}`}>
+                <a className="cta-primary" href={`tel:${company.commercial_phone_international}`}>
                   <Phone className="size-4" />
                   Appeler
                 </a>
@@ -277,7 +277,7 @@ export function SiteLayout() {
 
       <div className="fixed inset-x-0 bottom-0 z-50 border-t border-[#1398db]/12 bg-white/95 px-3 py-3 backdrop-blur-xl lg:hidden">
         <div className="mx-auto grid max-w-[1440px] grid-cols-3 gap-2">
-          <a className="cta-primary !px-3 !py-3 text-xs" href={`tel:${company.phone_international}`}>
+          <a className="cta-primary !px-3 !py-3 text-xs" href={`tel:${company.commercial_phone_international}`}>
             <Phone className="size-4" />
             Appeler
           </a>

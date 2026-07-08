@@ -128,19 +128,76 @@ const profilePreview = {
 
 const contentIdeas = [
   {
-    title: 'Post profil',
+    title: 'Realisations',
     hook: 'Menuiserie aluminium sur mesure en Martinique',
-    body: 'Présentez clairement le positionnement, la zone et la promesse de réponse rapide.',
+    body: 'Selection de chantiers GIB en Martinique: finitions propres, pose locale et demande de devis par photo.',
+    hashtags: '#gibmenuiseries #menuiseriemartinique #artisan972 #travauxmartinique',
   },
   {
-    title: 'Reel portail',
-    hook: 'Sécuriser et moderniser une entrée',
-    body: 'Montez une entrée, puis terminez par le CTA photo + dimensions sur WhatsApp.',
+    title: 'Avant apres',
+    hook: 'Transformer une ouverture sans perdre de temps',
+    body: 'Montrez l existant, la pose et le rendu final. CTA: envoyez photo, dimensions et commune.',
+    hashtags: '#renovationmartinique #avantapres #menuiseriealu #ducos',
   },
   {
-    title: 'Reel pergola',
-    hook: 'Plus d ombre, plus de confort',
-    body: 'Montrez la terrasse, la pose et la finition avant/après sur 6 à 8 secondes.',
+    title: 'Volets',
+    hook: 'Volets roulants pour confort et securite',
+    body: 'Format court sur protection solaire, fermeture, depannage et remplacement en Martinique.',
+    hashtags: '#voletmartinique #voletroulant #travauxmartinique #gibmenuiseries',
+  },
+  {
+    title: 'Fenetres',
+    hook: 'Fenetre propre, lumineuse et adaptee au climat local',
+    body: 'Expliquer le choix des materiaux, la prise de mesure et la pose sur renovation.',
+    hashtags: '#fenetremartinique #menuiseriealu #menuiseriebois #renovationmartinique',
+  },
+  {
+    title: 'Portes',
+    hook: 'Porte sur mesure pour securiser et moderniser',
+    body: 'Montrer les details de finition, l usage quotidien et le contact devis rapide.',
+    hashtags: '#portemartinique #menuiseriemartinique #artisan972 #ducos',
+  },
+  {
+    title: 'Garde-corps',
+    hook: 'Securiser terrasse, escalier et balcon',
+    body: 'Post conseil sur securite, finition et adaptation au bord de mer ou a l humidite.',
+    hashtags: '#gardecorps #cloturemartinique #securitemaison #travauxmartinique',
+  },
+  {
+    title: 'Aluminium',
+    hook: 'Pourquoi choisir l aluminium en Martinique',
+    body: 'Carrousel simple: entretien, resistance, rendu moderne, options et projet sur devis.',
+    hashtags: '#menuiseriealu #aluminiummartinique #portailmartinique #baievitree',
+  },
+  {
+    title: 'Bois',
+    hook: 'Menuiserie bois: cachet, renovation et adaptation',
+    body: 'Post pedagogique sur le besoin, l etat de l existant et les contraintes a verifier.',
+    hashtags: '#menuiseriebois #renovationmartinique #artisan972 #travauxmaison',
+  },
+  {
+    title: 'Renovation',
+    hook: 'Remplacer sans improviser',
+    body: 'Lister les infos utiles: photos, dimensions, commune, urgence, acces chantier.',
+    hashtags: '#renovationmartinique #menuiseriemartinique #ducos #gibmenuiseries',
+  },
+  {
+    title: 'Securite',
+    hook: 'Portail, cloture, volet: securiser la maison',
+    body: 'Post conversion pour proprietaires: expliquer le besoin et proposer un devis WhatsApp.',
+    hashtags: '#securitemaison #portailmartinique #cloturemartinique #voletmartinique',
+  },
+  {
+    title: 'Devis',
+    hook: 'Photo + dimensions = devis plus rapide',
+    body: 'Publier une marche a suivre en 4 etapes avec lien WhatsApp en bio.',
+    hashtags: '#devistravaux #menuiseriemartinique #travauxmartinique #gibmenuiseries',
+  },
+  {
+    title: 'Contact',
+    hook: 'GIB intervient depuis Ducos sur toute la Martinique',
+    body: 'Post final de conversion: appel, WhatsApp, email et zone d intervention.',
+    hashtags: '#ducos #martinique #artisan972 #menuiseriemartinique',
   },
 ]
 
@@ -645,6 +702,7 @@ export function InstagramProfilePage() {
                   <p className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-black/42">{item.title}</p>
                   <h3 className="mt-2 text-xl font-semibold text-black">{item.hook}</h3>
                   <p className="mt-3 text-sm leading-6 text-black/68">{item.body}</p>
+                  <p className="mt-3 text-xs font-semibold leading-6 text-[#0f6ea7]">{item.hashtags}</p>
                   <div className="mt-4 inline-flex rounded-full bg-[#eef8ff] px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-[#0f6ea7]">
                     Prêt à publier
                   </div>

@@ -44,6 +44,9 @@ interface QuoteFormProps {
 }
 
 interface QuoteSnapshot {
+  name: string
+  email: string
+  urgency: string
   typeProjet: string
   produit: string
   contact: string
@@ -57,6 +60,9 @@ interface QuoteSnapshot {
 const defaultProjectType = projectTypes[0]
 const defaultContext = contexts[1]
 const emptySnapshot: QuoteSnapshot = {
+  name: '',
+  email: '',
+  urgency: 'Sous 1 mois',
   typeProjet: defaultProjectType,
   produit: '',
   contact: '',
@@ -72,6 +78,9 @@ function buildLeadPayload(snapshot: QuoteSnapshot) {
     id: crypto.randomUUID(),
     createdAt: new Date().toISOString(),
     status: 'new' as const,
+    name: snapshot.name,
+    email: snapshot.email,
+    urgency: snapshot.urgency,
     typeProjet: snapshot.typeProjet,
     produit: snapshot.produit,
     contact: snapshot.contact,
@@ -95,6 +104,7 @@ export function QuoteForm({
     produit: initialProduit,
   })
   const [status, setStatus] = useState<'idle' | 'loading' | 'success'>('idle')
+  const [error, setError] = useState('')
   const [submittedSnapshot, setSubmittedSnapshot] = useState<QuoteSnapshot | null>(null)
 
   const whatsappUrl = useMemo(
@@ -105,12 +115,28 @@ export function QuoteForm({
           commune: snapshot.commune,
           dimensions: snapshot.dimensions,
           contexte: snapshot.contexte,
-          commentaire: snapshot.commentaire,
+          commentaire: [
+            snapshot.name ? `Nom : ${snapshot.name}` : null,
+            snapshot.email ? `Email : ${snapshot.email}` : null,
+            snapshot.urgency ? `Urgence : ${snapshot.urgency}` : null,
+            snapshot.commentaire,
+          ].filter(Boolean).join('\n'),
           assetTitle: summaryTitle,
           photoCount: snapshot.photos.length,
         }),
       ),
-    [snapshot.commentaire, snapshot.commune, snapshot.contexte, snapshot.dimensions, snapshot.photos.length, snapshot.produit, summaryTitle],
+    [
+      snapshot.commentaire,
+      snapshot.commune,
+      snapshot.contexte,
+      snapshot.dimensions,
+      snapshot.email,
+      snapshot.name,
+      snapshot.photos.length,
+      snapshot.produit,
+      snapshot.urgency,
+      summaryTitle,
+    ],
   )
 
   function updateField(key: keyof QuoteSnapshot) {
@@ -132,6 +158,12 @@ export function QuoteForm({
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
 
+    if (!snapshot.name.trim() || !snapshot.contact.trim() || !snapshot.commune.trim() || !snapshot.produit.trim()) {
+      setError('Merci de renseigner au minimum le nom, le telephone, la commune et le type de besoin.')
+      return
+    }
+
+    setError('')
     setStatus('loading')
 
     const nextSnapshot = snapshot
@@ -149,6 +181,7 @@ export function QuoteForm({
       produit: initialProduit,
     })
     setSubmittedSnapshot(null)
+    setError('')
     setStatus('idle')
   }
 
@@ -169,12 +202,16 @@ export function QuoteForm({
             <div className="rounded-[1.35rem] border border-white/18 bg-white/12 p-4">
               <p className="text-xs uppercase tracking-[0.22em] text-white/50">Projet</p>
               <p className="mt-2 font-semibold text-white">{submittedSnapshot.produit || summaryTitle}</p>
-              <p className="mt-2 text-sm leading-6 text-white/72">{submittedSnapshot.typeProjet}</p>
+              <p className="mt-2 text-sm leading-6 text-white/72">
+                {submittedSnapshot.typeProjet} · {submittedSnapshot.urgency}
+              </p>
             </div>
             <div className="rounded-[1.35rem] border border-white/18 bg-white/12 p-4">
               <p className="text-xs uppercase tracking-[0.22em] text-white/50">Zone</p>
               <p className="mt-2 font-semibold text-white">{submittedSnapshot.commune || 'A confirmer'}</p>
-              <p className="mt-2 text-sm leading-6 text-white/72">{submittedSnapshot.dimensions || 'Dimensions a preciser'}</p>
+              <p className="mt-2 text-sm leading-6 text-white/72">
+                {submittedSnapshot.name} · {submittedSnapshot.contact}
+              </p>
             </div>
           </div>
           <div className="rounded-[1.35rem] border border-white/18 bg-white/10 p-4 text-sm leading-7 text-white/78">
@@ -195,7 +232,7 @@ export function QuoteForm({
             <MessageCircle className="size-4" />
             Ouvrir WhatsApp
           </a>
-          <a className="cta-secondary w-full sm:w-auto" href={`tel:${company.phone_international}`}>
+          <a className="cta-secondary w-full sm:w-auto" href={`tel:${company.commercial_phone_international}`}>
             <PhoneCall className="size-4" />
             Appeler
           </a>
@@ -216,12 +253,40 @@ export function QuoteForm({
       <div className="rounded-[1.45rem] border border-white/16 bg-white/10 p-5 text-sm leading-7 text-white/78">
         <p className="text-xs uppercase tracking-[0.24em] text-white/48">Validation rapide</p>
         <p className="mt-3">
-          Remplissez la demande, puis ouvrez WhatsApp avec vos photos. GIB peut ainsi mieux orienter la solution avant
-          le rendez-vous.
+          Demande de devis gratuit pour menuiserie aluminium, bois, PVC, volets, portes, garde-corps, renovation et
+          depannage. Reponse rapide avec photo, dimensions et commune.
         </p>
       </div>
 
       <div className="mt-5 grid gap-5 md:grid-cols-2">
+        <div>
+          <p className="text-xs uppercase tracking-[0.24em] text-white/45">Nom</p>
+          <input
+            className="field mt-3"
+            onChange={updateField('name')}
+            placeholder="Votre nom"
+            value={snapshot.name}
+          />
+        </div>
+        <div>
+          <p className="text-xs uppercase tracking-[0.24em] text-white/45">Telephone</p>
+          <input
+            className="field mt-3"
+            onChange={updateField('contact')}
+            placeholder="06 96 65 35 89"
+            value={snapshot.contact}
+          />
+        </div>
+        <div>
+          <p className="text-xs uppercase tracking-[0.24em] text-white/45">Email</p>
+          <input
+            className="field mt-3"
+            onChange={updateField('email')}
+            placeholder="nom@email.com"
+            type="email"
+            value={snapshot.email}
+          />
+        </div>
         <div>
           <p className="text-xs uppercase tracking-[0.24em] text-white/45">Type de projet</p>
           <select className="field mt-3" onChange={updateField('typeProjet')} value={snapshot.typeProjet}>
@@ -233,11 +298,11 @@ export function QuoteForm({
           </select>
         </div>
         <div>
-          <p className="text-xs uppercase tracking-[0.24em] text-white/45">Produit</p>
+          <p className="text-xs uppercase tracking-[0.24em] text-white/45">Type de besoin</p>
           <input
             className="field mt-3"
             onChange={updateField('produit')}
-            placeholder="Portail, baie vitree, pergola, renovation..."
+            placeholder="Aluminium, bois, PVC, volets, portes, garde-corps..."
             value={snapshot.produit}
           />
         </div>
@@ -251,15 +316,6 @@ export function QuoteForm({
               </option>
             ))}
           </select>
-        </div>
-        <div>
-          <p className="text-xs uppercase tracking-[0.24em] text-white/45">Contact rapide</p>
-          <input
-            className="field mt-3"
-            onChange={updateField('contact')}
-            placeholder="Telephone, email ou WhatsApp"
-            value={snapshot.contact}
-          />
         </div>
         <div>
           <p className="text-xs uppercase tracking-[0.24em] text-white/45">Dimensions approximatives</p>
@@ -280,6 +336,16 @@ export function QuoteForm({
             ))}
           </select>
         </div>
+        <div>
+          <p className="text-xs uppercase tracking-[0.24em] text-white/45">Urgence</p>
+          <select className="field mt-3" onChange={updateField('urgency')} value={snapshot.urgency}>
+            {['Urgent', 'Sous 1 mois', 'Sous 3 mois', 'Projet a planifier'].map((item) => (
+              <option key={item} value={item}>
+                {item}
+              </option>
+            ))}
+          </select>
+        </div>
         <div className="md:col-span-2">
           <p className="text-xs uppercase tracking-[0.24em] text-white/45">Photos ou captures</p>
           <label className="field mt-3 flex cursor-pointer items-center gap-3">
@@ -291,7 +357,7 @@ export function QuoteForm({
       </div>
 
       <div className="mt-5">
-        <p className="text-xs uppercase tracking-[0.24em] text-white/45">Commentaire</p>
+        <p className="text-xs uppercase tracking-[0.24em] text-white/45">Message</p>
         <textarea
           className="field mt-3 min-h-36"
           onChange={updateField('commentaire')}
@@ -299,6 +365,12 @@ export function QuoteForm({
           value={snapshot.commentaire}
         />
       </div>
+
+      {error ? (
+        <div className="mt-5 rounded-[1.3rem] border border-red-300/30 bg-red-500/12 px-4 py-3 text-sm font-semibold text-white">
+          {error}
+        </div>
+      ) : null}
 
       <div className="mt-6 flex flex-wrap gap-3">
         <button className="cta-primary w-full sm:w-auto" disabled={status === 'loading'} type="submit">

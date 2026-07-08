@@ -138,7 +138,7 @@ export function HomePage() {
                   <Images className="size-4 text-[#1398db]" />
                   Voir Instagram
                 </Link>
-                <a className="cta-secondary !border-[#1398db]/24 !text-[#0f6ea7]" href={`tel:${company.phone_international}`}>
+                <a className="cta-secondary !border-[#1398db]/24 !text-[#0f6ea7]" href={`tel:${company.commercial_phone_international}`}>
                   <PhoneCall className="size-4 text-[#1398db]" />
                   Appeler
                 </a>
@@ -372,7 +372,7 @@ export function HomePage() {
                 Quand aucune photo portrait n est fournie, GIB montre le metier plutot que de remplir des cartes vides : reperage terrain, preparation atelier et pose chantier.
               </p>
               <div className="mt-5 flex flex-wrap gap-3">
-                <a className="cta-primary" href={`tel:${company.phone_international}`}>
+                <a className="cta-primary" href={`tel:${company.commercial_phone_international}`}>
                   <PhoneCall className="size-4" />
                   Standard {company.phone_display}
                 </a>
@@ -504,9 +504,9 @@ export function HomePage() {
             <p>Vous souhaitez profiter des services de nos menuisiers pour un projet de construction ou de renovation ?</p>
           </div>
           <div className="mt-6 flex flex-wrap gap-3">
-            <a className="cta-primary" href={`tel:${company.phone_international}`}>
+            <a className="cta-primary" href={`tel:${company.commercial_phone_international}`}>
               <PhoneCall className="size-4" />
-              0596737219
+              06 96 65 35 89
             </a>
             <a className="cta-secondary !border-[#1398db]/24 !text-[#0f6ea7]" href={`mailto:${company.email}`}>
               <Mail className="size-4 text-[#1398db]" />

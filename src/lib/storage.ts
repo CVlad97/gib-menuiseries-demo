@@ -2,6 +2,9 @@ export interface LeadDraft {
   id: string
   createdAt: string
   status: 'new' | 'qualified' | 'quoted' | 'closed'
+  name: string
+  email: string
+  urgency: string
   typeProjet: string
   produit: string
   contact: string
@@ -65,6 +68,9 @@ function normalizeLead(entry: Partial<LeadDraft> & Pick<LeadDraft, 'id' | 'creat
     id: entry.id,
     createdAt: entry.createdAt,
     status: entry.status ?? 'new',
+    name: entry.name ?? '',
+    email: entry.email ?? '',
+    urgency: entry.urgency ?? '',
     typeProjet: entry.typeProjet ?? 'Habitat',
     produit: entry.produit ?? 'Projet sur mesure',
     contact: entry.contact ?? '',

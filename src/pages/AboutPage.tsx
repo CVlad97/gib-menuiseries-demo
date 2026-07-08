@@ -68,7 +68,7 @@ export function AboutPage() {
           description="Notre entreprise assure la pose de volet roulant, porte, fenetre, cloture, pergola, baie vitree, store et portail sur toute l ile, avec une logique simple : ecouter, conseiller, mesurer et etablir un devis precis."
         />
         <div className="mt-8 flex flex-wrap gap-3">
-          <a className="cta-primary" href={`tel:${company.phone_international}`}>
+          <a className="cta-primary" href={`tel:${company.commercial_phone_international}`}>
             <PhoneCall className="size-4" />
             Appeler
           </a>

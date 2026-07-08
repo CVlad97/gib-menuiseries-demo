@@ -35,8 +35,8 @@ export function QuotePage() {
       <section className="surface-panel px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
         <SectionHeading
           eyebrow="Demande de devis"
-          title="Demandez un devis clair, sans prix public approximatif."
-          description="Indiquez le produit, la commune, les dimensions si vous les avez et ajoutez des photos. GIB pourra ensuite vous rappeler ou vous repondre par WhatsApp."
+          title="Demande de devis gratuit pour vos menuiseries en Martinique."
+          description="Indiquez le produit, la commune, les dimensions si vous les avez et ajoutez des photos. GIB traite les besoins en menuiserie aluminium, bois, PVC, volets, portes, garde-corps, renovation et depannage."
         />
       </section>
 

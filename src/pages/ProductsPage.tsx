@@ -82,7 +82,7 @@ export function ProductsPage() {
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <a className="cta-primary" href={`tel:${company.phone_international}`}>
+            <a className="cta-primary" href={`tel:${company.commercial_phone_international}`}>
               <PhoneCall className="size-4" />
               Appeler
             </a>
