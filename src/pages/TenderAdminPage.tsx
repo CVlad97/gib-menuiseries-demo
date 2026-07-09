@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Download, ExternalLink, FilePlus2, MessageCircle, RefreshCw, Trash2 } from 'lucide-react'
+import { Download, ExternalLink, FileDown, FilePlus2, MessageCircle, RefreshCw, Trash2 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { SectionHeading } from '../components/SectionHeading'
+import { withBase } from '../lib/base'
 import { buildWhatsAppUrl } from '../lib/content'
 import {
   deleteTender,
@@ -43,6 +44,31 @@ const emptyTender = {
   score: 5,
   nextAction: '',
   notes: '',
+}
+
+interface BoampTenderItem {
+  sourceId: string
+  organism: string
+  platform: string
+  url: string
+  object: string
+  lot: string
+  deadline: string
+  commune: string
+  visitRequired: string
+  documents: string
+  score: number
+  priority: TenderOpportunity['priority']
+  nextAction: string
+  notes: string
+}
+
+interface BoampTenderFeed {
+  generatedAt: string
+  source: string
+  sourceUrl: string
+  count: number
+  items: BoampTenderItem[]
 }
 
 function formatDate(value: string) {
@@ -129,6 +155,7 @@ export function TenderAdminPage() {
   const [tenders, setTenders] = useState<TenderOpportunity[]>([])
   const [draft, setDraft] = useState(emptyTender)
   const [error, setError] = useState('')
+  const [importStatus, setImportStatus] = useState('')
 
   useEffect(() => {
     const refresh = () => setTenders(listTenders())
@@ -144,6 +171,14 @@ export function TenderAdminPage() {
       urgent: tenders.filter((tender) => tender.priority === 'high').length,
       submitted: tenders.filter((tender) => tender.status === 'submitted').length,
     }
+  }, [tenders])
+
+  const firstClientTargets = useMemo(() => {
+    const active = tenders
+      .filter((tender) => tender.status !== 'discarded' && tender.status !== 'lost')
+      .sort((a, b) => b.score - a.score)
+
+    return active.slice(0, 5)
   }, [tenders])
 
   function handleChange(key: keyof typeof emptyTender, value: string) {
@@ -172,6 +207,57 @@ export function TenderAdminPage() {
     setError('')
   }
 
+  async function importBoampFeed() {
+    setImportStatus('Import BOAMP en cours...')
+    setError('')
+
+    try {
+      const response = await fetch(withBase('data/gib/boamp-tenders.json'), { cache: 'no-store' })
+
+      if (!response.ok) {
+        throw new Error(`Flux BOAMP indisponible (${response.status})`)
+      }
+
+      const feed = await response.json() as BoampTenderFeed
+      const current = listTenders()
+      const knownKeys = new Set(current.map((tender) => tender.url || `${tender.organism}|${tender.object}|${tender.deadline}`))
+      let imported = 0
+
+      for (const item of feed.items) {
+        const key = item.url || `${item.organism}|${item.object}|${item.deadline}`
+        if (knownKeys.has(key)) {
+          continue
+        }
+
+        saveTender({
+          id: crypto.randomUUID(),
+          createdAt: new Date().toISOString(),
+          status: 'watch',
+          priority: item.priority,
+          organism: item.organism,
+          platform: item.platform,
+          url: item.url,
+          object: item.object,
+          lot: item.lot,
+          deadline: item.deadline,
+          commune: item.commune,
+          visitRequired: item.visitRequired,
+          documents: item.documents,
+          score: item.score,
+          nextAction: item.nextAction,
+          notes: `${item.notes}${item.sourceId ? ` | BOAMP ${item.sourceId}` : ''}`,
+        })
+        knownKeys.add(key)
+        imported += 1
+      }
+
+      setImportStatus(`${imported} annonce(s) BOAMP importee(s). Flux genere : ${feed.generatedAt || 'date non renseignee'}.`)
+    } catch (importError) {
+      setImportStatus('')
+      setError(importError instanceof Error ? importError.message : 'Import BOAMP impossible.')
+    }
+  }
+
   return (
     <div className="shell space-y-10 pt-8 sm:pt-12">
       <section className="glass-panel-strong px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
@@ -181,6 +267,10 @@ export function TenderAdminPage() {
               <button className="cta-secondary" onClick={() => seedDemoData()} type="button">
                 <RefreshCw className="size-4" />
                 Charger demo
+              </button>
+              <button className="cta-secondary" onClick={importBoampFeed} type="button">
+                <FileDown className="size-4" />
+                Import BOAMP
               </button>
               <button className="cta-primary" disabled={tenders.length === 0} onClick={() => exportTenders(tenders)} type="button">
                 <Download className="size-4" />
@@ -194,6 +284,12 @@ export function TenderAdminPage() {
           title="Piloter les marches publics et organismes a traiter."
         />
       </section>
+
+      {importStatus ? (
+        <section className="rounded-[1.35rem] border border-emerald-300/40 bg-emerald-50 px-5 py-4 text-sm font-semibold text-emerald-800">
+          {importStatus}
+        </section>
+      ) : null}
 
       <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         <div className="metric-card">
@@ -211,6 +307,32 @@ export function TenderAdminPage() {
         <div className="metric-card">
           <p className="text-xs uppercase tracking-[0.24em] text-white/45">Deposes</p>
           <p className="mt-3 text-3xl font-semibold text-white">{stats.submitted}</p>
+        </div>
+      </section>
+
+      <section className="surface-panel px-6 py-8 sm:px-8 lg:px-10">
+        <SectionHeading
+          eyebrow="Premiers clients"
+          title="Organismes a prioriser apres import."
+          description="Cette liste classe les opportunites importees par score. Elle sert a choisir les premiers organismes a analyser, pas a les spammer."
+        />
+        <div className="mt-6 grid gap-4 lg:grid-cols-5">
+          {firstClientTargets.length === 0 ? (
+            <div className="rounded-[1.35rem] border border-[#1398db]/12 bg-white p-5 text-sm text-black/62 lg:col-span-5">
+              Importez le flux BOAMP pour afficher les premiers organismes a cibler.
+            </div>
+          ) : (
+            firstClientTargets.map((target) => (
+              <article key={target.id} className="rounded-[1.35rem] border border-[#1398db]/12 bg-white p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0f6ea7]">{target.score}/10</p>
+                <h3 className="mt-3 text-base font-semibold leading-6 text-black">{target.organism || 'Organisme a verifier'}</h3>
+                <p className="mt-2 line-clamp-4 text-sm leading-6 text-black/62">{target.object}</p>
+                <a className="mt-4 inline-flex text-sm font-semibold text-[#0f6ea7]" href={buildTenderWhatsApp(target)} rel="noreferrer" target="_blank">
+                  Preparer contact
+                </a>
+              </article>
+            ))
+          )}
         </div>
       </section>
 
