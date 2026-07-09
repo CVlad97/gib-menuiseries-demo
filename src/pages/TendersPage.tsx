@@ -1,4 +1,4 @@
-import { ArrowUpRight, Building2, CheckCircle2, FileSearch, Mail, MessageCircle, PhoneCall, Search } from 'lucide-react'
+import { ArrowUpRight, Building2, CheckCircle2, ClipboardCheck, FileSearch, Mail, MessageCircle, PhoneCall, Search } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { SectionHeading } from '../components/SectionHeading'
 import { company } from '../lib/content'
@@ -76,6 +76,56 @@ const responsePack = [
   'Moyens humains et techniques : atelier, equipe, vehicule, methode de pose et suivi chantier.',
   'Methode chantier : reperage, prise de mesures, validation technique, fabrication, pose, controle et reception.',
   'Limites a confirmer : garanties, certifications, assurances et references nominatives avant depot officiel.',
+]
+
+const qualificationSteps = [
+  {
+    title: 'Detecter',
+    text: 'Repérer les avis avec filtre Martinique, mots-cles menuiserie, fermetures, renovation, second oeuvre et garde-corps.',
+  },
+  {
+    title: 'Qualifier',
+    text: 'Verifier la date limite, le lot, la visite obligatoire, les pieces, les capacites et la pertinence pour GIB.',
+  },
+  {
+    title: 'Decider',
+    text: 'Classer en go / no-go : seul, cotraitance, sous-traitance, demande de precision ou abandon.',
+  },
+  {
+    title: 'Repondre',
+    text: 'Adapter le memoire technique, joindre les attestations validees et deposer uniquement sur le profil acheteur.',
+  },
+]
+
+const scoringRules = [
+  'Metier principal GIB present dans le lot : +3',
+  'Intervention en Martinique accessible : +2',
+  'Delai compatible avec approvisionnement et pose : +2',
+  'Pieces administratives deja disponibles : +1',
+  'Visite obligatoire possible : +1',
+  'References comparables disponibles : +1',
+  'Score 7 a 10 : prioritaire. Score 4 a 6 : a qualifier. Score 0 a 3 : faible priorite.',
+]
+
+const tenderExamples = [
+  {
+    target: 'Collectivite / commune',
+    object: 'Remplacement de menuiseries exterieures sur batiment communal',
+    fit: 'Fort',
+    action: 'Telecharger DCE, verifier visite et quantitatif.',
+  },
+  {
+    target: 'Bailleur / residence',
+    object: 'Pose ou remplacement de volets roulants et fermetures',
+    fit: 'Fort',
+    action: 'Identifier lots, delais, acces logements et references.',
+  },
+  {
+    target: 'Maitre d oeuvre',
+    object: 'Consultation entreprise pour lot garde-corps / clotures',
+    fit: 'Moyen a fort',
+    action: 'Proposer dossier entreprise et references photos.',
+  },
 ]
 
 export function TendersPage() {
@@ -212,6 +262,71 @@ export function TendersPage() {
                 <span>{item}</span>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="surface-panel px-6 py-8 sm:px-8 lg:px-10">
+        <SectionHeading
+          eyebrow="Qualification"
+          title="Pipeline simple pour transformer une annonce en opportunite."
+          description="Le but est de ne pas perdre de temps : chaque appel d offres doit etre detecte, note, puis classe avant d engager une reponse."
+        />
+        <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          {qualificationSteps.map((step, index) => (
+            <div key={step.title} className="rounded-[1.35rem] border border-[#1398db]/12 bg-white p-5">
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#0f6ea7]">Phase {index + 1}</p>
+              <h3 className="mt-3 text-lg font-semibold text-black">{step.title}</h3>
+              <p className="mt-3 text-sm leading-6 text-black/66">{step.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-[0.86fr_1.14fr]">
+        <div className="surface-panel px-6 py-8 sm:px-8">
+          <SectionHeading
+            eyebrow="Scoring"
+            title="Regle go / no-go rapide."
+            description="Une opportunite doit etre notee avant de mobiliser du temps de preparation."
+          />
+          <div className="mt-6 space-y-2">
+            {scoringRules.map((rule) => (
+              <div key={rule} className="flex items-start gap-3 rounded-[1.15rem] border border-[#1398db]/12 bg-white p-4 text-sm leading-6 text-black/70">
+                <ClipboardCheck className="mt-0.5 size-4 shrink-0 text-[#1398db]" />
+                <span>{rule}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="surface-panel overflow-hidden px-6 py-8 sm:px-8">
+          <SectionHeading
+            eyebrow="Exemples"
+            title="Opportunites a rechercher en priorite."
+            description="Ces exemples donnent le type d annonces a surveiller pour les prestations GIB."
+          />
+          <div className="mt-6 overflow-x-auto rounded-[1.35rem] border border-[#1398db]/12 bg-white">
+            <table className="min-w-[720px] text-left text-sm">
+              <thead className="bg-[#eef8ff] text-xs uppercase tracking-[0.18em] text-[#0f6ea7]">
+                <tr>
+                  <th className="px-4 py-3">Cible</th>
+                  <th className="px-4 py-3">Objet probable</th>
+                  <th className="px-4 py-3">Fit</th>
+                  <th className="px-4 py-3">Action</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-[#1398db]/10 text-black/70">
+                {tenderExamples.map((example) => (
+                  <tr key={example.object}>
+                    <td className="px-4 py-4 font-semibold text-black">{example.target}</td>
+                    <td className="px-4 py-4">{example.object}</td>
+                    <td className="px-4 py-4">{example.fit}</td>
+                    <td className="px-4 py-4">{example.action}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </section>

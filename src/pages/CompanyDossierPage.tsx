@@ -45,6 +45,36 @@ const downloadLinks = [
   },
 ]
 
+const administrativeReadiness = [
+  { item: 'Kbis recent', status: 'A fournir', tone: 'amber' },
+  { item: 'SIRET et representant legal', status: 'A confirmer', tone: 'amber' },
+  { item: 'Attestation fiscale', status: 'A fournir', tone: 'amber' },
+  { item: 'Attestation sociale', status: 'A fournir', tone: 'amber' },
+  { item: 'Assurance RC professionnelle', status: 'A fournir', tone: 'amber' },
+  { item: 'Decennale si applicable', status: 'A confirmer', tone: 'amber' },
+  { item: 'References chantier autorisees', status: 'A completer', tone: 'blue' },
+  { item: 'Memoire technique type', status: 'Modele pret', tone: 'green' },
+]
+
+const tenderWorkflow = [
+  'Recevoir ou detecter une consultation.',
+  'Verifier date limite, plateforme, lot et visite obligatoire.',
+  'Classer go / no-go selon capacite GIB.',
+  'Completer les pieces administratives manquantes.',
+  'Adapter le memoire technique au CCTP.',
+  'Valider humainement avant depot officiel.',
+]
+
+function statusClass(tone: string) {
+  if (tone === 'green') {
+    return 'border-emerald-300/50 bg-emerald-50 text-emerald-800'
+  }
+  if (tone === 'blue') {
+    return 'border-[#1398db]/20 bg-[#eef8ff] text-[#0f6ea7]'
+  }
+  return 'border-amber-300/50 bg-amber-50 text-amber-800'
+}
+
 export function CompanyDossierPage() {
   const tenderMessage = encodeURIComponent(
     [
@@ -143,6 +173,56 @@ export function CompanyDossierPage() {
               <p className="mt-3 text-sm leading-6 text-black/62">{link.description}</p>
             </a>
           ))}
+        </div>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-[1.12fr_0.88fr]">
+        <div className="surface-panel px-6 py-8 sm:px-8">
+          <SectionHeading
+            eyebrow="Etat du dossier"
+            title="Pieces a reunir avant un depot officiel."
+            description="Ce tableau evite d annoncer un dossier pret si des elements administratifs ou garanties ne sont pas encore verifies."
+          />
+          <div className="mt-6 overflow-x-auto rounded-[1.35rem] border border-[#1398db]/12 bg-white">
+            <table className="min-w-[620px] text-left text-sm">
+              <thead className="bg-[#eef8ff] text-xs uppercase tracking-[0.18em] text-[#0f6ea7]">
+                <tr>
+                  <th className="px-4 py-3">Piece</th>
+                  <th className="px-4 py-3">Statut</th>
+                  <th className="px-4 py-3">Action</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-[#1398db]/10 text-black/70">
+                {administrativeReadiness.map((row) => (
+                  <tr key={row.item}>
+                    <td className="px-4 py-4 font-semibold text-black">{row.item}</td>
+                    <td className="px-4 py-4">
+                      <span className={`rounded-full border px-3 py-1 text-xs font-semibold ${statusClass(row.tone)}`}>
+                        {row.status}
+                      </span>
+                    </td>
+                    <td className="px-4 py-4">Valider et stocker hors site public si document confidentiel.</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div className="surface-panel px-6 py-8 sm:px-8">
+          <SectionHeading
+            eyebrow="Workflow"
+            title="De l opportunite au depot."
+            description="Le site prepare le dossier, mais la reponse finale doit rester validee par une personne."
+          />
+          <div className="mt-6 space-y-3">
+            {tenderWorkflow.map((step, index) => (
+              <div key={step} className="rounded-[1.2rem] border border-[#1398db]/12 bg-white p-4">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0f6ea7]">Action {index + 1}</p>
+                <p className="mt-2 text-sm leading-6 text-black/70">{step}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
