@@ -31,6 +31,7 @@ const navItems = [
 const secondaryItems = [
   { to: '/galerie', label: 'Realisations' },
   { to: '/instagram', label: 'Instagram preview' },
+  { to: '/prospection-locale', label: 'Prospection locale' },
   { to: '/admin-appels-offres', label: 'Admin AO' },
   { to: '/devis', label: 'Demander un devis' },
 ]

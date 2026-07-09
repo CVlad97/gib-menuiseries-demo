@@ -13,6 +13,7 @@ import { QuotePage } from './pages/QuotePage'
 import { InstagramProfilePage } from './pages/InstagramProfilePage'
 import { TendersPage } from './pages/TendersPage'
 import { TenderAdminPage } from './pages/TenderAdminPage'
+import { ProspectingAppPage } from './pages/ProspectingAppPage'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route element={<TendersPage />} path="appels-offres" />
           <Route element={<CompanyDossierPage />} path="dossier-entreprise" />
           <Route element={<TenderAdminPage />} path="admin-appels-offres" />
+          <Route element={<ProspectingAppPage />} path="prospection-locale" />
           <Route element={<ProductsPage />} path="produits" />
           <Route element={<ProductPage />} path="produits/:slug" />
           <Route element={<QuotePage />} path="devis" />
