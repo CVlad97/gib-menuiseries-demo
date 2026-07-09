@@ -24,6 +24,7 @@ const navItems = [
   { to: '/produits/renovation-depannage', label: 'Depannage express' },
   { to: '/diagnostic-immobilier', label: 'Diagnostic immobilier' },
   { to: '/appels-offres', label: 'Appels d offres' },
+  { to: '/dossier-entreprise', label: 'Dossier entreprise' },
   { to: '/contact', label: 'Contact' },
 ]
 

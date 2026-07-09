@@ -1,0 +1,38 @@
+{
+  "title": "Organismes Martinique a surveiller pour GIB",
+  "status": "modele de veille",
+  "targets": [
+    {
+      "name": "Etat et services deconcentres",
+      "channels": ["PLACE", "BOAMP"],
+      "keywords": ["menuiserie", "fermeture", "renovation batiment", "second oeuvre"]
+    },
+    {
+      "name": "Collectivite Territoriale de Martinique",
+      "channels": ["achatpublic", "BOAMP"],
+      "keywords": ["menuiseries exterieures", "volets", "garde-corps", "travaux"]
+    },
+    {
+      "name": "Communes de Martinique",
+      "channels": ["e-marches Martinique", "marches-securises", "BOAMP"],
+      "keywords": ["portails", "clotures", "fenetres", "batiments communaux"]
+    },
+    {
+      "name": "Bailleurs, syndics et residences",
+      "channels": ["contact direct autorise", "sites acheteurs", "reseau local"],
+      "keywords": ["renovation", "fermetures", "securisation", "maintenance"]
+    },
+    {
+      "name": "Architectes, bureaux d'etudes et maitres d'oeuvre",
+      "channels": ["prospection B2B qualifiee", "reseau chantier"],
+      "keywords": ["consultation entreprise", "lot menuiserie", "lot fermeture"]
+    }
+  ],
+  "rules": [
+    "Ne pas scraper de plateformes protegees.",
+    "Ne pas deposer automatiquement.",
+    "Verifier chaque reglement de consultation.",
+    "Ne pas inventer de certification ou garantie.",
+    "Conserver les preuves de consentement pour les contacts directs."
+  ]
+}
