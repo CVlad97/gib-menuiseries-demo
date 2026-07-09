@@ -1,4 +1,4 @@
-import { ArrowRight, BadgeCheck, Images, Mail, MessageCircle, PhoneCall, PlayCircle, Sparkles } from 'lucide-react'
+import { ArrowRight, BadgeCheck, Building2, Images, Mail, MessageCircle, PhoneCall, PlayCircle, Sparkles } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { withBase } from '../lib/base'
 import { assets, company, getAssetById } from '../lib/content'
@@ -201,6 +201,33 @@ export function HomePage() {
                   </article>
                 ))}
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="shell">
+        <div className="surface-panel border-[#1398db]/14 bg-[linear-gradient(135deg,#eef8ff,#ffffff)] px-5 py-6 sm:px-7 sm:py-7 lg:px-8">
+          <div className="grid gap-5 lg:grid-cols-[1fr_0.78fr] lg:items-center">
+            <div>
+              <span className="eyebrow">Appels d offres Martinique</span>
+              <h2 className="section-title mt-3 text-[var(--text-dark)]">
+                Une veille dediee pour capter les marches publics et organismes.
+              </h2>
+              <p className="mt-3 max-w-3xl text-sm leading-7 text-black/70">
+                GIB peut se positionner sur les consultations menuiserie, fermetures, renovation, garde-corps et second oeuvre :
+                Etat, collectivites, bailleurs, syndics, etablissements publics, architectes et maitres d oeuvre.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-3 lg:justify-end">
+              <Link className="cta-primary" to="/appels-offres">
+                <Building2 className="size-4" />
+                Voir la veille AO
+              </Link>
+              <a className="cta-secondary !border-[#1398db]/24 !text-[#0f6ea7]" href={`mailto:${company.email}`}>
+                <Mail className="size-4 text-[#1398db]" />
+                Transmettre un dossier
+              </a>
             </div>
           </div>
         </div>

@@ -10,6 +10,7 @@ import { ProductPage } from './pages/ProductPage'
 import { ProductsPage } from './pages/ProductsPage'
 import { QuotePage } from './pages/QuotePage'
 import { InstagramProfilePage } from './pages/InstagramProfilePage'
+import { TendersPage } from './pages/TendersPage'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route element={<InstagramProfilePage />} path="instagram" />
           <Route element={<ContactPage />} path="contact" />
           <Route element={<GalleryPage />} path="galerie" />
+          <Route element={<TendersPage />} path="appels-offres" />
           <Route element={<ProductsPage />} path="produits" />
           <Route element={<ProductPage />} path="produits/:slug" />
           <Route element={<QuotePage />} path="devis" />
