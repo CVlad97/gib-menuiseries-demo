@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Crosshair, ExternalLink, FileDown, MapPin, MessageCircle, Navigation, PhoneCall, PlusCircle } from 'lucide-react'
+import { Copy, Crosshair, ExternalLink, FileDown, MapPin, MessageCircle, Navigation, PhoneCall, PlusCircle, Route } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { SectionHeading } from '../components/SectionHeading'
 import { withBase } from '../lib/base'
@@ -105,11 +105,35 @@ function buildProspectWhatsApp(item: BoampTenderItem, distance: number, finalSco
   )
 }
 
+function buildContactScript(item: BoampTenderItem) {
+  return [
+    `Bonjour, je vous contacte pour GIB Menuiseries Services, entreprise basee a Ducos en Martinique.`,
+    `Nous avons repere votre consultation : ${item.object}.`,
+    `Nous souhaitons verifier si un lot concerne les menuiseries, fermetures, portails, volets, clotures, garde-corps ou amenagements exterieurs.`,
+    `Pouvez-vous nous confirmer le profil acheteur ou le lien DCE a utiliser pour consulter les pieces officielles ?`,
+    `Merci, nous passerons uniquement par la procedure prevue dans le reglement de consultation.`,
+  ].join('\n')
+}
+
+function buildMapsUrl(origin: LatLng, destination: LatLng) {
+  const params = new URLSearchParams({
+    api: '1',
+    origin: `${origin.lat},${origin.lng}`,
+    destination: `${destination.lat},${destination.lng}`,
+    travelmode: 'driving',
+  })
+
+  return `https://www.google.com/maps/dir/?${params.toString()}`
+}
+
 export function ProspectingAppPage() {
   const [feed, setFeed] = useState<BoampTenderFeed | null>(null)
   const [position, setPosition] = useState<LatLng>(ducosFallback)
   const [geoStatus, setGeoStatus] = useState('Position par defaut : Ducos.')
   const [importStatus, setImportStatus] = useState('')
+  const [radiusKm, setRadiusKm] = useState(35)
+  const [minScore, setMinScore] = useState(6)
+  const [query, setQuery] = useState('')
 
   useEffect(() => {
     fetch(withBase('data/gib/boamp-tenders.json'), { cache: 'no-store' })
@@ -119,6 +143,8 @@ export function ProspectingAppPage() {
   }, [])
 
   const rankedProspects = useMemo(() => {
+    const normalizedQuery = normalizeText(query)
+
     return (feed?.items ?? [])
       .map((item) => {
         const inferred = inferLocation(item)
@@ -132,9 +158,15 @@ export function ProspectingAppPage() {
           finalScore,
         }
       })
+      .filter(({ item, distance, finalScore }) => {
+        const haystack = normalizeText(`${item.organism} ${item.object} ${item.lot} ${item.notes}`)
+        const queryMatch = normalizedQuery.length === 0 || haystack.includes(normalizedQuery)
+
+        return distance <= radiusKm && finalScore >= minScore && queryMatch
+      })
       .sort((a, b) => b.finalScore - a.finalScore || a.distance - b.distance)
       .slice(0, 24)
-  }, [feed, position])
+  }, [feed, minScore, position, query, radiusKm])
 
   function locateMe() {
     if (!navigator.geolocation) {
@@ -185,6 +217,18 @@ export function ProspectingAppPage() {
     setImportStatus(`${item.organism} importe dans le tableau AO.`)
   }
 
+  async function copyContactScript(item: BoampTenderItem) {
+    const script = buildContactScript(item)
+
+    if (!navigator.clipboard) {
+      setImportStatus(script)
+      return
+    }
+
+    await navigator.clipboard.writeText(script)
+    setImportStatus(`Script de contact copie pour ${item.organism}.`)
+  }
+
   return (
     <div className="shell space-y-10 pt-8 sm:pt-12">
       <section className="glass-panel-strong px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
@@ -224,6 +268,43 @@ export function ProspectingAppPage() {
         </div>
       </section>
 
+      <section className="surface-panel px-6 py-6 sm:px-8">
+        <div className="grid gap-4 lg:grid-cols-[1.1fr_0.7fr_0.7fr] lg:items-end">
+          <label className="text-sm font-semibold text-black/70">
+            Recherche organisme / objet / lot
+            <input
+              className="field-light mt-3"
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="Ex. cloture, SEMSAMAR, Lamentin..."
+              value={query}
+            />
+          </label>
+          <label className="text-sm font-semibold text-black/70">
+            Rayon {radiusKm} km
+            <input
+              className="mt-4 w-full accent-[#1398db]"
+              max="80"
+              min="5"
+              onChange={(event) => setRadiusKm(Number(event.target.value))}
+              step="5"
+              type="range"
+              value={radiusKm}
+            />
+          </label>
+          <label className="text-sm font-semibold text-black/70">
+            Score min. {minScore}/10
+            <input
+              className="mt-4 w-full accent-[#1398db]"
+              max="10"
+              min="1"
+              onChange={(event) => setMinScore(Number(event.target.value))}
+              type="range"
+              value={minScore}
+            />
+          </label>
+        </div>
+      </section>
+
       {importStatus ? (
         <section className="rounded-[1.35rem] border border-emerald-300/40 bg-emerald-50 px-5 py-4 text-sm font-semibold text-emerald-800">
           {importStatus}
@@ -254,6 +335,7 @@ export function ProspectingAppPage() {
                   <div className="grid gap-3 text-sm text-black/68 sm:grid-cols-2">
                     <p className="inline-flex items-center gap-2"><MapPin className="size-4 text-[#1398db]" /> {inferred.label}</p>
                     <p className="inline-flex items-center gap-2"><Navigation className="size-4 text-[#1398db]" /> Deadline : {item.deadline || 'a verifier'}</p>
+                    <p className="sm:col-span-2 text-black/58">Script : verifier le DCE, identifier le lot utile, contacter uniquement via le canal prevu.</p>
                   </div>
                 </div>
                 <div className="flex shrink-0 flex-col gap-3 md:w-52">
@@ -269,6 +351,14 @@ export function ProspectingAppPage() {
                     <ExternalLink className="size-4" />
                     Source
                   </a>
+                  <a className="cta-secondary w-full" href={buildMapsUrl(position, inferred)} rel="noreferrer" target="_blank">
+                    <Route className="size-4" />
+                    Itineraire
+                  </a>
+                  <button className="cta-secondary w-full" onClick={() => copyContactScript(item)} type="button">
+                    <Copy className="size-4" />
+                    Copier script
+                  </button>
                 </div>
               </div>
             </article>
