@@ -165,6 +165,10 @@ export function TendersPage() {
                 <FileSearch className="size-4 text-[#1398db]" />
                 Dossier GIB
               </Link>
+              <Link className="cta-secondary !border-[#1398db]/24 !text-[#0f6ea7]" to="/admin-appels-offres">
+                <ClipboardCheck className="size-4 text-[#1398db]" />
+                Suivi AO
+              </Link>
               <a className="cta-secondary !border-[#1398db]/24 !text-[#0f6ea7]" href={`tel:${company.commercial_phone_international}`}>
                 <PhoneCall className="size-4 text-[#1398db]" />
                 Appeler GIB

@@ -25,8 +25,28 @@ export interface SimulationDraft {
   imagePreview?: string
 }
 
+export interface TenderOpportunity {
+  id: string
+  createdAt: string
+  status: 'watch' | 'qualified' | 'dce' | 'response' | 'submitted' | 'won' | 'lost' | 'discarded'
+  priority: 'low' | 'medium' | 'high'
+  organism: string
+  platform: string
+  url: string
+  object: string
+  lot: string
+  deadline: string
+  commune: string
+  visitRequired: string
+  documents: string
+  score: number
+  nextAction: string
+  notes: string
+}
+
 const leadKey = 'gib-demo-leads'
 const simulationKey = 'gib-demo-simulations'
+const tenderKey = 'gib-demo-tenders'
 const updateEvent = 'gib-admin-updated'
 
 function notifyUpdated() {
@@ -96,6 +116,29 @@ function normalizeSimulation(
   }
 }
 
+function normalizeTender(
+  entry: Partial<TenderOpportunity> & Pick<TenderOpportunity, 'id' | 'createdAt'>,
+): TenderOpportunity {
+  return {
+    id: entry.id,
+    createdAt: entry.createdAt,
+    status: entry.status ?? 'watch',
+    priority: entry.priority ?? 'medium',
+    organism: entry.organism ?? '',
+    platform: entry.platform ?? '',
+    url: entry.url ?? '',
+    object: entry.object ?? '',
+    lot: entry.lot ?? '',
+    deadline: entry.deadline ?? '',
+    commune: entry.commune ?? 'Martinique',
+    visitRequired: entry.visitRequired ?? 'A verifier',
+    documents: entry.documents ?? '',
+    score: Number.isFinite(entry.score) ? Number(entry.score) : 0,
+    nextAction: entry.nextAction ?? '',
+    notes: entry.notes ?? '',
+  }
+}
+
 export function listLeads(): LeadDraft[] {
   return readArray<Partial<LeadDraft> & Pick<LeadDraft, 'id' | 'createdAt'>>(leadKey).map(normalizeLead)
 }
@@ -114,6 +157,16 @@ export function saveSimulation(entry: SimulationDraft) {
   writeArray(simulationKey, [normalizeSimulation(entry), ...listSimulations()].slice(0, 30))
 }
 
+export function listTenders(): TenderOpportunity[] {
+  return readArray<Partial<TenderOpportunity> & Pick<TenderOpportunity, 'id' | 'createdAt'>>(
+    tenderKey,
+  ).map(normalizeTender)
+}
+
+export function saveTender(entry: TenderOpportunity) {
+  writeArray(tenderKey, [normalizeTender(entry), ...listTenders()].slice(0, 60))
+}
+
 export function updateLeadStatus(id: string, status: LeadDraft['status']) {
   const nextEntries = listLeads().map((entry) => (entry.id === id ? { ...entry, status } : entry))
   writeArray(leadKey, nextEntries)
@@ -124,6 +177,17 @@ export function updateSimulationStatus(id: string, status: SimulationDraft['stat
     entry.id === id ? { ...entry, status } : entry,
   )
   writeArray(simulationKey, nextEntries)
+}
+
+export function updateTender(id: string, patch: Partial<TenderOpportunity>) {
+  const nextEntries = listTenders().map((entry) =>
+    entry.id === id ? normalizeTender({ ...entry, ...patch, id: entry.id, createdAt: entry.createdAt }) : entry,
+  )
+  writeArray(tenderKey, nextEntries)
+}
+
+export function deleteTender(id: string) {
+  writeArray(tenderKey, listTenders().filter((entry) => entry.id !== id))
 }
 
 export function seedDemoData() {
@@ -154,6 +218,29 @@ export function seedDemoData() {
         produit: 'baies-vitrees',
         ambiance: 'tropical',
         notes: 'Projet terrasse couverte avec recherche de luminosite et continuité dedans-dehors.',
+      }),
+    ])
+  }
+
+  if (listTenders().length === 0) {
+    writeArray<TenderOpportunity>(tenderKey, [
+      normalizeTender({
+        id: crypto.randomUUID(),
+        createdAt: new Date().toISOString(),
+        status: 'qualified',
+        priority: 'high',
+        organism: 'Commune a confirmer',
+        platform: 'BOAMP / profil acheteur',
+        url: 'https://www.boamp.fr/pages/recherche/',
+        object: 'Remplacement de menuiseries exterieures sur batiment public',
+        lot: 'Lot menuiserie / fermetures',
+        deadline: '',
+        commune: 'Martinique',
+        visitRequired: 'A verifier',
+        documents: 'RC, CCTP, DPGF, AE, DC1, DC2',
+        score: 8,
+        nextAction: 'Telecharger le DCE et verifier la visite obligatoire.',
+        notes: 'Exemple demo. Remplacer par une consultation reelle avant usage commercial.',
       }),
     ])
   }
