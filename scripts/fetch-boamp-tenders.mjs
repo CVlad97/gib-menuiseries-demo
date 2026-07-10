@@ -27,7 +27,7 @@ function buildWhere() {
     `search(descripteur_libelle,"${keyword}")`,
   ])
 
-  return `code_departement="972" AND (${searchClauses.join(' OR ')})`
+  return `code_departement="972" AND nature="APPEL_OFFRE" AND datelimitereponse >= now() AND (${searchClauses.join(' OR ')})`
 }
 
 function asArray(value) {
@@ -73,10 +73,100 @@ function scoreTender(record) {
   return Math.max(1, Math.min(10, score))
 }
 
+function walkValues(value, matcher, results = []) {
+  if (!value || results.length >= 8) {
+    return results
+  }
+
+  if (Array.isArray(value)) {
+    for (const item of value) {
+      walkValues(item, matcher, results)
+    }
+    return results
+  }
+
+  if (typeof value === 'object') {
+    for (const [key, item] of Object.entries(value)) {
+      if (matcher(key, item)) {
+        results.push(String(item))
+      }
+      walkValues(item, matcher, results)
+    }
+  }
+
+  return results
+}
+
+function firstValue(value, matchers) {
+  for (const matcher of matchers) {
+    const [result] = walkValues(value, matcher)
+    if (result) {
+      return result
+    }
+  }
+
+  return ''
+}
+
+function parseContact(record) {
+  if (!record.donnees) {
+    return {
+      email: '',
+      phone: '',
+      contactName: '',
+      buyerCity: '',
+      buyerPostalCode: '',
+      buyerProfileUrl: '',
+    }
+  }
+
+  try {
+    const data = JSON.parse(record.donnees)
+    const email = firstValue(data, [
+      (key, value) => /mail|mel|email|courriel/i.test(key) && typeof value === 'string' && value.includes('@'),
+      (_key, value) => typeof value === 'string' && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value),
+    ])
+    const phone = firstValue(data, [
+      (key, value) => /tel|telephone|phone/i.test(key) && typeof value === 'string',
+    ])
+    const contactName = firstValue(data, [
+      (key, value) => /nomContact|contact|correspondant/i.test(key) && typeof value === 'string' && value.length > 2,
+    ])
+    const buyerCity = firstValue(data, [
+      (key, value) => /^ville$/i.test(key) && typeof value === 'string',
+    ])
+    const buyerPostalCode = firstValue(data, [
+      (key, value) => /^cp$|codePostal/i.test(key) && typeof value === 'string',
+    ])
+    const buyerProfileUrl = firstValue(data, [
+      (key, value) => /urlProfilAch|profil/i.test(key) && typeof value === 'string' && value.includes('.'),
+    ])
+
+    return {
+      email,
+      phone,
+      contactName,
+      buyerCity,
+      buyerPostalCode,
+      buyerProfileUrl,
+    }
+  } catch {
+    return {
+      email: '',
+      phone: '',
+      contactName: '',
+      buyerCity: '',
+      buyerPostalCode: '',
+      buyerProfileUrl: '',
+    }
+  }
+}
+
 function normalizeRecord(record) {
   const descriptors = asArray(record.descripteur_libelle)
   const marketTypes = asArray(record.type_marche_facette ?? record.type_marche)
   const score = scoreTender(record)
+  const contact = parseContact(record)
 
   return {
     source: 'BOAMP / DILA API ouverte',
@@ -94,10 +184,14 @@ function normalizeRecord(record) {
     score,
     priority: score >= 7 ? 'high' : score >= 4 ? 'medium' : 'low',
     nextAction: 'Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.',
+    contact,
     notes: [
       descriptors.length > 0 ? `Descripteurs : ${descriptors.join(', ')}` : null,
       marketTypes.length > 0 ? `Type marche : ${marketTypes.join(', ')}` : null,
       record.procedure_libelle ? `Procedure : ${record.procedure_libelle}` : null,
+      contact.email ? `Email acheteur : ${contact.email}` : null,
+      contact.phone ? `Tel acheteur : ${contact.phone}` : null,
+      contact.buyerProfileUrl ? `Profil acheteur : ${contact.buyerProfileUrl}` : null,
     ].filter(Boolean).join(' | '),
   }
 }
@@ -120,6 +214,9 @@ async function fetchBoamp() {
       'type_marche_facette',
       'procedure_libelle',
       'url_avis',
+      'nature',
+      'nature_libelle',
+      'donnees',
     ].join(','),
   })
 

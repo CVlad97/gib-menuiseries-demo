@@ -61,6 +61,14 @@ interface BoampTenderItem {
   priority: TenderOpportunity['priority']
   nextAction: string
   notes: string
+  contact?: {
+    email?: string
+    phone?: string
+    contactName?: string
+    buyerCity?: string
+    buyerPostalCode?: string
+    buyerProfileUrl?: string
+  }
 }
 
 interface BoampTenderFeed {
@@ -245,7 +253,14 @@ export function TenderAdminPage() {
           documents: item.documents,
           score: item.score,
           nextAction: item.nextAction,
-          notes: `${item.notes}${item.sourceId ? ` | BOAMP ${item.sourceId}` : ''}`,
+          notes: [
+            item.notes,
+            item.sourceId ? `BOAMP ${item.sourceId}` : null,
+            item.contact?.email ? `Email acheteur : ${item.contact.email}` : null,
+            item.contact?.phone ? `Tel acheteur : ${item.contact.phone}` : null,
+            item.contact?.contactName ? `Contact acheteur : ${item.contact.contactName}` : null,
+            item.contact?.buyerProfileUrl ? `Profil acheteur : ${item.contact.buyerProfileUrl}` : null,
+          ].filter(Boolean).join(' | '),
         })
         knownKeys.add(key)
         imported += 1
@@ -418,6 +433,12 @@ export function TenderAdminPage() {
                           <dt className="font-semibold text-black">Action suivante</dt>
                           <dd>{tender.nextAction || 'A definir'}</dd>
                         </div>
+                        {tender.notes ? (
+                          <div className="md:col-span-2">
+                            <dt className="font-semibold text-black">Coordonnees / notes</dt>
+                            <dd>{tender.notes}</dd>
+                          </div>
+                        ) : null}
                       </dl>
                     </div>
                     <div className="flex w-full flex-col gap-3 lg:w-56">

@@ -21,6 +21,14 @@ interface BoampTenderItem {
   priority: TenderOpportunity['priority']
   nextAction: string
   notes: string
+  contact?: {
+    email?: string
+    phone?: string
+    contactName?: string
+    buyerCity?: string
+    buyerPostalCode?: string
+    buyerProfileUrl?: string
+  }
 }
 
 interface BoampTenderFeed {
@@ -100,8 +108,10 @@ function buildProspectWhatsApp(item: BoampTenderItem, distance: number, finalSco
       `Score prospection : ${finalScore}/10`,
       `Date limite : ${item.deadline || 'a verifier'}`,
       `Lien : ${item.url}`,
+      item.contact?.email ? `Email acheteur : ${item.contact.email}` : null,
+      item.contact?.phone ? `Tel acheteur : ${item.contact.phone}` : null,
       'Action : verifier le DCE, identifier le lot menuiserie/fermeture et decider go/no-go.',
-    ].join('\n'),
+    ].filter(Boolean).join('\n'),
   )
 }
 
@@ -212,7 +222,11 @@ export function ProspectingAppPage() {
       documents: item.documents,
       score: item.score,
       nextAction: item.nextAction,
-      notes: item.notes,
+      notes: [
+        item.notes,
+        item.contact?.email ? `Email acheteur : ${item.contact.email}` : null,
+        item.contact?.phone ? `Tel acheteur : ${item.contact.phone}` : null,
+      ].filter(Boolean).join(' | '),
     })
     setImportStatus(`${item.organism} importe dans le tableau AO.`)
   }
@@ -335,6 +349,17 @@ export function ProspectingAppPage() {
                   <div className="grid gap-3 text-sm text-black/68 sm:grid-cols-2">
                     <p className="inline-flex items-center gap-2"><MapPin className="size-4 text-[#1398db]" /> {inferred.label}</p>
                     <p className="inline-flex items-center gap-2"><Navigation className="size-4 text-[#1398db]" /> Deadline : {item.deadline || 'a verifier'}</p>
+                    <p className="inline-flex items-center gap-2">
+                      Email : {item.contact?.email ? (
+                        <a className="font-semibold text-[#0f6ea7]" href={`mailto:${item.contact.email}`}>{item.contact.email}</a>
+                      ) : 'non fourni'}
+                    </p>
+                    <p className="inline-flex items-center gap-2">
+                      Tel : {item.contact?.phone ? (
+                        <a className="font-semibold text-[#0f6ea7]" href={`tel:${item.contact.phone}`}>{item.contact.phone}</a>
+                      ) : 'non fourni'}
+                    </p>
+                    {item.contact?.contactName ? <p className="sm:col-span-2 text-black/58">Contact : {item.contact.contactName}</p> : null}
                     <p className="sm:col-span-2 text-black/58">Script : verifier le DCE, identifier le lot utile, contacter uniquement via le canal prevu.</p>
                   </div>
                 </div>
