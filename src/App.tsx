@@ -15,6 +15,7 @@ import { TendersPage } from './pages/TendersPage'
 import { TenderAdminPage } from './pages/TenderAdminPage'
 import { ProspectingAppPage } from './pages/ProspectingAppPage'
 import { TenderMethodologyPage } from './pages/TenderMethodologyPage'
+import { GlobalProspectingPage } from './pages/GlobalProspectingPage'
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route element={<CompanyDossierPage />} path="dossier-entreprise" />
           <Route element={<TenderAdminPage />} path="admin-appels-offres" />
           <Route element={<ProspectingAppPage />} path="prospection-locale" />
+          <Route element={<GlobalProspectingPage />} path="prospection-globale" />
           <Route element={<TenderMethodologyPage />} path="methode-appels-offres" />
           <Route element={<ProductsPage />} path="produits" />
           <Route element={<ProductPage />} path="produits/:slug" />
