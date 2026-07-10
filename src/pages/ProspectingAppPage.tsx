@@ -257,6 +257,9 @@ export function ProspectingAppPage() {
                 <FileDown className="size-4" />
                 Tableau AO
               </Link>
+              <Link className="cta-secondary" to="/methode-appels-offres">
+                Methode de reponse
+              </Link>
             </div>
           }
           description="Classe les opportunites BOAMP Martinique selon votre position, la distance estimee, le score metier GIB et la date limite. Aucun tracking externe, aucune cle API."
