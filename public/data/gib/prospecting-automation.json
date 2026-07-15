@@ -1,0 +1,310 @@
+{
+  "source": "GIB prospecting automation queue",
+  "generatedAt": "2026-07-15T18:09:34.732Z",
+  "tenderFeedGeneratedAt": "2026-07-15T18:09:34.197Z",
+  "summary": {
+    "totalTenderRows": 5,
+    "uniqueQueueItems": 4,
+    "emailReady": 4,
+    "phoneReady": 2,
+    "urgent": 0,
+    "manualSubmissionRequired": 4
+  },
+  "compliance": [
+    "Utiliser uniquement les contacts publies ou fournis volontairement.",
+    "Ne pas deposer automatiquement une offre sur un profil acheteur.",
+    "Respecter les canaux officiels du DCE pour questions et depots.",
+    "Arreter les relances si STOP, refus ou absence de pertinence.",
+    "Verifier les certifications, assurances et prix avant toute reponse officielle."
+  ],
+  "queue": [
+    {
+      "id": "ao-26-66044",
+      "sourceId": "26-66044",
+      "type": "response",
+      "organism": "PREFECTURE DE LA MARTINIQUE",
+      "object": "Travaux de sécurisation d’un site par installation d’une clôture et réalisation de divers aménagements extérieurs à Fort-de-France",
+      "lot": "Clôture",
+      "deadline": "2026-07-27",
+      "daysUntilDeadline": 13,
+      "priority": "high",
+      "score": 8,
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-66044",
+      "contact": {
+        "email": "sgc-achat@martinique.gouv.fr",
+        "phone": "",
+        "name": "Lionel VINCENT",
+        "profile": "www.marches-publics.gouv.fr"
+      },
+      "automation": {
+        "emailReady": true,
+        "phoneReady": false,
+        "whatsappReady": true,
+        "officialSubmission": "manual_required",
+        "duplicateGuard": "sgc-achat@martinique.gouv.fr|prefecture de la martinique|travaux de securisation d’un site par installation d’une cloture et realisation de divers amenagements exterieurs a fort-de-france"
+      },
+      "email": {
+        "to": "sgc-achat@martinique.gouv.fr",
+        "subject": "Demande DCE / qualification lot - PREFECTURE DE LA MARTINIQUE - 26-66044",
+        "body": "Bonjour,\n\nNous vous contactons pour GIB Menuiseries Services, entreprise basee a Ducos en Martinique, au sujet de la consultation suivante :\n- Organisme : PREFECTURE DE LA MARTINIQUE\n- Objet : Travaux de sécurisation d’un site par installation d’une clôture et réalisation de divers aménagements extérieurs à Fort-de-France\n- Reference : 26-66044\n- Date limite : 2026-07-27\n\nNous souhaitons verifier si un lot menuiserie, fermeture, cloture, garde-corps ou ouvrage associe correspond a notre activite.\n\nPouvez-vous nous confirmer le lien DCE/profil acheteur a utiliser, ainsi que les modalites officielles pour poser une question ou deposer une reponse si le lot est pertinent ?\n\nPresentation GIB :\nSite : https://www.gibmenuiseries.fr\nInstagram : https://www.instagram.com/gibmenuiseries/\nFlyer : https://cvlad97.github.io/gib-menuiseries-demo/media/gib/flyers/pub3.jpeg\n\nContact commercial : Vladimir Claveau\nWhatsApp : +596 696 65 35 89\nEmail : gibmenuiseriesservices@gmail.com\nZone Industrielle Cocotte, derriere Lapeyre, Ducos, Martinique\n\nCordialement,\nGIB Menuiseries Services",
+        "mailto": "mailto:sgc-achat@martinique.gouv.fr?subject=Demande+DCE+%2F+qualification+lot+-+PREFECTURE+DE+LA+MARTINIQUE+-+26-66044&body=Bonjour%2C%0A%0ANous+vous+contactons+pour+GIB+Menuiseries+Services%2C+entreprise+basee+a+Ducos+en+Martinique%2C+au+sujet+de+la+consultation+suivante+%3A%0A-+Organisme+%3A+PREFECTURE+DE+LA+MARTINIQUE%0A-+Objet+%3A+Travaux+de+s%C3%A9curisation+d%E2%80%99un+site+par+installation+d%E2%80%99une+cl%C3%B4ture+et+r%C3%A9alisation+de+divers+am%C3%A9nagements+ext%C3%A9rieurs+%C3%A0+Fort-de-France%0A-+Reference+%3A+26-66044%0A-+Date+limite+%3A+2026-07-27%0A%0ANous+souhaitons+verifier+si+un+lot+menuiserie%2C+fermeture%2C+cloture%2C+garde-corps+ou+ouvrage+associe+correspond+a+notre+activite.%0A%0APouvez-vous+nous+confirmer+le+lien+DCE%2Fprofil+acheteur+a+utiliser%2C+ainsi+que+les+modalites+officielles+pour+poser+une+question+ou+deposer+une+reponse+si+le+lot+est+pertinent+%3F%0A%0APresentation+GIB+%3A%0ASite+%3A+https%3A%2F%2Fwww.gibmenuiseries.fr%0AInstagram+%3A+https%3A%2F%2Fwww.instagram.com%2Fgibmenuiseries%2F%0AFlyer+%3A+https%3A%2F%2Fcvlad97.github.io%2Fgib-menuiseries-demo%2Fmedia%2Fgib%2Fflyers%2Fpub3.jpeg%0A%0AContact+commercial+%3A+Vladimir+Claveau%0AWhatsApp+%3A+%2B596+696+65+35+89%0AEmail+%3A+gibmenuiseriesservices%40gmail.com%0AZone+Industrielle+Cocotte%2C+derriere+Lapeyre%2C+Ducos%2C+Martinique%0A%0ACordialement%2C%0AGIB+Menuiseries+Services"
+      },
+      "whatsapp": {
+        "to": "+596 696 65 35 89",
+        "body": "AO GIB a traiter\nOrganisme : PREFECTURE DE LA MARTINIQUE\nObjet : Travaux de sécurisation d’un site par installation d’une clôture et réalisation de divers aménagements extérieurs à Fort-de-France\nDeadline : 2026-07-27\nScore : 8/10\nEmail : sgc-achat@martinique.gouv.fr\nLien : https://www.boamp.fr/pages/avis/?q=idweb:26-66044\nAction : verifier DCE, identifier lot, preparer go/no-go.",
+        "url": "https://wa.me/596696653589?text=AO%20GIB%20a%20traiter%0AOrganisme%20%3A%20PREFECTURE%20DE%20LA%20MARTINIQUE%0AObjet%20%3A%20Travaux%20de%20s%C3%A9curisation%20d%E2%80%99un%20site%20par%20installation%20d%E2%80%99une%20cl%C3%B4ture%20et%20r%C3%A9alisation%20de%20divers%20am%C3%A9nagements%20ext%C3%A9rieurs%20%C3%A0%20Fort-de-France%0ADeadline%20%3A%202026-07-27%0AScore%20%3A%208%2F10%0AEmail%20%3A%20sgc-achat%40martinique.gouv.fr%0ALien%20%3A%20https%3A%2F%2Fwww.boamp.fr%2Fpages%2Favis%2F%3Fq%3Didweb%3A26-66044%0AAction%20%3A%20verifier%20DCE%2C%20identifier%20lot%2C%20preparer%20go%2Fno-go."
+      },
+      "call": {
+        "phone": "",
+        "script": "Bonjour, je vous appelle pour GIB Menuiseries Services a Ducos.\nNous avons repere votre consultation : Travaux de sécurisation d’un site par installation d’une clôture et réalisation de divers aménagements extérieurs à Fort-de-France.\nNous souhaitons verifier si un lot concerne les menuiseries, fermetures, clotures, garde-corps, portails, volets ou ouvrages associes.\nPouvez-vous me confirmer le bon lien DCE/profil acheteur et la procedure officielle pour les questions ?\nNous passerons uniquement par le canal prevu dans le reglement de consultation.",
+        "telUrl": ""
+      },
+      "dossier": {
+        "status": "to_prepare",
+        "checklist": [
+          "Ouvrir avis BOAMP et profil acheteur",
+          "Telecharger RC, CCTP, DPGF/BPU, AE, CCAP et annexes",
+          "Verifier date limite, visite obligatoire, questions autorisees",
+          "Identifier lot menuiserie/fermeture/cloture/garde-corps",
+          "Decision go/no-go : capacite, delai, references, pieces administratives",
+          "Preparer DC1/DC2, attestation assurance, Kbis, RIB, memoire technique",
+          "Chiffrer le lot pertinent et preparer une question technique si besoin"
+        ],
+        "warning": "Ne pas deposer une offre automatiquement. Le DCE, les pieces et le chiffrage doivent etre valides par un humain."
+      },
+      "followUps": [
+        {
+          "label": "J+1",
+          "date": "2026-07-16",
+          "action": "Verifier reception ou ouvrir profil acheteur officiel"
+        },
+        {
+          "label": "J+3",
+          "date": "2026-07-18",
+          "action": "Relancer si aucune reponse et deadline compatible"
+        },
+        {
+          "label": "J+7",
+          "date": "2026-07-22",
+          "action": "Decision go/no-go ou classement"
+        }
+      ]
+    },
+    {
+      "id": "ao-26-52714",
+      "sourceId": "26-52714",
+      "type": "qualification",
+      "organism": "DSNA DTI",
+      "object": "Travaux de rénovation de la distribution électrique sur l'aéroport de Martinique Aimé Césaire",
+      "lot": "Aéronautique",
+      "deadline": "2026-07-29",
+      "daysUntilDeadline": 15,
+      "priority": "medium",
+      "score": 6,
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-52714",
+      "contact": {
+        "email": "Frederic.Darmaillacq@aviation-civile.gouv.fr",
+        "phone": "",
+        "name": "",
+        "profile": "https://www.marches-publics.gouv.fr/entreprise"
+      },
+      "automation": {
+        "emailReady": true,
+        "phoneReady": false,
+        "whatsappReady": true,
+        "officialSubmission": "manual_required",
+        "duplicateGuard": "frederic.darmaillacq@aviation-civile.gouv.fr|dsna dti|travaux de renovation de la distribution electrique sur l'aeroport de martinique aime cesaire"
+      },
+      "email": {
+        "to": "Frederic.Darmaillacq@aviation-civile.gouv.fr",
+        "subject": "Demande orientation DCE - DSNA DTI - 26-52714",
+        "body": "Bonjour,\n\nNous vous contactons pour GIB Menuiseries Services, entreprise basee a Ducos en Martinique, au sujet de la consultation suivante :\n- Organisme : DSNA DTI\n- Objet : Travaux de rénovation de la distribution électrique sur l'aéroport de Martinique Aimé Césaire\n- Reference : 26-52714\n- Date limite : 2026-07-29\n\nNous souhaitons identifier si des prestations de menuiserie, fermeture, acces, cloture ou renovation peuvent correspondre a notre activite.\n\nPouvez-vous nous confirmer le lien DCE/profil acheteur a utiliser, ainsi que les modalites officielles pour poser une question ou deposer une reponse si le lot est pertinent ?\n\nPresentation GIB :\nSite : https://www.gibmenuiseries.fr\nInstagram : https://www.instagram.com/gibmenuiseries/\nFlyer : https://cvlad97.github.io/gib-menuiseries-demo/media/gib/flyers/pub3.jpeg\n\nContact commercial : Vladimir Claveau\nWhatsApp : +596 696 65 35 89\nEmail : gibmenuiseriesservices@gmail.com\nZone Industrielle Cocotte, derriere Lapeyre, Ducos, Martinique\n\nCordialement,\nGIB Menuiseries Services",
+        "mailto": "mailto:Frederic.Darmaillacq@aviation-civile.gouv.fr?subject=Demande+orientation+DCE+-+DSNA+DTI+-+26-52714&body=Bonjour%2C%0A%0ANous+vous+contactons+pour+GIB+Menuiseries+Services%2C+entreprise+basee+a+Ducos+en+Martinique%2C+au+sujet+de+la+consultation+suivante+%3A%0A-+Organisme+%3A+DSNA+DTI%0A-+Objet+%3A+Travaux+de+r%C3%A9novation+de+la+distribution+%C3%A9lectrique+sur+l%27a%C3%A9roport+de+Martinique+Aim%C3%A9+C%C3%A9saire%0A-+Reference+%3A+26-52714%0A-+Date+limite+%3A+2026-07-29%0A%0ANous+souhaitons+identifier+si+des+prestations+de+menuiserie%2C+fermeture%2C+acces%2C+cloture+ou+renovation+peuvent+correspondre+a+notre+activite.%0A%0APouvez-vous+nous+confirmer+le+lien+DCE%2Fprofil+acheteur+a+utiliser%2C+ainsi+que+les+modalites+officielles+pour+poser+une+question+ou+deposer+une+reponse+si+le+lot+est+pertinent+%3F%0A%0APresentation+GIB+%3A%0ASite+%3A+https%3A%2F%2Fwww.gibmenuiseries.fr%0AInstagram+%3A+https%3A%2F%2Fwww.instagram.com%2Fgibmenuiseries%2F%0AFlyer+%3A+https%3A%2F%2Fcvlad97.github.io%2Fgib-menuiseries-demo%2Fmedia%2Fgib%2Fflyers%2Fpub3.jpeg%0A%0AContact+commercial+%3A+Vladimir+Claveau%0AWhatsApp+%3A+%2B596+696+65+35+89%0AEmail+%3A+gibmenuiseriesservices%40gmail.com%0AZone+Industrielle+Cocotte%2C+derriere+Lapeyre%2C+Ducos%2C+Martinique%0A%0ACordialement%2C%0AGIB+Menuiseries+Services"
+      },
+      "whatsapp": {
+        "to": "+596 696 65 35 89",
+        "body": "AO GIB a traiter\nOrganisme : DSNA DTI\nObjet : Travaux de rénovation de la distribution électrique sur l'aéroport de Martinique Aimé Césaire\nDeadline : 2026-07-29\nScore : 6/10\nEmail : Frederic.Darmaillacq@aviation-civile.gouv.fr\nLien : https://www.boamp.fr/pages/avis/?q=idweb:26-52714\nAction : verifier DCE, identifier lot, preparer go/no-go.",
+        "url": "https://wa.me/596696653589?text=AO%20GIB%20a%20traiter%0AOrganisme%20%3A%20DSNA%20DTI%0AObjet%20%3A%20Travaux%20de%20r%C3%A9novation%20de%20la%20distribution%20%C3%A9lectrique%20sur%20l'a%C3%A9roport%20de%20Martinique%20Aim%C3%A9%20C%C3%A9saire%0ADeadline%20%3A%202026-07-29%0AScore%20%3A%206%2F10%0AEmail%20%3A%20Frederic.Darmaillacq%40aviation-civile.gouv.fr%0ALien%20%3A%20https%3A%2F%2Fwww.boamp.fr%2Fpages%2Favis%2F%3Fq%3Didweb%3A26-52714%0AAction%20%3A%20verifier%20DCE%2C%20identifier%20lot%2C%20preparer%20go%2Fno-go."
+      },
+      "call": {
+        "phone": "",
+        "script": "Bonjour, je vous appelle pour GIB Menuiseries Services a Ducos.\nNous avons repere votre consultation : Travaux de rénovation de la distribution électrique sur l'aéroport de Martinique Aimé Césaire.\nNous souhaitons verifier si un lot concerne les menuiseries, fermetures, clotures, garde-corps, portails, volets ou ouvrages associes.\nPouvez-vous me confirmer le bon lien DCE/profil acheteur et la procedure officielle pour les questions ?\nNous passerons uniquement par le canal prevu dans le reglement de consultation.",
+        "telUrl": ""
+      },
+      "dossier": {
+        "status": "to_prepare",
+        "checklist": [
+          "Ouvrir avis BOAMP et profil acheteur",
+          "Telecharger RC, CCTP, DPGF/BPU, AE, CCAP et annexes",
+          "Verifier date limite, visite obligatoire, questions autorisees",
+          "Identifier lot menuiserie/fermeture/cloture/garde-corps",
+          "Decision go/no-go : capacite, delai, references, pieces administratives",
+          "Preparer DC1/DC2, attestation assurance, Kbis, RIB, memoire technique",
+          "Ecarter si aucun lot GIB ou garder en veille fournisseur/sous-traitance"
+        ],
+        "warning": "Ne pas deposer une offre automatiquement. Le DCE, les pieces et le chiffrage doivent etre valides par un humain."
+      },
+      "followUps": [
+        {
+          "label": "J+1",
+          "date": "2026-07-16",
+          "action": "Verifier reception ou ouvrir profil acheteur officiel"
+        },
+        {
+          "label": "J+3",
+          "date": "2026-07-18",
+          "action": "Relancer si aucune reponse et deadline compatible"
+        },
+        {
+          "label": "J+7",
+          "date": "2026-07-22",
+          "action": "Decision go/no-go ou classement"
+        }
+      ]
+    },
+    {
+      "id": "ao-26-66492",
+      "sourceId": "26-66492",
+      "type": "response",
+      "organism": "SEMSAMAR (972)",
+      "object": "Marche de Travaux - Construction du groupe scolaire de Bagatelle - GROS MORNE",
+      "lot": "Gros oeuvre, Menuiserie, Electricité (travaux), Plomberie (travaux), Peinture (travaux)",
+      "deadline": "2026-07-31",
+      "daysUntilDeadline": 17,
+      "priority": "high",
+      "score": 8,
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-66492",
+      "contact": {
+        "email": "lvalentin@semsamar.fr",
+        "phone": "+33596731659",
+        "name": "",
+        "profile": "https://www.marches-securises.fr"
+      },
+      "automation": {
+        "emailReady": true,
+        "phoneReady": true,
+        "whatsappReady": true,
+        "officialSubmission": "manual_required",
+        "duplicateGuard": "lvalentin@semsamar.fr|semsamar (972)|marche de travaux - construction du groupe scolaire de bagatelle - gros morne"
+      },
+      "email": {
+        "to": "lvalentin@semsamar.fr",
+        "subject": "Demande DCE / qualification lot - SEMSAMAR (972) - 26-66492",
+        "body": "Bonjour,\n\nNous vous contactons pour GIB Menuiseries Services, entreprise basee a Ducos en Martinique, au sujet de la consultation suivante :\n- Organisme : SEMSAMAR (972)\n- Objet : Marche de Travaux - Construction du groupe scolaire de Bagatelle - GROS MORNE\n- Reference : 26-66492\n- Date limite : 2026-07-31\n\nNous souhaitons verifier si un lot menuiserie, fermeture, cloture, garde-corps ou ouvrage associe correspond a notre activite.\n\nPouvez-vous nous confirmer le lien DCE/profil acheteur a utiliser, ainsi que les modalites officielles pour poser une question ou deposer une reponse si le lot est pertinent ?\n\nPresentation GIB :\nSite : https://www.gibmenuiseries.fr\nInstagram : https://www.instagram.com/gibmenuiseries/\nFlyer : https://cvlad97.github.io/gib-menuiseries-demo/media/gib/flyers/pub3.jpeg\n\nContact commercial : Vladimir Claveau\nWhatsApp : +596 696 65 35 89\nEmail : gibmenuiseriesservices@gmail.com\nZone Industrielle Cocotte, derriere Lapeyre, Ducos, Martinique\n\nCordialement,\nGIB Menuiseries Services",
+        "mailto": "mailto:lvalentin@semsamar.fr?subject=Demande+DCE+%2F+qualification+lot+-+SEMSAMAR+%28972%29+-+26-66492&body=Bonjour%2C%0A%0ANous+vous+contactons+pour+GIB+Menuiseries+Services%2C+entreprise+basee+a+Ducos+en+Martinique%2C+au+sujet+de+la+consultation+suivante+%3A%0A-+Organisme+%3A+SEMSAMAR+%28972%29%0A-+Objet+%3A+Marche+de+Travaux+-+Construction+du+groupe+scolaire+de+Bagatelle+-+GROS+MORNE%0A-+Reference+%3A+26-66492%0A-+Date+limite+%3A+2026-07-31%0A%0ANous+souhaitons+verifier+si+un+lot+menuiserie%2C+fermeture%2C+cloture%2C+garde-corps+ou+ouvrage+associe+correspond+a+notre+activite.%0A%0APouvez-vous+nous+confirmer+le+lien+DCE%2Fprofil+acheteur+a+utiliser%2C+ainsi+que+les+modalites+officielles+pour+poser+une+question+ou+deposer+une+reponse+si+le+lot+est+pertinent+%3F%0A%0APresentation+GIB+%3A%0ASite+%3A+https%3A%2F%2Fwww.gibmenuiseries.fr%0AInstagram+%3A+https%3A%2F%2Fwww.instagram.com%2Fgibmenuiseries%2F%0AFlyer+%3A+https%3A%2F%2Fcvlad97.github.io%2Fgib-menuiseries-demo%2Fmedia%2Fgib%2Fflyers%2Fpub3.jpeg%0A%0AContact+commercial+%3A+Vladimir+Claveau%0AWhatsApp+%3A+%2B596+696+65+35+89%0AEmail+%3A+gibmenuiseriesservices%40gmail.com%0AZone+Industrielle+Cocotte%2C+derriere+Lapeyre%2C+Ducos%2C+Martinique%0A%0ACordialement%2C%0AGIB+Menuiseries+Services"
+      },
+      "whatsapp": {
+        "to": "+596 696 65 35 89",
+        "body": "AO GIB a traiter\nOrganisme : SEMSAMAR (972)\nObjet : Marche de Travaux - Construction du groupe scolaire de Bagatelle - GROS MORNE\nDeadline : 2026-07-31\nScore : 8/10\nEmail : lvalentin@semsamar.fr\nTel : +33 596731659\nLien : https://www.boamp.fr/pages/avis/?q=idweb:26-66492\nAction : verifier DCE, identifier lot, preparer go/no-go.",
+        "url": "https://wa.me/596696653589?text=AO%20GIB%20a%20traiter%0AOrganisme%20%3A%20SEMSAMAR%20(972)%0AObjet%20%3A%20Marche%20de%20Travaux%20-%20Construction%20du%20groupe%20scolaire%20de%20Bagatelle%20-%20GROS%20MORNE%0ADeadline%20%3A%202026-07-31%0AScore%20%3A%208%2F10%0AEmail%20%3A%20lvalentin%40semsamar.fr%0ATel%20%3A%20%2B33%20596731659%0ALien%20%3A%20https%3A%2F%2Fwww.boamp.fr%2Fpages%2Favis%2F%3Fq%3Didweb%3A26-66492%0AAction%20%3A%20verifier%20DCE%2C%20identifier%20lot%2C%20preparer%20go%2Fno-go."
+      },
+      "call": {
+        "phone": "+33596731659",
+        "script": "Bonjour, je vous appelle pour GIB Menuiseries Services a Ducos.\nNous avons repere votre consultation : Marche de Travaux - Construction du groupe scolaire de Bagatelle - GROS MORNE.\nNous souhaitons verifier si un lot concerne les menuiseries, fermetures, clotures, garde-corps, portails, volets ou ouvrages associes.\nPouvez-vous me confirmer le bon lien DCE/profil acheteur et la procedure officielle pour les questions ?\nNous passerons uniquement par le canal prevu dans le reglement de consultation.",
+        "telUrl": "tel:+33596731659"
+      },
+      "dossier": {
+        "status": "to_prepare",
+        "checklist": [
+          "Ouvrir avis BOAMP et profil acheteur",
+          "Telecharger RC, CCTP, DPGF/BPU, AE, CCAP et annexes",
+          "Verifier date limite, visite obligatoire, questions autorisees",
+          "Identifier lot menuiserie/fermeture/cloture/garde-corps",
+          "Decision go/no-go : capacite, delai, references, pieces administratives",
+          "Preparer DC1/DC2, attestation assurance, Kbis, RIB, memoire technique",
+          "Chiffrer le lot pertinent et preparer une question technique si besoin"
+        ],
+        "warning": "Ne pas deposer une offre automatiquement. Le DCE, les pieces et le chiffrage doivent etre valides par un humain."
+      },
+      "followUps": [
+        {
+          "label": "J+1",
+          "date": "2026-07-16",
+          "action": "Verifier reception ou ouvrir profil acheteur officiel"
+        },
+        {
+          "label": "J+3",
+          "date": "2026-07-18",
+          "action": "Relancer si aucune reponse et deadline compatible"
+        },
+        {
+          "label": "J+7",
+          "date": "2026-07-22",
+          "action": "Decision go/no-go ou classement"
+        }
+      ]
+    },
+    {
+      "id": "ao-26-67263",
+      "sourceId": "26-67263",
+      "type": "qualification",
+      "organism": "GPMLM",
+      "object": "TRAVAUX DE RÉNOVATION SUR TOITURES GRAND PORT MARITIME DE LA MARTINIQUE",
+      "lot": "Etanchéité",
+      "deadline": "2026-08-06",
+      "daysUntilDeadline": 23,
+      "priority": "medium",
+      "score": 6,
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-67263",
+      "contact": {
+        "email": "c.sabino@martinique.port.fr",
+        "phone": "+33596590052",
+        "name": "Monsieur Christophe SABINO",
+        "profile": "https://www.antilles-legales.fr"
+      },
+      "automation": {
+        "emailReady": true,
+        "phoneReady": true,
+        "whatsappReady": true,
+        "officialSubmission": "manual_required",
+        "duplicateGuard": "c.sabino@martinique.port.fr|gpmlm|travaux de renovation sur toitures grand port maritime de la martinique"
+      },
+      "email": {
+        "to": "c.sabino@martinique.port.fr",
+        "subject": "Demande orientation DCE - GPMLM - 26-67263",
+        "body": "Bonjour,\n\nNous vous contactons pour GIB Menuiseries Services, entreprise basee a Ducos en Martinique, au sujet de la consultation suivante :\n- Organisme : GPMLM\n- Objet : TRAVAUX DE RÉNOVATION SUR TOITURES GRAND PORT MARITIME DE LA MARTINIQUE\n- Reference : 26-67263\n- Date limite : 2026-08-06\n\nNous souhaitons identifier si des prestations de menuiserie, fermeture, acces, cloture ou renovation peuvent correspondre a notre activite.\n\nPouvez-vous nous confirmer le lien DCE/profil acheteur a utiliser, ainsi que les modalites officielles pour poser une question ou deposer une reponse si le lot est pertinent ?\n\nPresentation GIB :\nSite : https://www.gibmenuiseries.fr\nInstagram : https://www.instagram.com/gibmenuiseries/\nFlyer : https://cvlad97.github.io/gib-menuiseries-demo/media/gib/flyers/pub3.jpeg\n\nContact commercial : Vladimir Claveau\nWhatsApp : +596 696 65 35 89\nEmail : gibmenuiseriesservices@gmail.com\nZone Industrielle Cocotte, derriere Lapeyre, Ducos, Martinique\n\nCordialement,\nGIB Menuiseries Services",
+        "mailto": "mailto:c.sabino@martinique.port.fr?subject=Demande+orientation+DCE+-+GPMLM+-+26-67263&body=Bonjour%2C%0A%0ANous+vous+contactons+pour+GIB+Menuiseries+Services%2C+entreprise+basee+a+Ducos+en+Martinique%2C+au+sujet+de+la+consultation+suivante+%3A%0A-+Organisme+%3A+GPMLM%0A-+Objet+%3A+TRAVAUX+DE+R%C3%89NOVATION+SUR+TOITURES+GRAND+PORT+MARITIME+DE+LA+MARTINIQUE%0A-+Reference+%3A+26-67263%0A-+Date+limite+%3A+2026-08-06%0A%0ANous+souhaitons+identifier+si+des+prestations+de+menuiserie%2C+fermeture%2C+acces%2C+cloture+ou+renovation+peuvent+correspondre+a+notre+activite.%0A%0APouvez-vous+nous+confirmer+le+lien+DCE%2Fprofil+acheteur+a+utiliser%2C+ainsi+que+les+modalites+officielles+pour+poser+une+question+ou+deposer+une+reponse+si+le+lot+est+pertinent+%3F%0A%0APresentation+GIB+%3A%0ASite+%3A+https%3A%2F%2Fwww.gibmenuiseries.fr%0AInstagram+%3A+https%3A%2F%2Fwww.instagram.com%2Fgibmenuiseries%2F%0AFlyer+%3A+https%3A%2F%2Fcvlad97.github.io%2Fgib-menuiseries-demo%2Fmedia%2Fgib%2Fflyers%2Fpub3.jpeg%0A%0AContact+commercial+%3A+Vladimir+Claveau%0AWhatsApp+%3A+%2B596+696+65+35+89%0AEmail+%3A+gibmenuiseriesservices%40gmail.com%0AZone+Industrielle+Cocotte%2C+derriere+Lapeyre%2C+Ducos%2C+Martinique%0A%0ACordialement%2C%0AGIB+Menuiseries+Services"
+      },
+      "whatsapp": {
+        "to": "+596 696 65 35 89",
+        "body": "AO GIB a traiter\nOrganisme : GPMLM\nObjet : TRAVAUX DE RÉNOVATION SUR TOITURES GRAND PORT MARITIME DE LA MARTINIQUE\nDeadline : 2026-08-06\nScore : 6/10\nEmail : c.sabino@martinique.port.fr\nTel : +33 596590052\nLien : https://www.boamp.fr/pages/avis/?q=idweb:26-67263\nAction : verifier DCE, identifier lot, preparer go/no-go.",
+        "url": "https://wa.me/596696653589?text=AO%20GIB%20a%20traiter%0AOrganisme%20%3A%20GPMLM%0AObjet%20%3A%20TRAVAUX%20DE%20R%C3%89NOVATION%20SUR%20TOITURES%20GRAND%20PORT%20MARITIME%20DE%20LA%20MARTINIQUE%0ADeadline%20%3A%202026-08-06%0AScore%20%3A%206%2F10%0AEmail%20%3A%20c.sabino%40martinique.port.fr%0ATel%20%3A%20%2B33%20596590052%0ALien%20%3A%20https%3A%2F%2Fwww.boamp.fr%2Fpages%2Favis%2F%3Fq%3Didweb%3A26-67263%0AAction%20%3A%20verifier%20DCE%2C%20identifier%20lot%2C%20preparer%20go%2Fno-go."
+      },
+      "call": {
+        "phone": "+33596590052",
+        "script": "Bonjour, je vous appelle pour GIB Menuiseries Services a Ducos.\nNous avons repere votre consultation : TRAVAUX DE RÉNOVATION SUR TOITURES GRAND PORT MARITIME DE LA MARTINIQUE.\nNous souhaitons verifier si un lot concerne les menuiseries, fermetures, clotures, garde-corps, portails, volets ou ouvrages associes.\nPouvez-vous me confirmer le bon lien DCE/profil acheteur et la procedure officielle pour les questions ?\nNous passerons uniquement par le canal prevu dans le reglement de consultation.",
+        "telUrl": "tel:+33596590052"
+      },
+      "dossier": {
+        "status": "to_prepare",
+        "checklist": [
+          "Ouvrir avis BOAMP et profil acheteur",
+          "Telecharger RC, CCTP, DPGF/BPU, AE, CCAP et annexes",
+          "Verifier date limite, visite obligatoire, questions autorisees",
+          "Identifier lot menuiserie/fermeture/cloture/garde-corps",
+          "Decision go/no-go : capacite, delai, references, pieces administratives",
+          "Preparer DC1/DC2, attestation assurance, Kbis, RIB, memoire technique",
+          "Ecarter si aucun lot GIB ou garder en veille fournisseur/sous-traitance"
+        ],
+        "warning": "Ne pas deposer une offre automatiquement. Le DCE, les pieces et le chiffrage doivent etre valides par un humain."
+      },
+      "followUps": [
+        {
+          "label": "J+1",
+          "date": "2026-07-16",
+          "action": "Verifier reception ou ouvrir profil acheteur officiel"
+        },
+        {
+          "label": "J+3",
+          "date": "2026-07-18",
+          "action": "Relancer si aucune reponse et deadline compatible"
+        },
+        {
+          "label": "J+7",
+          "date": "2026-07-22",
+          "action": "Decision go/no-go ou classement"
+        }
+      ]
+    }
+  ]
+}

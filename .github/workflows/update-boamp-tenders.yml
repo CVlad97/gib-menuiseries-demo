@@ -19,14 +19,15 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run fetch:boamp
+      - run: npm run build:prospection
       - name: Commit BOAMP data
         run: |
-          if git diff --quiet -- public/data/gib/boamp-tenders.json; then
-            echo "No BOAMP changes"
+          if git diff --quiet -- public/data/gib/boamp-tenders.json public/data/gib/prospecting-automation.json; then
+            echo "No BOAMP/prospecting changes"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/gib/boamp-tenders.json
+          git add public/data/gib/boamp-tenders.json public/data/gib/prospecting-automation.json
           git commit -m "chore: update BOAMP tender feed"
           git push

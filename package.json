@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:prospection": "node scripts/build-prospecting-automation.mjs",
     "fetch:boamp": "node scripts/fetch-boamp-tenders.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
