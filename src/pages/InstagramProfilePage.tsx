@@ -2,6 +2,7 @@ import { BadgeCheck, ChevronLeft, CheckCircle2, Copy, Images, Link2, MessageCirc
 import { useState } from 'react'
 import { MediaImage } from '../components/MediaImage'
 import { SectionHeading } from '../components/SectionHeading'
+import generatedReelsData from '../data/instagramReels.json'
 import { withBase } from '../lib/base'
 import { company, getAssetById } from '../lib/content'
 import type { MediaAsset } from '../types/content'
@@ -89,13 +90,24 @@ const instagramAssets = [
   .map((id) => getAssetById(id))
   .filter((asset): asset is MediaAsset => Boolean(asset))
 
-const instagramReels = [
+interface InstagramReelCard {
+  id: string
+  title: string
+  description: string
+  src: string
+  poster: string
+  formatLabel: string
+  caption?: string
+}
+
+const instagramReels: InstagramReelCard[] = [
   {
     id: 'reel-portail',
     title: 'Portail aluminium',
     description: 'Capsule courte pour montrer une entree, un acces et une finition plus lisible.',
     src: withBase('media/gib/instagram/videos/gib-menuiseries-portail-demo.mp4'),
     poster: withBase('media/gib/instagram/entree-portail.webp'),
+    formatLabel: 'Reel Instagram',
   },
   {
     id: 'reel-pergola',
@@ -103,6 +115,7 @@ const instagramReels = [
     description: 'Reel de presentation pour parler confort exterieur, terrasse et ombrage en Martinique.',
     src: withBase('media/gib/instagram/videos/gib-menuiseries-pergola-demo.mp4'),
     poster: withBase('media/gib/official/pergola-elegance.jpg'),
+    formatLabel: 'Reel Instagram',
   },
   {
     id: 'reel-volet',
@@ -110,8 +123,21 @@ const instagramReels = [
     description: 'Format reel simple pour rappeler le role thermique, securite et depannage du volet.',
     src: withBase('media/gib/instagram/videos/gib-menuiseries-volet-demo.mp4'),
     poster: withBase('media/gib/instagram/volet-anticyclonique.jpg'),
+    formatLabel: 'Reel Instagram',
   },
 ]
+
+const generatedReels: InstagramReelCard[] = generatedReelsData.reels.map((reel) => ({
+  id: reel.id,
+  title: reel.title,
+  description: reel.caption,
+  src: withBase(reel.src),
+  poster: withBase(reel.poster),
+  caption: `${reel.caption}\n\n${reel.hashtags}\n\n${reel.cta}`,
+  formatLabel: reel.format,
+}))
+
+const allInstagramReels = [...generatedReels, ...instagramReels]
 
 const profilePreview = {
   displayName: 'GIB Menuiserie Martinique',
@@ -234,6 +260,16 @@ export function InstagramProfilePage() {
   async function handleCopyBio() {
     try {
       await navigator.clipboard.writeText(profilePreview.bio.join('\n'))
+      setCopied(true)
+      window.setTimeout(() => setCopied(false), 1800)
+    } catch {
+      setCopied(false)
+    }
+  }
+
+  async function handleCopyText(text: string) {
+    try {
+      await navigator.clipboard.writeText(text)
       setCopied(true)
       window.setTimeout(() => setCopied(false), 1800)
     } catch {
@@ -673,17 +709,23 @@ export function InstagramProfilePage() {
               eyebrow="Capsules video"
               title="Formats reels prets a utiliser."
             />
-            <div className="mt-6 grid gap-4 lg:grid-cols-3">
-              {instagramReels.map((reel) => (
+            <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+              {allInstagramReels.map((reel) => (
                 <article key={reel.id} className="overflow-hidden rounded-[1.45rem] border border-[#1398db]/12 bg-white shadow-[0_14px_30px_rgba(19,122,186,0.06)]">
-                  <video className="aspect-[4/5] w-full bg-black object-cover" controls playsInline preload="metadata" poster={reel.poster}>
+                  <video className="aspect-[9/16] w-full bg-black object-cover" controls playsInline preload="metadata" poster={reel.poster}>
                     <source src={reel.src} type="video/mp4" />
                     Votre navigateur ne prend pas en charge la lecture video.
                   </video>
                   <div className="space-y-2 p-4">
-                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0f6ea7]">Reel Instagram</p>
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0f6ea7]">{reel.formatLabel}</p>
                     <h3 className="font-[Marcellus] text-xl leading-tight text-black">{reel.title}</h3>
                     <p className="text-sm leading-6 text-black/66">{reel.description}</p>
+                    {reel.caption ? (
+                      <button className="cta-secondary mt-3 w-full !px-4 !py-2" onClick={() => handleCopyText(reel.caption ?? '')} type="button">
+                        <Copy className="size-4" />
+                        Copier caption
+                      </button>
+                    ) : null}
                   </div>
                 </article>
               ))}

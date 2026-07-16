@@ -1,0 +1,84 @@
+{
+  "generatedAt": "2026-07-16T22:25:52.931Z",
+  "count": 6,
+  "reels": [
+    {
+      "id": "gib-reel-devis-photo",
+      "title": "DEVIS PLUS RAPIDE",
+      "src": "media/gib/instagram/reels/gib-reel-devis-photo.mp4",
+      "poster": "media/gib/flyers/pub3.jpeg",
+      "durationSeconds": 8,
+      "format": "reel 1080x1920",
+      "caption": "Pour un premier avis rapide : envoyez une photo, vos dimensions approximatives et votre commune. GIB Menuiseries vous oriente pour votre projet alu en Martinique.",
+      "hashtags": "#gibmenuiseries #devistravaux #menuiseriemartinique #artisan972 #ducos",
+      "cta": "WhatsApp : 0696 65 35 89",
+      "status": "ready_to_review",
+      "recommendedUse": "Instagram Reels, WhatsApp status, Facebook local"
+    },
+    {
+      "id": "gib-reel-portail-securite",
+      "title": "SECURISEZ VOTRE ENTREE",
+      "src": "media/gib/instagram/reels/gib-reel-portail-securite.mp4",
+      "poster": "media/gib/portail-dallas.jpg",
+      "durationSeconds": 8,
+      "format": "reel 1080x1920",
+      "caption": "Portail aluminium, cloture, acces maison : une entree propre et securisee commence par une bonne prise de mesures.",
+      "hashtags": "#portailmartinique #cloturemartinique #menuiseriealu #travauxmartinique",
+      "cta": "Pose locale en Martinique",
+      "status": "ready_to_review",
+      "recommendedUse": "Instagram Reels, WhatsApp status, Facebook local"
+    },
+    {
+      "id": "gib-reel-baie-lumiere",
+      "title": "PLUS DE LUMIERE",
+      "src": "media/gib/instagram/reels/gib-reel-baie-lumiere.mp4",
+      "poster": "media/gib/baie-luminosite.jpeg",
+      "durationSeconds": 8,
+      "format": "reel 1080x1920",
+      "caption": "Baie vitree aluminium : plus de lumiere, une ouverture moderne et une pose adaptee aux contraintes locales.",
+      "hashtags": "#baievitree #menuiseriemartinique #aluminiummartinique #renovationmartinique",
+      "cta": "Envoyez vos dimensions",
+      "status": "ready_to_review",
+      "recommendedUse": "Instagram Reels, WhatsApp status, Facebook local"
+    },
+    {
+      "id": "gib-reel-volet-confort",
+      "title": "VOLETS ROULANTS",
+      "src": "media/gib/instagram/reels/gib-reel-volet-confort.mp4",
+      "poster": "media/gib/volet-ambiance-1.jpeg",
+      "durationSeconds": 8,
+      "format": "reel 1080x1920",
+      "caption": "Volets roulants en Martinique : confort solaire, securite et depannage. Envoyez photo + commune pour un premier retour.",
+      "hashtags": "#voletmartinique #voletroulant #depannage #travauxmartinique",
+      "cta": "GIB intervient en Martinique",
+      "status": "ready_to_review",
+      "recommendedUse": "Instagram Reels, WhatsApp status, Facebook local"
+    },
+    {
+      "id": "gib-reel-pergola-terrasse",
+      "title": "TERRASSE PLUS CONFORT",
+      "src": "media/gib/instagram/reels/gib-reel-pergola-terrasse.mp4",
+      "poster": "media/gib/pergola-ambiance-2.jpg",
+      "durationSeconds": 8,
+      "format": "reel 1080x1920",
+      "caption": "Pergola aluminium : creer de l ombre, structurer la terrasse et ameliorer le confort exterieur.",
+      "hashtags": "#pergolamartinique #terrasse #menuiseriealu #artisan972",
+      "cta": "Projet sur devis",
+      "status": "ready_to_review",
+      "recommendedUse": "Instagram Reels, WhatsApp status, Facebook local"
+    },
+    {
+      "id": "gib-reel-garde-corps",
+      "title": "SECURITE ET FINITION",
+      "src": "media/gib/instagram/reels/gib-reel-garde-corps.mp4",
+      "poster": "media/gib/garde-corps-portillon.jpg",
+      "durationSeconds": 8,
+      "format": "reel 1080x1920",
+      "caption": "Garde-corps et clotures : securiser sans sacrifier le rendu. GIB accompagne vos projets en Martinique.",
+      "hashtags": "#gardecorps #cloturemartinique #securitemaison #gibmenuiseries",
+      "cta": "Ducos - Toute Martinique",
+      "status": "ready_to_review",
+      "recommendedUse": "Instagram Reels, WhatsApp status, Facebook local"
+    }
+  ]
+}
