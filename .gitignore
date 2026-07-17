@@ -12,6 +12,12 @@ dist
 dist-ssr
 *.local
 
+# Private CRM / customer data must never be published to GitHub Pages.
+private/
+*.private.csv
+*.private.json
+*.private.vcf
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

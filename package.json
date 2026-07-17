@@ -8,6 +8,8 @@
     "build": "tsc -b && vite build",
     "build:prospection": "node scripts/build-prospecting-automation.mjs",
     "create:reels": "node scripts/create-instagram-reels.mjs",
+    "crm:init": "node scripts/create-private-crm.mjs",
+    "crm:import-contacts": "node scripts/import-android-contacts-private.mjs",
     "fetch:boamp": "node scripts/fetch-boamp-tenders.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
