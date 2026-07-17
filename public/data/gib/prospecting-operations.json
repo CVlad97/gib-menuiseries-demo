@@ -1,0 +1,61 @@
+{
+  "generatedAt": "2026-07-17T12:40:00.000Z",
+  "summary": {
+    "emailsSent": 4,
+    "qualifiedReplies": 1,
+    "manualBlocks": 1,
+    "phoneCallsToDo": 2,
+    "instagramReelsReady": 6
+  },
+  "status": [
+    {
+      "id": "prefecture-26-66044",
+      "reference": "26-66044",
+      "organism": "Prefecture de la Martinique",
+      "status": "qualified_reply",
+      "priority": "high",
+      "lastAction": "2026-07-16",
+      "result": "Reponse recue : la consultation ne comporte pas de lot menuiserie, mais un lot cloture existe.",
+      "nextAction": "Ouvrir le DCE officiel, telecharger les pieces, verifier le lot cloture et preparer go/no-go.",
+      "officialUrl": "https://www.marches-publics.gouv.fr/app.php/entreprise/consultation/3033849?orgAcronyme=g6l"
+    },
+    {
+      "id": "semsamar-26-66492",
+      "reference": "26-66492",
+      "organism": "SEMSAMAR",
+      "status": "sent_waiting_reply",
+      "priority": "high",
+      "lastAction": "2026-07-15",
+      "result": "E-mail de qualification envoye. Telephone publie disponible.",
+      "nextAction": "Appeler pour confirmer le lot menuiserie et le profil acheteur.",
+      "phone": "+33596731659"
+    },
+    {
+      "id": "dsna-26-52714",
+      "reference": "26-52714",
+      "organism": "DSNA DTI",
+      "status": "sent_waiting_reply",
+      "priority": "medium",
+      "lastAction": "2026-07-15",
+      "result": "E-mail d orientation envoye.",
+      "nextAction": "Relancer uniquement si une prestation menuiserie/fermeture est confirmee dans le DCE."
+    },
+    {
+      "id": "gpmlm-26-67263",
+      "reference": "26-67263",
+      "organism": "Grand Port Maritime de la Martinique",
+      "status": "manual_block",
+      "priority": "medium",
+      "lastAction": "2026-07-16",
+      "result": "Reponse MailInBlack recue. Validation humaine anti-robot requise.",
+      "nextAction": "Valider manuellement MailInBlack, puis attendre la reponse ou ouvrir le profil acheteur.",
+      "phone": "+33596590052"
+    }
+  ],
+  "rules": [
+    "Ne pas deposer une offre automatiquement.",
+    "Ne pas contourner les protections anti-robot MailInBlack.",
+    "Verifier DCE, lot, prix, assurances et capacite avant toute reponse officielle.",
+    "Utiliser WhatsApp uniquement pour notifier Vladimir et preparer les brouillons."
+  ]
+}

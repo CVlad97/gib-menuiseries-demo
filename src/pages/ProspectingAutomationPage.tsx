@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import {
   AlertTriangle,
   CheckCircle2,
+  Clock3,
   ClipboardCheck,
   Copy,
   Download,
@@ -88,6 +89,30 @@ interface AutomationFeed {
   }
   compliance: string[]
   queue: QueueItem[]
+}
+
+interface OperationFeed {
+  generatedAt: string
+  summary: {
+    emailsSent: number
+    qualifiedReplies: number
+    manualBlocks: number
+    phoneCallsToDo: number
+    instagramReelsReady: number
+  }
+  status: Array<{
+    id: string
+    reference: string
+    organism: string
+    status: 'qualified_reply' | 'sent_waiting_reply' | 'manual_block'
+    priority: string
+    lastAction: string
+    result: string
+    nextAction: string
+    officialUrl?: string
+    phone?: string
+  }>
+  rules: string[]
 }
 
 interface QueueTracking {
@@ -199,6 +224,7 @@ function buildCsv(feed: AutomationFeed, tracking: QueueTracking[]) {
 
 export function ProspectingAutomationPage() {
   const [feed, setFeed] = useState<AutomationFeed | null>(null)
+  const [operations, setOperations] = useState<OperationFeed | null>(null)
   const [tracking, setTracking] = useState<QueueTracking[]>(() => readTracking())
   const [filter, setFilter] = useState<'tous' | 'email' | 'tel' | 'reponse'>('tous')
   const [notice, setNotice] = useState('Chargement de la queue automation...')
@@ -211,6 +237,13 @@ export function ProspectingAutomationPage() {
         setNotice(`Queue chargee : ${data.summary.uniqueQueueItems} actions uniques.`)
       })
       .catch((error: Error) => setNotice(error.message))
+  }, [])
+
+  useEffect(() => {
+    fetch(withBase('data/gib/prospecting-operations.json'), { cache: 'no-store' })
+      .then((response) => response.ok ? response.json() : Promise.reject(new Error(`Operations indisponibles (${response.status})`)))
+      .then((data: OperationFeed) => setOperations(data))
+      .catch(() => setOperations(null))
   }, [])
 
   const trackingById = useMemo(() => new Map(tracking.map((item) => [item.id, item])), [tracking])
@@ -345,6 +378,65 @@ export function ProspectingAutomationPage() {
           </div>
         </div>
       </section>
+
+      {operations ? (
+        <section className="surface-panel px-6 py-6 sm:px-8">
+          <div className="grid gap-6 xl:grid-cols-[0.8fr_1.2fr] xl:items-start">
+            <div>
+              <div className="flex items-center gap-3">
+                <Clock3 className="size-5 text-[#1398db]" />
+                <h2 className="text-xl font-semibold text-black">Journal operationnel reel</h2>
+              </div>
+              <p className="mt-3 text-sm leading-6 text-black/62">
+                Derniere mise a jour : {formatDateTime(operations.generatedAt)}. Ce journal se limite aux actions verifiees : envois effectues, reponses recues et blocages humains.
+              </p>
+              <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                {[
+                  ['Mails envoyes', operations.summary.emailsSent],
+                  ['Reponses qualifiees', operations.summary.qualifiedReplies],
+                  ['Blocages humains', operations.summary.manualBlocks],
+                  ['Appels a faire', operations.summary.phoneCallsToDo],
+                ].map(([label, value]) => (
+                  <div className="rounded-[1.2rem] border border-[#1398db]/10 bg-white p-4" key={label}>
+                    <p className="text-xs uppercase tracking-[0.2em] text-black/45">{label}</p>
+                    <p className="mt-2 text-2xl font-semibold text-black">{value}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="grid gap-3">
+              {operations.status.map((item) => (
+                <article className="rounded-[1.25rem] border border-black/8 bg-white p-4 shadow-[0_18px_45px_rgba(17,34,51,0.07)]" key={item.id}>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="micro-badge">{item.reference}</span>
+                    <span className="micro-badge">{item.priority}</span>
+                    <span className={`micro-badge ${item.status === 'qualified_reply' ? '!bg-emerald-50 !text-emerald-700' : ''}`}>
+                      {item.status === 'qualified_reply' ? 'Reponse qualifiee' : item.status === 'manual_block' ? 'Blocage manuel' : 'En attente'}
+                    </span>
+                  </div>
+                  <h3 className="mt-3 text-lg font-semibold text-black">{item.organism}</h3>
+                  <p className="mt-2 text-sm leading-6 text-black/66">{item.result}</p>
+                  <p className="mt-2 text-sm leading-6 text-black/78"><strong>Prochaine action :</strong> {item.nextAction}</p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {item.officialUrl ? (
+                      <a className="cta-secondary !px-4 !py-2" href={item.officialUrl} rel="noreferrer" target="_blank">
+                        <ExternalLink className="size-4" />
+                        Ouvrir DCE
+                      </a>
+                    ) : null}
+                    {item.phone ? (
+                      <a className="cta-secondary !px-4 !py-2" href={`tel:${item.phone}`}>
+                        <PhoneCall className="size-4" />
+                        Appeler
+                      </a>
+                    ) : null}
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       <section className="grid gap-4 lg:grid-cols-[0.8fr_1.2fr]">
         <div className="surface-panel px-6 py-6 sm:px-8">
