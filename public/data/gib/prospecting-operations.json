@@ -1,13 +1,37 @@
 {
-  "generatedAt": "2026-07-17T12:40:00.000Z",
+  "generatedAt": "2026-07-17T13:03:00.000Z",
   "summary": {
-    "emailsSent": 4,
+    "emailsSent": 6,
     "qualifiedReplies": 1,
     "manualBlocks": 1,
-    "phoneCallsToDo": 2,
+    "phoneCallsToDo": 10,
     "instagramReelsReady": 6
   },
   "status": [
+    {
+      "id": "martinique-gestion-syndic",
+      "reference": "PRO-SYNDIC-001",
+      "organism": "Martinique Gestion & Syndic",
+      "status": "sent_waiting_reply",
+      "priority": "high",
+      "lastAction": "2026-07-17",
+      "result": "E-mail qualifie envoye avec presentation GIB, site, Instagram, flyer et STOP. Brouillon WhatsApp ouvert.",
+      "nextAction": "Appeler J+1 pour demander le gestionnaire travaux et qualifier besoins coproprietes.",
+      "officialUrl": "https://www.martinique-gestion-syndic.com/page%2C129",
+      "phone": "+596596737779"
+    },
+    {
+      "id": "hotel-la-pagerie",
+      "reference": "PRO-HOTEL-001",
+      "organism": "La Pagerie Hotel",
+      "status": "sent_waiting_reply",
+      "priority": "high",
+      "lastAction": "2026-07-17",
+      "result": "E-mail qualifie envoye avec presentation GIB, site, Instagram, flyer et STOP.",
+      "nextAction": "Appeler J+1 pour demander direction/maintenance et qualifier besoins baies, volets, pergolas, protections solaires.",
+      "officialUrl": "https://tourisme-handicaps.org/structures-label/hotel-la-pagerie/",
+      "phone": "+596596660530"
+    },
     {
       "id": "prefecture-26-66044",
       "reference": "26-66044",
