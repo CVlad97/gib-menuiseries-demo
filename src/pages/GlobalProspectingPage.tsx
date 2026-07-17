@@ -20,6 +20,7 @@ import {
   martiniqueZones,
   prospectChannels,
   prospectSegments,
+  qualifiedProspectSeeds,
   type ProspectChannel,
   type ProspectSegment,
 } from '../data/globalProspecting'
@@ -215,6 +216,15 @@ function toCsv(prospects: GlobalProspect[]) {
   return [headers.join(','), ...rows].join('\n')
 }
 
+function sameProspect(a: Pick<GlobalProspect, 'name' | 'phone' | 'email'>, b: Pick<GlobalProspect, 'name' | 'phone' | 'email'>) {
+  const phoneA = a.phone.replace(/\D/g, '')
+  const phoneB = b.phone.replace(/\D/g, '')
+  const emailA = a.email.trim().toLowerCase()
+  const emailB = b.email.trim().toLowerCase()
+
+  return (phoneA && phoneA === phoneB) || (emailA && emailA === emailB) || normalizeText(a.name) === normalizeText(b.name)
+}
+
 export function GlobalProspectingPage() {
   const [prospects, setProspects] = useState<GlobalProspect[]>(() => readProspects())
   const [form, setForm] = useState(emptyForm)
@@ -311,6 +321,37 @@ export function GlobalProspectingPage() {
     persist([nextProspect, ...prospects], `${template.title} ajoute au pipeline.`)
   }
 
+  function importQualifiedProspects() {
+    const existing = prospects
+    const additions = qualifiedProspectSeeds
+      .filter((seed) => !existing.some((prospect) => sameProspect(prospect, seed)))
+      .map((seed): GlobalProspect => ({
+        id: seed.id,
+        createdAt: new Date().toISOString(),
+        name: seed.name,
+        segment: seed.segment,
+        zone: seed.zone,
+        contactName: seed.contactName,
+        email: seed.email,
+        phone: seed.phone,
+        channel: seed.channel,
+        need: seed.need,
+        source: `${seed.source} - ${seed.sourceUrl}`,
+        status: 'A contacter',
+        score: seed.score,
+        nextAction: seed.nextAction,
+        lastContact: '',
+        notes: seed.notes,
+      }))
+
+    if (additions.length === 0) {
+      setNotice('Aucun nouveau contact qualifie a importer : la base est deja a jour.')
+      return
+    }
+
+    persist([...additions, ...prospects], `${additions.length} contacts qualifies importes dans le pipeline.`)
+  }
+
   async function copyText(text: string, message: string) {
     if (!navigator.clipboard) {
       setNotice(text)
@@ -390,6 +431,10 @@ export function GlobalProspectingPage() {
             <button className="cta-primary w-full" onClick={addProspect} type="button">
               <Plus className="size-4" />
               Ajouter au pipeline
+            </button>
+            <button className="cta-secondary w-full" onClick={importQualifiedProspects} type="button">
+              <Target className="size-4" />
+              Importer contacts pros qualifies
             </button>
           </div>
         </div>
