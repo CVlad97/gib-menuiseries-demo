@@ -33,6 +33,13 @@ const files = [
     ].join('\n'),
   },
   {
+    path: 'zones-terrain-particuliers.private.csv',
+    content: [
+      'id,created_at,commune,zone,product_pitch,field_action,next_visit,status,notes',
+      '',
+    ].join('\n'),
+  },
+  {
     path: 'README.md',
     content: `# Base CRM privee GIB
 
@@ -56,6 +63,7 @@ Ce dossier est ignore par Git et ne doit pas etre publie sur GitHub Pages.
 - \`chantiers-en-cours.private.csv\` : adresses chantier et suivi operationnel.
 - \`whatsapp-import-a-trier.private.csv\` : zone tampon avant validation humaine.
 - \`leads-web-2-mois.private.csv\` : leads entrants web, Google Business, Ads, formulaire, Meta ou WhatsApp.
+- \`zones-terrain-particuliers.private.csv\` : tournees terrain par commune/quartier sans adresse privee non consentie.
 	`,
   },
 ]

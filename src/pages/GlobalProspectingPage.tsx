@@ -24,6 +24,7 @@ import {
   type ProspectChannel,
   type ProspectSegment,
 } from '../data/globalProspecting'
+import { localProspectingZones } from '../data/localProspectingZones'
 import { buildWhatsAppUrl, company } from '../lib/content'
 
 type ProspectStatus = 'A contacter' | 'Contacte' | 'Relance J+1' | 'Relance J+3' | 'Relance J+7' | 'Qualifie' | 'Perdu'
@@ -472,6 +473,50 @@ export function GlobalProspectingPage() {
           {notice}
         </section>
       ) : null}
+
+      <section className="surface-panel px-6 py-6 sm:px-8">
+        <SectionHeading
+          eyebrow="Zones chaudes"
+          title="Ou presenter les produits aux particuliers."
+          description="Ciblage par zones publiques et signaux urbanisme/logement. Aucune adresse privee n est publiee : les adresses chantier restent dans le CRM prive."
+        />
+        <div className="mt-6 grid gap-4">
+          {localProspectingZones.map((zone) => (
+            <article className="rounded-[1.35rem] border border-[#1398db]/12 bg-white p-5 shadow-[0_12px_30px_rgba(19,122,186,0.06)]" key={zone.id}>
+              <div className="grid gap-5 lg:grid-cols-[1fr_280px]">
+                <div>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="tag">Priorite {zone.rank}</span>
+                    <span className="micro-badge">{zone.leadType}</span>
+                    <span className="micro-badge">{zone.commune}</span>
+                  </div>
+                  <h3 className="mt-3 text-2xl font-semibold text-black">{zone.commune}</h3>
+                  <p className="mt-2 text-sm leading-6 text-black/66">{zone.opportunity}</p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {zone.zones.map((item) => (
+                      <span className="rounded-full bg-[#eef8ff] px-3 py-1 text-xs font-semibold text-[#0f6ea7]" key={item}>{item}</span>
+                    ))}
+                  </div>
+                  <div className="mt-4 grid gap-3 text-sm leading-6 text-black/68 md:grid-cols-2">
+                    <p><strong>Terrain :</strong> {zone.fieldAction}</p>
+                    <p><strong>Digital :</strong> {zone.digitalAction}</p>
+                    <p><strong>Produits :</strong> {zone.products.join(', ')}</p>
+                    <p><strong>Regle :</strong> {zone.privacyRule}</p>
+                  </div>
+                </div>
+                <div className="rounded-[1.2rem] border border-black/8 bg-[#f8fbfd] p-4">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-black/45">Preuve publique</p>
+                  <p className="mt-3 text-sm leading-6 text-black/64">{zone.evidence}</p>
+                  <a className="cta-secondary mt-4 w-full" href={zone.sourceUrl} rel="noreferrer" target="_blank">
+                    <ExternalLink className="size-4" />
+                    Source
+                  </a>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
 
       <section className="surface-panel px-6 py-6 sm:px-8">
         <div className="grid gap-4 lg:grid-cols-[1fr_0.5fr_0.5fr_auto] lg:items-end">

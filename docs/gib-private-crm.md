@@ -30,6 +30,7 @@ Cette commande cree localement :
 - `private/gib-crm/chantiers-en-cours.private.csv`
 - `private/gib-crm/whatsapp-import-a-trier.private.csv`
 - `private/gib-crm/leads-web-2-mois.private.csv`
+- `private/gib-crm/zones-terrain-particuliers.private.csv`
 
 Le dossier `private/` est ignore par Git.
 
