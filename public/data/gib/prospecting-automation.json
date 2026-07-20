@@ -1,13 +1,13 @@
 {
   "source": "GIB prospecting automation queue",
-  "generatedAt": "2026-07-17T12:42:53.247Z",
-  "tenderFeedGeneratedAt": "2026-07-17T12:42:52.692Z",
+  "generatedAt": "2026-07-20T11:59:26.366Z",
+  "tenderFeedGeneratedAt": "2026-07-20T11:59:26.189Z",
   "summary": {
     "totalTenderRows": 5,
     "uniqueQueueItems": 4,
     "emailReady": 4,
     "phoneReady": 2,
-    "urgent": 0,
+    "urgent": 2,
     "manualSubmissionRequired": 4
   },
   "compliance": [
@@ -26,8 +26,8 @@
       "object": "Travaux de sécurisation d’un site par installation d’une clôture et réalisation de divers aménagements extérieurs à Fort-de-France",
       "lot": "Clôture",
       "deadline": "2026-07-27",
-      "daysUntilDeadline": 11,
-      "priority": "high",
+      "daysUntilDeadline": 8,
+      "priority": "urgent",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-66044",
       "contact": {
@@ -75,17 +75,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-07-18",
+          "date": "2026-07-21",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-07-20",
+          "date": "2026-07-23",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-07-24",
+          "date": "2026-07-27",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -98,8 +98,8 @@
       "object": "Travaux de rénovation de la distribution électrique sur l'aéroport de Martinique Aimé Césaire",
       "lot": "Aéronautique",
       "deadline": "2026-07-29",
-      "daysUntilDeadline": 13,
-      "priority": "medium",
+      "daysUntilDeadline": 10,
+      "priority": "urgent",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-52714",
       "contact": {
@@ -147,17 +147,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-07-18",
+          "date": "2026-07-21",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-07-20",
+          "date": "2026-07-23",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-07-24",
+          "date": "2026-07-27",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -170,7 +170,7 @@
       "object": "Marche de Travaux - Construction du groupe scolaire de Bagatelle - GROS MORNE",
       "lot": "Gros oeuvre, Menuiserie, Electricité (travaux), Plomberie (travaux), Peinture (travaux)",
       "deadline": "2026-07-31",
-      "daysUntilDeadline": 15,
+      "daysUntilDeadline": 12,
       "priority": "high",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-66492",
@@ -219,17 +219,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-07-18",
+          "date": "2026-07-21",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-07-20",
+          "date": "2026-07-23",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-07-24",
+          "date": "2026-07-27",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -242,7 +242,7 @@
       "object": "TRAVAUX DE RÉNOVATION SUR TOITURES GRAND PORT MARITIME DE LA MARTINIQUE",
       "lot": "Etanchéité",
       "deadline": "2026-08-06",
-      "daysUntilDeadline": 21,
+      "daysUntilDeadline": 18,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-67263",
@@ -291,17 +291,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-07-18",
+          "date": "2026-07-21",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-07-20",
+          "date": "2026-07-23",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-07-24",
+          "date": "2026-07-27",
           "action": "Decision go/no-go ou classement"
         }
       ]
