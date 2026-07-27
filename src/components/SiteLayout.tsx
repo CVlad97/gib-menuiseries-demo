@@ -33,6 +33,7 @@ const secondaryItems = [
   { to: '/instagram', label: 'Instagram preview' },
   { to: '/prospection-locale', label: 'Prospection locale' },
   { to: '/prospection-globale', label: 'Prospection globale' },
+  { to: '/war-room-24h', label: 'War room 24h' },
   { to: '/automatisation-prospection', label: 'Automation prospection' },
   { to: '/admin-appels-offres', label: 'Admin AO' },
   { to: '/methode-appels-offres', label: 'Methode AO' },

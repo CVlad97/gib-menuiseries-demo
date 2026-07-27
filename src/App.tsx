@@ -17,6 +17,7 @@ import { ProspectingAppPage } from './pages/ProspectingAppPage'
 import { TenderMethodologyPage } from './pages/TenderMethodologyPage'
 import { GlobalProspectingPage } from './pages/GlobalProspectingPage'
 import { ProspectingAutomationPage } from './pages/ProspectingAutomationPage'
+import { WarRoom24hPage } from './pages/WarRoom24hPage'
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route element={<ProspectingAppPage />} path="prospection-locale" />
           <Route element={<GlobalProspectingPage />} path="prospection-globale" />
           <Route element={<ProspectingAutomationPage />} path="automatisation-prospection" />
+          <Route element={<WarRoom24hPage />} path="war-room-24h" />
           <Route element={<TenderMethodologyPage />} path="methode-appels-offres" />
           <Route element={<ProductsPage />} path="produits" />
           <Route element={<ProductPage />} path="produits/:slug" />

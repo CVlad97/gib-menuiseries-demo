@@ -1,0 +1,138 @@
+{
+  "generatedAt": "2026-07-27T18:00:44.016Z",
+  "mission": "GIB 24h revenue sprint",
+  "proof": {
+    "openTenderActions": 3,
+    "urgentTenderActions": 2,
+    "emailReadyTenderActions": 3,
+    "phoneReadyTenderActions": 2,
+    "qualifiedProspectsSeeded": 12,
+    "qualifiedPhonesSeeded": 11,
+    "qualifiedEmailsSeeded": 4,
+    "privateFieldZonesReady": 7,
+    "instagramReelsReady": 6,
+    "emailsAlreadySent": 7,
+    "qualifiedReplies": 2
+  },
+  "moneyHypothesis": [
+    {
+      "lever": "AO SEMSAMAR",
+      "why": "Lot menuiserie explicite, deadline courte, telephone et e-mail publies.",
+      "expectedOutcome": "Go/no-go aujourd hui puis DCE/chiffrage si lot compatible.",
+      "priority": 10
+    },
+    {
+      "lever": "La Pagerie",
+      "why": "Reponse direction recue, telephone direct public dans signature, segment hotelier a forte valeur.",
+      "expectedOutcome": "Obtenir un rendez-vous maintenance ou etre reference fournisseur.",
+      "priority": 9
+    },
+    {
+      "lever": "Syndics / gestion locative",
+      "why": "Volume recurrent : coproprietes, residences, portails, volets, garde-corps, depannage.",
+      "expectedOutcome": "Identifier 3 gestionnaires travaux et programmer visites/devis.",
+      "priority": 9
+    },
+    {
+      "lever": "Terrain Ducos-Lamentin-Riviere-Salee",
+      "why": "Proximite GIB, zones pavillonnaires et commerces travaux, cout acquisition faible.",
+      "expectedOutcome": "Generer demandes WhatsApp photo + dimensions via QR/flyer.",
+      "priority": 8
+    }
+  ],
+  "next24h": [
+    {
+      "window": "H0-H1",
+      "action": "Appeler SEMSAMAR au +33 596 73 16 59, demander le profil acheteur et confirmer lot menuiserie.",
+      "proofData": "AO 26-66492, score 8/10, deadline 31/07/2026, telephone disponible.",
+      "owner": "Vladimir",
+      "status": "to_do"
+    },
+    {
+      "window": "H1-H2",
+      "action": "Ouvrir DSNA DCE et classer go/no-go. Ne pas perdre de temps si aucun lot fermeture/menuiserie.",
+      "proofData": "AO 26-52714, deadline 29/07/2026, score 6/10, qualification seulement.",
+      "owner": "GIB",
+      "status": "to_do"
+    },
+    {
+      "window": "H2-H3",
+      "action": "Relancer La Pagerie avec un message court : proposer 15 minutes avec direction/maintenance.",
+      "proofData": "Reponse recue le 18/07/2026 par Elodie des Chaumes, Directrice Generale.",
+      "owner": "GIB",
+      "status": "ready"
+    },
+    {
+      "window": "H3-H5",
+      "action": "Appeler 5 contacts pros avec telephone : syndics, immobilier, hotels, BTP.",
+      "proofData": "12 contacts pros qualifies, 11 numeros, 4 e-mails.",
+      "owner": "Vladimir",
+      "status": "to_do"
+    },
+    {
+      "window": "H5-H8",
+      "action": "Tour terrain Ducos/Genipa/ZI Cocotte avec flyer QR WhatsApp et script photo + dimensions.",
+      "proofData": "Zone priorite 1, proximite GIB, cout terrain faible.",
+      "owner": "Vladimir",
+      "status": "to_do"
+    },
+    {
+      "window": "H8-H12",
+      "action": "Publier 1 Reel produit + 3 stories devis sur Instagram, CTA WhatsApp uniquement.",
+      "proofData": "6 Reels deja generes et presents sur Android.",
+      "owner": "GIB",
+      "status": "ready"
+    },
+    {
+      "window": "H12-H24",
+      "action": "Relances J+1/J+3 : mettre a jour statuts, isoler les chauds, preparer visites et devis.",
+      "proofData": "Dashboard local + CRM prive + operations journal.",
+      "owner": "GIB",
+      "status": "to_do"
+    }
+  ],
+  "tenderActions": [
+    {
+      "id": "ao-26-52714",
+      "reference": "26-52714",
+      "organism": "DSNA DTI",
+      "deadline": "2026-07-29",
+      "daysUntilDeadline": 3,
+      "score": 6,
+      "type": "qualification",
+      "phone": "",
+      "email": "Frederic.Darmaillacq@aviation-civile.gouv.fr",
+      "action": "Ouvrir DCE uniquement pour confirmer presence menuiserie/fermeture, sinon classer no-go."
+    },
+    {
+      "id": "ao-26-66492",
+      "reference": "26-66492",
+      "organism": "SEMSAMAR (972)",
+      "deadline": "2026-07-31",
+      "daysUntilDeadline": 5,
+      "score": 8,
+      "type": "response",
+      "phone": "+33596731659",
+      "email": "lvalentin@semsamar.fr",
+      "action": "Appeler et ouvrir DCE pour verifier lot menuiserie/cloture avant chiffrage."
+    },
+    {
+      "id": "ao-26-67263",
+      "reference": "26-67263",
+      "organism": "GPMLM",
+      "deadline": "2026-08-06",
+      "daysUntilDeadline": 11,
+      "score": 6,
+      "type": "qualification",
+      "phone": "+33596590052",
+      "email": "c.sabino@martinique.port.fr",
+      "action": "Ouvrir DCE uniquement pour confirmer presence menuiserie/fermeture, sinon classer no-go."
+    }
+  ],
+  "rules": [
+    "Ne pas promettre de prix, delai ou depot AO sans DCE valide.",
+    "Ne pas publier contacts particuliers ou adresses chantier.",
+    "Ne pas envoyer WhatsApp de masse sans validation humaine.",
+    "Chaque action doit produire un statut : qualifie, relance, no-go, stop ou rendez-vous."
+  ]
+}
