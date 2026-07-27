@@ -1,7 +1,7 @@
 {
   "source": "BOAMP / DILA API ouverte",
   "sourceUrl": "https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/api/",
-  "generatedAt": "2026-07-24T11:13:22.242Z",
+  "generatedAt": "2026-07-27T12:37:57.360Z",
   "department": "972",
   "keywords": [
     "menuiserie",
@@ -20,8 +20,8 @@
     "rénovation",
     "second oeuvre"
   ],
-  "totalCount": 5,
-  "count": 5,
+  "totalCount": 4,
+  "count": 4,
   "items": [
     {
       "source": "BOAMP / DILA API ouverte",
@@ -74,32 +74,6 @@
         "buyerProfileUrl": "https://www.marches-securises.fr"
       },
       "notes": "Descripteurs : Gros oeuvre, Menuiserie, Electricité (travaux), Plomberie (travaux), Peinture (travaux) | Type marche : Travaux | Procedure : Procédure Ouverte | Email acheteur : lvalentin@semsamar.fr | Tel acheteur : +33 596731659 | Profil acheteur : https://www.marches-securises.fr"
-    },
-    {
-      "source": "BOAMP / DILA API ouverte",
-      "sourceId": "26-66044",
-      "organism": "PREFECTURE DE LA MARTINIQUE",
-      "platform": "BOAMP",
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-66044",
-      "object": "Travaux de sécurisation d’un site par installation d’une clôture et réalisation de divers aménagements extérieurs à Fort-de-France",
-      "lot": "Clôture",
-      "deadline": "2026-07-27",
-      "publishedAt": "2026-07-02",
-      "commune": "Martinique",
-      "visitRequired": "A verifier dans le DCE",
-      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
-      "score": 8,
-      "priority": "high",
-      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
-      "contact": {
-        "email": "sgc-achat@martinique.gouv.fr",
-        "phone": "",
-        "contactName": "Lionel VINCENT",
-        "buyerCity": "Fort-de-France",
-        "buyerPostalCode": "97200",
-        "buyerProfileUrl": "www.marches-publics.gouv.fr"
-      },
-      "notes": "Descripteurs : Clôture | Type marche : Travaux | Procedure : Procédure Ouverte | Email acheteur : sgc-achat@martinique.gouv.fr | Profil acheteur : www.marches-publics.gouv.fr"
     },
     {
       "source": "BOAMP / DILA API ouverte",
