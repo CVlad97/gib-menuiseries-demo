@@ -14,7 +14,8 @@
     "crm:zones": "node scripts/build-private-field-zones.mjs",
     "fetch:boamp": "node scripts/fetch-boamp-tenders.mjs",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "safety:check": "node scripts/safety-check.mjs"
   },
   "dependencies": {
     "@fontsource/marcellus": "^5.2.8",

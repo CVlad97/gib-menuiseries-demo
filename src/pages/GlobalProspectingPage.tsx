@@ -60,6 +60,58 @@ const statuses: ProspectStatus[] = [
   'Perdu',
 ]
 
+const sevenDayActionPlan = [
+  {
+    day: 'J1',
+    title: 'Nettoyer et prioriser',
+    action: 'Importer contacts pros qualifies, ouvrir AO urgents, verifier STOP/refus, programmer 10 appels.',
+    channel: 'Dashboard + telephone',
+    metric: '10 appels planifies',
+  },
+  {
+    day: 'J2',
+    title: 'Syndics et immobilier',
+    action: 'Appeler syndics/agences, demander responsable travaux/gestion, envoyer flyer + lien realisations.',
+    channel: 'Telephone + e-mail',
+    metric: '5 interlocuteurs identifies',
+  },
+  {
+    day: 'J3',
+    title: 'Terrain proche GIB',
+    action: 'Tour Ducos/Lamentin/Riviere-Salee avec QR WhatsApp, sans collecter adresse privee non consentie.',
+    channel: 'Terrain',
+    metric: '20 flyers qualifies',
+  },
+  {
+    day: 'J4',
+    title: 'Tourisme et villas',
+    action: 'Cibler Trois-Ilets/Sud : conciergeries, hotels, locations, pergolas, baies et volets.',
+    channel: 'Telephone + WhatsApp brouillon',
+    metric: '8 contacts B2B',
+  },
+  {
+    day: 'J5',
+    title: 'Relances J+1/J+3',
+    action: 'Relancer seulement les contacts pertinents, consigner reponses, classer Qualifie/Perdu/Stop.',
+    channel: 'CRM local',
+    metric: '100% statuts a jour',
+  },
+  {
+    day: 'J6',
+    title: 'Contenus conversion',
+    action: 'Publier Reel produit + story devis : photo + commune + dimensions + WhatsApp.',
+    channel: 'Instagram/Facebook',
+    metric: '1 Reel + 3 stories',
+  },
+  {
+    day: 'J7',
+    title: 'Bilan et next batch',
+    action: 'Exporter CSV, compter prospects qualifies, choisir 3 zones suivantes et 3 offres a pousser.',
+    channel: 'Dashboard',
+    metric: 'Pipeline nettoye',
+  },
+]
+
 const starterProspects: GlobalProspect[] = [
   {
     id: 'starter-syndics',
@@ -473,6 +525,25 @@ export function GlobalProspectingPage() {
           {notice}
         </section>
       ) : null}
+
+      <section className="surface-panel px-6 py-6 sm:px-8">
+        <SectionHeading
+          eyebrow="Plan 7 jours"
+          title="Execution commerciale sans angle mort."
+          description="Sequence simple pour transformer les contacts, les zones et les contenus en demandes de devis qualifiees."
+        />
+        <div className="mt-6 grid gap-3 lg:grid-cols-7">
+          {sevenDayActionPlan.map((item) => (
+            <article className="rounded-[1.2rem] border border-[#1398db]/12 bg-white p-4 shadow-[0_12px_28px_rgba(19,122,186,0.06)]" key={item.day}>
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#0f6ea7]">{item.day}</p>
+              <h3 className="mt-2 font-semibold leading-6 text-black">{item.title}</h3>
+              <p className="mt-3 text-sm leading-6 text-black/64">{item.action}</p>
+              <p className="mt-3 text-xs font-semibold uppercase tracking-[0.16em] text-black/40">{item.channel}</p>
+              <p className="mt-1 text-sm font-semibold text-[#173f35]">{item.metric}</p>
+            </article>
+          ))}
+        </div>
+      </section>
 
       <section className="surface-panel px-6 py-6 sm:px-8">
         <SectionHeading

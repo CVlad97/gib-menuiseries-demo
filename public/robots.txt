@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cvlad97.github.io/gib-menuiseries-demo/sitemap.xml
