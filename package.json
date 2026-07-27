@@ -11,6 +11,7 @@
     "crm:init": "node scripts/create-private-crm.mjs",
     "crm:import-contacts": "node scripts/import-android-contacts-private.mjs",
     "crm:import-files": "node scripts/import-private-leads-from-files.mjs",
+    "crm:zones": "node scripts/build-private-field-zones.mjs",
     "fetch:boamp": "node scripts/fetch-boamp-tenders.mjs",
     "lint": "eslint .",
     "preview": "vite preview"

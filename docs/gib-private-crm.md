@@ -22,6 +22,7 @@ La base particuliers ne doit pas etre publiee dans le site GitHub Pages. Elle co
 npm run crm:init
 npm run crm:import-contacts
 npm run crm:import-files
+npm run crm:zones
 ```
 
 Cette commande cree localement :
@@ -37,6 +38,8 @@ Le dossier `private/` est ignore par Git.
 `npm run crm:import-contacts` tente d importer les contacts Android via Shizuku dans `whatsapp-import-a-trier.private.csv`. Cet import est une zone de tri : ne pas envoyer de relance avant validation humaine du besoin, de la source et du consentement.
 
 `npm run crm:import-files` lit les fichiers `.txt`, `.csv` et `.vcf` de `/sdcard/Download/gib-crm-import` ou `private/gib-crm/imports`, puis extrait uniquement les lignes candidates dans `whatsapp-import-a-trier.private.csv`.
+
+`npm run crm:zones` regenere `zones-terrain-particuliers.private.csv` avec les tournees prioritaires par commune/quartier.
 
 ## Leads web des 2 derniers mois
 
