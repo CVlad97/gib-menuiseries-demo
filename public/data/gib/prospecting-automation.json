@@ -1,7 +1,7 @@
 {
   "source": "GIB prospecting automation queue",
-  "generatedAt": "2026-07-28T11:28:41.213Z",
-  "tenderFeedGeneratedAt": "2026-07-28T11:28:41.071Z",
+  "generatedAt": "2026-07-29T11:34:52.026Z",
+  "tenderFeedGeneratedAt": "2026-07-29T11:34:51.850Z",
   "summary": {
     "totalTenderRows": 4,
     "uniqueQueueItems": 3,
@@ -26,7 +26,7 @@
       "object": "Travaux de rénovation de la distribution électrique sur l'aéroport de Martinique Aimé Césaire",
       "lot": "Aéronautique",
       "deadline": "2026-07-29",
-      "daysUntilDeadline": 2,
+      "daysUntilDeadline": 1,
       "priority": "urgent",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-52714",
@@ -75,17 +75,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-07-31",
+          "date": "2026-08-01",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-04",
+          "date": "2026-08-05",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -98,7 +98,7 @@
       "object": "Marche de Travaux - Construction du groupe scolaire de Bagatelle - GROS MORNE",
       "lot": "Gros oeuvre, Menuiserie, Electricité (travaux), Plomberie (travaux), Peinture (travaux)",
       "deadline": "2026-07-31",
-      "daysUntilDeadline": 4,
+      "daysUntilDeadline": 3,
       "priority": "urgent",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-66492",
@@ -147,17 +147,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-07-31",
+          "date": "2026-08-01",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-04",
+          "date": "2026-08-05",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -170,7 +170,7 @@
       "object": "TRAVAUX DE RÉNOVATION SUR TOITURES GRAND PORT MARITIME DE LA MARTINIQUE",
       "lot": "Etanchéité",
       "deadline": "2026-08-06",
-      "daysUntilDeadline": 10,
+      "daysUntilDeadline": 9,
       "priority": "urgent",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-67263",
@@ -219,17 +219,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-07-29",
+          "date": "2026-07-30",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-07-31",
+          "date": "2026-08-01",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-04",
+          "date": "2026-08-05",
           "action": "Decision go/no-go ou classement"
         }
       ]
