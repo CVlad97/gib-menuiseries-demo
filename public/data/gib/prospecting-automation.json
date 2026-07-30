@@ -1,13 +1,13 @@
 {
   "source": "GIB prospecting automation queue",
-  "generatedAt": "2026-07-29T11:34:52.026Z",
-  "tenderFeedGeneratedAt": "2026-07-29T11:34:51.850Z",
+  "generatedAt": "2026-07-30T11:21:34.839Z",
+  "tenderFeedGeneratedAt": "2026-07-30T11:21:34.651Z",
   "summary": {
     "totalTenderRows": 4,
     "uniqueQueueItems": 3,
     "emailReady": 3,
-    "phoneReady": 2,
-    "urgent": 3,
+    "phoneReady": 3,
+    "urgent": 2,
     "manualSubmissionRequired": 3
   },
   "compliance": [
@@ -19,78 +19,6 @@
   ],
   "queue": [
     {
-      "id": "ao-26-52714",
-      "sourceId": "26-52714",
-      "type": "qualification",
-      "organism": "DSNA DTI",
-      "object": "Travaux de rénovation de la distribution électrique sur l'aéroport de Martinique Aimé Césaire",
-      "lot": "Aéronautique",
-      "deadline": "2026-07-29",
-      "daysUntilDeadline": 1,
-      "priority": "urgent",
-      "score": 6,
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-52714",
-      "contact": {
-        "email": "Frederic.Darmaillacq@aviation-civile.gouv.fr",
-        "phone": "",
-        "name": "",
-        "profile": "https://www.marches-publics.gouv.fr/entreprise"
-      },
-      "automation": {
-        "emailReady": true,
-        "phoneReady": false,
-        "whatsappReady": true,
-        "officialSubmission": "manual_required",
-        "duplicateGuard": "frederic.darmaillacq@aviation-civile.gouv.fr|dsna dti|travaux de renovation de la distribution electrique sur l'aeroport de martinique aime cesaire"
-      },
-      "email": {
-        "to": "Frederic.Darmaillacq@aviation-civile.gouv.fr",
-        "subject": "Demande orientation DCE - DSNA DTI - 26-52714",
-        "body": "Bonjour,\n\nNous vous contactons pour GIB Menuiseries Services, entreprise basee a Ducos en Martinique, au sujet de la consultation suivante :\n- Organisme : DSNA DTI\n- Objet : Travaux de rénovation de la distribution électrique sur l'aéroport de Martinique Aimé Césaire\n- Reference : 26-52714\n- Date limite : 2026-07-29\n\nNous souhaitons identifier si des prestations de menuiserie, fermeture, acces, cloture ou renovation peuvent correspondre a notre activite.\n\nPouvez-vous nous confirmer le lien DCE/profil acheteur a utiliser, ainsi que les modalites officielles pour poser une question ou deposer une reponse si le lot est pertinent ?\n\nPresentation GIB :\nSite : https://www.gibmenuiseries.fr\nInstagram : https://www.instagram.com/gibmenuiseries/\nFlyer : https://cvlad97.github.io/gib-menuiseries-demo/media/gib/flyers/pub3.jpeg\n\nContact commercial : Vladimir Claveau\nWhatsApp : +596 696 65 35 89\nEmail : gibmenuiseriesservices@gmail.com\nZone Industrielle Cocotte, derriere Lapeyre, Ducos, Martinique\n\nCordialement,\nGIB Menuiseries Services",
-        "mailto": "mailto:Frederic.Darmaillacq@aviation-civile.gouv.fr?subject=Demande+orientation+DCE+-+DSNA+DTI+-+26-52714&body=Bonjour%2C%0A%0ANous+vous+contactons+pour+GIB+Menuiseries+Services%2C+entreprise+basee+a+Ducos+en+Martinique%2C+au+sujet+de+la+consultation+suivante+%3A%0A-+Organisme+%3A+DSNA+DTI%0A-+Objet+%3A+Travaux+de+r%C3%A9novation+de+la+distribution+%C3%A9lectrique+sur+l%27a%C3%A9roport+de+Martinique+Aim%C3%A9+C%C3%A9saire%0A-+Reference+%3A+26-52714%0A-+Date+limite+%3A+2026-07-29%0A%0ANous+souhaitons+identifier+si+des+prestations+de+menuiserie%2C+fermeture%2C+acces%2C+cloture+ou+renovation+peuvent+correspondre+a+notre+activite.%0A%0APouvez-vous+nous+confirmer+le+lien+DCE%2Fprofil+acheteur+a+utiliser%2C+ainsi+que+les+modalites+officielles+pour+poser+une+question+ou+deposer+une+reponse+si+le+lot+est+pertinent+%3F%0A%0APresentation+GIB+%3A%0ASite+%3A+https%3A%2F%2Fwww.gibmenuiseries.fr%0AInstagram+%3A+https%3A%2F%2Fwww.instagram.com%2Fgibmenuiseries%2F%0AFlyer+%3A+https%3A%2F%2Fcvlad97.github.io%2Fgib-menuiseries-demo%2Fmedia%2Fgib%2Fflyers%2Fpub3.jpeg%0A%0AContact+commercial+%3A+Vladimir+Claveau%0AWhatsApp+%3A+%2B596+696+65+35+89%0AEmail+%3A+gibmenuiseriesservices%40gmail.com%0AZone+Industrielle+Cocotte%2C+derriere+Lapeyre%2C+Ducos%2C+Martinique%0A%0ACordialement%2C%0AGIB+Menuiseries+Services"
-      },
-      "whatsapp": {
-        "to": "+596 696 65 35 89",
-        "body": "AO GIB a traiter\nOrganisme : DSNA DTI\nObjet : Travaux de rénovation de la distribution électrique sur l'aéroport de Martinique Aimé Césaire\nDeadline : 2026-07-29\nScore : 6/10\nEmail : Frederic.Darmaillacq@aviation-civile.gouv.fr\nLien : https://www.boamp.fr/pages/avis/?q=idweb:26-52714\nAction : verifier DCE, identifier lot, preparer go/no-go.",
-        "url": "https://wa.me/596696653589?text=AO%20GIB%20a%20traiter%0AOrganisme%20%3A%20DSNA%20DTI%0AObjet%20%3A%20Travaux%20de%20r%C3%A9novation%20de%20la%20distribution%20%C3%A9lectrique%20sur%20l'a%C3%A9roport%20de%20Martinique%20Aim%C3%A9%20C%C3%A9saire%0ADeadline%20%3A%202026-07-29%0AScore%20%3A%206%2F10%0AEmail%20%3A%20Frederic.Darmaillacq%40aviation-civile.gouv.fr%0ALien%20%3A%20https%3A%2F%2Fwww.boamp.fr%2Fpages%2Favis%2F%3Fq%3Didweb%3A26-52714%0AAction%20%3A%20verifier%20DCE%2C%20identifier%20lot%2C%20preparer%20go%2Fno-go."
-      },
-      "call": {
-        "phone": "",
-        "script": "Bonjour, je vous appelle pour GIB Menuiseries Services a Ducos.\nNous avons repere votre consultation : Travaux de rénovation de la distribution électrique sur l'aéroport de Martinique Aimé Césaire.\nNous souhaitons verifier si un lot concerne les menuiseries, fermetures, clotures, garde-corps, portails, volets ou ouvrages associes.\nPouvez-vous me confirmer le bon lien DCE/profil acheteur et la procedure officielle pour les questions ?\nNous passerons uniquement par le canal prevu dans le reglement de consultation.",
-        "telUrl": ""
-      },
-      "dossier": {
-        "status": "to_prepare",
-        "checklist": [
-          "Ouvrir avis BOAMP et profil acheteur",
-          "Telecharger RC, CCTP, DPGF/BPU, AE, CCAP et annexes",
-          "Verifier date limite, visite obligatoire, questions autorisees",
-          "Identifier lot menuiserie/fermeture/cloture/garde-corps",
-          "Decision go/no-go : capacite, delai, references, pieces administratives",
-          "Preparer DC1/DC2, attestation assurance, Kbis, RIB, memoire technique",
-          "Ecarter si aucun lot GIB ou garder en veille fournisseur/sous-traitance"
-        ],
-        "warning": "Ne pas deposer une offre automatiquement. Le DCE, les pieces et le chiffrage doivent etre valides par un humain."
-      },
-      "followUps": [
-        {
-          "label": "J+1",
-          "date": "2026-07-30",
-          "action": "Verifier reception ou ouvrir profil acheteur officiel"
-        },
-        {
-          "label": "J+3",
-          "date": "2026-08-01",
-          "action": "Relancer si aucune reponse et deadline compatible"
-        },
-        {
-          "label": "J+7",
-          "date": "2026-08-05",
-          "action": "Decision go/no-go ou classement"
-        }
-      ]
-    },
-    {
       "id": "ao-26-66492",
       "sourceId": "26-66492",
       "type": "response",
@@ -98,7 +26,7 @@
       "object": "Marche de Travaux - Construction du groupe scolaire de Bagatelle - GROS MORNE",
       "lot": "Gros oeuvre, Menuiserie, Electricité (travaux), Plomberie (travaux), Peinture (travaux)",
       "deadline": "2026-07-31",
-      "daysUntilDeadline": 3,
+      "daysUntilDeadline": 2,
       "priority": "urgent",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-66492",
@@ -147,17 +75,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-07-30",
+          "date": "2026-07-31",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-01",
+          "date": "2026-08-02",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-05",
+          "date": "2026-08-06",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -170,7 +98,7 @@
       "object": "TRAVAUX DE RÉNOVATION SUR TOITURES GRAND PORT MARITIME DE LA MARTINIQUE",
       "lot": "Etanchéité",
       "deadline": "2026-08-06",
-      "daysUntilDeadline": 9,
+      "daysUntilDeadline": 8,
       "priority": "urgent",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-67263",
@@ -219,17 +147,89 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-07-30",
+          "date": "2026-07-31",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-01",
+          "date": "2026-08-02",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-05",
+          "date": "2026-08-06",
+          "action": "Decision go/no-go ou classement"
+        }
+      ]
+    },
+    {
+      "id": "ao-26-75861",
+      "sourceId": "26-75861",
+      "type": "qualification",
+      "organism": "DID FdF",
+      "object": "GUADELOUPE (971) – SAINT BARTHÉLEMY – Gendarmerie Fort Oscar – Travaux de désamiantage et rénovation intérieure de 3 villas",
+      "lot": "Amiante (désamiantage)",
+      "deadline": "2026-09-11",
+      "daysUntilDeadline": 44,
+      "priority": "medium",
+      "score": 6,
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-75861",
+      "contact": {
+        "email": "mohamed.abdelghani@intradef.gouv.fr",
+        "phone": "+596596395264",
+        "name": "",
+        "profile": "https://www.marches-publics.gouv.fr/entreprise"
+      },
+      "automation": {
+        "emailReady": true,
+        "phoneReady": true,
+        "whatsappReady": true,
+        "officialSubmission": "manual_required",
+        "duplicateGuard": "mohamed.abdelghani@intradef.gouv.fr|did fdf|guadeloupe (971) – saint barthelemy – gendarmerie fort oscar – travaux de desamiantage et renovation interieure de 3 villas"
+      },
+      "email": {
+        "to": "mohamed.abdelghani@intradef.gouv.fr",
+        "subject": "Demande orientation DCE - DID FdF - 26-75861",
+        "body": "Bonjour,\n\nNous vous contactons pour GIB Menuiseries Services, entreprise basee a Ducos en Martinique, au sujet de la consultation suivante :\n- Organisme : DID FdF\n- Objet : GUADELOUPE (971) – SAINT BARTHÉLEMY – Gendarmerie Fort Oscar – Travaux de désamiantage et rénovation intérieure de 3 villas\n- Reference : 26-75861\n- Date limite : 2026-09-11\n\nNous souhaitons identifier si des prestations de menuiserie, fermeture, acces, cloture ou renovation peuvent correspondre a notre activite.\n\nPouvez-vous nous confirmer le lien DCE/profil acheteur a utiliser, ainsi que les modalites officielles pour poser une question ou deposer une reponse si le lot est pertinent ?\n\nPresentation GIB :\nSite : https://www.gibmenuiseries.fr\nInstagram : https://www.instagram.com/gibmenuiseries/\nFlyer : https://cvlad97.github.io/gib-menuiseries-demo/media/gib/flyers/pub3.jpeg\n\nContact commercial : Vladimir Claveau\nWhatsApp : +596 696 65 35 89\nEmail : gibmenuiseriesservices@gmail.com\nZone Industrielle Cocotte, derriere Lapeyre, Ducos, Martinique\n\nCordialement,\nGIB Menuiseries Services",
+        "mailto": "mailto:mohamed.abdelghani@intradef.gouv.fr?subject=Demande+orientation+DCE+-+DID+FdF+-+26-75861&body=Bonjour%2C%0A%0ANous+vous+contactons+pour+GIB+Menuiseries+Services%2C+entreprise+basee+a+Ducos+en+Martinique%2C+au+sujet+de+la+consultation+suivante+%3A%0A-+Organisme+%3A+DID+FdF%0A-+Objet+%3A+GUADELOUPE+%28971%29+%E2%80%93+SAINT+BARTH%C3%89LEMY+%E2%80%93+Gendarmerie+Fort+Oscar+%E2%80%93+Travaux+de+d%C3%A9samiantage+et+r%C3%A9novation+int%C3%A9rieure+de+3+villas%0A-+Reference+%3A+26-75861%0A-+Date+limite+%3A+2026-09-11%0A%0ANous+souhaitons+identifier+si+des+prestations+de+menuiserie%2C+fermeture%2C+acces%2C+cloture+ou+renovation+peuvent+correspondre+a+notre+activite.%0A%0APouvez-vous+nous+confirmer+le+lien+DCE%2Fprofil+acheteur+a+utiliser%2C+ainsi+que+les+modalites+officielles+pour+poser+une+question+ou+deposer+une+reponse+si+le+lot+est+pertinent+%3F%0A%0APresentation+GIB+%3A%0ASite+%3A+https%3A%2F%2Fwww.gibmenuiseries.fr%0AInstagram+%3A+https%3A%2F%2Fwww.instagram.com%2Fgibmenuiseries%2F%0AFlyer+%3A+https%3A%2F%2Fcvlad97.github.io%2Fgib-menuiseries-demo%2Fmedia%2Fgib%2Fflyers%2Fpub3.jpeg%0A%0AContact+commercial+%3A+Vladimir+Claveau%0AWhatsApp+%3A+%2B596+696+65+35+89%0AEmail+%3A+gibmenuiseriesservices%40gmail.com%0AZone+Industrielle+Cocotte%2C+derriere+Lapeyre%2C+Ducos%2C+Martinique%0A%0ACordialement%2C%0AGIB+Menuiseries+Services"
+      },
+      "whatsapp": {
+        "to": "+596 696 65 35 89",
+        "body": "AO GIB a traiter\nOrganisme : DID FdF\nObjet : GUADELOUPE (971) – SAINT BARTHÉLEMY – Gendarmerie Fort Oscar – Travaux de désamiantage et rénovation intérieure de 3 villas\nDeadline : 2026-09-11\nScore : 6/10\nEmail : mohamed.abdelghani@intradef.gouv.fr\nTel : +596 596 39 52 64 \nLien : https://www.boamp.fr/pages/avis/?q=idweb:26-75861\nAction : verifier DCE, identifier lot, preparer go/no-go.",
+        "url": "https://wa.me/596696653589?text=AO%20GIB%20a%20traiter%0AOrganisme%20%3A%20DID%20FdF%0AObjet%20%3A%20GUADELOUPE%20(971)%20%E2%80%93%20SAINT%20BARTH%C3%89LEMY%20%E2%80%93%20Gendarmerie%20Fort%20Oscar%20%E2%80%93%20Travaux%20de%20d%C3%A9samiantage%20et%20r%C3%A9novation%20int%C3%A9rieure%20de%203%20villas%0ADeadline%20%3A%202026-09-11%0AScore%20%3A%206%2F10%0AEmail%20%3A%20mohamed.abdelghani%40intradef.gouv.fr%0ATel%20%3A%20%2B596%20596%2039%2052%2064%20%0ALien%20%3A%20https%3A%2F%2Fwww.boamp.fr%2Fpages%2Favis%2F%3Fq%3Didweb%3A26-75861%0AAction%20%3A%20verifier%20DCE%2C%20identifier%20lot%2C%20preparer%20go%2Fno-go."
+      },
+      "call": {
+        "phone": "+596596395264",
+        "script": "Bonjour, je vous appelle pour GIB Menuiseries Services a Ducos.\nNous avons repere votre consultation : GUADELOUPE (971) – SAINT BARTHÉLEMY – Gendarmerie Fort Oscar – Travaux de désamiantage et rénovation intérieure de 3 villas.\nNous souhaitons verifier si un lot concerne les menuiseries, fermetures, clotures, garde-corps, portails, volets ou ouvrages associes.\nPouvez-vous me confirmer le bon lien DCE/profil acheteur et la procedure officielle pour les questions ?\nNous passerons uniquement par le canal prevu dans le reglement de consultation.",
+        "telUrl": "tel:+596596395264"
+      },
+      "dossier": {
+        "status": "to_prepare",
+        "checklist": [
+          "Ouvrir avis BOAMP et profil acheteur",
+          "Telecharger RC, CCTP, DPGF/BPU, AE, CCAP et annexes",
+          "Verifier date limite, visite obligatoire, questions autorisees",
+          "Identifier lot menuiserie/fermeture/cloture/garde-corps",
+          "Decision go/no-go : capacite, delai, references, pieces administratives",
+          "Preparer DC1/DC2, attestation assurance, Kbis, RIB, memoire technique",
+          "Ecarter si aucun lot GIB ou garder en veille fournisseur/sous-traitance"
+        ],
+        "warning": "Ne pas deposer une offre automatiquement. Le DCE, les pieces et le chiffrage doivent etre valides par un humain."
+      },
+      "followUps": [
+        {
+          "label": "J+1",
+          "date": "2026-07-31",
+          "action": "Verifier reception ou ouvrir profil acheteur officiel"
+        },
+        {
+          "label": "J+3",
+          "date": "2026-08-02",
+          "action": "Relancer si aucune reponse et deadline compatible"
+        },
+        {
+          "label": "J+7",
+          "date": "2026-08-06",
           "action": "Decision go/no-go ou classement"
         }
       ]
