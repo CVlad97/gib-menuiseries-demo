@@ -1,7 +1,7 @@
 {
   "source": "BOAMP / DILA API ouverte",
   "sourceUrl": "https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/api/",
-  "generatedAt": "2026-07-30T11:21:34.651Z",
+  "generatedAt": "2026-07-31T11:35:41.356Z",
   "department": "972",
   "keywords": [
     "menuiserie",
@@ -20,9 +20,35 @@
     "rénovation",
     "second oeuvre"
   ],
-  "totalCount": 4,
-  "count": 4,
+  "totalCount": 5,
+  "count": 5,
   "items": [
+    {
+      "source": "BOAMP / DILA API ouverte",
+      "sourceId": "26-76434",
+      "organism": "FRANCE TRAVAIL",
+      "platform": "BOAMP",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-76434",
+      "object": "La consultation vise à la conclusion d’accords-cadres ayant pour objet des prestations de travaux de mise à niveau de la sûreté bâtimentaire des sites de France Travail Martinique.",
+      "lot": "Menuiserie",
+      "deadline": "2026-08-18",
+      "publishedAt": "2026-07-30",
+      "commune": "Martinique",
+      "visitRequired": "A verifier dans le DCE",
+      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
+      "score": 8,
+      "priority": "high",
+      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
+      "contact": {
+        "email": "marches.97210@francetravail.fr",
+        "phone": "+596 596999999",
+        "contactName": "Pôle Achat Marchés",
+        "buyerCity": "FORT-DE-FRANCE",
+        "buyerPostalCode": "97200",
+        "buyerProfileUrl": "https://www.marches-publics.gouv.fr/agent/"
+      },
+      "notes": "Descripteurs : Menuiserie | Type marche : Travaux | Procedure : Procédure Ouverte | Email acheteur : marches.97210@francetravail.fr | Tel acheteur : +596 596999999 | Profil acheteur : https://www.marches-publics.gouv.fr/agent/"
+    },
     {
       "source": "BOAMP / DILA API ouverte",
       "sourceId": "26-75861",
