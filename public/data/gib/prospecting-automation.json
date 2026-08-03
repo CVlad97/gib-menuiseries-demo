@@ -1,13 +1,13 @@
 {
   "source": "GIB prospecting automation queue",
-  "generatedAt": "2026-07-31T11:35:41.532Z",
-  "tenderFeedGeneratedAt": "2026-07-31T11:35:41.356Z",
+  "generatedAt": "2026-08-03T12:37:05.757Z",
+  "tenderFeedGeneratedAt": "2026-08-03T12:37:05.559Z",
   "summary": {
-    "totalTenderRows": 5,
+    "totalTenderRows": 4,
     "uniqueQueueItems": 4,
     "emailReady": 4,
     "phoneReady": 4,
-    "urgent": 2,
+    "urgent": 1,
     "manualSubmissionRequired": 4
   },
   "compliance": [
@@ -19,78 +19,6 @@
   ],
   "queue": [
     {
-      "id": "ao-26-66492",
-      "sourceId": "26-66492",
-      "type": "response",
-      "organism": "SEMSAMAR (972)",
-      "object": "Marche de Travaux - Construction du groupe scolaire de Bagatelle - GROS MORNE",
-      "lot": "Gros oeuvre, Menuiserie, Electricité (travaux), Plomberie (travaux), Peinture (travaux)",
-      "deadline": "2026-07-31",
-      "daysUntilDeadline": 1,
-      "priority": "urgent",
-      "score": 8,
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-66492",
-      "contact": {
-        "email": "lvalentin@semsamar.fr",
-        "phone": "+33596731659",
-        "name": "",
-        "profile": "https://www.marches-securises.fr"
-      },
-      "automation": {
-        "emailReady": true,
-        "phoneReady": true,
-        "whatsappReady": true,
-        "officialSubmission": "manual_required",
-        "duplicateGuard": "lvalentin@semsamar.fr|semsamar (972)|marche de travaux - construction du groupe scolaire de bagatelle - gros morne"
-      },
-      "email": {
-        "to": "lvalentin@semsamar.fr",
-        "subject": "Demande DCE / qualification lot - SEMSAMAR (972) - 26-66492",
-        "body": "Bonjour,\n\nNous vous contactons pour GIB Menuiseries Services, entreprise basee a Ducos en Martinique, au sujet de la consultation suivante :\n- Organisme : SEMSAMAR (972)\n- Objet : Marche de Travaux - Construction du groupe scolaire de Bagatelle - GROS MORNE\n- Reference : 26-66492\n- Date limite : 2026-07-31\n\nNous souhaitons verifier si un lot menuiserie, fermeture, cloture, garde-corps ou ouvrage associe correspond a notre activite.\n\nPouvez-vous nous confirmer le lien DCE/profil acheteur a utiliser, ainsi que les modalites officielles pour poser une question ou deposer une reponse si le lot est pertinent ?\n\nPresentation GIB :\nSite : https://www.gibmenuiseries.fr\nInstagram : https://www.instagram.com/gibmenuiseries/\nFlyer : https://cvlad97.github.io/gib-menuiseries-demo/media/gib/flyers/pub3.jpeg\n\nContact commercial : Vladimir Claveau\nWhatsApp : +596 696 65 35 89\nEmail : gibmenuiseriesservices@gmail.com\nZone Industrielle Cocotte, derriere Lapeyre, Ducos, Martinique\n\nCordialement,\nGIB Menuiseries Services",
-        "mailto": "mailto:lvalentin@semsamar.fr?subject=Demande+DCE+%2F+qualification+lot+-+SEMSAMAR+%28972%29+-+26-66492&body=Bonjour%2C%0A%0ANous+vous+contactons+pour+GIB+Menuiseries+Services%2C+entreprise+basee+a+Ducos+en+Martinique%2C+au+sujet+de+la+consultation+suivante+%3A%0A-+Organisme+%3A+SEMSAMAR+%28972%29%0A-+Objet+%3A+Marche+de+Travaux+-+Construction+du+groupe+scolaire+de+Bagatelle+-+GROS+MORNE%0A-+Reference+%3A+26-66492%0A-+Date+limite+%3A+2026-07-31%0A%0ANous+souhaitons+verifier+si+un+lot+menuiserie%2C+fermeture%2C+cloture%2C+garde-corps+ou+ouvrage+associe+correspond+a+notre+activite.%0A%0APouvez-vous+nous+confirmer+le+lien+DCE%2Fprofil+acheteur+a+utiliser%2C+ainsi+que+les+modalites+officielles+pour+poser+une+question+ou+deposer+une+reponse+si+le+lot+est+pertinent+%3F%0A%0APresentation+GIB+%3A%0ASite+%3A+https%3A%2F%2Fwww.gibmenuiseries.fr%0AInstagram+%3A+https%3A%2F%2Fwww.instagram.com%2Fgibmenuiseries%2F%0AFlyer+%3A+https%3A%2F%2Fcvlad97.github.io%2Fgib-menuiseries-demo%2Fmedia%2Fgib%2Fflyers%2Fpub3.jpeg%0A%0AContact+commercial+%3A+Vladimir+Claveau%0AWhatsApp+%3A+%2B596+696+65+35+89%0AEmail+%3A+gibmenuiseriesservices%40gmail.com%0AZone+Industrielle+Cocotte%2C+derriere+Lapeyre%2C+Ducos%2C+Martinique%0A%0ACordialement%2C%0AGIB+Menuiseries+Services"
-      },
-      "whatsapp": {
-        "to": "+596 696 65 35 89",
-        "body": "AO GIB a traiter\nOrganisme : SEMSAMAR (972)\nObjet : Marche de Travaux - Construction du groupe scolaire de Bagatelle - GROS MORNE\nDeadline : 2026-07-31\nScore : 8/10\nEmail : lvalentin@semsamar.fr\nTel : +33 596731659\nLien : https://www.boamp.fr/pages/avis/?q=idweb:26-66492\nAction : verifier DCE, identifier lot, preparer go/no-go.",
-        "url": "https://wa.me/596696653589?text=AO%20GIB%20a%20traiter%0AOrganisme%20%3A%20SEMSAMAR%20(972)%0AObjet%20%3A%20Marche%20de%20Travaux%20-%20Construction%20du%20groupe%20scolaire%20de%20Bagatelle%20-%20GROS%20MORNE%0ADeadline%20%3A%202026-07-31%0AScore%20%3A%208%2F10%0AEmail%20%3A%20lvalentin%40semsamar.fr%0ATel%20%3A%20%2B33%20596731659%0ALien%20%3A%20https%3A%2F%2Fwww.boamp.fr%2Fpages%2Favis%2F%3Fq%3Didweb%3A26-66492%0AAction%20%3A%20verifier%20DCE%2C%20identifier%20lot%2C%20preparer%20go%2Fno-go."
-      },
-      "call": {
-        "phone": "+33596731659",
-        "script": "Bonjour, je vous appelle pour GIB Menuiseries Services a Ducos.\nNous avons repere votre consultation : Marche de Travaux - Construction du groupe scolaire de Bagatelle - GROS MORNE.\nNous souhaitons verifier si un lot concerne les menuiseries, fermetures, clotures, garde-corps, portails, volets ou ouvrages associes.\nPouvez-vous me confirmer le bon lien DCE/profil acheteur et la procedure officielle pour les questions ?\nNous passerons uniquement par le canal prevu dans le reglement de consultation.",
-        "telUrl": "tel:+33596731659"
-      },
-      "dossier": {
-        "status": "to_prepare",
-        "checklist": [
-          "Ouvrir avis BOAMP et profil acheteur",
-          "Telecharger RC, CCTP, DPGF/BPU, AE, CCAP et annexes",
-          "Verifier date limite, visite obligatoire, questions autorisees",
-          "Identifier lot menuiserie/fermeture/cloture/garde-corps",
-          "Decision go/no-go : capacite, delai, references, pieces administratives",
-          "Preparer DC1/DC2, attestation assurance, Kbis, RIB, memoire technique",
-          "Chiffrer le lot pertinent et preparer une question technique si besoin"
-        ],
-        "warning": "Ne pas deposer une offre automatiquement. Le DCE, les pieces et le chiffrage doivent etre valides par un humain."
-      },
-      "followUps": [
-        {
-          "label": "J+1",
-          "date": "2026-08-01",
-          "action": "Verifier reception ou ouvrir profil acheteur officiel"
-        },
-        {
-          "label": "J+3",
-          "date": "2026-08-03",
-          "action": "Relancer si aucune reponse et deadline compatible"
-        },
-        {
-          "label": "J+7",
-          "date": "2026-08-07",
-          "action": "Decision go/no-go ou classement"
-        }
-      ]
-    },
-    {
       "id": "ao-26-67263",
       "sourceId": "26-67263",
       "type": "qualification",
@@ -98,7 +26,7 @@
       "object": "TRAVAUX DE RÉNOVATION SUR TOITURES GRAND PORT MARITIME DE LA MARTINIQUE",
       "lot": "Etanchéité",
       "deadline": "2026-08-06",
-      "daysUntilDeadline": 7,
+      "daysUntilDeadline": 4,
       "priority": "urgent",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-67263",
@@ -147,17 +75,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-01",
+          "date": "2026-08-04",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-03",
+          "date": "2026-08-06",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-07",
+          "date": "2026-08-10",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -170,7 +98,7 @@
       "object": "La consultation vise à la conclusion d’accords-cadres ayant pour objet des prestations de travaux de mise à niveau de la sûreté bâtimentaire des sites de France Travail Martinique.",
       "lot": "Menuiserie",
       "deadline": "2026-08-18",
-      "daysUntilDeadline": 19,
+      "daysUntilDeadline": 16,
       "priority": "high",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-76434",
@@ -219,17 +147,89 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-01",
+          "date": "2026-08-04",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-03",
+          "date": "2026-08-06",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-07",
+          "date": "2026-08-10",
+          "action": "Decision go/no-go ou classement"
+        }
+      ]
+    },
+    {
+      "id": "ao-26-77010",
+      "sourceId": "26-77010",
+      "type": "qualification",
+      "organism": "DGDDI DI ANTILLES GUYANE",
+      "object": "Marché de travaux de rénovation des installations électriques (Courants Forts – CFO) et informatique (Courants Faibles – CFA) les locaux du bâtiment SGCD",
+      "lot": "Electricité (travaux)",
+      "deadline": "2026-08-20",
+      "daysUntilDeadline": 18,
+      "priority": "medium",
+      "score": 6,
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-77010",
+      "contact": {
+        "email": "armelle.feumba-tchebetchou@douane.finances.gouv.fr",
+        "phone": "0596707305",
+        "name": "",
+        "profile": "https://www.marches-publics.gouv.fr/entreprise"
+      },
+      "automation": {
+        "emailReady": true,
+        "phoneReady": true,
+        "whatsappReady": true,
+        "officialSubmission": "manual_required",
+        "duplicateGuard": "armelle.feumba-tchebetchou@douane.finances.gouv.fr|dgddi di antilles guyane|marche de travaux de renovation des installations electriques (courants forts – cfo) et informatique (courants faibles – cfa) les locaux du batiment sgcd"
+      },
+      "email": {
+        "to": "armelle.feumba-tchebetchou@douane.finances.gouv.fr",
+        "subject": "Demande orientation DCE - DGDDI DI ANTILLES GUYANE - 26-77010",
+        "body": "Bonjour,\n\nNous vous contactons pour GIB Menuiseries Services, entreprise basee a Ducos en Martinique, au sujet de la consultation suivante :\n- Organisme : DGDDI DI ANTILLES GUYANE\n- Objet : Marché de travaux de rénovation des installations électriques (Courants Forts – CFO) et informatique (Courants Faibles – CFA) les locaux du bâtiment SGCD\n- Reference : 26-77010\n- Date limite : 2026-08-20\n\nNous souhaitons identifier si des prestations de menuiserie, fermeture, acces, cloture ou renovation peuvent correspondre a notre activite.\n\nPouvez-vous nous confirmer le lien DCE/profil acheteur a utiliser, ainsi que les modalites officielles pour poser une question ou deposer une reponse si le lot est pertinent ?\n\nPresentation GIB :\nSite : https://www.gibmenuiseries.fr\nInstagram : https://www.instagram.com/gibmenuiseries/\nFlyer : https://cvlad97.github.io/gib-menuiseries-demo/media/gib/flyers/pub3.jpeg\n\nContact commercial : Vladimir Claveau\nWhatsApp : +596 696 65 35 89\nEmail : gibmenuiseriesservices@gmail.com\nZone Industrielle Cocotte, derriere Lapeyre, Ducos, Martinique\n\nCordialement,\nGIB Menuiseries Services",
+        "mailto": "mailto:armelle.feumba-tchebetchou@douane.finances.gouv.fr?subject=Demande+orientation+DCE+-+DGDDI+DI+ANTILLES+GUYANE+-+26-77010&body=Bonjour%2C%0A%0ANous+vous+contactons+pour+GIB+Menuiseries+Services%2C+entreprise+basee+a+Ducos+en+Martinique%2C+au+sujet+de+la+consultation+suivante+%3A%0A-+Organisme+%3A+DGDDI+DI+ANTILLES+GUYANE%0A-+Objet+%3A+March%C3%A9+de+travaux+de+r%C3%A9novation+des+installations+%C3%A9lectriques+%28Courants+Forts+%E2%80%93+CFO%29+et+informatique+%28Courants+Faibles+%E2%80%93+CFA%29+les+locaux+du+b%C3%A2timent+SGCD%0A-+Reference+%3A+26-77010%0A-+Date+limite+%3A+2026-08-20%0A%0ANous+souhaitons+identifier+si+des+prestations+de+menuiserie%2C+fermeture%2C+acces%2C+cloture+ou+renovation+peuvent+correspondre+a+notre+activite.%0A%0APouvez-vous+nous+confirmer+le+lien+DCE%2Fprofil+acheteur+a+utiliser%2C+ainsi+que+les+modalites+officielles+pour+poser+une+question+ou+deposer+une+reponse+si+le+lot+est+pertinent+%3F%0A%0APresentation+GIB+%3A%0ASite+%3A+https%3A%2F%2Fwww.gibmenuiseries.fr%0AInstagram+%3A+https%3A%2F%2Fwww.instagram.com%2Fgibmenuiseries%2F%0AFlyer+%3A+https%3A%2F%2Fcvlad97.github.io%2Fgib-menuiseries-demo%2Fmedia%2Fgib%2Fflyers%2Fpub3.jpeg%0A%0AContact+commercial+%3A+Vladimir+Claveau%0AWhatsApp+%3A+%2B596+696+65+35+89%0AEmail+%3A+gibmenuiseriesservices%40gmail.com%0AZone+Industrielle+Cocotte%2C+derriere+Lapeyre%2C+Ducos%2C+Martinique%0A%0ACordialement%2C%0AGIB+Menuiseries+Services"
+      },
+      "whatsapp": {
+        "to": "+596 696 65 35 89",
+        "body": "AO GIB a traiter\nOrganisme : DGDDI DI ANTILLES GUYANE\nObjet : Marché de travaux de rénovation des installations électriques (Courants Forts – CFO) et informatique (Courants Faibles – CFA) les locaux du bâtiment SGCD\nDeadline : 2026-08-20\nScore : 6/10\nEmail : armelle.feumba-tchebetchou@douane.finances.gouv.fr\nTel : 0596707305\nLien : https://www.boamp.fr/pages/avis/?q=idweb:26-77010\nAction : verifier DCE, identifier lot, preparer go/no-go.",
+        "url": "https://wa.me/596696653589?text=AO%20GIB%20a%20traiter%0AOrganisme%20%3A%20DGDDI%20DI%20ANTILLES%20GUYANE%0AObjet%20%3A%20March%C3%A9%20de%20travaux%20de%20r%C3%A9novation%20des%20installations%20%C3%A9lectriques%20(Courants%20Forts%20%E2%80%93%20CFO)%20et%20informatique%20(Courants%20Faibles%20%E2%80%93%20CFA)%20les%20locaux%20du%20b%C3%A2timent%20SGCD%0ADeadline%20%3A%202026-08-20%0AScore%20%3A%206%2F10%0AEmail%20%3A%20armelle.feumba-tchebetchou%40douane.finances.gouv.fr%0ATel%20%3A%200596707305%0ALien%20%3A%20https%3A%2F%2Fwww.boamp.fr%2Fpages%2Favis%2F%3Fq%3Didweb%3A26-77010%0AAction%20%3A%20verifier%20DCE%2C%20identifier%20lot%2C%20preparer%20go%2Fno-go."
+      },
+      "call": {
+        "phone": "0596707305",
+        "script": "Bonjour, je vous appelle pour GIB Menuiseries Services a Ducos.\nNous avons repere votre consultation : Marché de travaux de rénovation des installations électriques (Courants Forts – CFO) et informatique (Courants Faibles – CFA) les locaux du bâtiment SGCD.\nNous souhaitons verifier si un lot concerne les menuiseries, fermetures, clotures, garde-corps, portails, volets ou ouvrages associes.\nPouvez-vous me confirmer le bon lien DCE/profil acheteur et la procedure officielle pour les questions ?\nNous passerons uniquement par le canal prevu dans le reglement de consultation.",
+        "telUrl": "tel:0596707305"
+      },
+      "dossier": {
+        "status": "to_prepare",
+        "checklist": [
+          "Ouvrir avis BOAMP et profil acheteur",
+          "Telecharger RC, CCTP, DPGF/BPU, AE, CCAP et annexes",
+          "Verifier date limite, visite obligatoire, questions autorisees",
+          "Identifier lot menuiserie/fermeture/cloture/garde-corps",
+          "Decision go/no-go : capacite, delai, references, pieces administratives",
+          "Preparer DC1/DC2, attestation assurance, Kbis, RIB, memoire technique",
+          "Ecarter si aucun lot GIB ou garder en veille fournisseur/sous-traitance"
+        ],
+        "warning": "Ne pas deposer une offre automatiquement. Le DCE, les pieces et le chiffrage doivent etre valides par un humain."
+      },
+      "followUps": [
+        {
+          "label": "J+1",
+          "date": "2026-08-04",
+          "action": "Verifier reception ou ouvrir profil acheteur officiel"
+        },
+        {
+          "label": "J+3",
+          "date": "2026-08-06",
+          "action": "Relancer si aucune reponse et deadline compatible"
+        },
+        {
+          "label": "J+7",
+          "date": "2026-08-10",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -242,7 +242,7 @@
       "object": "GUADELOUPE (971) – SAINT BARTHÉLEMY – Gendarmerie Fort Oscar – Travaux de désamiantage et rénovation intérieure de 3 villas",
       "lot": "Amiante (désamiantage)",
       "deadline": "2026-09-11",
-      "daysUntilDeadline": 43,
+      "daysUntilDeadline": 40,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-75861",
@@ -291,17 +291,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-01",
+          "date": "2026-08-04",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-03",
+          "date": "2026-08-06",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-07",
+          "date": "2026-08-10",
           "action": "Decision go/no-go ou classement"
         }
       ]

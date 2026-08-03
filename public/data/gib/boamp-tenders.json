@@ -1,7 +1,7 @@
 {
   "source": "BOAMP / DILA API ouverte",
   "sourceUrl": "https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/api/",
-  "generatedAt": "2026-07-31T11:35:41.356Z",
+  "generatedAt": "2026-08-03T12:37:05.559Z",
   "department": "972",
   "keywords": [
     "menuiserie",
@@ -20,9 +20,35 @@
     "rénovation",
     "second oeuvre"
   ],
-  "totalCount": 5,
-  "count": 5,
+  "totalCount": 4,
+  "count": 4,
   "items": [
+    {
+      "source": "BOAMP / DILA API ouverte",
+      "sourceId": "26-77010",
+      "organism": "DGDDI DI ANTILLES GUYANE",
+      "platform": "BOAMP",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-77010",
+      "object": "Marché de travaux de rénovation des installations électriques (Courants Forts – CFO) et informatique (Courants Faibles – CFA) les locaux du bâtiment SGCD",
+      "lot": "Electricité (travaux)",
+      "deadline": "2026-08-20",
+      "publishedAt": "2026-07-31",
+      "commune": "Martinique",
+      "visitRequired": "A verifier dans le DCE",
+      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
+      "score": 6,
+      "priority": "medium",
+      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
+      "contact": {
+        "email": "armelle.feumba-tchebetchou@douane.finances.gouv.fr",
+        "phone": "0596707305",
+        "contactName": "",
+        "buyerCity": "Fort de France",
+        "buyerPostalCode": "97247",
+        "buyerProfileUrl": "https://www.marches-publics.gouv.fr/entreprise"
+      },
+      "notes": "Descripteurs : Electricité (travaux) | Type marche : Travaux | Procedure : Procédure Adaptée | Email acheteur : armelle.feumba-tchebetchou@douane.finances.gouv.fr | Tel acheteur : 0596707305 | Profil acheteur : https://www.marches-publics.gouv.fr/entreprise"
+    },
     {
       "source": "BOAMP / DILA API ouverte",
       "sourceId": "26-76434",
@@ -100,58 +126,6 @@
         "buyerProfileUrl": "https://www.antilles-legales.fr"
       },
       "notes": "Descripteurs : Etanchéité | Type marche : Travaux | Procedure : Procédure Ouverte | Email acheteur : c.sabino@martinique.port.fr | Tel acheteur : +33 596590052 | Profil acheteur : https://www.antilles-legales.fr"
-    },
-    {
-      "source": "BOAMP / DILA API ouverte",
-      "sourceId": "26-66492",
-      "organism": "SEMSAMAR (972)",
-      "platform": "BOAMP",
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-66492",
-      "object": "Marche de Travaux - Construction du groupe scolaire de Bagatelle - GROS MORNE",
-      "lot": "Gros oeuvre, Menuiserie, Electricité (travaux), Plomberie (travaux), Peinture (travaux)",
-      "deadline": "2026-07-31",
-      "publishedAt": "2026-07-05",
-      "commune": "Martinique",
-      "visitRequired": "A verifier dans le DCE",
-      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
-      "score": 8,
-      "priority": "high",
-      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
-      "contact": {
-        "email": "lvalentin@semsamar.fr",
-        "phone": "+33 596731659",
-        "contactName": "",
-        "buyerCity": "",
-        "buyerPostalCode": "",
-        "buyerProfileUrl": "https://www.marches-securises.fr"
-      },
-      "notes": "Descripteurs : Gros oeuvre, Menuiserie, Electricité (travaux), Plomberie (travaux), Peinture (travaux) | Type marche : Travaux | Procedure : Procédure Ouverte | Email acheteur : lvalentin@semsamar.fr | Tel acheteur : +33 596731659 | Profil acheteur : https://www.marches-securises.fr"
-    },
-    {
-      "source": "BOAMP / DILA API ouverte",
-      "sourceId": "26-44285",
-      "organism": "SEMSAMAR (972)",
-      "platform": "BOAMP",
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-44285",
-      "object": "Marche de Travaux - Construction du groupe scolaire de Bagatelle - GROS MORNE",
-      "lot": "Gros oeuvre, Menuiserie, Electricité (travaux), Plomberie (travaux), Peinture (travaux)",
-      "deadline": "2026-07-31",
-      "publishedAt": "2026-05-02",
-      "commune": "Martinique",
-      "visitRequired": "A verifier dans le DCE",
-      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
-      "score": 8,
-      "priority": "high",
-      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
-      "contact": {
-        "email": "lvalentin@semsamar.fr",
-        "phone": "+33 596731659",
-        "contactName": "",
-        "buyerCity": "",
-        "buyerPostalCode": "",
-        "buyerProfileUrl": "https://www.marches-securises.fr"
-      },
-      "notes": "Descripteurs : Gros oeuvre, Menuiserie, Electricité (travaux), Plomberie (travaux), Peinture (travaux) | Type marche : Travaux | Procedure : Procédure Ouverte | Email acheteur : lvalentin@semsamar.fr | Tel acheteur : +33 596731659 | Profil acheteur : https://www.marches-securises.fr"
     }
   ]
 }
