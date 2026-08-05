@@ -1,14 +1,14 @@
 {
   "source": "GIB prospecting automation queue",
-  "generatedAt": "2026-08-04T11:34:12.296Z",
-  "tenderFeedGeneratedAt": "2026-08-04T11:34:12.105Z",
+  "generatedAt": "2026-08-05T11:30:47.126Z",
+  "tenderFeedGeneratedAt": "2026-08-05T11:30:46.896Z",
   "summary": {
-    "totalTenderRows": 4,
-    "uniqueQueueItems": 4,
-    "emailReady": 4,
+    "totalTenderRows": 5,
+    "uniqueQueueItems": 5,
+    "emailReady": 5,
     "phoneReady": 4,
     "urgent": 1,
-    "manualSubmissionRequired": 4
+    "manualSubmissionRequired": 5
   },
   "compliance": [
     "Utiliser uniquement les contacts publies ou fournis volontairement.",
@@ -26,7 +26,7 @@
       "object": "TRAVAUX DE RÉNOVATION SUR TOITURES GRAND PORT MARITIME DE LA MARTINIQUE",
       "lot": "Etanchéité",
       "deadline": "2026-08-06",
-      "daysUntilDeadline": 3,
+      "daysUntilDeadline": 2,
       "priority": "urgent",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-67263",
@@ -75,17 +75,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-05",
+          "date": "2026-08-06",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-07",
+          "date": "2026-08-08",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-11",
+          "date": "2026-08-12",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -98,7 +98,7 @@
       "object": "La consultation vise à la conclusion d’accords-cadres ayant pour objet des prestations de travaux de mise à niveau de la sûreté bâtimentaire des sites de France Travail Martinique.",
       "lot": "Menuiserie",
       "deadline": "2026-08-18",
-      "daysUntilDeadline": 15,
+      "daysUntilDeadline": 14,
       "priority": "high",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-76434",
@@ -147,17 +147,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-05",
+          "date": "2026-08-06",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-07",
+          "date": "2026-08-08",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-11",
+          "date": "2026-08-12",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -170,7 +170,7 @@
       "object": "Marché de travaux de rénovation des installations électriques (Courants Forts – CFO) et informatique (Courants Faibles – CFA) les locaux du bâtiment SGCD",
       "lot": "Electricité (travaux)",
       "deadline": "2026-08-20",
-      "daysUntilDeadline": 17,
+      "daysUntilDeadline": 16,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-77010",
@@ -219,17 +219,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-05",
+          "date": "2026-08-06",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-07",
+          "date": "2026-08-08",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-11",
+          "date": "2026-08-12",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -242,7 +242,7 @@
       "object": "GUADELOUPE (971) – SAINT BARTHÉLEMY – Gendarmerie Fort Oscar – Travaux de désamiantage et rénovation intérieure de 3 villas",
       "lot": "Amiante (désamiantage)",
       "deadline": "2026-09-11",
-      "daysUntilDeadline": 39,
+      "daysUntilDeadline": 38,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-75861",
@@ -291,17 +291,89 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-05",
+          "date": "2026-08-06",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-07",
+          "date": "2026-08-08",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-11",
+          "date": "2026-08-12",
+          "action": "Decision go/no-go ou classement"
+        }
+      ]
+    },
+    {
+      "id": "ao-26-77983",
+      "sourceId": "26-77983",
+      "type": "response",
+      "organism": "DID Cayenne",
+      "object": "P26-013",
+      "lot": "Climatisation, Electricité (travaux), Tous corps d'état, Menuiserie, Charpente, Couverture",
+      "deadline": "2026-09-14",
+      "daysUntilDeadline": 41,
+      "priority": "high",
+      "score": 8,
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-77983",
+      "contact": {
+        "email": "did-cayenne-divadm.ach.fct@intradef.gouv.fr",
+        "phone": "",
+        "name": "Section marchés",
+        "profile": ""
+      },
+      "automation": {
+        "emailReady": true,
+        "phoneReady": false,
+        "whatsappReady": true,
+        "officialSubmission": "manual_required",
+        "duplicateGuard": "did-cayenne-divadm.ach.fct@intradef.gouv.fr|did cayenne|p26-013"
+      },
+      "email": {
+        "to": "did-cayenne-divadm.ach.fct@intradef.gouv.fr",
+        "subject": "Demande DCE / qualification lot - DID Cayenne - 26-77983",
+        "body": "Bonjour,\n\nNous vous contactons pour GIB Menuiseries Services, entreprise basee a Ducos en Martinique, au sujet de la consultation suivante :\n- Organisme : DID Cayenne\n- Objet : P26-013\n- Reference : 26-77983\n- Date limite : 2026-09-14\n\nNous souhaitons verifier si un lot menuiserie, fermeture, cloture, garde-corps ou ouvrage associe correspond a notre activite.\n\nPouvez-vous nous confirmer le lien DCE/profil acheteur a utiliser, ainsi que les modalites officielles pour poser une question ou deposer une reponse si le lot est pertinent ?\n\nPresentation GIB :\nSite : https://www.gibmenuiseries.fr\nInstagram : https://www.instagram.com/gibmenuiseries/\nFlyer : https://cvlad97.github.io/gib-menuiseries-demo/media/gib/flyers/pub3.jpeg\n\nContact commercial : Vladimir Claveau\nWhatsApp : +596 696 65 35 89\nEmail : gibmenuiseriesservices@gmail.com\nZone Industrielle Cocotte, derriere Lapeyre, Ducos, Martinique\n\nCordialement,\nGIB Menuiseries Services",
+        "mailto": "mailto:did-cayenne-divadm.ach.fct@intradef.gouv.fr?subject=Demande+DCE+%2F+qualification+lot+-+DID+Cayenne+-+26-77983&body=Bonjour%2C%0A%0ANous+vous+contactons+pour+GIB+Menuiseries+Services%2C+entreprise+basee+a+Ducos+en+Martinique%2C+au+sujet+de+la+consultation+suivante+%3A%0A-+Organisme+%3A+DID+Cayenne%0A-+Objet+%3A+P26-013%0A-+Reference+%3A+26-77983%0A-+Date+limite+%3A+2026-09-14%0A%0ANous+souhaitons+verifier+si+un+lot+menuiserie%2C+fermeture%2C+cloture%2C+garde-corps+ou+ouvrage+associe+correspond+a+notre+activite.%0A%0APouvez-vous+nous+confirmer+le+lien+DCE%2Fprofil+acheteur+a+utiliser%2C+ainsi+que+les+modalites+officielles+pour+poser+une+question+ou+deposer+une+reponse+si+le+lot+est+pertinent+%3F%0A%0APresentation+GIB+%3A%0ASite+%3A+https%3A%2F%2Fwww.gibmenuiseries.fr%0AInstagram+%3A+https%3A%2F%2Fwww.instagram.com%2Fgibmenuiseries%2F%0AFlyer+%3A+https%3A%2F%2Fcvlad97.github.io%2Fgib-menuiseries-demo%2Fmedia%2Fgib%2Fflyers%2Fpub3.jpeg%0A%0AContact+commercial+%3A+Vladimir+Claveau%0AWhatsApp+%3A+%2B596+696+65+35+89%0AEmail+%3A+gibmenuiseriesservices%40gmail.com%0AZone+Industrielle+Cocotte%2C+derriere+Lapeyre%2C+Ducos%2C+Martinique%0A%0ACordialement%2C%0AGIB+Menuiseries+Services"
+      },
+      "whatsapp": {
+        "to": "+596 696 65 35 89",
+        "body": "AO GIB a traiter\nOrganisme : DID Cayenne\nObjet : P26-013\nDeadline : 2026-09-14\nScore : 8/10\nEmail : did-cayenne-divadm.ach.fct@intradef.gouv.fr\nLien : https://www.boamp.fr/pages/avis/?q=idweb:26-77983\nAction : verifier DCE, identifier lot, preparer go/no-go.",
+        "url": "https://wa.me/596696653589?text=AO%20GIB%20a%20traiter%0AOrganisme%20%3A%20DID%20Cayenne%0AObjet%20%3A%20P26-013%0ADeadline%20%3A%202026-09-14%0AScore%20%3A%208%2F10%0AEmail%20%3A%20did-cayenne-divadm.ach.fct%40intradef.gouv.fr%0ALien%20%3A%20https%3A%2F%2Fwww.boamp.fr%2Fpages%2Favis%2F%3Fq%3Didweb%3A26-77983%0AAction%20%3A%20verifier%20DCE%2C%20identifier%20lot%2C%20preparer%20go%2Fno-go."
+      },
+      "call": {
+        "phone": "",
+        "script": "Bonjour, je vous appelle pour GIB Menuiseries Services a Ducos.\nNous avons repere votre consultation : P26-013.\nNous souhaitons verifier si un lot concerne les menuiseries, fermetures, clotures, garde-corps, portails, volets ou ouvrages associes.\nPouvez-vous me confirmer le bon lien DCE/profil acheteur et la procedure officielle pour les questions ?\nNous passerons uniquement par le canal prevu dans le reglement de consultation.",
+        "telUrl": ""
+      },
+      "dossier": {
+        "status": "to_prepare",
+        "checklist": [
+          "Ouvrir avis BOAMP et profil acheteur",
+          "Telecharger RC, CCTP, DPGF/BPU, AE, CCAP et annexes",
+          "Verifier date limite, visite obligatoire, questions autorisees",
+          "Identifier lot menuiserie/fermeture/cloture/garde-corps",
+          "Decision go/no-go : capacite, delai, references, pieces administratives",
+          "Preparer DC1/DC2, attestation assurance, Kbis, RIB, memoire technique",
+          "Chiffrer le lot pertinent et preparer une question technique si besoin"
+        ],
+        "warning": "Ne pas deposer une offre automatiquement. Le DCE, les pieces et le chiffrage doivent etre valides par un humain."
+      },
+      "followUps": [
+        {
+          "label": "J+1",
+          "date": "2026-08-06",
+          "action": "Verifier reception ou ouvrir profil acheteur officiel"
+        },
+        {
+          "label": "J+3",
+          "date": "2026-08-08",
+          "action": "Relancer si aucune reponse et deadline compatible"
+        },
+        {
+          "label": "J+7",
+          "date": "2026-08-12",
           "action": "Decision go/no-go ou classement"
         }
       ]
