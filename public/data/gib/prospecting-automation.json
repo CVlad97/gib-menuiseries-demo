@@ -1,7 +1,7 @@
 {
   "source": "GIB prospecting automation queue",
-  "generatedAt": "2026-08-05T11:30:47.126Z",
-  "tenderFeedGeneratedAt": "2026-08-05T11:30:46.896Z",
+  "generatedAt": "2026-08-06T11:34:16.552Z",
+  "tenderFeedGeneratedAt": "2026-08-06T11:34:16.363Z",
   "summary": {
     "totalTenderRows": 5,
     "uniqueQueueItems": 5,
@@ -26,7 +26,7 @@
       "object": "TRAVAUX DE RÉNOVATION SUR TOITURES GRAND PORT MARITIME DE LA MARTINIQUE",
       "lot": "Etanchéité",
       "deadline": "2026-08-06",
-      "daysUntilDeadline": 2,
+      "daysUntilDeadline": 1,
       "priority": "urgent",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-67263",
@@ -75,17 +75,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-06",
+          "date": "2026-08-07",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-08",
+          "date": "2026-08-09",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-12",
+          "date": "2026-08-13",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -98,7 +98,7 @@
       "object": "La consultation vise à la conclusion d’accords-cadres ayant pour objet des prestations de travaux de mise à niveau de la sûreté bâtimentaire des sites de France Travail Martinique.",
       "lot": "Menuiserie",
       "deadline": "2026-08-18",
-      "daysUntilDeadline": 14,
+      "daysUntilDeadline": 13,
       "priority": "high",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-76434",
@@ -147,17 +147,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-06",
+          "date": "2026-08-07",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-08",
+          "date": "2026-08-09",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-12",
+          "date": "2026-08-13",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -170,7 +170,7 @@
       "object": "Marché de travaux de rénovation des installations électriques (Courants Forts – CFO) et informatique (Courants Faibles – CFA) les locaux du bâtiment SGCD",
       "lot": "Electricité (travaux)",
       "deadline": "2026-08-20",
-      "daysUntilDeadline": 16,
+      "daysUntilDeadline": 15,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-77010",
@@ -219,17 +219,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-06",
+          "date": "2026-08-07",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-08",
+          "date": "2026-08-09",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-12",
+          "date": "2026-08-13",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -242,7 +242,7 @@
       "object": "GUADELOUPE (971) – SAINT BARTHÉLEMY – Gendarmerie Fort Oscar – Travaux de désamiantage et rénovation intérieure de 3 villas",
       "lot": "Amiante (désamiantage)",
       "deadline": "2026-09-11",
-      "daysUntilDeadline": 38,
+      "daysUntilDeadline": 37,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-75861",
@@ -291,17 +291,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-06",
+          "date": "2026-08-07",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-08",
+          "date": "2026-08-09",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-12",
+          "date": "2026-08-13",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -314,7 +314,7 @@
       "object": "P26-013",
       "lot": "Climatisation, Electricité (travaux), Tous corps d'état, Menuiserie, Charpente, Couverture",
       "deadline": "2026-09-14",
-      "daysUntilDeadline": 41,
+      "daysUntilDeadline": 40,
       "priority": "high",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-77983",
@@ -363,17 +363,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-06",
+          "date": "2026-08-07",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-08",
+          "date": "2026-08-09",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-12",
+          "date": "2026-08-13",
           "action": "Decision go/no-go ou classement"
         }
       ]
