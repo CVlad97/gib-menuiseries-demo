@@ -1,7 +1,7 @@
 {
   "source": "BOAMP / DILA API ouverte",
   "sourceUrl": "https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/api/",
-  "generatedAt": "2026-08-06T11:34:16.363Z",
+  "generatedAt": "2026-08-07T10:12:04.486Z",
   "department": "972",
   "keywords": [
     "menuiserie",
@@ -20,8 +20,8 @@
     "rénovation",
     "second oeuvre"
   ],
-  "totalCount": 5,
-  "count": 5,
+  "totalCount": 4,
+  "count": 4,
   "items": [
     {
       "source": "BOAMP / DILA API ouverte",
@@ -126,32 +126,6 @@
         "buyerProfileUrl": "https://www.marches-publics.gouv.fr/entreprise"
       },
       "notes": "Descripteurs : Amiante (désamiantage) | Type marche : Travaux | Procedure : Procédure Ouverte | Email acheteur : mohamed.abdelghani@intradef.gouv.fr | Tel acheteur : +596 596 39 52 64  | Profil acheteur : https://www.marches-publics.gouv.fr/entreprise"
-    },
-    {
-      "source": "BOAMP / DILA API ouverte",
-      "sourceId": "26-67263",
-      "organism": "GPMLM",
-      "platform": "BOAMP",
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-67263",
-      "object": "TRAVAUX DE RÉNOVATION SUR TOITURES GRAND PORT MARITIME DE LA MARTINIQUE",
-      "lot": "Etanchéité",
-      "deadline": "2026-08-06",
-      "publishedAt": "2026-07-06",
-      "commune": "Martinique",
-      "visitRequired": "A verifier dans le DCE",
-      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
-      "score": 6,
-      "priority": "medium",
-      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
-      "contact": {
-        "email": "c.sabino@martinique.port.fr",
-        "phone": "+33 596590052",
-        "contactName": "Monsieur Christophe SABINO",
-        "buyerCity": "FORT DE FRANCE",
-        "buyerPostalCode": "97200",
-        "buyerProfileUrl": "https://www.antilles-legales.fr"
-      },
-      "notes": "Descripteurs : Etanchéité | Type marche : Travaux | Procedure : Procédure Ouverte | Email acheteur : c.sabino@martinique.port.fr | Tel acheteur : +33 596590052 | Profil acheteur : https://www.antilles-legales.fr"
     }
   ]
 }
