@@ -1,13 +1,13 @@
 {
   "source": "GIB prospecting automation queue",
-  "generatedAt": "2026-08-07T10:12:04.678Z",
-  "tenderFeedGeneratedAt": "2026-08-07T10:12:04.486Z",
+  "generatedAt": "2026-08-10T10:37:19.319Z",
+  "tenderFeedGeneratedAt": "2026-08-10T10:37:19.122Z",
   "summary": {
     "totalTenderRows": 4,
     "uniqueQueueItems": 4,
     "emailReady": 4,
     "phoneReady": 3,
-    "urgent": 0,
+    "urgent": 1,
     "manualSubmissionRequired": 4
   },
   "compliance": [
@@ -26,8 +26,8 @@
       "object": "La consultation vise à la conclusion d’accords-cadres ayant pour objet des prestations de travaux de mise à niveau de la sûreté bâtimentaire des sites de France Travail Martinique.",
       "lot": "Menuiserie",
       "deadline": "2026-08-18",
-      "daysUntilDeadline": 12,
-      "priority": "high",
+      "daysUntilDeadline": 9,
+      "priority": "urgent",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-76434",
       "contact": {
@@ -75,17 +75,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-08",
+          "date": "2026-08-11",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-10",
+          "date": "2026-08-13",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-14",
+          "date": "2026-08-17",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -98,7 +98,7 @@
       "object": "Marché de travaux de rénovation des installations électriques (Courants Forts – CFO) et informatique (Courants Faibles – CFA) les locaux du bâtiment SGCD",
       "lot": "Electricité (travaux)",
       "deadline": "2026-08-20",
-      "daysUntilDeadline": 14,
+      "daysUntilDeadline": 11,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-77010",
@@ -147,17 +147,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-08",
+          "date": "2026-08-11",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-10",
+          "date": "2026-08-13",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-14",
+          "date": "2026-08-17",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -170,7 +170,7 @@
       "object": "GUADELOUPE (971) – SAINT BARTHÉLEMY – Gendarmerie Fort Oscar – Travaux de désamiantage et rénovation intérieure de 3 villas",
       "lot": "Amiante (désamiantage)",
       "deadline": "2026-09-11",
-      "daysUntilDeadline": 36,
+      "daysUntilDeadline": 33,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-75861",
@@ -219,17 +219,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-08",
+          "date": "2026-08-11",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-10",
+          "date": "2026-08-13",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-14",
+          "date": "2026-08-17",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -242,7 +242,7 @@
       "object": "P26-013",
       "lot": "Climatisation, Electricité (travaux), Tous corps d'état, Menuiserie, Charpente, Couverture",
       "deadline": "2026-09-14",
-      "daysUntilDeadline": 39,
+      "daysUntilDeadline": 36,
       "priority": "high",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-77983",
@@ -291,17 +291,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-08",
+          "date": "2026-08-11",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-10",
+          "date": "2026-08-13",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-14",
+          "date": "2026-08-17",
           "action": "Decision go/no-go ou classement"
         }
       ]
