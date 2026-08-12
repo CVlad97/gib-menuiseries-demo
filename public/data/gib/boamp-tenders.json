@@ -1,7 +1,7 @@
 {
   "source": "BOAMP / DILA API ouverte",
   "sourceUrl": "https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/api/",
-  "generatedAt": "2026-08-11T10:12:36.685Z",
+  "generatedAt": "2026-08-12T10:27:33.223Z",
   "department": "972",
   "keywords": [
     "menuiserie",
@@ -20,9 +20,35 @@
     "rénovation",
     "second oeuvre"
   ],
-  "totalCount": 4,
-  "count": 4,
+  "totalCount": 5,
+  "count": 5,
   "items": [
+    {
+      "source": "BOAMP / DILA API ouverte",
+      "sourceId": "26-79923",
+      "organism": "Mairie du Lamentin",
+      "platform": "BOAMP",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-79923",
+      "object": "FOURNITURE ET LIVRAISON D'ARTICLES DE MENUISERIES ALUMINIUM DU BATIMENT",
+      "lot": "Menuiserie",
+      "deadline": "2026-09-18",
+      "publishedAt": "2026-08-11",
+      "commune": "Martinique",
+      "visitRequired": "A verifier dans le DCE",
+      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
+      "score": 9,
+      "priority": "high",
+      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
+      "contact": {
+        "email": "grenard@mairie-lelamentin.fr",
+        "phone": "0596300752",
+        "contactName": "Mesdames Gisèle RENARD et Clarisse COUENO",
+        "buyerCity": "Lamentin",
+        "buyerPostalCode": "97232",
+        "buyerProfileUrl": "https://mairie-lelamentin.e-marchespublics.com/pack/annonce_marche_public_7996_1177777.html"
+      },
+      "notes": "Descripteurs : Menuiserie | Type marche : Fournitures | Procedure : Procédure Ouverte | Email acheteur : grenard@mairie-lelamentin.fr | Tel acheteur : 0596300752 | Profil acheteur : https://mairie-lelamentin.e-marchespublics.com/pack/annonce_marche_public_7996_1177777.html"
+    },
     {
       "source": "BOAMP / DILA API ouverte",
       "sourceId": "26-77983",
