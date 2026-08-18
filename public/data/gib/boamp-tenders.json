@@ -1,7 +1,7 @@
 {
   "source": "BOAMP / DILA API ouverte",
   "sourceUrl": "https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/api/",
-  "generatedAt": "2026-08-17T09:59:04.012Z",
+  "generatedAt": "2026-08-18T09:50:03.864Z",
   "department": "972",
   "keywords": [
     "menuiserie",
@@ -20,9 +20,35 @@
     "rénovation",
     "second oeuvre"
   ],
-  "totalCount": 6,
-  "count": 6,
+  "totalCount": 7,
+  "count": 7,
   "items": [
+    {
+      "source": "BOAMP / DILA API ouverte",
+      "sourceId": "26-81185",
+      "organism": "DID Fort-de-France",
+      "platform": "BOAMP",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-81185",
+      "object": "GUADELOUPE (971) -  LES ABYMES – Le Raizet –  2ème phase de rénovation des bâtiments 057, 058, 059 et 060.",
+      "lot": "Bâtiment",
+      "deadline": "2026-09-24",
+      "publishedAt": "2026-08-17",
+      "commune": "Martinique",
+      "visitRequired": "A verifier dans le DCE",
+      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
+      "score": 6,
+      "priority": "medium",
+      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
+      "contact": {
+        "email": "dany.chenet@intradef.gouv.fr",
+        "phone": "",
+        "contactName": "",
+        "buyerCity": "FORT DE FRANCE",
+        "buyerPostalCode": "97200",
+        "buyerProfileUrl": "https://www.marches-publics.gouv.fr/entreprise"
+      },
+      "notes": "Descripteurs : Bâtiment | Type marche : Travaux | Procedure : Procédure Adaptée | Email acheteur : dany.chenet@intradef.gouv.fr | Profil acheteur : https://www.marches-publics.gouv.fr/entreprise"
+    },
     {
       "source": "BOAMP / DILA API ouverte",
       "sourceId": "26-80519",
