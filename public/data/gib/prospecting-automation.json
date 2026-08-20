@@ -1,7 +1,7 @@
 {
   "source": "GIB prospecting automation queue",
-  "generatedAt": "2026-08-19T09:50:16.838Z",
-  "tenderFeedGeneratedAt": "2026-08-19T09:50:16.629Z",
+  "generatedAt": "2026-08-20T09:51:09.599Z",
+  "tenderFeedGeneratedAt": "2026-08-20T09:51:09.447Z",
   "summary": {
     "totalTenderRows": 6,
     "uniqueQueueItems": 6,
@@ -26,7 +26,7 @@
       "object": "Marché de travaux de rénovation des installations électriques (Courants Forts – CFO) et informatique (Courants Faibles – CFA) les locaux du bâtiment SGCD",
       "lot": "Electricité (travaux)",
       "deadline": "2026-08-20",
-      "daysUntilDeadline": 2,
+      "daysUntilDeadline": 1,
       "priority": "urgent",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-77010",
@@ -75,17 +75,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-20",
+          "date": "2026-08-21",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-22",
+          "date": "2026-08-23",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-26",
+          "date": "2026-08-27",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -98,7 +98,7 @@
       "object": "GUADELOUPE (971) – SAINT BARTHÉLEMY – Gendarmerie Fort Oscar – Travaux de désamiantage et rénovation intérieure de 3 villas",
       "lot": "Amiante (désamiantage)",
       "deadline": "2026-09-11",
-      "daysUntilDeadline": 24,
+      "daysUntilDeadline": 23,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-75861",
@@ -147,17 +147,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-20",
+          "date": "2026-08-21",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-22",
+          "date": "2026-08-23",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-26",
+          "date": "2026-08-27",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -170,7 +170,7 @@
       "object": "P26-013",
       "lot": "Climatisation, Electricité (travaux), Tous corps d'état, Menuiserie, Charpente, Couverture",
       "deadline": "2026-09-14",
-      "daysUntilDeadline": 27,
+      "daysUntilDeadline": 26,
       "priority": "high",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-77983",
@@ -219,17 +219,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-20",
+          "date": "2026-08-21",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-22",
+          "date": "2026-08-23",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-26",
+          "date": "2026-08-27",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -242,7 +242,7 @@
       "object": "Travaux d'aménagement des locaux Grives et Gros Bec (Chateauboeuf, Fort-de-France) - 6 lots",
       "lot": "Plomberie (travaux), Peinture (travaux), Maçonnerie, Menuiserie",
       "deadline": "2026-09-16",
-      "daysUntilDeadline": 29,
+      "daysUntilDeadline": 28,
       "priority": "high",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-80519",
@@ -291,17 +291,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-20",
+          "date": "2026-08-21",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-22",
+          "date": "2026-08-23",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-26",
+          "date": "2026-08-27",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -314,7 +314,7 @@
       "object": "FOURNITURE ET LIVRAISON D'ARTICLES DE MENUISERIES ALUMINIUM DU BATIMENT",
       "lot": "Menuiserie",
       "deadline": "2026-09-18",
-      "daysUntilDeadline": 31,
+      "daysUntilDeadline": 30,
       "priority": "high",
       "score": 9,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-79923",
@@ -363,17 +363,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-20",
+          "date": "2026-08-21",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-22",
+          "date": "2026-08-23",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-26",
+          "date": "2026-08-27",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -386,7 +386,7 @@
       "object": "GUADELOUPE (971) -  LES ABYMES – Le Raizet –  2ème phase de rénovation des bâtiments 057, 058, 059 et 060.",
       "lot": "Bâtiment",
       "deadline": "2026-09-24",
-      "daysUntilDeadline": 37,
+      "daysUntilDeadline": 36,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-81185",
@@ -435,17 +435,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-20",
+          "date": "2026-08-21",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-22",
+          "date": "2026-08-23",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-26",
+          "date": "2026-08-27",
           "action": "Decision go/no-go ou classement"
         }
       ]
