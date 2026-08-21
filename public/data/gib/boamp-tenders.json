@@ -1,7 +1,7 @@
 {
   "source": "BOAMP / DILA API ouverte",
   "sourceUrl": "https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/api/",
-  "generatedAt": "2026-08-20T09:51:09.447Z",
+  "generatedAt": "2026-08-21T09:53:22.602Z",
   "department": "972",
   "keywords": [
     "menuiserie",
@@ -23,6 +23,32 @@
   "totalCount": 6,
   "count": 6,
   "items": [
+    {
+      "source": "BOAMP / DILA API ouverte",
+      "sourceId": "26-82009",
+      "organism": "SA Aéroport de Martinique Aimé Cesaire",
+      "platform": "BOAMP",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-82009",
+      "object": "Travaux de rénovation et de réaménagement du Service de Sauvetage et de Lutte contre l'Incendie des Aéronefs (SSLIA), partie Ouest, situé côté piste de l'Aéroport Martinique Aimé Césaire.",
+      "lot": "Démolition, Gros oeuvre, Cloison, faux plafond, Plomberie (travaux), Sanitaire",
+      "deadline": "2026-09-14",
+      "publishedAt": "2026-08-20",
+      "commune": "Martinique",
+      "visitRequired": "A verifier dans le DCE",
+      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
+      "score": 6,
+      "priority": "medium",
+      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
+      "contact": {
+        "email": "achat@martinique.aeroport.fr",
+        "phone": "+33 596424076",
+        "contactName": "Service Juridique et Corporate",
+        "buyerCity": "LE LAMENTIN CEDEX2",
+        "buyerPostalCode": "97285",
+        "buyerProfileUrl": "https://martinique-aeroport.e-marchespublics.com/pack/annonce_marche_public_8805_1178786.html"
+      },
+      "notes": "Descripteurs : Démolition, Gros oeuvre, Cloison, faux plafond, Plomberie (travaux), Sanitaire | Type marche : Travaux | Procedure : Procédure Ouverte | Email acheteur : achat@martinique.aeroport.fr | Tel acheteur : +33 596424076 | Profil acheteur : https://martinique-aeroport.e-marchespublics.com/pack/annonce_marche_public_8805_1178786.html"
+    },
     {
       "source": "BOAMP / DILA API ouverte",
       "sourceId": "26-81185",
@@ -126,32 +152,6 @@
         "buyerProfileUrl": ""
       },
       "notes": "Descripteurs : Climatisation, Electricité (travaux), Tous corps d'état, Menuiserie, Charpente, Couverture | Type marche : Travaux | Procedure : Procédure Ouverte | Email acheteur : did-cayenne-divadm.ach.fct@intradef.gouv.fr"
-    },
-    {
-      "source": "BOAMP / DILA API ouverte",
-      "sourceId": "26-77010",
-      "organism": "DGDDI DI ANTILLES GUYANE",
-      "platform": "BOAMP",
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-77010",
-      "object": "Marché de travaux de rénovation des installations électriques (Courants Forts – CFO) et informatique (Courants Faibles – CFA) les locaux du bâtiment SGCD",
-      "lot": "Electricité (travaux)",
-      "deadline": "2026-08-20",
-      "publishedAt": "2026-07-31",
-      "commune": "Martinique",
-      "visitRequired": "A verifier dans le DCE",
-      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
-      "score": 6,
-      "priority": "medium",
-      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
-      "contact": {
-        "email": "armelle.feumba-tchebetchou@douane.finances.gouv.fr",
-        "phone": "0596707305",
-        "contactName": "",
-        "buyerCity": "Fort de France",
-        "buyerPostalCode": "97247",
-        "buyerProfileUrl": "https://www.marches-publics.gouv.fr/entreprise"
-      },
-      "notes": "Descripteurs : Electricité (travaux) | Type marche : Travaux | Procedure : Procédure Adaptée | Email acheteur : armelle.feumba-tchebetchou@douane.finances.gouv.fr | Tel acheteur : 0596707305 | Profil acheteur : https://www.marches-publics.gouv.fr/entreprise"
     },
     {
       "source": "BOAMP / DILA API ouverte",

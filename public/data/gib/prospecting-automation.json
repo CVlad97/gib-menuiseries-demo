@@ -1,13 +1,13 @@
 {
   "source": "GIB prospecting automation queue",
-  "generatedAt": "2026-08-20T09:51:09.599Z",
-  "tenderFeedGeneratedAt": "2026-08-20T09:51:09.447Z",
+  "generatedAt": "2026-08-21T09:53:22.795Z",
+  "tenderFeedGeneratedAt": "2026-08-21T09:53:22.602Z",
   "summary": {
     "totalTenderRows": 6,
     "uniqueQueueItems": 6,
     "emailReady": 6,
     "phoneReady": 4,
-    "urgent": 1,
+    "urgent": 0,
     "manualSubmissionRequired": 6
   },
   "compliance": [
@@ -19,78 +19,6 @@
   ],
   "queue": [
     {
-      "id": "ao-26-77010",
-      "sourceId": "26-77010",
-      "type": "qualification",
-      "organism": "DGDDI DI ANTILLES GUYANE",
-      "object": "Marché de travaux de rénovation des installations électriques (Courants Forts – CFO) et informatique (Courants Faibles – CFA) les locaux du bâtiment SGCD",
-      "lot": "Electricité (travaux)",
-      "deadline": "2026-08-20",
-      "daysUntilDeadline": 1,
-      "priority": "urgent",
-      "score": 6,
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-77010",
-      "contact": {
-        "email": "armelle.feumba-tchebetchou@douane.finances.gouv.fr",
-        "phone": "0596707305",
-        "name": "",
-        "profile": "https://www.marches-publics.gouv.fr/entreprise"
-      },
-      "automation": {
-        "emailReady": true,
-        "phoneReady": true,
-        "whatsappReady": true,
-        "officialSubmission": "manual_required",
-        "duplicateGuard": "armelle.feumba-tchebetchou@douane.finances.gouv.fr|dgddi di antilles guyane|marche de travaux de renovation des installations electriques (courants forts – cfo) et informatique (courants faibles – cfa) les locaux du batiment sgcd"
-      },
-      "email": {
-        "to": "armelle.feumba-tchebetchou@douane.finances.gouv.fr",
-        "subject": "Demande orientation DCE - DGDDI DI ANTILLES GUYANE - 26-77010",
-        "body": "Bonjour,\n\nNous vous contactons pour GIB Menuiseries Services, entreprise basee a Ducos en Martinique, au sujet de la consultation suivante :\n- Organisme : DGDDI DI ANTILLES GUYANE\n- Objet : Marché de travaux de rénovation des installations électriques (Courants Forts – CFO) et informatique (Courants Faibles – CFA) les locaux du bâtiment SGCD\n- Reference : 26-77010\n- Date limite : 2026-08-20\n\nNous souhaitons identifier si des prestations de menuiserie, fermeture, acces, cloture ou renovation peuvent correspondre a notre activite.\n\nPouvez-vous nous confirmer le lien DCE/profil acheteur a utiliser, ainsi que les modalites officielles pour poser une question ou deposer une reponse si le lot est pertinent ?\n\nPresentation GIB :\nSite : https://www.gibmenuiseries.fr\nInstagram : https://www.instagram.com/gibmenuiseries/\nFlyer : https://cvlad97.github.io/gib-menuiseries-demo/media/gib/flyers/pub3.jpeg\n\nContact commercial : Vladimir Claveau\nWhatsApp : +596 696 65 35 89\nEmail : gibmenuiseriesservices@gmail.com\nZone Industrielle Cocotte, derriere Lapeyre, Ducos, Martinique\n\nCordialement,\nGIB Menuiseries Services",
-        "mailto": "mailto:armelle.feumba-tchebetchou@douane.finances.gouv.fr?subject=Demande+orientation+DCE+-+DGDDI+DI+ANTILLES+GUYANE+-+26-77010&body=Bonjour%2C%0A%0ANous+vous+contactons+pour+GIB+Menuiseries+Services%2C+entreprise+basee+a+Ducos+en+Martinique%2C+au+sujet+de+la+consultation+suivante+%3A%0A-+Organisme+%3A+DGDDI+DI+ANTILLES+GUYANE%0A-+Objet+%3A+March%C3%A9+de+travaux+de+r%C3%A9novation+des+installations+%C3%A9lectriques+%28Courants+Forts+%E2%80%93+CFO%29+et+informatique+%28Courants+Faibles+%E2%80%93+CFA%29+les+locaux+du+b%C3%A2timent+SGCD%0A-+Reference+%3A+26-77010%0A-+Date+limite+%3A+2026-08-20%0A%0ANous+souhaitons+identifier+si+des+prestations+de+menuiserie%2C+fermeture%2C+acces%2C+cloture+ou+renovation+peuvent+correspondre+a+notre+activite.%0A%0APouvez-vous+nous+confirmer+le+lien+DCE%2Fprofil+acheteur+a+utiliser%2C+ainsi+que+les+modalites+officielles+pour+poser+une+question+ou+deposer+une+reponse+si+le+lot+est+pertinent+%3F%0A%0APresentation+GIB+%3A%0ASite+%3A+https%3A%2F%2Fwww.gibmenuiseries.fr%0AInstagram+%3A+https%3A%2F%2Fwww.instagram.com%2Fgibmenuiseries%2F%0AFlyer+%3A+https%3A%2F%2Fcvlad97.github.io%2Fgib-menuiseries-demo%2Fmedia%2Fgib%2Fflyers%2Fpub3.jpeg%0A%0AContact+commercial+%3A+Vladimir+Claveau%0AWhatsApp+%3A+%2B596+696+65+35+89%0AEmail+%3A+gibmenuiseriesservices%40gmail.com%0AZone+Industrielle+Cocotte%2C+derriere+Lapeyre%2C+Ducos%2C+Martinique%0A%0ACordialement%2C%0AGIB+Menuiseries+Services"
-      },
-      "whatsapp": {
-        "to": "+596 696 65 35 89",
-        "body": "AO GIB a traiter\nOrganisme : DGDDI DI ANTILLES GUYANE\nObjet : Marché de travaux de rénovation des installations électriques (Courants Forts – CFO) et informatique (Courants Faibles – CFA) les locaux du bâtiment SGCD\nDeadline : 2026-08-20\nScore : 6/10\nEmail : armelle.feumba-tchebetchou@douane.finances.gouv.fr\nTel : 0596707305\nLien : https://www.boamp.fr/pages/avis/?q=idweb:26-77010\nAction : verifier DCE, identifier lot, preparer go/no-go.",
-        "url": "https://wa.me/596696653589?text=AO%20GIB%20a%20traiter%0AOrganisme%20%3A%20DGDDI%20DI%20ANTILLES%20GUYANE%0AObjet%20%3A%20March%C3%A9%20de%20travaux%20de%20r%C3%A9novation%20des%20installations%20%C3%A9lectriques%20(Courants%20Forts%20%E2%80%93%20CFO)%20et%20informatique%20(Courants%20Faibles%20%E2%80%93%20CFA)%20les%20locaux%20du%20b%C3%A2timent%20SGCD%0ADeadline%20%3A%202026-08-20%0AScore%20%3A%206%2F10%0AEmail%20%3A%20armelle.feumba-tchebetchou%40douane.finances.gouv.fr%0ATel%20%3A%200596707305%0ALien%20%3A%20https%3A%2F%2Fwww.boamp.fr%2Fpages%2Favis%2F%3Fq%3Didweb%3A26-77010%0AAction%20%3A%20verifier%20DCE%2C%20identifier%20lot%2C%20preparer%20go%2Fno-go."
-      },
-      "call": {
-        "phone": "0596707305",
-        "script": "Bonjour, je vous appelle pour GIB Menuiseries Services a Ducos.\nNous avons repere votre consultation : Marché de travaux de rénovation des installations électriques (Courants Forts – CFO) et informatique (Courants Faibles – CFA) les locaux du bâtiment SGCD.\nNous souhaitons verifier si un lot concerne les menuiseries, fermetures, clotures, garde-corps, portails, volets ou ouvrages associes.\nPouvez-vous me confirmer le bon lien DCE/profil acheteur et la procedure officielle pour les questions ?\nNous passerons uniquement par le canal prevu dans le reglement de consultation.",
-        "telUrl": "tel:0596707305"
-      },
-      "dossier": {
-        "status": "to_prepare",
-        "checklist": [
-          "Ouvrir avis BOAMP et profil acheteur",
-          "Telecharger RC, CCTP, DPGF/BPU, AE, CCAP et annexes",
-          "Verifier date limite, visite obligatoire, questions autorisees",
-          "Identifier lot menuiserie/fermeture/cloture/garde-corps",
-          "Decision go/no-go : capacite, delai, references, pieces administratives",
-          "Preparer DC1/DC2, attestation assurance, Kbis, RIB, memoire technique",
-          "Ecarter si aucun lot GIB ou garder en veille fournisseur/sous-traitance"
-        ],
-        "warning": "Ne pas deposer une offre automatiquement. Le DCE, les pieces et le chiffrage doivent etre valides par un humain."
-      },
-      "followUps": [
-        {
-          "label": "J+1",
-          "date": "2026-08-21",
-          "action": "Verifier reception ou ouvrir profil acheteur officiel"
-        },
-        {
-          "label": "J+3",
-          "date": "2026-08-23",
-          "action": "Relancer si aucune reponse et deadline compatible"
-        },
-        {
-          "label": "J+7",
-          "date": "2026-08-27",
-          "action": "Decision go/no-go ou classement"
-        }
-      ]
-    },
-    {
       "id": "ao-26-75861",
       "sourceId": "26-75861",
       "type": "qualification",
@@ -98,7 +26,7 @@
       "object": "GUADELOUPE (971) – SAINT BARTHÉLEMY – Gendarmerie Fort Oscar – Travaux de désamiantage et rénovation intérieure de 3 villas",
       "lot": "Amiante (désamiantage)",
       "deadline": "2026-09-11",
-      "daysUntilDeadline": 23,
+      "daysUntilDeadline": 22,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-75861",
@@ -147,17 +75,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-21",
+          "date": "2026-08-22",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-23",
+          "date": "2026-08-24",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-27",
+          "date": "2026-08-28",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -170,7 +98,7 @@
       "object": "P26-013",
       "lot": "Climatisation, Electricité (travaux), Tous corps d'état, Menuiserie, Charpente, Couverture",
       "deadline": "2026-09-14",
-      "daysUntilDeadline": 26,
+      "daysUntilDeadline": 25,
       "priority": "high",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-77983",
@@ -219,17 +147,89 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-21",
+          "date": "2026-08-22",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-23",
+          "date": "2026-08-24",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-27",
+          "date": "2026-08-28",
+          "action": "Decision go/no-go ou classement"
+        }
+      ]
+    },
+    {
+      "id": "ao-26-82009",
+      "sourceId": "26-82009",
+      "type": "qualification",
+      "organism": "SA Aéroport de Martinique Aimé Cesaire",
+      "object": "Travaux de rénovation et de réaménagement du Service de Sauvetage et de Lutte contre l'Incendie des Aéronefs (SSLIA), partie Ouest, situé côté piste de l'Aéroport Martinique Aimé Césaire.",
+      "lot": "Démolition, Gros oeuvre, Cloison, faux plafond, Plomberie (travaux), Sanitaire",
+      "deadline": "2026-09-14",
+      "daysUntilDeadline": 25,
+      "priority": "medium",
+      "score": 6,
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-82009",
+      "contact": {
+        "email": "achat@martinique.aeroport.fr",
+        "phone": "+33596424076",
+        "name": "Service Juridique et Corporate",
+        "profile": "https://martinique-aeroport.e-marchespublics.com/pack/annonce_marche_public_8805_1178786.html"
+      },
+      "automation": {
+        "emailReady": true,
+        "phoneReady": true,
+        "whatsappReady": true,
+        "officialSubmission": "manual_required",
+        "duplicateGuard": "achat@martinique.aeroport.fr|sa aeroport de martinique aime cesaire|travaux de renovation et de reamenagement du service de sauvetage et de lutte contre l'incendie des aeronefs (sslia), partie ouest, situe cote piste de l'aeroport martinique aime cesaire."
+      },
+      "email": {
+        "to": "achat@martinique.aeroport.fr",
+        "subject": "Demande orientation DCE - SA Aéroport de Martinique Aimé Cesaire - 26-82009",
+        "body": "Bonjour,\n\nNous vous contactons pour GIB Menuiseries Services, entreprise basee a Ducos en Martinique, au sujet de la consultation suivante :\n- Organisme : SA Aéroport de Martinique Aimé Cesaire\n- Objet : Travaux de rénovation et de réaménagement du Service de Sauvetage et de Lutte contre l'Incendie des Aéronefs (SSLIA), partie Ouest, situé côté piste de l'Aéroport Martinique Aimé Césaire.\n- Reference : 26-82009\n- Date limite : 2026-09-14\n\nNous souhaitons identifier si des prestations de menuiserie, fermeture, acces, cloture ou renovation peuvent correspondre a notre activite.\n\nPouvez-vous nous confirmer le lien DCE/profil acheteur a utiliser, ainsi que les modalites officielles pour poser une question ou deposer une reponse si le lot est pertinent ?\n\nPresentation GIB :\nSite : https://www.gibmenuiseries.fr\nInstagram : https://www.instagram.com/gibmenuiseries/\nFlyer : https://cvlad97.github.io/gib-menuiseries-demo/media/gib/flyers/pub3.jpeg\n\nContact commercial : Vladimir Claveau\nWhatsApp : +596 696 65 35 89\nEmail : gibmenuiseriesservices@gmail.com\nZone Industrielle Cocotte, derriere Lapeyre, Ducos, Martinique\n\nCordialement,\nGIB Menuiseries Services",
+        "mailto": "mailto:achat@martinique.aeroport.fr?subject=Demande+orientation+DCE+-+SA+A%C3%A9roport+de+Martinique+Aim%C3%A9+Cesaire+-+26-82009&body=Bonjour%2C%0A%0ANous+vous+contactons+pour+GIB+Menuiseries+Services%2C+entreprise+basee+a+Ducos+en+Martinique%2C+au+sujet+de+la+consultation+suivante+%3A%0A-+Organisme+%3A+SA+A%C3%A9roport+de+Martinique+Aim%C3%A9+Cesaire%0A-+Objet+%3A+Travaux+de+r%C3%A9novation+et+de+r%C3%A9am%C3%A9nagement+du+Service+de+Sauvetage+et+de+Lutte+contre+l%27Incendie+des+A%C3%A9ronefs+%28SSLIA%29%2C+partie+Ouest%2C+situ%C3%A9+c%C3%B4t%C3%A9+piste+de+l%27A%C3%A9roport+Martinique+Aim%C3%A9+C%C3%A9saire.%0A-+Reference+%3A+26-82009%0A-+Date+limite+%3A+2026-09-14%0A%0ANous+souhaitons+identifier+si+des+prestations+de+menuiserie%2C+fermeture%2C+acces%2C+cloture+ou+renovation+peuvent+correspondre+a+notre+activite.%0A%0APouvez-vous+nous+confirmer+le+lien+DCE%2Fprofil+acheteur+a+utiliser%2C+ainsi+que+les+modalites+officielles+pour+poser+une+question+ou+deposer+une+reponse+si+le+lot+est+pertinent+%3F%0A%0APresentation+GIB+%3A%0ASite+%3A+https%3A%2F%2Fwww.gibmenuiseries.fr%0AInstagram+%3A+https%3A%2F%2Fwww.instagram.com%2Fgibmenuiseries%2F%0AFlyer+%3A+https%3A%2F%2Fcvlad97.github.io%2Fgib-menuiseries-demo%2Fmedia%2Fgib%2Fflyers%2Fpub3.jpeg%0A%0AContact+commercial+%3A+Vladimir+Claveau%0AWhatsApp+%3A+%2B596+696+65+35+89%0AEmail+%3A+gibmenuiseriesservices%40gmail.com%0AZone+Industrielle+Cocotte%2C+derriere+Lapeyre%2C+Ducos%2C+Martinique%0A%0ACordialement%2C%0AGIB+Menuiseries+Services"
+      },
+      "whatsapp": {
+        "to": "+596 696 65 35 89",
+        "body": "AO GIB a traiter\nOrganisme : SA Aéroport de Martinique Aimé Cesaire\nObjet : Travaux de rénovation et de réaménagement du Service de Sauvetage et de Lutte contre l'Incendie des Aéronefs (SSLIA), partie Ouest, situé côté piste de l'Aéroport Martinique Aimé Césaire.\nDeadline : 2026-09-14\nScore : 6/10\nEmail : achat@martinique.aeroport.fr\nTel : +33 596424076\nLien : https://www.boamp.fr/pages/avis/?q=idweb:26-82009\nAction : verifier DCE, identifier lot, preparer go/no-go.",
+        "url": "https://wa.me/596696653589?text=AO%20GIB%20a%20traiter%0AOrganisme%20%3A%20SA%20A%C3%A9roport%20de%20Martinique%20Aim%C3%A9%20Cesaire%0AObjet%20%3A%20Travaux%20de%20r%C3%A9novation%20et%20de%20r%C3%A9am%C3%A9nagement%20du%20Service%20de%20Sauvetage%20et%20de%20Lutte%20contre%20l'Incendie%20des%20A%C3%A9ronefs%20(SSLIA)%2C%20partie%20Ouest%2C%20situ%C3%A9%20c%C3%B4t%C3%A9%20piste%20de%20l'A%C3%A9roport%20Martinique%20Aim%C3%A9%20C%C3%A9saire.%0ADeadline%20%3A%202026-09-14%0AScore%20%3A%206%2F10%0AEmail%20%3A%20achat%40martinique.aeroport.fr%0ATel%20%3A%20%2B33%20596424076%0ALien%20%3A%20https%3A%2F%2Fwww.boamp.fr%2Fpages%2Favis%2F%3Fq%3Didweb%3A26-82009%0AAction%20%3A%20verifier%20DCE%2C%20identifier%20lot%2C%20preparer%20go%2Fno-go."
+      },
+      "call": {
+        "phone": "+33596424076",
+        "script": "Bonjour, je vous appelle pour GIB Menuiseries Services a Ducos.\nNous avons repere votre consultation : Travaux de rénovation et de réaménagement du Service de Sauvetage et de Lutte contre l'Incendie des Aéronefs (SSLIA), partie Ouest, situé côté piste de l'Aéroport Martinique Aimé Césaire..\nNous souhaitons verifier si un lot concerne les menuiseries, fermetures, clotures, garde-corps, portails, volets ou ouvrages associes.\nPouvez-vous me confirmer le bon lien DCE/profil acheteur et la procedure officielle pour les questions ?\nNous passerons uniquement par le canal prevu dans le reglement de consultation.",
+        "telUrl": "tel:+33596424076"
+      },
+      "dossier": {
+        "status": "to_prepare",
+        "checklist": [
+          "Ouvrir avis BOAMP et profil acheteur",
+          "Telecharger RC, CCTP, DPGF/BPU, AE, CCAP et annexes",
+          "Verifier date limite, visite obligatoire, questions autorisees",
+          "Identifier lot menuiserie/fermeture/cloture/garde-corps",
+          "Decision go/no-go : capacite, delai, references, pieces administratives",
+          "Preparer DC1/DC2, attestation assurance, Kbis, RIB, memoire technique",
+          "Ecarter si aucun lot GIB ou garder en veille fournisseur/sous-traitance"
+        ],
+        "warning": "Ne pas deposer une offre automatiquement. Le DCE, les pieces et le chiffrage doivent etre valides par un humain."
+      },
+      "followUps": [
+        {
+          "label": "J+1",
+          "date": "2026-08-22",
+          "action": "Verifier reception ou ouvrir profil acheteur officiel"
+        },
+        {
+          "label": "J+3",
+          "date": "2026-08-24",
+          "action": "Relancer si aucune reponse et deadline compatible"
+        },
+        {
+          "label": "J+7",
+          "date": "2026-08-28",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -242,7 +242,7 @@
       "object": "Travaux d'aménagement des locaux Grives et Gros Bec (Chateauboeuf, Fort-de-France) - 6 lots",
       "lot": "Plomberie (travaux), Peinture (travaux), Maçonnerie, Menuiserie",
       "deadline": "2026-09-16",
-      "daysUntilDeadline": 28,
+      "daysUntilDeadline": 27,
       "priority": "high",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-80519",
@@ -291,17 +291,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-21",
+          "date": "2026-08-22",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-23",
+          "date": "2026-08-24",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-27",
+          "date": "2026-08-28",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -314,7 +314,7 @@
       "object": "FOURNITURE ET LIVRAISON D'ARTICLES DE MENUISERIES ALUMINIUM DU BATIMENT",
       "lot": "Menuiserie",
       "deadline": "2026-09-18",
-      "daysUntilDeadline": 30,
+      "daysUntilDeadline": 29,
       "priority": "high",
       "score": 9,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-79923",
@@ -363,17 +363,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-21",
+          "date": "2026-08-22",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-23",
+          "date": "2026-08-24",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-27",
+          "date": "2026-08-28",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -386,7 +386,7 @@
       "object": "GUADELOUPE (971) -  LES ABYMES – Le Raizet –  2ème phase de rénovation des bâtiments 057, 058, 059 et 060.",
       "lot": "Bâtiment",
       "deadline": "2026-09-24",
-      "daysUntilDeadline": 36,
+      "daysUntilDeadline": 35,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-81185",
@@ -435,17 +435,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-21",
+          "date": "2026-08-22",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-23",
+          "date": "2026-08-24",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-08-27",
+          "date": "2026-08-28",
           "action": "Decision go/no-go ou classement"
         }
       ]
