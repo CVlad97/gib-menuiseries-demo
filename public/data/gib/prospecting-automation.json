@@ -1,14 +1,14 @@
 {
   "source": "GIB prospecting automation queue",
-  "generatedAt": "2026-08-27T19:51:43.381Z",
-  "tenderFeedGeneratedAt": "2026-08-27T19:51:43.178Z",
+  "generatedAt": "2026-08-28T20:55:45.021Z",
+  "tenderFeedGeneratedAt": "2026-08-28T20:55:44.820Z",
   "summary": {
-    "totalTenderRows": 6,
-    "uniqueQueueItems": 6,
-    "emailReady": 6,
-    "phoneReady": 4,
+    "totalTenderRows": 7,
+    "uniqueQueueItems": 7,
+    "emailReady": 7,
+    "phoneReady": 5,
     "urgent": 0,
-    "manualSubmissionRequired": 6
+    "manualSubmissionRequired": 7
   },
   "compliance": [
     "Utiliser uniquement les contacts publies ou fournis volontairement.",
@@ -26,7 +26,7 @@
       "object": "GUADELOUPE (971) – SAINT BARTHÉLEMY – Gendarmerie Fort Oscar – Travaux de désamiantage et rénovation intérieure de 3 villas",
       "lot": "Amiante (désamiantage)",
       "deadline": "2026-09-11",
-      "daysUntilDeadline": 16,
+      "daysUntilDeadline": 15,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-75861",
@@ -75,17 +75,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-28",
+          "date": "2026-08-29",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-30",
+          "date": "2026-08-31",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-09-03",
+          "date": "2026-09-04",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -98,7 +98,7 @@
       "object": "P26-013",
       "lot": "Climatisation, Electricité (travaux), Tous corps d'état, Menuiserie, Charpente, Couverture",
       "deadline": "2026-09-14",
-      "daysUntilDeadline": 19,
+      "daysUntilDeadline": 18,
       "priority": "high",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-77983",
@@ -147,17 +147,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-28",
+          "date": "2026-08-29",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-30",
+          "date": "2026-08-31",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-09-03",
+          "date": "2026-09-04",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -170,7 +170,7 @@
       "object": "Travaux de rénovation et de réaménagement du Service de Sauvetage et de Lutte contre l'Incendie des Aéronefs (SSLIA), partie Ouest, situé côté piste de l'Aéroport Martinique Aimé Césaire.",
       "lot": "Démolition, Gros oeuvre, Cloison, faux plafond, Plomberie (travaux), Sanitaire",
       "deadline": "2026-09-14",
-      "daysUntilDeadline": 19,
+      "daysUntilDeadline": 18,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-82009",
@@ -219,17 +219,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-28",
+          "date": "2026-08-29",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-30",
+          "date": "2026-08-31",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-09-03",
+          "date": "2026-09-04",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -242,7 +242,7 @@
       "object": "Travaux d'aménagement des locaux Grives et Gros Bec (Chateauboeuf, Fort-de-France) - 6 lots",
       "lot": "Plomberie (travaux), Peinture (travaux), Maçonnerie, Menuiserie",
       "deadline": "2026-09-16",
-      "daysUntilDeadline": 21,
+      "daysUntilDeadline": 20,
       "priority": "high",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-80519",
@@ -291,17 +291,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-28",
+          "date": "2026-08-29",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-30",
+          "date": "2026-08-31",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-09-03",
+          "date": "2026-09-04",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -314,7 +314,7 @@
       "object": "FOURNITURE ET LIVRAISON D'ARTICLES DE MENUISERIES ALUMINIUM DU BATIMENT",
       "lot": "Menuiserie",
       "deadline": "2026-09-18",
-      "daysUntilDeadline": 23,
+      "daysUntilDeadline": 22,
       "priority": "high",
       "score": 9,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-79923",
@@ -363,17 +363,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-28",
+          "date": "2026-08-29",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-30",
+          "date": "2026-08-31",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-09-03",
+          "date": "2026-09-04",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -386,7 +386,7 @@
       "object": "GUADELOUPE (971) -  LES ABYMES – Le Raizet –  2ème phase de rénovation des bâtiments 057, 058, 059 et 060.",
       "lot": "Bâtiment",
       "deadline": "2026-09-24",
-      "daysUntilDeadline": 29,
+      "daysUntilDeadline": 28,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-81185",
@@ -435,17 +435,89 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-08-28",
+          "date": "2026-08-29",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-08-30",
+          "date": "2026-08-31",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-09-03",
+          "date": "2026-09-04",
+          "action": "Decision go/no-go ou classement"
+        }
+      ]
+    },
+    {
+      "id": "ao-26-84293",
+      "sourceId": "26-84293",
+      "type": "response",
+      "organism": "FRANCE TRAVAIL MARTINIQUE",
+      "object": "Achat par la direction régionale de France Travail de travaux d’aménagement intérieur d’un immeuble existant à destination de bureaux administratifs situé au quartier Gondeau au Lamentin 97232.",
+      "lot": "Bâtiment, Climatisation, Cloison, faux plafond, Electricité (travaux), Menuiserie, Peinture (travaux), Plomberie (travaux), Revêtements de sols, Sanitaire",
+      "deadline": "2026-09-30",
+      "daysUntilDeadline": 34,
+      "priority": "high",
+      "score": 8,
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-84293",
+      "contact": {
+        "email": "marches.97210@francetravail.fr",
+        "phone": "0596999999",
+        "name": "Service Achats Marchés",
+        "profile": "https://www.marches-publics.gouv.fr/"
+      },
+      "automation": {
+        "emailReady": true,
+        "phoneReady": true,
+        "whatsappReady": true,
+        "officialSubmission": "manual_required",
+        "duplicateGuard": "marches.97210@francetravail.fr|france travail martinique|achat par la direction regionale de france travail de travaux d’amenagement interieur d’un immeuble existant a destination de bureaux administratifs situe au quartier gondeau au lamentin 97232."
+      },
+      "email": {
+        "to": "marches.97210@francetravail.fr",
+        "subject": "Demande DCE / qualification lot - FRANCE TRAVAIL MARTINIQUE - 26-84293",
+        "body": "Bonjour,\n\nNous vous contactons pour GIB Menuiseries Services, entreprise basee a Ducos en Martinique, au sujet de la consultation suivante :\n- Organisme : FRANCE TRAVAIL MARTINIQUE\n- Objet : Achat par la direction régionale de France Travail de travaux d’aménagement intérieur d’un immeuble existant à destination de bureaux administratifs situé au quartier Gondeau au Lamentin 97232.\n- Reference : 26-84293\n- Date limite : 2026-09-30\n\nNous souhaitons verifier si un lot menuiserie, fermeture, cloture, garde-corps ou ouvrage associe correspond a notre activite.\n\nPouvez-vous nous confirmer le lien DCE/profil acheteur a utiliser, ainsi que les modalites officielles pour poser une question ou deposer une reponse si le lot est pertinent ?\n\nPresentation GIB :\nSite : https://www.gibmenuiseries.fr\nInstagram : https://www.instagram.com/gibmenuiseries/\nFlyer : https://cvlad97.github.io/gib-menuiseries-demo/media/gib/flyers/pub3.jpeg\n\nContact commercial : Vladimir Claveau\nWhatsApp : +596 696 65 35 89\nEmail : gibmenuiseriesservices@gmail.com\nZone Industrielle Cocotte, derriere Lapeyre, Ducos, Martinique\n\nCordialement,\nGIB Menuiseries Services",
+        "mailto": "mailto:marches.97210@francetravail.fr?subject=Demande+DCE+%2F+qualification+lot+-+FRANCE+TRAVAIL+MARTINIQUE+-+26-84293&body=Bonjour%2C%0A%0ANous+vous+contactons+pour+GIB+Menuiseries+Services%2C+entreprise+basee+a+Ducos+en+Martinique%2C+au+sujet+de+la+consultation+suivante+%3A%0A-+Organisme+%3A+FRANCE+TRAVAIL+MARTINIQUE%0A-+Objet+%3A+Achat+par+la+direction+r%C3%A9gionale+de+France+Travail+de+travaux+d%E2%80%99am%C3%A9nagement+int%C3%A9rieur+d%E2%80%99un+immeuble+existant+%C3%A0+destination+de+bureaux+administratifs+situ%C3%A9+au+quartier+Gondeau+au+Lamentin+97232.%0A-+Reference+%3A+26-84293%0A-+Date+limite+%3A+2026-09-30%0A%0ANous+souhaitons+verifier+si+un+lot+menuiserie%2C+fermeture%2C+cloture%2C+garde-corps+ou+ouvrage+associe+correspond+a+notre+activite.%0A%0APouvez-vous+nous+confirmer+le+lien+DCE%2Fprofil+acheteur+a+utiliser%2C+ainsi+que+les+modalites+officielles+pour+poser+une+question+ou+deposer+une+reponse+si+le+lot+est+pertinent+%3F%0A%0APresentation+GIB+%3A%0ASite+%3A+https%3A%2F%2Fwww.gibmenuiseries.fr%0AInstagram+%3A+https%3A%2F%2Fwww.instagram.com%2Fgibmenuiseries%2F%0AFlyer+%3A+https%3A%2F%2Fcvlad97.github.io%2Fgib-menuiseries-demo%2Fmedia%2Fgib%2Fflyers%2Fpub3.jpeg%0A%0AContact+commercial+%3A+Vladimir+Claveau%0AWhatsApp+%3A+%2B596+696+65+35+89%0AEmail+%3A+gibmenuiseriesservices%40gmail.com%0AZone+Industrielle+Cocotte%2C+derriere+Lapeyre%2C+Ducos%2C+Martinique%0A%0ACordialement%2C%0AGIB+Menuiseries+Services"
+      },
+      "whatsapp": {
+        "to": "+596 696 65 35 89",
+        "body": "AO GIB a traiter\nOrganisme : FRANCE TRAVAIL MARTINIQUE\nObjet : Achat par la direction régionale de France Travail de travaux d’aménagement intérieur d’un immeuble existant à destination de bureaux administratifs situé au quartier Gondeau au Lamentin 97232.\nDeadline : 2026-09-30\nScore : 8/10\nEmail : marches.97210@francetravail.fr\nTel : 0596999999\nLien : https://www.boamp.fr/pages/avis/?q=idweb:26-84293\nAction : verifier DCE, identifier lot, preparer go/no-go.",
+        "url": "https://wa.me/596696653589?text=AO%20GIB%20a%20traiter%0AOrganisme%20%3A%20FRANCE%20TRAVAIL%20MARTINIQUE%0AObjet%20%3A%20Achat%20par%20la%20direction%20r%C3%A9gionale%20de%20France%20Travail%20de%20travaux%20d%E2%80%99am%C3%A9nagement%20int%C3%A9rieur%20d%E2%80%99un%20immeuble%20existant%20%C3%A0%20destination%20de%20bureaux%20administratifs%20situ%C3%A9%20au%20quartier%20Gondeau%20au%20Lamentin%2097232.%0ADeadline%20%3A%202026-09-30%0AScore%20%3A%208%2F10%0AEmail%20%3A%20marches.97210%40francetravail.fr%0ATel%20%3A%200596999999%0ALien%20%3A%20https%3A%2F%2Fwww.boamp.fr%2Fpages%2Favis%2F%3Fq%3Didweb%3A26-84293%0AAction%20%3A%20verifier%20DCE%2C%20identifier%20lot%2C%20preparer%20go%2Fno-go."
+      },
+      "call": {
+        "phone": "0596999999",
+        "script": "Bonjour, je vous appelle pour GIB Menuiseries Services a Ducos.\nNous avons repere votre consultation : Achat par la direction régionale de France Travail de travaux d’aménagement intérieur d’un immeuble existant à destination de bureaux administratifs situé au quartier Gondeau au Lamentin 97232..\nNous souhaitons verifier si un lot concerne les menuiseries, fermetures, clotures, garde-corps, portails, volets ou ouvrages associes.\nPouvez-vous me confirmer le bon lien DCE/profil acheteur et la procedure officielle pour les questions ?\nNous passerons uniquement par le canal prevu dans le reglement de consultation.",
+        "telUrl": "tel:0596999999"
+      },
+      "dossier": {
+        "status": "to_prepare",
+        "checklist": [
+          "Ouvrir avis BOAMP et profil acheteur",
+          "Telecharger RC, CCTP, DPGF/BPU, AE, CCAP et annexes",
+          "Verifier date limite, visite obligatoire, questions autorisees",
+          "Identifier lot menuiserie/fermeture/cloture/garde-corps",
+          "Decision go/no-go : capacite, delai, references, pieces administratives",
+          "Preparer DC1/DC2, attestation assurance, Kbis, RIB, memoire technique",
+          "Chiffrer le lot pertinent et preparer une question technique si besoin"
+        ],
+        "warning": "Ne pas deposer une offre automatiquement. Le DCE, les pieces et le chiffrage doivent etre valides par un humain."
+      },
+      "followUps": [
+        {
+          "label": "J+1",
+          "date": "2026-08-29",
+          "action": "Verifier reception ou ouvrir profil acheteur officiel"
+        },
+        {
+          "label": "J+3",
+          "date": "2026-08-31",
+          "action": "Relancer si aucune reponse et deadline compatible"
+        },
+        {
+          "label": "J+7",
+          "date": "2026-09-04",
           "action": "Decision go/no-go ou classement"
         }
       ]
