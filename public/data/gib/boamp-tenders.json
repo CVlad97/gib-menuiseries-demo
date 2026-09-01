@@ -1,7 +1,7 @@
 {
   "source": "BOAMP / DILA API ouverte",
   "sourceUrl": "https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/api/",
-  "generatedAt": "2026-08-31T17:05:01.947Z",
+  "generatedAt": "2026-09-01T14:10:06.354Z",
   "department": "972",
   "keywords": [
     "menuiserie",
@@ -20,9 +20,35 @@
     "rénovation",
     "second oeuvre"
   ],
-  "totalCount": 7,
-  "count": 7,
+  "totalCount": 8,
+  "count": 8,
   "items": [
+    {
+      "source": "BOAMP / DILA API ouverte",
+      "sourceId": "26-84721",
+      "organism": "DID FdF",
+      "platform": "BOAMP",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-84721",
+      "object": "MARTINIQUE (972) – FORT de FRANCE – Fort Saint Louis – Base navale – Rénovation du pavillon de MORVILLE - 039",
+      "lot": "Bâtiment",
+      "deadline": "2026-10-05",
+      "publishedAt": "2026-08-31",
+      "commune": "Martinique",
+      "visitRequired": "A verifier dans le DCE",
+      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
+      "score": 6,
+      "priority": "medium",
+      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
+      "contact": {
+        "email": "mohamed.abdelghani@intradef.gouv.fr",
+        "phone": "",
+        "contactName": "",
+        "buyerCity": "FORT DE FRANCE",
+        "buyerPostalCode": "97200",
+        "buyerProfileUrl": "https://www.marches-publics.gouv.fr/entreprise"
+      },
+      "notes": "Descripteurs : Bâtiment | Type marche : Travaux | Procedure : Procédure Adaptée | Email acheteur : mohamed.abdelghani@intradef.gouv.fr | Profil acheteur : https://www.marches-publics.gouv.fr/entreprise"
+    },
     {
       "source": "BOAMP / DILA API ouverte",
       "sourceId": "26-84293",
