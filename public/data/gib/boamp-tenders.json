@@ -1,7 +1,7 @@
 {
   "source": "BOAMP / DILA API ouverte",
   "sourceUrl": "https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/api/",
-  "generatedAt": "2026-09-11T13:36:32.616Z",
+  "generatedAt": "2026-09-14T15:54:29.512Z",
   "department": "972",
   "keywords": [
     "menuiserie",
@@ -20,8 +20,8 @@
     "rénovation",
     "second oeuvre"
   ],
-  "totalCount": 10,
-  "count": 10,
+  "totalCount": 8,
+  "count": 8,
   "items": [
     {
       "source": "BOAMP / DILA API ouverte",
@@ -129,32 +129,6 @@
     },
     {
       "source": "BOAMP / DILA API ouverte",
-      "sourceId": "26-82009",
-      "organism": "SA Aéroport de Martinique Aimé Cesaire",
-      "platform": "BOAMP",
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-82009",
-      "object": "Travaux de rénovation et de réaménagement du Service de Sauvetage et de Lutte contre l'Incendie des Aéronefs (SSLIA), partie Ouest, situé côté piste de l'Aéroport Martinique Aimé Césaire.",
-      "lot": "Démolition, Gros oeuvre, Cloison, faux plafond, Plomberie (travaux), Sanitaire",
-      "deadline": "2026-09-14",
-      "publishedAt": "2026-08-20",
-      "commune": "Martinique",
-      "visitRequired": "A verifier dans le DCE",
-      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
-      "score": 6,
-      "priority": "medium",
-      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
-      "contact": {
-        "email": "achat@martinique.aeroport.fr",
-        "phone": "+33 596424076",
-        "contactName": "Service Juridique et Corporate",
-        "buyerCity": "LE LAMENTIN CEDEX2",
-        "buyerPostalCode": "97285",
-        "buyerProfileUrl": "https://martinique-aeroport.e-marchespublics.com/pack/annonce_marche_public_8805_1178786.html"
-      },
-      "notes": "Descripteurs : Démolition, Gros oeuvre, Cloison, faux plafond, Plomberie (travaux), Sanitaire | Type marche : Travaux | Procedure : Procédure Ouverte | Email acheteur : achat@martinique.aeroport.fr | Tel acheteur : +33 596424076 | Profil acheteur : https://martinique-aeroport.e-marchespublics.com/pack/annonce_marche_public_8805_1178786.html"
-    },
-    {
-      "source": "BOAMP / DILA API ouverte",
       "sourceId": "26-81185",
       "organism": "DID Fort-de-France",
       "platform": "BOAMP",
@@ -256,32 +230,6 @@
         "buyerProfileUrl": ""
       },
       "notes": "Descripteurs : Climatisation, Electricité (travaux), Tous corps d'état, Menuiserie, Charpente, Couverture | Type marche : Travaux | Procedure : Procédure Ouverte | Email acheteur : did-cayenne-divadm.ach.fct@intradef.gouv.fr"
-    },
-    {
-      "source": "BOAMP / DILA API ouverte",
-      "sourceId": "26-75861",
-      "organism": "DID FdF",
-      "platform": "BOAMP",
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-75861",
-      "object": "GUADELOUPE (971) – SAINT BARTHÉLEMY – Gendarmerie Fort Oscar – Travaux de désamiantage et rénovation intérieure de 3 villas",
-      "lot": "Amiante (désamiantage)",
-      "deadline": "2026-09-11",
-      "publishedAt": "2026-07-30",
-      "commune": "Martinique",
-      "visitRequired": "A verifier dans le DCE",
-      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
-      "score": 6,
-      "priority": "medium",
-      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
-      "contact": {
-        "email": "mohamed.abdelghani@intradef.gouv.fr",
-        "phone": "+596 596 39 52 64 ",
-        "contactName": "",
-        "buyerCity": "",
-        "buyerPostalCode": "",
-        "buyerProfileUrl": "https://www.marches-publics.gouv.fr/entreprise"
-      },
-      "notes": "Descripteurs : Amiante (désamiantage) | Type marche : Travaux | Procedure : Procédure Ouverte | Email acheteur : mohamed.abdelghani@intradef.gouv.fr | Tel acheteur : +596 596 39 52 64  | Profil acheteur : https://www.marches-publics.gouv.fr/entreprise"
     }
   ]
 }
