@@ -1,7 +1,7 @@
 {
   "source": "BOAMP / DILA API ouverte",
   "sourceUrl": "https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/api/",
-  "generatedAt": "2026-09-15T14:20:37.647Z",
+  "generatedAt": "2026-09-16T14:12:59.722Z",
   "department": "972",
   "keywords": [
     "menuiserie",
@@ -23,6 +23,32 @@
   "totalCount": 8,
   "count": 8,
   "items": [
+    {
+      "source": "BOAMP / DILA API ouverte",
+      "sourceId": "26-88861",
+      "organism": "Communauté d'Agglomération de l'Espace Sud Martinique (972)",
+      "platform": "BOAMP",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-88861",
+      "object": "Accord-cadre composite (marché ordinaire et marchés subséquents) de maintenance des systèmes de contrôle d’accès des sites de la CAESM",
+      "lot": "Alarme, Contrôle d'accès, Maintenance, Porte automatique, portail",
+      "deadline": "2026-10-16",
+      "publishedAt": "2026-09-16",
+      "commune": "Martinique",
+      "visitRequired": "A verifier dans le DCE",
+      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
+      "score": 7,
+      "priority": "high",
+      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
+      "contact": {
+        "email": "marches-publics@espacesud.fr",
+        "phone": "+33 596",
+        "contactName": "",
+        "buyerCity": "",
+        "buyerPostalCode": "",
+        "buyerProfileUrl": "https://v2.marches-securises.fr/"
+      },
+      "notes": "Descripteurs : Alarme, Contrôle d'accès, Maintenance, Porte automatique, portail | Type marche : Services | Procedure : Procédure Ouverte | Email acheteur : marches-publics@espacesud.fr | Tel acheteur : +33 596 | Profil acheteur : https://v2.marches-securises.fr/"
+    },
     {
       "source": "BOAMP / DILA API ouverte",
       "sourceId": "26-88989",
@@ -178,32 +204,6 @@
         "buyerProfileUrl": "https://www.marches-publics.gouv.fr/entreprise"
       },
       "notes": "Descripteurs : Bâtiment | Type marche : Travaux | Procedure : Procédure Adaptée | Email acheteur : dany.chenet@intradef.gouv.fr | Profil acheteur : https://www.marches-publics.gouv.fr/entreprise"
-    },
-    {
-      "source": "BOAMP / DILA API ouverte",
-      "sourceId": "26-80519",
-      "organism": "CACEM - Communauté d'Agglomération Centre Martinique",
-      "platform": "BOAMP",
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-80519",
-      "object": "Travaux d'aménagement des locaux Grives et Gros Bec (Chateauboeuf, Fort-de-France) - 6 lots",
-      "lot": "Plomberie (travaux), Peinture (travaux), Maçonnerie, Menuiserie",
-      "deadline": "2026-09-16",
-      "publishedAt": "2026-08-13",
-      "commune": "Martinique",
-      "visitRequired": "A verifier dans le DCE",
-      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
-      "score": 8,
-      "priority": "high",
-      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
-      "contact": {
-        "email": "dcp@cacem.fr",
-        "phone": "+33 596758272",
-        "contactName": "Direction des Achats",
-        "buyerCity": "Fort de france cedex martinique",
-        "buyerPostalCode": "97204",
-        "buyerProfileUrl": "https://www.achatpublic.com/sdm/ent/gen/ent_detail.do?PCSLID=CSL_2026_indh-f1Z8K"
-      },
-      "notes": "Descripteurs : Plomberie (travaux), Peinture (travaux), Maçonnerie, Menuiserie | Type marche : Travaux | Procedure : Procédure Ouverte | Email acheteur : dcp@cacem.fr | Tel acheteur : +33 596758272 | Profil acheteur : https://www.achatpublic.com/sdm/ent/gen/ent_detail.do?PCSLID=CSL_2026_indh-f1Z8K"
     },
     {
       "source": "BOAMP / DILA API ouverte",
