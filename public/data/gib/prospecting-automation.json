@@ -1,7 +1,7 @@
 {
   "source": "GIB prospecting automation queue",
-  "generatedAt": "2026-09-16T14:12:59.878Z",
-  "tenderFeedGeneratedAt": "2026-09-16T14:12:59.722Z",
+  "generatedAt": "2026-09-17T14:18:28.579Z",
+  "tenderFeedGeneratedAt": "2026-09-17T14:18:28.355Z",
   "summary": {
     "totalTenderRows": 8,
     "uniqueQueueItems": 8,
@@ -26,7 +26,7 @@
       "object": "FOURNITURE ET LIVRAISON D'ARTICLES DE MENUISERIES ALUMINIUM DU BATIMENT",
       "lot": "Menuiserie",
       "deadline": "2026-09-18",
-      "daysUntilDeadline": 3,
+      "daysUntilDeadline": 2,
       "priority": "urgent",
       "score": 9,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-79923",
@@ -75,17 +75,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-09-17",
+          "date": "2026-09-18",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-09-19",
+          "date": "2026-09-20",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-09-23",
+          "date": "2026-09-24",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -98,7 +98,7 @@
       "object": "Le présent marché a pour objet : MARCHÉ DE TRAVAUX POUR LA RÉHABILITATION DU CIS DE BOUILLANTE",
       "lot": "Bardage, Couverture, Electricité (travaux), Etanchéité, Maçonnerie, Menuiserie, Peinture (travaux), Plomberie (travaux)",
       "deadline": "2026-09-21",
-      "daysUntilDeadline": 6,
+      "daysUntilDeadline": 5,
       "priority": "urgent",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-85129",
@@ -147,17 +147,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-09-17",
+          "date": "2026-09-18",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-09-19",
+          "date": "2026-09-20",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-09-23",
+          "date": "2026-09-24",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -170,7 +170,7 @@
       "object": "La Préfecture de Guyane engage un marché public de travaux portant sur la rénovation partielle du bâtiment Vignon, situé rue Fiedmond à Cayenne.",
       "lot": "Amiante (désamiantage), Maçonnerie, Plomberie (travaux), Menuiserie, Peinture (travaux)",
       "deadline": "2026-09-24",
-      "daysUntilDeadline": 9,
+      "daysUntilDeadline": 8,
       "priority": "urgent",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-85452",
@@ -219,17 +219,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-09-17",
+          "date": "2026-09-18",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-09-19",
+          "date": "2026-09-20",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-09-23",
+          "date": "2026-09-24",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -242,7 +242,7 @@
       "object": "GUADELOUPE (971) -  LES ABYMES – Le Raizet –  2ème phase de rénovation des bâtiments 057, 058, 059 et 060.",
       "lot": "Bâtiment",
       "deadline": "2026-09-24",
-      "daysUntilDeadline": 9,
+      "daysUntilDeadline": 8,
       "priority": "urgent",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-81185",
@@ -291,17 +291,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-09-17",
+          "date": "2026-09-18",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-09-19",
+          "date": "2026-09-20",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-09-23",
+          "date": "2026-09-24",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -314,7 +314,7 @@
       "object": "Achat par la direction régionale de France Travail de travaux d’aménagement intérieur d’un immeuble existant à destination de bureaux administratifs situé au quartier Gondeau au Lamentin 97232.",
       "lot": "Bâtiment, Climatisation, Cloison, faux plafond, Electricité (travaux), Menuiserie, Peinture (travaux), Plomberie (travaux), Revêtements de sols, Sanitaire",
       "deadline": "2026-09-30",
-      "daysUntilDeadline": 15,
+      "daysUntilDeadline": 14,
       "priority": "high",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-84293",
@@ -363,17 +363,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-09-17",
+          "date": "2026-09-18",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-09-19",
+          "date": "2026-09-20",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-09-23",
+          "date": "2026-09-24",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -386,7 +386,7 @@
       "object": "MARTINIQUE (972) – FORT de FRANCE – Fort Saint Louis – Base navale – Rénovation du pavillon de MORVILLE - 039",
       "lot": "Bâtiment",
       "deadline": "2026-10-05",
-      "daysUntilDeadline": 20,
+      "daysUntilDeadline": 19,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-84721",
@@ -435,17 +435,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-09-17",
+          "date": "2026-09-18",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-09-19",
+          "date": "2026-09-20",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-09-23",
+          "date": "2026-09-24",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -458,7 +458,7 @@
       "object": "GUADELOUPE (971) – POINTE-à-PITRE – Dugazon – BATIMENT 002 –  Rénovation des appartements 007 ET 009",
       "lot": "Bâtiment",
       "deadline": "2026-10-15",
-      "daysUntilDeadline": 30,
+      "daysUntilDeadline": 29,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-88989",
@@ -507,17 +507,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-09-17",
+          "date": "2026-09-18",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-09-19",
+          "date": "2026-09-20",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-09-23",
+          "date": "2026-09-24",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -530,7 +530,7 @@
       "object": "Accord-cadre composite (marché ordinaire et marchés subséquents) de maintenance des systèmes de contrôle d’accès des sites de la CAESM",
       "lot": "Alarme, Contrôle d'accès, Maintenance, Porte automatique, portail",
       "deadline": "2026-10-16",
-      "daysUntilDeadline": 31,
+      "daysUntilDeadline": 30,
       "priority": "high",
       "score": 7,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-88861",
@@ -579,17 +579,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-09-17",
+          "date": "2026-09-18",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-09-19",
+          "date": "2026-09-20",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-09-23",
+          "date": "2026-09-24",
           "action": "Decision go/no-go ou classement"
         }
       ]
