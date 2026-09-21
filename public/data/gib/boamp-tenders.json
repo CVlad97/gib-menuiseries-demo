@@ -1,7 +1,7 @@
 {
   "source": "BOAMP / DILA API ouverte",
   "sourceUrl": "https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/api/",
-  "generatedAt": "2026-09-18T13:37:34.880Z",
+  "generatedAt": "2026-09-21T15:54:40.601Z",
   "department": "972",
   "keywords": [
     "menuiserie",
@@ -20,8 +20,8 @@
     "rénovation",
     "second oeuvre"
   ],
-  "totalCount": 8,
-  "count": 8,
+  "totalCount": 6,
+  "count": 6,
   "items": [
     {
       "source": "BOAMP / DILA API ouverte",
@@ -103,32 +103,6 @@
     },
     {
       "source": "BOAMP / DILA API ouverte",
-      "sourceId": "26-85129",
-      "organism": "COMMUNE DE BOUILLANTE",
-      "platform": "BOAMP",
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-85129",
-      "object": "Le présent marché a pour objet : MARCHÉ DE TRAVAUX POUR LA RÉHABILITATION DU CIS DE BOUILLANTE",
-      "lot": "Bardage, Couverture, Electricité (travaux), Etanchéité, Maçonnerie, Menuiserie, Peinture (travaux), Plomberie (travaux)",
-      "deadline": "2026-09-21",
-      "publishedAt": "2026-09-01",
-      "commune": "Martinique",
-      "visitRequired": "A verifier dans le DCE",
-      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
-      "score": 8,
-      "priority": "high",
-      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
-      "contact": {
-        "email": "a.lemoyne@splgrandsudcaraibe.fr",
-        "phone": "",
-        "contactName": "Alexandre LEMOYNE",
-        "buyerCity": "BOUILLANTE",
-        "buyerPostalCode": "97125",
-        "buyerProfileUrl": "http://www.marches-securises.fr/"
-      },
-      "notes": "Descripteurs : Bardage, Couverture, Electricité (travaux), Etanchéité, Maçonnerie, Menuiserie, Peinture (travaux), Plomberie (travaux) | Type marche : Travaux | Procedure : Procédure Ouverte | Email acheteur : a.lemoyne@splgrandsudcaraibe.fr | Profil acheteur : http://www.marches-securises.fr/"
-    },
-    {
-      "source": "BOAMP / DILA API ouverte",
       "sourceId": "26-84721",
       "organism": "DID FdF",
       "platform": "BOAMP",
@@ -204,32 +178,6 @@
         "buyerProfileUrl": "https://www.marches-publics.gouv.fr/entreprise"
       },
       "notes": "Descripteurs : Bâtiment | Type marche : Travaux | Procedure : Procédure Adaptée | Email acheteur : dany.chenet@intradef.gouv.fr | Profil acheteur : https://www.marches-publics.gouv.fr/entreprise"
-    },
-    {
-      "source": "BOAMP / DILA API ouverte",
-      "sourceId": "26-79923",
-      "organism": "Mairie du Lamentin",
-      "platform": "BOAMP",
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-79923",
-      "object": "FOURNITURE ET LIVRAISON D'ARTICLES DE MENUISERIES ALUMINIUM DU BATIMENT",
-      "lot": "Menuiserie",
-      "deadline": "2026-09-18",
-      "publishedAt": "2026-08-11",
-      "commune": "Martinique",
-      "visitRequired": "A verifier dans le DCE",
-      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
-      "score": 9,
-      "priority": "high",
-      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
-      "contact": {
-        "email": "grenard@mairie-lelamentin.fr",
-        "phone": "0596300752",
-        "contactName": "Mesdames Gisèle RENARD et Clarisse COUENO",
-        "buyerCity": "Lamentin",
-        "buyerPostalCode": "97232",
-        "buyerProfileUrl": "https://mairie-lelamentin.e-marchespublics.com/pack/annonce_marche_public_7996_1177777.html"
-      },
-      "notes": "Descripteurs : Menuiserie | Type marche : Fournitures | Procedure : Procédure Ouverte | Email acheteur : grenard@mairie-lelamentin.fr | Tel acheteur : 0596300752 | Profil acheteur : https://mairie-lelamentin.e-marchespublics.com/pack/annonce_marche_public_7996_1177777.html"
     }
   ]
 }
