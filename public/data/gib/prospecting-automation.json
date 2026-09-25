@@ -1,14 +1,14 @@
 {
   "source": "GIB prospecting automation queue",
-  "generatedAt": "2026-09-24T14:13:31.187Z",
-  "tenderFeedGeneratedAt": "2026-09-24T14:13:31.056Z",
+  "generatedAt": "2026-09-25T14:37:23.532Z",
+  "tenderFeedGeneratedAt": "2026-09-25T14:37:23.340Z",
   "summary": {
-    "totalTenderRows": 6,
-    "uniqueQueueItems": 6,
-    "emailReady": 6,
-    "phoneReady": 2,
-    "urgent": 3,
-    "manualSubmissionRequired": 6
+    "totalTenderRows": 5,
+    "uniqueQueueItems": 5,
+    "emailReady": 5,
+    "phoneReady": 3,
+    "urgent": 1,
+    "manualSubmissionRequired": 5
   },
   "compliance": [
     "Utiliser uniquement les contacts publies ou fournis volontairement.",
@@ -19,150 +19,6 @@
   ],
   "queue": [
     {
-      "id": "ao-26-85452",
-      "sourceId": "26-85452",
-      "type": "response",
-      "organism": "SGSE973",
-      "object": "La Préfecture de Guyane engage un marché public de travaux portant sur la rénovation partielle du bâtiment Vignon, situé rue Fiedmond à Cayenne.",
-      "lot": "Amiante (désamiantage), Maçonnerie, Plomberie (travaux), Menuiserie, Peinture (travaux)",
-      "deadline": "2026-09-24",
-      "daysUntilDeadline": 1,
-      "priority": "urgent",
-      "score": 8,
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-85452",
-      "contact": {
-        "email": "bureau-achats@guyane.gouv.fr",
-        "phone": "",
-        "name": "",
-        "profile": "https://www.marches-publics.gouv.fr/entreprise"
-      },
-      "automation": {
-        "emailReady": true,
-        "phoneReady": false,
-        "whatsappReady": true,
-        "officialSubmission": "manual_required",
-        "duplicateGuard": "bureau-achats@guyane.gouv.fr|sgse973|la prefecture de guyane engage un marche public de travaux portant sur la renovation partielle du batiment vignon, situe rue fiedmond a cayenne."
-      },
-      "email": {
-        "to": "bureau-achats@guyane.gouv.fr",
-        "subject": "Demande DCE / qualification lot - SGSE973 - 26-85452",
-        "body": "Bonjour,\n\nNous vous contactons pour GIB Menuiseries Services, entreprise basee a Ducos en Martinique, au sujet de la consultation suivante :\n- Organisme : SGSE973\n- Objet : La Préfecture de Guyane engage un marché public de travaux portant sur la rénovation partielle du bâtiment Vignon, situé rue Fiedmond à Cayenne.\n- Reference : 26-85452\n- Date limite : 2026-09-24\n\nNous souhaitons verifier si un lot menuiserie, fermeture, cloture, garde-corps ou ouvrage associe correspond a notre activite.\n\nPouvez-vous nous confirmer le lien DCE/profil acheteur a utiliser, ainsi que les modalites officielles pour poser une question ou deposer une reponse si le lot est pertinent ?\n\nPresentation GIB :\nSite : https://www.gibmenuiseries.fr\nInstagram : https://www.instagram.com/gibmenuiseries/\nFlyer : https://cvlad97.github.io/gib-menuiseries-demo/media/gib/flyers/pub3.jpeg\n\nContact commercial : Vladimir Claveau\nWhatsApp : +596 696 65 35 89\nEmail : gibmenuiseriesservices@gmail.com\nZone Industrielle Cocotte, derriere Lapeyre, Ducos, Martinique\n\nCordialement,\nGIB Menuiseries Services",
-        "mailto": "mailto:bureau-achats@guyane.gouv.fr?subject=Demande+DCE+%2F+qualification+lot+-+SGSE973+-+26-85452&body=Bonjour%2C%0A%0ANous+vous+contactons+pour+GIB+Menuiseries+Services%2C+entreprise+basee+a+Ducos+en+Martinique%2C+au+sujet+de+la+consultation+suivante+%3A%0A-+Organisme+%3A+SGSE973%0A-+Objet+%3A+La+Pr%C3%A9fecture+de+Guyane+engage+un+march%C3%A9+public+de+travaux+portant+sur+la+r%C3%A9novation+partielle+du+b%C3%A2timent+Vignon%2C+situ%C3%A9+rue+Fiedmond+%C3%A0+Cayenne.%0A-+Reference+%3A+26-85452%0A-+Date+limite+%3A+2026-09-24%0A%0ANous+souhaitons+verifier+si+un+lot+menuiserie%2C+fermeture%2C+cloture%2C+garde-corps+ou+ouvrage+associe+correspond+a+notre+activite.%0A%0APouvez-vous+nous+confirmer+le+lien+DCE%2Fprofil+acheteur+a+utiliser%2C+ainsi+que+les+modalites+officielles+pour+poser+une+question+ou+deposer+une+reponse+si+le+lot+est+pertinent+%3F%0A%0APresentation+GIB+%3A%0ASite+%3A+https%3A%2F%2Fwww.gibmenuiseries.fr%0AInstagram+%3A+https%3A%2F%2Fwww.instagram.com%2Fgibmenuiseries%2F%0AFlyer+%3A+https%3A%2F%2Fcvlad97.github.io%2Fgib-menuiseries-demo%2Fmedia%2Fgib%2Fflyers%2Fpub3.jpeg%0A%0AContact+commercial+%3A+Vladimir+Claveau%0AWhatsApp+%3A+%2B596+696+65+35+89%0AEmail+%3A+gibmenuiseriesservices%40gmail.com%0AZone+Industrielle+Cocotte%2C+derriere+Lapeyre%2C+Ducos%2C+Martinique%0A%0ACordialement%2C%0AGIB+Menuiseries+Services"
-      },
-      "whatsapp": {
-        "to": "+596 696 65 35 89",
-        "body": "AO GIB a traiter\nOrganisme : SGSE973\nObjet : La Préfecture de Guyane engage un marché public de travaux portant sur la rénovation partielle du bâtiment Vignon, situé rue Fiedmond à Cayenne.\nDeadline : 2026-09-24\nScore : 8/10\nEmail : bureau-achats@guyane.gouv.fr\nLien : https://www.boamp.fr/pages/avis/?q=idweb:26-85452\nAction : verifier DCE, identifier lot, preparer go/no-go.",
-        "url": "https://wa.me/596696653589?text=AO%20GIB%20a%20traiter%0AOrganisme%20%3A%20SGSE973%0AObjet%20%3A%20La%20Pr%C3%A9fecture%20de%20Guyane%20engage%20un%20march%C3%A9%20public%20de%20travaux%20portant%20sur%20la%20r%C3%A9novation%20partielle%20du%20b%C3%A2timent%20Vignon%2C%20situ%C3%A9%20rue%20Fiedmond%20%C3%A0%20Cayenne.%0ADeadline%20%3A%202026-09-24%0AScore%20%3A%208%2F10%0AEmail%20%3A%20bureau-achats%40guyane.gouv.fr%0ALien%20%3A%20https%3A%2F%2Fwww.boamp.fr%2Fpages%2Favis%2F%3Fq%3Didweb%3A26-85452%0AAction%20%3A%20verifier%20DCE%2C%20identifier%20lot%2C%20preparer%20go%2Fno-go."
-      },
-      "call": {
-        "phone": "",
-        "script": "Bonjour, je vous appelle pour GIB Menuiseries Services a Ducos.\nNous avons repere votre consultation : La Préfecture de Guyane engage un marché public de travaux portant sur la rénovation partielle du bâtiment Vignon, situé rue Fiedmond à Cayenne..\nNous souhaitons verifier si un lot concerne les menuiseries, fermetures, clotures, garde-corps, portails, volets ou ouvrages associes.\nPouvez-vous me confirmer le bon lien DCE/profil acheteur et la procedure officielle pour les questions ?\nNous passerons uniquement par le canal prevu dans le reglement de consultation.",
-        "telUrl": ""
-      },
-      "dossier": {
-        "status": "to_prepare",
-        "checklist": [
-          "Ouvrir avis BOAMP et profil acheteur",
-          "Telecharger RC, CCTP, DPGF/BPU, AE, CCAP et annexes",
-          "Verifier date limite, visite obligatoire, questions autorisees",
-          "Identifier lot menuiserie/fermeture/cloture/garde-corps",
-          "Decision go/no-go : capacite, delai, references, pieces administratives",
-          "Preparer DC1/DC2, attestation assurance, Kbis, RIB, memoire technique",
-          "Chiffrer le lot pertinent et preparer une question technique si besoin"
-        ],
-        "warning": "Ne pas deposer une offre automatiquement. Le DCE, les pieces et le chiffrage doivent etre valides par un humain."
-      },
-      "followUps": [
-        {
-          "label": "J+1",
-          "date": "2026-09-25",
-          "action": "Verifier reception ou ouvrir profil acheteur officiel"
-        },
-        {
-          "label": "J+3",
-          "date": "2026-09-27",
-          "action": "Relancer si aucune reponse et deadline compatible"
-        },
-        {
-          "label": "J+7",
-          "date": "2026-10-01",
-          "action": "Decision go/no-go ou classement"
-        }
-      ]
-    },
-    {
-      "id": "ao-26-81185",
-      "sourceId": "26-81185",
-      "type": "qualification",
-      "organism": "DID Fort-de-France",
-      "object": "GUADELOUPE (971) -  LES ABYMES – Le Raizet –  2ème phase de rénovation des bâtiments 057, 058, 059 et 060.",
-      "lot": "Bâtiment",
-      "deadline": "2026-09-24",
-      "daysUntilDeadline": 1,
-      "priority": "urgent",
-      "score": 6,
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-81185",
-      "contact": {
-        "email": "dany.chenet@intradef.gouv.fr",
-        "phone": "",
-        "name": "",
-        "profile": "https://www.marches-publics.gouv.fr/entreprise"
-      },
-      "automation": {
-        "emailReady": true,
-        "phoneReady": false,
-        "whatsappReady": true,
-        "officialSubmission": "manual_required",
-        "duplicateGuard": "dany.chenet@intradef.gouv.fr|did fort-de-france|guadeloupe (971) - les abymes – le raizet – 2eme phase de renovation des batiments 057, 058, 059 et 060."
-      },
-      "email": {
-        "to": "dany.chenet@intradef.gouv.fr",
-        "subject": "Demande orientation DCE - DID Fort-de-France - 26-81185",
-        "body": "Bonjour,\n\nNous vous contactons pour GIB Menuiseries Services, entreprise basee a Ducos en Martinique, au sujet de la consultation suivante :\n- Organisme : DID Fort-de-France\n- Objet : GUADELOUPE (971) -  LES ABYMES – Le Raizet –  2ème phase de rénovation des bâtiments 057, 058, 059 et 060.\n- Reference : 26-81185\n- Date limite : 2026-09-24\n\nNous souhaitons identifier si des prestations de menuiserie, fermeture, acces, cloture ou renovation peuvent correspondre a notre activite.\n\nPouvez-vous nous confirmer le lien DCE/profil acheteur a utiliser, ainsi que les modalites officielles pour poser une question ou deposer une reponse si le lot est pertinent ?\n\nPresentation GIB :\nSite : https://www.gibmenuiseries.fr\nInstagram : https://www.instagram.com/gibmenuiseries/\nFlyer : https://cvlad97.github.io/gib-menuiseries-demo/media/gib/flyers/pub3.jpeg\n\nContact commercial : Vladimir Claveau\nWhatsApp : +596 696 65 35 89\nEmail : gibmenuiseriesservices@gmail.com\nZone Industrielle Cocotte, derriere Lapeyre, Ducos, Martinique\n\nCordialement,\nGIB Menuiseries Services",
-        "mailto": "mailto:dany.chenet@intradef.gouv.fr?subject=Demande+orientation+DCE+-+DID+Fort-de-France+-+26-81185&body=Bonjour%2C%0A%0ANous+vous+contactons+pour+GIB+Menuiseries+Services%2C+entreprise+basee+a+Ducos+en+Martinique%2C+au+sujet+de+la+consultation+suivante+%3A%0A-+Organisme+%3A+DID+Fort-de-France%0A-+Objet+%3A+GUADELOUPE+%28971%29+-++LES+ABYMES+%E2%80%93+Le+Raizet+%E2%80%93++2%C3%A8me+phase+de+r%C3%A9novation+des+b%C3%A2timents+057%2C+058%2C+059+et+060.%0A-+Reference+%3A+26-81185%0A-+Date+limite+%3A+2026-09-24%0A%0ANous+souhaitons+identifier+si+des+prestations+de+menuiserie%2C+fermeture%2C+acces%2C+cloture+ou+renovation+peuvent+correspondre+a+notre+activite.%0A%0APouvez-vous+nous+confirmer+le+lien+DCE%2Fprofil+acheteur+a+utiliser%2C+ainsi+que+les+modalites+officielles+pour+poser+une+question+ou+deposer+une+reponse+si+le+lot+est+pertinent+%3F%0A%0APresentation+GIB+%3A%0ASite+%3A+https%3A%2F%2Fwww.gibmenuiseries.fr%0AInstagram+%3A+https%3A%2F%2Fwww.instagram.com%2Fgibmenuiseries%2F%0AFlyer+%3A+https%3A%2F%2Fcvlad97.github.io%2Fgib-menuiseries-demo%2Fmedia%2Fgib%2Fflyers%2Fpub3.jpeg%0A%0AContact+commercial+%3A+Vladimir+Claveau%0AWhatsApp+%3A+%2B596+696+65+35+89%0AEmail+%3A+gibmenuiseriesservices%40gmail.com%0AZone+Industrielle+Cocotte%2C+derriere+Lapeyre%2C+Ducos%2C+Martinique%0A%0ACordialement%2C%0AGIB+Menuiseries+Services"
-      },
-      "whatsapp": {
-        "to": "+596 696 65 35 89",
-        "body": "AO GIB a traiter\nOrganisme : DID Fort-de-France\nObjet : GUADELOUPE (971) -  LES ABYMES – Le Raizet –  2ème phase de rénovation des bâtiments 057, 058, 059 et 060.\nDeadline : 2026-09-24\nScore : 6/10\nEmail : dany.chenet@intradef.gouv.fr\nLien : https://www.boamp.fr/pages/avis/?q=idweb:26-81185\nAction : verifier DCE, identifier lot, preparer go/no-go.",
-        "url": "https://wa.me/596696653589?text=AO%20GIB%20a%20traiter%0AOrganisme%20%3A%20DID%20Fort-de-France%0AObjet%20%3A%20GUADELOUPE%20(971)%20-%20%20LES%20ABYMES%20%E2%80%93%20Le%20Raizet%20%E2%80%93%20%202%C3%A8me%20phase%20de%20r%C3%A9novation%20des%20b%C3%A2timents%20057%2C%20058%2C%20059%20et%20060.%0ADeadline%20%3A%202026-09-24%0AScore%20%3A%206%2F10%0AEmail%20%3A%20dany.chenet%40intradef.gouv.fr%0ALien%20%3A%20https%3A%2F%2Fwww.boamp.fr%2Fpages%2Favis%2F%3Fq%3Didweb%3A26-81185%0AAction%20%3A%20verifier%20DCE%2C%20identifier%20lot%2C%20preparer%20go%2Fno-go."
-      },
-      "call": {
-        "phone": "",
-        "script": "Bonjour, je vous appelle pour GIB Menuiseries Services a Ducos.\nNous avons repere votre consultation : GUADELOUPE (971) -  LES ABYMES – Le Raizet –  2ème phase de rénovation des bâtiments 057, 058, 059 et 060..\nNous souhaitons verifier si un lot concerne les menuiseries, fermetures, clotures, garde-corps, portails, volets ou ouvrages associes.\nPouvez-vous me confirmer le bon lien DCE/profil acheteur et la procedure officielle pour les questions ?\nNous passerons uniquement par le canal prevu dans le reglement de consultation.",
-        "telUrl": ""
-      },
-      "dossier": {
-        "status": "to_prepare",
-        "checklist": [
-          "Ouvrir avis BOAMP et profil acheteur",
-          "Telecharger RC, CCTP, DPGF/BPU, AE, CCAP et annexes",
-          "Verifier date limite, visite obligatoire, questions autorisees",
-          "Identifier lot menuiserie/fermeture/cloture/garde-corps",
-          "Decision go/no-go : capacite, delai, references, pieces administratives",
-          "Preparer DC1/DC2, attestation assurance, Kbis, RIB, memoire technique",
-          "Ecarter si aucun lot GIB ou garder en veille fournisseur/sous-traitance"
-        ],
-        "warning": "Ne pas deposer une offre automatiquement. Le DCE, les pieces et le chiffrage doivent etre valides par un humain."
-      },
-      "followUps": [
-        {
-          "label": "J+1",
-          "date": "2026-09-25",
-          "action": "Verifier reception ou ouvrir profil acheteur officiel"
-        },
-        {
-          "label": "J+3",
-          "date": "2026-09-27",
-          "action": "Relancer si aucune reponse et deadline compatible"
-        },
-        {
-          "label": "J+7",
-          "date": "2026-10-01",
-          "action": "Decision go/no-go ou classement"
-        }
-      ]
-    },
-    {
       "id": "ao-26-84293",
       "sourceId": "26-84293",
       "type": "response",
@@ -170,7 +26,7 @@
       "object": "Achat par la direction régionale de France Travail de travaux d’aménagement intérieur d’un immeuble existant à destination de bureaux administratifs situé au quartier Gondeau au Lamentin 97232.",
       "lot": "Bâtiment, Climatisation, Cloison, faux plafond, Electricité (travaux), Menuiserie, Peinture (travaux), Plomberie (travaux), Revêtements de sols, Sanitaire",
       "deadline": "2026-09-30",
-      "daysUntilDeadline": 7,
+      "daysUntilDeadline": 6,
       "priority": "urgent",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-84293",
@@ -219,17 +75,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-09-25",
+          "date": "2026-09-26",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-09-27",
+          "date": "2026-09-28",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-10-01",
+          "date": "2026-10-02",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -242,7 +98,7 @@
       "object": "MARTINIQUE (972) – FORT de FRANCE – Fort Saint Louis – Base navale – Rénovation du pavillon de MORVILLE - 039",
       "lot": "Bâtiment",
       "deadline": "2026-10-05",
-      "daysUntilDeadline": 12,
+      "daysUntilDeadline": 11,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-84721",
@@ -291,17 +147,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-09-25",
+          "date": "2026-09-26",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-09-27",
+          "date": "2026-09-28",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-10-01",
+          "date": "2026-10-02",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -314,7 +170,7 @@
       "object": "GUADELOUPE (971) – POINTE-à-PITRE – Dugazon – BATIMENT 002 –  Rénovation des appartements 007 ET 009",
       "lot": "Bâtiment",
       "deadline": "2026-10-15",
-      "daysUntilDeadline": 22,
+      "daysUntilDeadline": 21,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-88989",
@@ -363,17 +219,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-09-25",
+          "date": "2026-09-26",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-09-27",
+          "date": "2026-09-28",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-10-01",
+          "date": "2026-10-02",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -386,7 +242,7 @@
       "object": "Accord-cadre composite (marché ordinaire et marchés subséquents) de maintenance des systèmes de contrôle d’accès des sites de la CAESM",
       "lot": "Alarme, Contrôle d'accès, Maintenance, Porte automatique, portail",
       "deadline": "2026-10-16",
-      "daysUntilDeadline": 23,
+      "daysUntilDeadline": 22,
       "priority": "high",
       "score": 7,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-88861",
@@ -435,17 +291,89 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-09-25",
+          "date": "2026-09-26",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-09-27",
+          "date": "2026-09-28",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-10-01",
+          "date": "2026-10-02",
+          "action": "Decision go/no-go ou classement"
+        }
+      ]
+    },
+    {
+      "id": "ao-26-92036",
+      "sourceId": "26-92036",
+      "type": "qualification",
+      "organism": "DID FdF",
+      "object": "MARTINIQUE (972) - LE LAMENTIN - Pôle aéronautique Etatique (PAE) - Etudes géotechniques préalables à la rénovation du taxiway MIKE et l'hélistation",
+      "lot": "Revêtements de sols, Sondage (travaux)",
+      "deadline": "2026-10-23",
+      "daysUntilDeadline": 29,
+      "priority": "medium",
+      "score": 6,
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-92036",
+      "contact": {
+        "email": "mohamed.abdelghani@intradef.gouv.fr",
+        "phone": "+569596395264",
+        "name": "",
+        "profile": "https://www.marches-publics.gouv.fr/entreprise"
+      },
+      "automation": {
+        "emailReady": true,
+        "phoneReady": true,
+        "whatsappReady": true,
+        "officialSubmission": "manual_required",
+        "duplicateGuard": "mohamed.abdelghani@intradef.gouv.fr|did fdf|martinique (972) - le lamentin - pole aeronautique etatique (pae) - etudes geotechniques prealables a la renovation du taxiway mike et l'helistation"
+      },
+      "email": {
+        "to": "mohamed.abdelghani@intradef.gouv.fr",
+        "subject": "Demande orientation DCE - DID FdF - 26-92036",
+        "body": "Bonjour,\n\nNous vous contactons pour GIB Menuiseries Services, entreprise basee a Ducos en Martinique, au sujet de la consultation suivante :\n- Organisme : DID FdF\n- Objet : MARTINIQUE (972) - LE LAMENTIN - Pôle aéronautique Etatique (PAE) - Etudes géotechniques préalables à la rénovation du taxiway MIKE et l'hélistation\n- Reference : 26-92036\n- Date limite : 2026-10-23\n\nNous souhaitons identifier si des prestations de menuiserie, fermeture, acces, cloture ou renovation peuvent correspondre a notre activite.\n\nPouvez-vous nous confirmer le lien DCE/profil acheteur a utiliser, ainsi que les modalites officielles pour poser une question ou deposer une reponse si le lot est pertinent ?\n\nPresentation GIB :\nSite : https://www.gibmenuiseries.fr\nInstagram : https://www.instagram.com/gibmenuiseries/\nFlyer : https://cvlad97.github.io/gib-menuiseries-demo/media/gib/flyers/pub3.jpeg\n\nContact commercial : Vladimir Claveau\nWhatsApp : +596 696 65 35 89\nEmail : gibmenuiseriesservices@gmail.com\nZone Industrielle Cocotte, derriere Lapeyre, Ducos, Martinique\n\nCordialement,\nGIB Menuiseries Services",
+        "mailto": "mailto:mohamed.abdelghani@intradef.gouv.fr?subject=Demande+orientation+DCE+-+DID+FdF+-+26-92036&body=Bonjour%2C%0A%0ANous+vous+contactons+pour+GIB+Menuiseries+Services%2C+entreprise+basee+a+Ducos+en+Martinique%2C+au+sujet+de+la+consultation+suivante+%3A%0A-+Organisme+%3A+DID+FdF%0A-+Objet+%3A+MARTINIQUE+%28972%29+-+LE+LAMENTIN+-+P%C3%B4le+a%C3%A9ronautique+Etatique+%28PAE%29+-+Etudes+g%C3%A9otechniques+pr%C3%A9alables+%C3%A0+la+r%C3%A9novation+du+taxiway+MIKE+et+l%27h%C3%A9listation%0A-+Reference+%3A+26-92036%0A-+Date+limite+%3A+2026-10-23%0A%0ANous+souhaitons+identifier+si+des+prestations+de+menuiserie%2C+fermeture%2C+acces%2C+cloture+ou+renovation+peuvent+correspondre+a+notre+activite.%0A%0APouvez-vous+nous+confirmer+le+lien+DCE%2Fprofil+acheteur+a+utiliser%2C+ainsi+que+les+modalites+officielles+pour+poser+une+question+ou+deposer+une+reponse+si+le+lot+est+pertinent+%3F%0A%0APresentation+GIB+%3A%0ASite+%3A+https%3A%2F%2Fwww.gibmenuiseries.fr%0AInstagram+%3A+https%3A%2F%2Fwww.instagram.com%2Fgibmenuiseries%2F%0AFlyer+%3A+https%3A%2F%2Fcvlad97.github.io%2Fgib-menuiseries-demo%2Fmedia%2Fgib%2Fflyers%2Fpub3.jpeg%0A%0AContact+commercial+%3A+Vladimir+Claveau%0AWhatsApp+%3A+%2B596+696+65+35+89%0AEmail+%3A+gibmenuiseriesservices%40gmail.com%0AZone+Industrielle+Cocotte%2C+derriere+Lapeyre%2C+Ducos%2C+Martinique%0A%0ACordialement%2C%0AGIB+Menuiseries+Services"
+      },
+      "whatsapp": {
+        "to": "+596 696 65 35 89",
+        "body": "AO GIB a traiter\nOrganisme : DID FdF\nObjet : MARTINIQUE (972) - LE LAMENTIN - Pôle aéronautique Etatique (PAE) - Etudes géotechniques préalables à la rénovation du taxiway MIKE et l'hélistation\nDeadline : 2026-10-23\nScore : 6/10\nEmail : mohamed.abdelghani@intradef.gouv.fr\nTel : +569 596 39 52 64\nLien : https://www.boamp.fr/pages/avis/?q=idweb:26-92036\nAction : verifier DCE, identifier lot, preparer go/no-go.",
+        "url": "https://wa.me/596696653589?text=AO%20GIB%20a%20traiter%0AOrganisme%20%3A%20DID%20FdF%0AObjet%20%3A%20MARTINIQUE%20(972)%20-%20LE%20LAMENTIN%20-%20P%C3%B4le%20a%C3%A9ronautique%20Etatique%20(PAE)%20-%20Etudes%20g%C3%A9otechniques%20pr%C3%A9alables%20%C3%A0%20la%20r%C3%A9novation%20du%20taxiway%20MIKE%20et%20l'h%C3%A9listation%0ADeadline%20%3A%202026-10-23%0AScore%20%3A%206%2F10%0AEmail%20%3A%20mohamed.abdelghani%40intradef.gouv.fr%0ATel%20%3A%20%2B569%20596%2039%2052%2064%0ALien%20%3A%20https%3A%2F%2Fwww.boamp.fr%2Fpages%2Favis%2F%3Fq%3Didweb%3A26-92036%0AAction%20%3A%20verifier%20DCE%2C%20identifier%20lot%2C%20preparer%20go%2Fno-go."
+      },
+      "call": {
+        "phone": "+569596395264",
+        "script": "Bonjour, je vous appelle pour GIB Menuiseries Services a Ducos.\nNous avons repere votre consultation : MARTINIQUE (972) - LE LAMENTIN - Pôle aéronautique Etatique (PAE) - Etudes géotechniques préalables à la rénovation du taxiway MIKE et l'hélistation.\nNous souhaitons verifier si un lot concerne les menuiseries, fermetures, clotures, garde-corps, portails, volets ou ouvrages associes.\nPouvez-vous me confirmer le bon lien DCE/profil acheteur et la procedure officielle pour les questions ?\nNous passerons uniquement par le canal prevu dans le reglement de consultation.",
+        "telUrl": "tel:+569596395264"
+      },
+      "dossier": {
+        "status": "to_prepare",
+        "checklist": [
+          "Ouvrir avis BOAMP et profil acheteur",
+          "Telecharger RC, CCTP, DPGF/BPU, AE, CCAP et annexes",
+          "Verifier date limite, visite obligatoire, questions autorisees",
+          "Identifier lot menuiserie/fermeture/cloture/garde-corps",
+          "Decision go/no-go : capacite, delai, references, pieces administratives",
+          "Preparer DC1/DC2, attestation assurance, Kbis, RIB, memoire technique",
+          "Ecarter si aucun lot GIB ou garder en veille fournisseur/sous-traitance"
+        ],
+        "warning": "Ne pas deposer une offre automatiquement. Le DCE, les pieces et le chiffrage doivent etre valides par un humain."
+      },
+      "followUps": [
+        {
+          "label": "J+1",
+          "date": "2026-09-26",
+          "action": "Verifier reception ou ouvrir profil acheteur officiel"
+        },
+        {
+          "label": "J+3",
+          "date": "2026-09-28",
+          "action": "Relancer si aucune reponse et deadline compatible"
+        },
+        {
+          "label": "J+7",
+          "date": "2026-10-02",
           "action": "Decision go/no-go ou classement"
         }
       ]

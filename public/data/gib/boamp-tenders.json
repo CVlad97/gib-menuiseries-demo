@@ -1,7 +1,7 @@
 {
   "source": "BOAMP / DILA API ouverte",
   "sourceUrl": "https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/api/",
-  "generatedAt": "2026-09-24T14:13:31.056Z",
+  "generatedAt": "2026-09-25T14:37:23.340Z",
   "department": "972",
   "keywords": [
     "menuiserie",
@@ -20,9 +20,35 @@
     "rénovation",
     "second oeuvre"
   ],
-  "totalCount": 6,
-  "count": 6,
+  "totalCount": 5,
+  "count": 5,
   "items": [
+    {
+      "source": "BOAMP / DILA API ouverte",
+      "sourceId": "26-92036",
+      "organism": "DID FdF",
+      "platform": "BOAMP",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-92036",
+      "object": "MARTINIQUE (972) - LE LAMENTIN - Pôle aéronautique Etatique (PAE) - Etudes géotechniques préalables à la rénovation du taxiway MIKE et l'hélistation",
+      "lot": "Revêtements de sols, Sondage (travaux)",
+      "deadline": "2026-10-23",
+      "publishedAt": "2026-09-25",
+      "commune": "Martinique",
+      "visitRequired": "A verifier dans le DCE",
+      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
+      "score": 6,
+      "priority": "medium",
+      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
+      "contact": {
+        "email": "mohamed.abdelghani@intradef.gouv.fr",
+        "phone": "+569 596 39 52 64",
+        "contactName": "",
+        "buyerCity": "",
+        "buyerPostalCode": "",
+        "buyerProfileUrl": "https://www.marches-publics.gouv.fr/entreprise"
+      },
+      "notes": "Descripteurs : Revêtements de sols, Sondage (travaux) | Type marche : Services | Procedure : Procédure Ouverte | Email acheteur : mohamed.abdelghani@intradef.gouv.fr | Tel acheteur : +569 596 39 52 64 | Profil acheteur : https://www.marches-publics.gouv.fr/entreprise"
+    },
     {
       "source": "BOAMP / DILA API ouverte",
       "sourceId": "26-88861",
@@ -77,32 +103,6 @@
     },
     {
       "source": "BOAMP / DILA API ouverte",
-      "sourceId": "26-85452",
-      "organism": "SGSE973",
-      "platform": "BOAMP",
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-85452",
-      "object": "La Préfecture de Guyane engage un marché public de travaux portant sur la rénovation partielle du bâtiment Vignon, situé rue Fiedmond à Cayenne.",
-      "lot": "Amiante (désamiantage), Maçonnerie, Plomberie (travaux), Menuiserie, Peinture (travaux)",
-      "deadline": "2026-09-24",
-      "publishedAt": "2026-09-02",
-      "commune": "Martinique",
-      "visitRequired": "A verifier dans le DCE",
-      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
-      "score": 8,
-      "priority": "high",
-      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
-      "contact": {
-        "email": "bureau-achats@guyane.gouv.fr",
-        "phone": "",
-        "contactName": "",
-        "buyerCity": "Paris",
-        "buyerPostalCode": "75012",
-        "buyerProfileUrl": "https://www.marches-publics.gouv.fr/entreprise"
-      },
-      "notes": "Descripteurs : Amiante (désamiantage), Maçonnerie, Plomberie (travaux), Menuiserie, Peinture (travaux) | Type marche : Travaux | Procedure : Procédure Adaptée | Email acheteur : bureau-achats@guyane.gouv.fr | Profil acheteur : https://www.marches-publics.gouv.fr/entreprise"
-    },
-    {
-      "source": "BOAMP / DILA API ouverte",
       "sourceId": "26-84721",
       "organism": "DID FdF",
       "platform": "BOAMP",
@@ -152,32 +152,6 @@
         "buyerProfileUrl": "https://www.marches-publics.gouv.fr/"
       },
       "notes": "Descripteurs : Bâtiment, Climatisation, Cloison, faux plafond, Electricité (travaux), Menuiserie, Peinture (travaux), Plomberie (travaux), Revêtements de sols, Sanitaire | Type marche : Travaux | Procedure : Procédure Ouverte | Email acheteur : marches.97210@francetravail.fr | Tel acheteur : 0596999999 | Profil acheteur : https://www.marches-publics.gouv.fr/"
-    },
-    {
-      "source": "BOAMP / DILA API ouverte",
-      "sourceId": "26-81185",
-      "organism": "DID Fort-de-France",
-      "platform": "BOAMP",
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-81185",
-      "object": "GUADELOUPE (971) -  LES ABYMES – Le Raizet –  2ème phase de rénovation des bâtiments 057, 058, 059 et 060.",
-      "lot": "Bâtiment",
-      "deadline": "2026-09-24",
-      "publishedAt": "2026-08-17",
-      "commune": "Martinique",
-      "visitRequired": "A verifier dans le DCE",
-      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
-      "score": 6,
-      "priority": "medium",
-      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
-      "contact": {
-        "email": "dany.chenet@intradef.gouv.fr",
-        "phone": "",
-        "contactName": "",
-        "buyerCity": "FORT DE FRANCE",
-        "buyerPostalCode": "97200",
-        "buyerProfileUrl": "https://www.marches-publics.gouv.fr/entreprise"
-      },
-      "notes": "Descripteurs : Bâtiment | Type marche : Travaux | Procedure : Procédure Adaptée | Email acheteur : dany.chenet@intradef.gouv.fr | Profil acheteur : https://www.marches-publics.gouv.fr/entreprise"
     }
   ]
 }
