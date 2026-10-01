@@ -1,7 +1,7 @@
 {
   "source": "BOAMP / DILA API ouverte",
   "sourceUrl": "https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/api/",
-  "generatedAt": "2026-09-30T15:56:22.108Z",
+  "generatedAt": "2026-10-01T16:28:12.213Z",
   "department": "972",
   "keywords": [
     "menuiserie",
@@ -20,8 +20,8 @@
     "rénovation",
     "second oeuvre"
   ],
-  "totalCount": 5,
-  "count": 5,
+  "totalCount": 4,
+  "count": 4,
   "items": [
     {
       "source": "BOAMP / DILA API ouverte",
@@ -126,32 +126,6 @@
         "buyerProfileUrl": "https://www.marches-publics.gouv.fr/entreprise"
       },
       "notes": "Descripteurs : Bâtiment | Type marche : Travaux | Procedure : Procédure Adaptée | Email acheteur : mohamed.abdelghani@intradef.gouv.fr | Profil acheteur : https://www.marches-publics.gouv.fr/entreprise"
-    },
-    {
-      "source": "BOAMP / DILA API ouverte",
-      "sourceId": "26-84293",
-      "organism": "FRANCE TRAVAIL MARTINIQUE",
-      "platform": "BOAMP",
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-84293",
-      "object": "Achat par la direction régionale de France Travail de travaux d’aménagement intérieur d’un immeuble existant à destination de bureaux administratifs situé au quartier Gondeau au Lamentin 97232.",
-      "lot": "Bâtiment, Climatisation, Cloison, faux plafond, Electricité (travaux), Menuiserie, Peinture (travaux), Plomberie (travaux), Revêtements de sols, Sanitaire",
-      "deadline": "2026-09-30",
-      "publishedAt": "2026-08-28",
-      "commune": "Martinique",
-      "visitRequired": "A verifier dans le DCE",
-      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
-      "score": 8,
-      "priority": "high",
-      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
-      "contact": {
-        "email": "marches.97210@francetravail.fr",
-        "phone": "0596999999",
-        "contactName": "Service Achats Marchés",
-        "buyerCity": "FORT-DE-FRANCE",
-        "buyerPostalCode": "97200",
-        "buyerProfileUrl": "https://www.marches-publics.gouv.fr/"
-      },
-      "notes": "Descripteurs : Bâtiment, Climatisation, Cloison, faux plafond, Electricité (travaux), Menuiserie, Peinture (travaux), Plomberie (travaux), Revêtements de sols, Sanitaire | Type marche : Travaux | Procedure : Procédure Ouverte | Email acheteur : marches.97210@francetravail.fr | Tel acheteur : 0596999999 | Profil acheteur : https://www.marches-publics.gouv.fr/"
     }
   ]
 }
