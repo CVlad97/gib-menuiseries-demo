@@ -1,13 +1,13 @@
 {
   "source": "GIB prospecting automation queue",
-  "generatedAt": "2026-10-06T15:59:00.481Z",
-  "tenderFeedGeneratedAt": "2026-10-06T15:59:00.286Z",
+  "generatedAt": "2026-10-07T16:32:50.626Z",
+  "tenderFeedGeneratedAt": "2026-10-07T16:32:50.405Z",
   "summary": {
     "totalTenderRows": 3,
     "uniqueQueueItems": 3,
     "emailReady": 3,
     "phoneReady": 2,
-    "urgent": 1,
+    "urgent": 2,
     "manualSubmissionRequired": 3
   },
   "compliance": [
@@ -26,7 +26,7 @@
       "object": "GUADELOUPE (971) – POINTE-à-PITRE – Dugazon – BATIMENT 002 –  Rénovation des appartements 007 ET 009",
       "lot": "Bâtiment",
       "deadline": "2026-10-15",
-      "daysUntilDeadline": 10,
+      "daysUntilDeadline": 9,
       "priority": "urgent",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-88989",
@@ -75,17 +75,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-10-07",
+          "date": "2026-10-08",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-10-09",
+          "date": "2026-10-10",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-10-13",
+          "date": "2026-10-14",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -98,8 +98,8 @@
       "object": "Accord-cadre composite (marché ordinaire et marchés subséquents) de maintenance des systèmes de contrôle d’accès des sites de la CAESM",
       "lot": "Alarme, Contrôle d'accès, Maintenance, Porte automatique, portail",
       "deadline": "2026-10-16",
-      "daysUntilDeadline": 11,
-      "priority": "high",
+      "daysUntilDeadline": 10,
+      "priority": "urgent",
       "score": 7,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-88861",
       "contact": {
@@ -147,17 +147,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-10-07",
+          "date": "2026-10-08",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-10-09",
+          "date": "2026-10-10",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-10-13",
+          "date": "2026-10-14",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -170,7 +170,7 @@
       "object": "MARTINIQUE (972) - LE LAMENTIN - Pôle aéronautique Etatique (PAE) - Etudes géotechniques préalables à la rénovation du taxiway MIKE et l'hélistation",
       "lot": "Revêtements de sols, Sondage (travaux)",
       "deadline": "2026-10-23",
-      "daysUntilDeadline": 18,
+      "daysUntilDeadline": 17,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-92036",
@@ -219,17 +219,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-10-07",
+          "date": "2026-10-08",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-10-09",
+          "date": "2026-10-10",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-10-13",
+          "date": "2026-10-14",
           "action": "Decision go/no-go ou classement"
         }
       ]
