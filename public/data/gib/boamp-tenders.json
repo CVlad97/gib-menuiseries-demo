@@ -1,7 +1,7 @@
 {
   "source": "BOAMP / DILA API ouverte",
   "sourceUrl": "https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/api/",
-  "generatedAt": "2026-10-07T16:32:50.405Z",
+  "generatedAt": "2026-10-08T16:31:18.030Z",
   "department": "972",
   "keywords": [
     "menuiserie",
@@ -20,9 +20,35 @@
     "rénovation",
     "second oeuvre"
   ],
-  "totalCount": 3,
-  "count": 3,
+  "totalCount": 4,
+  "count": 4,
   "items": [
+    {
+      "source": "BOAMP / DILA API ouverte",
+      "sourceId": "26-96679",
+      "organism": "Communauté d'Agglomération de l'Espace Sud Martinique (972)",
+      "platform": "BOAMP",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-96679",
+      "object": "Accord-cadre composite (marché ordinaire et marchés subséquents) de maintenance des systèmes de contrôle d’accès des sites de la CAESM",
+      "lot": "Alarme, Contrôle d'accès, Maintenance, Porte automatique, portail",
+      "deadline": "2026-10-16",
+      "publishedAt": "2026-10-08",
+      "commune": "Martinique",
+      "visitRequired": "A verifier dans le DCE",
+      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
+      "score": 7,
+      "priority": "high",
+      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
+      "contact": {
+        "email": "marches-publics@espacesud.fr",
+        "phone": "+33 596",
+        "contactName": "",
+        "buyerCity": "",
+        "buyerPostalCode": "",
+        "buyerProfileUrl": "https://v2.marches-securises.fr/"
+      },
+      "notes": "Descripteurs : Alarme, Contrôle d'accès, Maintenance, Porte automatique, portail | Type marche : Services | Procedure : Procédure Ouverte | Email acheteur : marches-publics@espacesud.fr | Tel acheteur : +33 596 | Profil acheteur : https://v2.marches-securises.fr/"
+    },
     {
       "source": "BOAMP / DILA API ouverte",
       "sourceId": "26-92036",

@@ -1,9 +1,9 @@
 {
   "source": "GIB prospecting automation queue",
-  "generatedAt": "2026-10-07T16:32:50.626Z",
-  "tenderFeedGeneratedAt": "2026-10-07T16:32:50.405Z",
+  "generatedAt": "2026-10-08T16:31:18.211Z",
+  "tenderFeedGeneratedAt": "2026-10-08T16:31:18.030Z",
   "summary": {
-    "totalTenderRows": 3,
+    "totalTenderRows": 4,
     "uniqueQueueItems": 3,
     "emailReady": 3,
     "phoneReady": 2,
@@ -26,7 +26,7 @@
       "object": "GUADELOUPE (971) – POINTE-à-PITRE – Dugazon – BATIMENT 002 –  Rénovation des appartements 007 ET 009",
       "lot": "Bâtiment",
       "deadline": "2026-10-15",
-      "daysUntilDeadline": 9,
+      "daysUntilDeadline": 8,
       "priority": "urgent",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-88989",
@@ -75,33 +75,33 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-10-10",
+          "date": "2026-10-11",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-10-14",
+          "date": "2026-10-15",
           "action": "Decision go/no-go ou classement"
         }
       ]
     },
     {
-      "id": "ao-26-88861",
-      "sourceId": "26-88861",
+      "id": "ao-26-96679",
+      "sourceId": "26-96679",
       "type": "qualification",
       "organism": "Communauté d'Agglomération de l'Espace Sud Martinique (972)",
       "object": "Accord-cadre composite (marché ordinaire et marchés subséquents) de maintenance des systèmes de contrôle d’accès des sites de la CAESM",
       "lot": "Alarme, Contrôle d'accès, Maintenance, Porte automatique, portail",
       "deadline": "2026-10-16",
-      "daysUntilDeadline": 10,
+      "daysUntilDeadline": 9,
       "priority": "urgent",
       "score": 7,
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-88861",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-96679",
       "contact": {
         "email": "marches-publics@espacesud.fr",
         "phone": "+33596",
@@ -117,14 +117,14 @@
       },
       "email": {
         "to": "marches-publics@espacesud.fr",
-        "subject": "Demande orientation DCE - Communauté d'Agglomération de l'Espace Sud Martinique (972) - 26-88861",
-        "body": "Bonjour,\n\nNous vous contactons pour GIB Menuiseries Services, entreprise basee a Ducos en Martinique, au sujet de la consultation suivante :\n- Organisme : Communauté d'Agglomération de l'Espace Sud Martinique (972)\n- Objet : Accord-cadre composite (marché ordinaire et marchés subséquents) de maintenance des systèmes de contrôle d’accès des sites de la CAESM\n- Reference : 26-88861\n- Date limite : 2026-10-16\n\nNous souhaitons identifier si des prestations de menuiserie, fermeture, acces, cloture ou renovation peuvent correspondre a notre activite.\n\nPouvez-vous nous confirmer le lien DCE/profil acheteur a utiliser, ainsi que les modalites officielles pour poser une question ou deposer une reponse si le lot est pertinent ?\n\nPresentation GIB :\nSite : https://www.gibmenuiseries.fr\nInstagram : https://www.instagram.com/gibmenuiseries/\nFlyer : https://cvlad97.github.io/gib-menuiseries-demo/media/gib/flyers/pub3.jpeg\n\nContact commercial : Vladimir Claveau\nWhatsApp : +596 696 65 35 89\nEmail : gibmenuiseriesservices@gmail.com\nZone Industrielle Cocotte, derriere Lapeyre, Ducos, Martinique\n\nCordialement,\nGIB Menuiseries Services",
-        "mailto": "mailto:marches-publics@espacesud.fr?subject=Demande+orientation+DCE+-+Communaut%C3%A9+d%27Agglom%C3%A9ration+de+l%27Espace+Sud+Martinique+%28972%29+-+26-88861&body=Bonjour%2C%0A%0ANous+vous+contactons+pour+GIB+Menuiseries+Services%2C+entreprise+basee+a+Ducos+en+Martinique%2C+au+sujet+de+la+consultation+suivante+%3A%0A-+Organisme+%3A+Communaut%C3%A9+d%27Agglom%C3%A9ration+de+l%27Espace+Sud+Martinique+%28972%29%0A-+Objet+%3A+Accord-cadre+composite+%28march%C3%A9+ordinaire+et+march%C3%A9s+subs%C3%A9quents%29+de+maintenance+des+syst%C3%A8mes+de+contr%C3%B4le+d%E2%80%99acc%C3%A8s+des+sites+de+la+CAESM%0A-+Reference+%3A+26-88861%0A-+Date+limite+%3A+2026-10-16%0A%0ANous+souhaitons+identifier+si+des+prestations+de+menuiserie%2C+fermeture%2C+acces%2C+cloture+ou+renovation+peuvent+correspondre+a+notre+activite.%0A%0APouvez-vous+nous+confirmer+le+lien+DCE%2Fprofil+acheteur+a+utiliser%2C+ainsi+que+les+modalites+officielles+pour+poser+une+question+ou+deposer+une+reponse+si+le+lot+est+pertinent+%3F%0A%0APresentation+GIB+%3A%0ASite+%3A+https%3A%2F%2Fwww.gibmenuiseries.fr%0AInstagram+%3A+https%3A%2F%2Fwww.instagram.com%2Fgibmenuiseries%2F%0AFlyer+%3A+https%3A%2F%2Fcvlad97.github.io%2Fgib-menuiseries-demo%2Fmedia%2Fgib%2Fflyers%2Fpub3.jpeg%0A%0AContact+commercial+%3A+Vladimir+Claveau%0AWhatsApp+%3A+%2B596+696+65+35+89%0AEmail+%3A+gibmenuiseriesservices%40gmail.com%0AZone+Industrielle+Cocotte%2C+derriere+Lapeyre%2C+Ducos%2C+Martinique%0A%0ACordialement%2C%0AGIB+Menuiseries+Services"
+        "subject": "Demande orientation DCE - Communauté d'Agglomération de l'Espace Sud Martinique (972) - 26-96679",
+        "body": "Bonjour,\n\nNous vous contactons pour GIB Menuiseries Services, entreprise basee a Ducos en Martinique, au sujet de la consultation suivante :\n- Organisme : Communauté d'Agglomération de l'Espace Sud Martinique (972)\n- Objet : Accord-cadre composite (marché ordinaire et marchés subséquents) de maintenance des systèmes de contrôle d’accès des sites de la CAESM\n- Reference : 26-96679\n- Date limite : 2026-10-16\n\nNous souhaitons identifier si des prestations de menuiserie, fermeture, acces, cloture ou renovation peuvent correspondre a notre activite.\n\nPouvez-vous nous confirmer le lien DCE/profil acheteur a utiliser, ainsi que les modalites officielles pour poser une question ou deposer une reponse si le lot est pertinent ?\n\nPresentation GIB :\nSite : https://www.gibmenuiseries.fr\nInstagram : https://www.instagram.com/gibmenuiseries/\nFlyer : https://cvlad97.github.io/gib-menuiseries-demo/media/gib/flyers/pub3.jpeg\n\nContact commercial : Vladimir Claveau\nWhatsApp : +596 696 65 35 89\nEmail : gibmenuiseriesservices@gmail.com\nZone Industrielle Cocotte, derriere Lapeyre, Ducos, Martinique\n\nCordialement,\nGIB Menuiseries Services",
+        "mailto": "mailto:marches-publics@espacesud.fr?subject=Demande+orientation+DCE+-+Communaut%C3%A9+d%27Agglom%C3%A9ration+de+l%27Espace+Sud+Martinique+%28972%29+-+26-96679&body=Bonjour%2C%0A%0ANous+vous+contactons+pour+GIB+Menuiseries+Services%2C+entreprise+basee+a+Ducos+en+Martinique%2C+au+sujet+de+la+consultation+suivante+%3A%0A-+Organisme+%3A+Communaut%C3%A9+d%27Agglom%C3%A9ration+de+l%27Espace+Sud+Martinique+%28972%29%0A-+Objet+%3A+Accord-cadre+composite+%28march%C3%A9+ordinaire+et+march%C3%A9s+subs%C3%A9quents%29+de+maintenance+des+syst%C3%A8mes+de+contr%C3%B4le+d%E2%80%99acc%C3%A8s+des+sites+de+la+CAESM%0A-+Reference+%3A+26-96679%0A-+Date+limite+%3A+2026-10-16%0A%0ANous+souhaitons+identifier+si+des+prestations+de+menuiserie%2C+fermeture%2C+acces%2C+cloture+ou+renovation+peuvent+correspondre+a+notre+activite.%0A%0APouvez-vous+nous+confirmer+le+lien+DCE%2Fprofil+acheteur+a+utiliser%2C+ainsi+que+les+modalites+officielles+pour+poser+une+question+ou+deposer+une+reponse+si+le+lot+est+pertinent+%3F%0A%0APresentation+GIB+%3A%0ASite+%3A+https%3A%2F%2Fwww.gibmenuiseries.fr%0AInstagram+%3A+https%3A%2F%2Fwww.instagram.com%2Fgibmenuiseries%2F%0AFlyer+%3A+https%3A%2F%2Fcvlad97.github.io%2Fgib-menuiseries-demo%2Fmedia%2Fgib%2Fflyers%2Fpub3.jpeg%0A%0AContact+commercial+%3A+Vladimir+Claveau%0AWhatsApp+%3A+%2B596+696+65+35+89%0AEmail+%3A+gibmenuiseriesservices%40gmail.com%0AZone+Industrielle+Cocotte%2C+derriere+Lapeyre%2C+Ducos%2C+Martinique%0A%0ACordialement%2C%0AGIB+Menuiseries+Services"
       },
       "whatsapp": {
         "to": "+596 696 65 35 89",
-        "body": "AO GIB a traiter\nOrganisme : Communauté d'Agglomération de l'Espace Sud Martinique (972)\nObjet : Accord-cadre composite (marché ordinaire et marchés subséquents) de maintenance des systèmes de contrôle d’accès des sites de la CAESM\nDeadline : 2026-10-16\nScore : 7/10\nEmail : marches-publics@espacesud.fr\nTel : +33 596\nLien : https://www.boamp.fr/pages/avis/?q=idweb:26-88861\nAction : verifier DCE, identifier lot, preparer go/no-go.",
-        "url": "https://wa.me/596696653589?text=AO%20GIB%20a%20traiter%0AOrganisme%20%3A%20Communaut%C3%A9%20d'Agglom%C3%A9ration%20de%20l'Espace%20Sud%20Martinique%20(972)%0AObjet%20%3A%20Accord-cadre%20composite%20(march%C3%A9%20ordinaire%20et%20march%C3%A9s%20subs%C3%A9quents)%20de%20maintenance%20des%20syst%C3%A8mes%20de%20contr%C3%B4le%20d%E2%80%99acc%C3%A8s%20des%20sites%20de%20la%20CAESM%0ADeadline%20%3A%202026-10-16%0AScore%20%3A%207%2F10%0AEmail%20%3A%20marches-publics%40espacesud.fr%0ATel%20%3A%20%2B33%20596%0ALien%20%3A%20https%3A%2F%2Fwww.boamp.fr%2Fpages%2Favis%2F%3Fq%3Didweb%3A26-88861%0AAction%20%3A%20verifier%20DCE%2C%20identifier%20lot%2C%20preparer%20go%2Fno-go."
+        "body": "AO GIB a traiter\nOrganisme : Communauté d'Agglomération de l'Espace Sud Martinique (972)\nObjet : Accord-cadre composite (marché ordinaire et marchés subséquents) de maintenance des systèmes de contrôle d’accès des sites de la CAESM\nDeadline : 2026-10-16\nScore : 7/10\nEmail : marches-publics@espacesud.fr\nTel : +33 596\nLien : https://www.boamp.fr/pages/avis/?q=idweb:26-96679\nAction : verifier DCE, identifier lot, preparer go/no-go.",
+        "url": "https://wa.me/596696653589?text=AO%20GIB%20a%20traiter%0AOrganisme%20%3A%20Communaut%C3%A9%20d'Agglom%C3%A9ration%20de%20l'Espace%20Sud%20Martinique%20(972)%0AObjet%20%3A%20Accord-cadre%20composite%20(march%C3%A9%20ordinaire%20et%20march%C3%A9s%20subs%C3%A9quents)%20de%20maintenance%20des%20syst%C3%A8mes%20de%20contr%C3%B4le%20d%E2%80%99acc%C3%A8s%20des%20sites%20de%20la%20CAESM%0ADeadline%20%3A%202026-10-16%0AScore%20%3A%207%2F10%0AEmail%20%3A%20marches-publics%40espacesud.fr%0ATel%20%3A%20%2B33%20596%0ALien%20%3A%20https%3A%2F%2Fwww.boamp.fr%2Fpages%2Favis%2F%3Fq%3Didweb%3A26-96679%0AAction%20%3A%20verifier%20DCE%2C%20identifier%20lot%2C%20preparer%20go%2Fno-go."
       },
       "call": {
         "phone": "+33596",
@@ -147,17 +147,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-10-10",
+          "date": "2026-10-11",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-10-14",
+          "date": "2026-10-15",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -170,7 +170,7 @@
       "object": "MARTINIQUE (972) - LE LAMENTIN - Pôle aéronautique Etatique (PAE) - Etudes géotechniques préalables à la rénovation du taxiway MIKE et l'hélistation",
       "lot": "Revêtements de sols, Sondage (travaux)",
       "deadline": "2026-10-23",
-      "daysUntilDeadline": 17,
+      "daysUntilDeadline": 16,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-92036",
@@ -219,17 +219,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-10-10",
+          "date": "2026-10-11",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-10-14",
+          "date": "2026-10-15",
           "action": "Decision go/no-go ou classement"
         }
       ]
