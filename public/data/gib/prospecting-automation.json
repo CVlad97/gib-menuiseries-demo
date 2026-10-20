@@ -1,7 +1,7 @@
 {
   "source": "GIB prospecting automation queue",
-  "generatedAt": "2026-10-19T16:29:13.016Z",
-  "tenderFeedGeneratedAt": "2026-10-19T16:29:12.822Z",
+  "generatedAt": "2026-10-20T14:19:39.505Z",
+  "tenderFeedGeneratedAt": "2026-10-20T14:19:39.379Z",
   "summary": {
     "totalTenderRows": 2,
     "uniqueQueueItems": 2,
@@ -26,7 +26,7 @@
       "object": "MARTINIQUE (972) - LE LAMENTIN - Pôle aéronautique Etatique (PAE) - Etudes géotechniques préalables à la rénovation du taxiway MIKE et l'hélistation",
       "lot": "Revêtements de sols, Sondage (travaux)",
       "deadline": "2026-10-23",
-      "daysUntilDeadline": 5,
+      "daysUntilDeadline": 4,
       "priority": "urgent",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-92036",
@@ -75,17 +75,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-10-20",
+          "date": "2026-10-21",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-10-22",
+          "date": "2026-10-23",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-10-26",
+          "date": "2026-10-27",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -98,7 +98,7 @@
       "object": "MARTINIQUE (972) – LE LAMENTIN – PAE – Mise à niveau du portail du taxiway MIKE",
       "lot": "Ferronnerie",
       "deadline": "2026-11-17",
-      "daysUntilDeadline": 30,
+      "daysUntilDeadline": 29,
       "priority": "high",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-100766",
@@ -147,17 +147,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-10-20",
+          "date": "2026-10-21",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-10-22",
+          "date": "2026-10-23",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-10-26",
+          "date": "2026-10-27",
           "action": "Decision go/no-go ou classement"
         }
       ]
