@@ -1,7 +1,7 @@
 {
   "source": "BOAMP / DILA API ouverte",
   "sourceUrl": "https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/api/",
-  "generatedAt": "2026-10-20T14:19:39.379Z",
+  "generatedAt": "2026-10-21T14:30:05.410Z",
   "department": "972",
   "keywords": [
     "menuiserie",
@@ -20,9 +20,35 @@
     "rénovation",
     "second oeuvre"
   ],
-  "totalCount": 2,
-  "count": 2,
+  "totalCount": 3,
+  "count": 3,
   "items": [
+    {
+      "source": "BOAMP / DILA API ouverte",
+      "sourceId": "26-102178",
+      "organism": "SPL SOGES",
+      "platform": "BOAMP",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-102178",
+      "object": "Mission de maîtrise d'oeuvre pour les travaux de réfection et de rénovation des équipements exploités par la SOGES",
+      "lot": "Maîtrise d'oeuvre",
+      "deadline": "2026-11-20",
+      "publishedAt": "2026-10-20",
+      "commune": "Martinique",
+      "visitRequired": "A verifier dans le DCE",
+      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
+      "score": 6,
+      "priority": "medium",
+      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
+      "contact": {
+        "email": "boris.petricien@soges972.fr",
+        "phone": "+33 596555544",
+        "contactName": "",
+        "buyerCity": "SAINTE-LUCE",
+        "buyerPostalCode": "97228",
+        "buyerProfileUrl": "https://www.marches-securises.fr"
+      },
+      "notes": "Descripteurs : Maîtrise d'oeuvre | Type marche : Services | Procedure : Procédure Adaptée | Email acheteur : boris.petricien@soges972.fr | Tel acheteur : +33 596555544 | Profil acheteur : https://www.marches-securises.fr"
+    },
     {
       "source": "BOAMP / DILA API ouverte",
       "sourceId": "26-100766",
