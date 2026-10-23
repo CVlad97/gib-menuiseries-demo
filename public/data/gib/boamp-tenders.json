@@ -1,7 +1,7 @@
 {
   "source": "BOAMP / DILA API ouverte",
   "sourceUrl": "https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/api/",
-  "generatedAt": "2026-10-22T14:31:55.119Z",
+  "generatedAt": "2026-10-23T14:15:50.344Z",
   "department": "972",
   "keywords": [
     "menuiserie",
@@ -20,9 +20,35 @@
     "rénovation",
     "second oeuvre"
   ],
-  "totalCount": 4,
-  "count": 4,
+  "totalCount": 5,
+  "count": 5,
   "items": [
+    {
+      "source": "BOAMP / DILA API ouverte",
+      "sourceId": "26-103522",
+      "organism": "DID FdF",
+      "platform": "BOAMP",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103522",
+      "object": "MARTINIQUE (972) – Fort-de-France – Fort Saint-Louis – Rénovation du pavillon « La Motte Picquet »",
+      "lot": "Bâtiment",
+      "deadline": "2026-11-19",
+      "publishedAt": "2026-10-23",
+      "commune": "Martinique",
+      "visitRequired": "A verifier dans le DCE",
+      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
+      "score": 6,
+      "priority": "medium",
+      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
+      "contact": {
+        "email": "mohamed.abdelghani@intradef.gouv.fr",
+        "phone": "",
+        "contactName": "ABDELGHANI",
+        "buyerCity": "FORT DE FRANCE",
+        "buyerPostalCode": "97200",
+        "buyerProfileUrl": ""
+      },
+      "notes": "Descripteurs : Bâtiment | Type marche : Travaux | Procedure : Procédure Ouverte | Email acheteur : mohamed.abdelghani@intradef.gouv.fr"
+    },
     {
       "source": "BOAMP / DILA API ouverte",
       "sourceId": "26-102184",
