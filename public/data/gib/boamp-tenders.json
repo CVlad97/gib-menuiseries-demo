@@ -1,7 +1,7 @@
 {
   "source": "BOAMP / DILA API ouverte",
   "sourceUrl": "https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/api/",
-  "generatedAt": "2026-10-23T14:15:50.344Z",
+  "generatedAt": "2026-10-26T16:08:56.830Z",
   "department": "972",
   "keywords": [
     "menuiserie",
@@ -23,6 +23,32 @@
   "totalCount": 5,
   "count": 5,
   "items": [
+    {
+      "source": "BOAMP / DILA API ouverte",
+      "sourceId": "26-103580",
+      "organism": "CACEM - Communauté d'Agglomération Centre Martinique",
+      "platform": "BOAMP",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103580",
+      "object": "Travaux d'aménagement d'un plateau de bureaux au R+2 des locaux Orchidée de la CACEM",
+      "lot": "Plomberie (travaux), Cloison, faux plafond, Menuiserie, Peinture (travaux)",
+      "deadline": "2026-11-13",
+      "publishedAt": "2026-10-23",
+      "commune": "Martinique",
+      "visitRequired": "A verifier dans le DCE",
+      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
+      "score": 8,
+      "priority": "high",
+      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
+      "contact": {
+        "email": "",
+        "phone": "",
+        "contactName": "Direction des achats",
+        "buyerCity": "Fort de france cedex martinique",
+        "buyerPostalCode": "97204",
+        "buyerProfileUrl": "https://www.achatpublic.com/sdm/ent/gen/ent_detail.do?PCSLID=CSL_2026_TGz15a29HN"
+      },
+      "notes": "Descripteurs : Plomberie (travaux), Cloison, faux plafond, Menuiserie, Peinture (travaux) | Type marche : Travaux | Procedure : Procédure Ouverte | Profil acheteur : https://www.achatpublic.com/sdm/ent/gen/ent_detail.do?PCSLID=CSL_2026_TGz15a29HN"
+    },
     {
       "source": "BOAMP / DILA API ouverte",
       "sourceId": "26-103522",
@@ -126,32 +152,6 @@
         "buyerProfileUrl": "https://www.marches-publics.gouv.fr/entreprise"
       },
       "notes": "Descripteurs : Ferronnerie | Type marche : Travaux | Procedure : Procédure Restreinte | Email acheteur : mohamed.abdelghani@intradef.gouv.fr | Profil acheteur : https://www.marches-publics.gouv.fr/entreprise"
-    },
-    {
-      "source": "BOAMP / DILA API ouverte",
-      "sourceId": "26-92036",
-      "organism": "DID FdF",
-      "platform": "BOAMP",
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-92036",
-      "object": "MARTINIQUE (972) - LE LAMENTIN - Pôle aéronautique Etatique (PAE) - Etudes géotechniques préalables à la rénovation du taxiway MIKE et l'hélistation",
-      "lot": "Revêtements de sols, Sondage (travaux)",
-      "deadline": "2026-10-23",
-      "publishedAt": "2026-09-25",
-      "commune": "Martinique",
-      "visitRequired": "A verifier dans le DCE",
-      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
-      "score": 6,
-      "priority": "medium",
-      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
-      "contact": {
-        "email": "mohamed.abdelghani@intradef.gouv.fr",
-        "phone": "+569 596 39 52 64",
-        "contactName": "",
-        "buyerCity": "",
-        "buyerPostalCode": "",
-        "buyerProfileUrl": "https://www.marches-publics.gouv.fr/entreprise"
-      },
-      "notes": "Descripteurs : Revêtements de sols, Sondage (travaux) | Type marche : Services | Procedure : Procédure Ouverte | Email acheteur : mohamed.abdelghani@intradef.gouv.fr | Tel acheteur : +569 596 39 52 64 | Profil acheteur : https://www.marches-publics.gouv.fr/entreprise"
     }
   ]
 }
