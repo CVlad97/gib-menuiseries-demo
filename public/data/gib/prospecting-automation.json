@@ -1,7 +1,7 @@
 {
   "source": "GIB prospecting automation queue",
-  "generatedAt": "2026-10-27T15:22:51.839Z",
-  "tenderFeedGeneratedAt": "2026-10-27T15:22:51.614Z",
+  "generatedAt": "2026-10-28T16:05:48.550Z",
+  "tenderFeedGeneratedAt": "2026-10-28T16:05:48.344Z",
   "summary": {
     "totalTenderRows": 5,
     "uniqueQueueItems": 5,
@@ -26,7 +26,7 @@
       "object": "MARTINIQUE (972) - LE LAMENTIN - Pôle aéronautique Etatique (PAE) - Etudes géotechniques préalables à la rénovation du taxiway MIKE et l'hélistation",
       "lot": "Revêtements de sols, Sondage (travaux)",
       "deadline": "2026-10-28",
-      "daysUntilDeadline": 2,
+      "daysUntilDeadline": 1,
       "priority": "urgent",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-102184",
@@ -75,17 +75,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-10-28",
+          "date": "2026-10-29",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-10-30",
+          "date": "2026-10-31",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-11-03",
+          "date": "2026-11-04",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -98,7 +98,7 @@
       "object": "Travaux d'aménagement d'un plateau de bureaux au R+2 des locaux Orchidée de la CACEM",
       "lot": "Plomberie (travaux), Cloison, faux plafond, Menuiserie, Peinture (travaux)",
       "deadline": "2026-11-13",
-      "daysUntilDeadline": 18,
+      "daysUntilDeadline": 17,
       "priority": "high",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103580",
@@ -142,17 +142,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-10-28",
+          "date": "2026-10-29",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-10-30",
+          "date": "2026-10-31",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-11-03",
+          "date": "2026-11-04",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -165,7 +165,7 @@
       "object": "MARTINIQUE (972) – LE LAMENTIN – PAE – Mise à niveau du portail du taxiway MIKE",
       "lot": "Ferronnerie",
       "deadline": "2026-11-17",
-      "daysUntilDeadline": 22,
+      "daysUntilDeadline": 21,
       "priority": "high",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-100766",
@@ -214,17 +214,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-10-28",
+          "date": "2026-10-29",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-10-30",
+          "date": "2026-10-31",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-11-03",
+          "date": "2026-11-04",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -237,7 +237,7 @@
       "object": "MARTINIQUE (972) – Fort-de-France – Fort Saint-Louis – Rénovation du pavillon « La Motte Picquet »",
       "lot": "Bâtiment",
       "deadline": "2026-11-19",
-      "daysUntilDeadline": 24,
+      "daysUntilDeadline": 23,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103522",
@@ -286,17 +286,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-10-28",
+          "date": "2026-10-29",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-10-30",
+          "date": "2026-10-31",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-11-03",
+          "date": "2026-11-04",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -309,7 +309,7 @@
       "object": "Mission de maîtrise d'oeuvre pour les travaux de réfection et de rénovation des équipements exploités par la SOGES",
       "lot": "Maîtrise d'oeuvre",
       "deadline": "2026-11-20",
-      "daysUntilDeadline": 25,
+      "daysUntilDeadline": 24,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-102178",
@@ -358,17 +358,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-10-28",
+          "date": "2026-10-29",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-10-30",
+          "date": "2026-10-31",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-11-03",
+          "date": "2026-11-04",
           "action": "Decision go/no-go ou classement"
         }
       ]
