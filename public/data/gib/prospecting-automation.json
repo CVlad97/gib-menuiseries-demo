@@ -1,14 +1,14 @@
 {
   "source": "GIB prospecting automation queue",
-  "generatedAt": "2026-10-28T16:05:48.550Z",
-  "tenderFeedGeneratedAt": "2026-10-28T16:05:48.344Z",
+  "generatedAt": "2026-10-29T16:10:24.234Z",
+  "tenderFeedGeneratedAt": "2026-10-29T16:10:24.033Z",
   "summary": {
-    "totalTenderRows": 5,
-    "uniqueQueueItems": 5,
-    "emailReady": 4,
-    "phoneReady": 2,
-    "urgent": 1,
-    "manualSubmissionRequired": 5
+    "totalTenderRows": 4,
+    "uniqueQueueItems": 4,
+    "emailReady": 3,
+    "phoneReady": 1,
+    "urgent": 0,
+    "manualSubmissionRequired": 4
   },
   "compliance": [
     "Utiliser uniquement les contacts publies ou fournis volontairement.",
@@ -19,78 +19,6 @@
   ],
   "queue": [
     {
-      "id": "ao-26-102184",
-      "sourceId": "26-102184",
-      "type": "qualification",
-      "organism": "DID FdF",
-      "object": "MARTINIQUE (972) - LE LAMENTIN - Pôle aéronautique Etatique (PAE) - Etudes géotechniques préalables à la rénovation du taxiway MIKE et l'hélistation",
-      "lot": "Revêtements de sols, Sondage (travaux)",
-      "deadline": "2026-10-28",
-      "daysUntilDeadline": 1,
-      "priority": "urgent",
-      "score": 6,
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-102184",
-      "contact": {
-        "email": "mohamed.abdelghani@intradef.gouv.fr",
-        "phone": "+569596395264",
-        "name": "",
-        "profile": "https://www.marches-publics.gouv.fr/entreprise"
-      },
-      "automation": {
-        "emailReady": true,
-        "phoneReady": true,
-        "whatsappReady": true,
-        "officialSubmission": "manual_required",
-        "duplicateGuard": "mohamed.abdelghani@intradef.gouv.fr|did fdf|martinique (972) - le lamentin - pole aeronautique etatique (pae) - etudes geotechniques prealables a la renovation du taxiway mike et l'helistation"
-      },
-      "email": {
-        "to": "mohamed.abdelghani@intradef.gouv.fr",
-        "subject": "Demande orientation DCE - DID FdF - 26-102184",
-        "body": "Bonjour,\n\nNous vous contactons pour GIB Menuiseries Services, entreprise basee a Ducos en Martinique, au sujet de la consultation suivante :\n- Organisme : DID FdF\n- Objet : MARTINIQUE (972) - LE LAMENTIN - Pôle aéronautique Etatique (PAE) - Etudes géotechniques préalables à la rénovation du taxiway MIKE et l'hélistation\n- Reference : 26-102184\n- Date limite : 2026-10-28\n\nNous souhaitons identifier si des prestations de menuiserie, fermeture, acces, cloture ou renovation peuvent correspondre a notre activite.\n\nPouvez-vous nous confirmer le lien DCE/profil acheteur a utiliser, ainsi que les modalites officielles pour poser une question ou deposer une reponse si le lot est pertinent ?\n\nPresentation GIB :\nSite : https://www.gibmenuiseries.fr\nInstagram : https://www.instagram.com/gibmenuiseries/\nFlyer : https://cvlad97.github.io/gib-menuiseries-demo/media/gib/flyers/pub3.jpeg\n\nContact commercial : Vladimir Claveau\nWhatsApp : +596 696 65 35 89\nEmail : gibmenuiseriesservices@gmail.com\nZone Industrielle Cocotte, derriere Lapeyre, Ducos, Martinique\n\nCordialement,\nGIB Menuiseries Services",
-        "mailto": "mailto:mohamed.abdelghani@intradef.gouv.fr?subject=Demande+orientation+DCE+-+DID+FdF+-+26-102184&body=Bonjour%2C%0A%0ANous+vous+contactons+pour+GIB+Menuiseries+Services%2C+entreprise+basee+a+Ducos+en+Martinique%2C+au+sujet+de+la+consultation+suivante+%3A%0A-+Organisme+%3A+DID+FdF%0A-+Objet+%3A+MARTINIQUE+%28972%29+-+LE+LAMENTIN+-+P%C3%B4le+a%C3%A9ronautique+Etatique+%28PAE%29+-+Etudes+g%C3%A9otechniques+pr%C3%A9alables+%C3%A0+la+r%C3%A9novation+du+taxiway+MIKE+et+l%27h%C3%A9listation%0A-+Reference+%3A+26-102184%0A-+Date+limite+%3A+2026-10-28%0A%0ANous+souhaitons+identifier+si+des+prestations+de+menuiserie%2C+fermeture%2C+acces%2C+cloture+ou+renovation+peuvent+correspondre+a+notre+activite.%0A%0APouvez-vous+nous+confirmer+le+lien+DCE%2Fprofil+acheteur+a+utiliser%2C+ainsi+que+les+modalites+officielles+pour+poser+une+question+ou+deposer+une+reponse+si+le+lot+est+pertinent+%3F%0A%0APresentation+GIB+%3A%0ASite+%3A+https%3A%2F%2Fwww.gibmenuiseries.fr%0AInstagram+%3A+https%3A%2F%2Fwww.instagram.com%2Fgibmenuiseries%2F%0AFlyer+%3A+https%3A%2F%2Fcvlad97.github.io%2Fgib-menuiseries-demo%2Fmedia%2Fgib%2Fflyers%2Fpub3.jpeg%0A%0AContact+commercial+%3A+Vladimir+Claveau%0AWhatsApp+%3A+%2B596+696+65+35+89%0AEmail+%3A+gibmenuiseriesservices%40gmail.com%0AZone+Industrielle+Cocotte%2C+derriere+Lapeyre%2C+Ducos%2C+Martinique%0A%0ACordialement%2C%0AGIB+Menuiseries+Services"
-      },
-      "whatsapp": {
-        "to": "+596 696 65 35 89",
-        "body": "AO GIB a traiter\nOrganisme : DID FdF\nObjet : MARTINIQUE (972) - LE LAMENTIN - Pôle aéronautique Etatique (PAE) - Etudes géotechniques préalables à la rénovation du taxiway MIKE et l'hélistation\nDeadline : 2026-10-28\nScore : 6/10\nEmail : mohamed.abdelghani@intradef.gouv.fr\nTel : +569 596 39 52 64\nLien : https://www.boamp.fr/pages/avis/?q=idweb:26-102184\nAction : verifier DCE, identifier lot, preparer go/no-go.",
-        "url": "https://wa.me/596696653589?text=AO%20GIB%20a%20traiter%0AOrganisme%20%3A%20DID%20FdF%0AObjet%20%3A%20MARTINIQUE%20(972)%20-%20LE%20LAMENTIN%20-%20P%C3%B4le%20a%C3%A9ronautique%20Etatique%20(PAE)%20-%20Etudes%20g%C3%A9otechniques%20pr%C3%A9alables%20%C3%A0%20la%20r%C3%A9novation%20du%20taxiway%20MIKE%20et%20l'h%C3%A9listation%0ADeadline%20%3A%202026-10-28%0AScore%20%3A%206%2F10%0AEmail%20%3A%20mohamed.abdelghani%40intradef.gouv.fr%0ATel%20%3A%20%2B569%20596%2039%2052%2064%0ALien%20%3A%20https%3A%2F%2Fwww.boamp.fr%2Fpages%2Favis%2F%3Fq%3Didweb%3A26-102184%0AAction%20%3A%20verifier%20DCE%2C%20identifier%20lot%2C%20preparer%20go%2Fno-go."
-      },
-      "call": {
-        "phone": "+569596395264",
-        "script": "Bonjour, je vous appelle pour GIB Menuiseries Services a Ducos.\nNous avons repere votre consultation : MARTINIQUE (972) - LE LAMENTIN - Pôle aéronautique Etatique (PAE) - Etudes géotechniques préalables à la rénovation du taxiway MIKE et l'hélistation.\nNous souhaitons verifier si un lot concerne les menuiseries, fermetures, clotures, garde-corps, portails, volets ou ouvrages associes.\nPouvez-vous me confirmer le bon lien DCE/profil acheteur et la procedure officielle pour les questions ?\nNous passerons uniquement par le canal prevu dans le reglement de consultation.",
-        "telUrl": "tel:+569596395264"
-      },
-      "dossier": {
-        "status": "to_prepare",
-        "checklist": [
-          "Ouvrir avis BOAMP et profil acheteur",
-          "Telecharger RC, CCTP, DPGF/BPU, AE, CCAP et annexes",
-          "Verifier date limite, visite obligatoire, questions autorisees",
-          "Identifier lot menuiserie/fermeture/cloture/garde-corps",
-          "Decision go/no-go : capacite, delai, references, pieces administratives",
-          "Preparer DC1/DC2, attestation assurance, Kbis, RIB, memoire technique",
-          "Ecarter si aucun lot GIB ou garder en veille fournisseur/sous-traitance"
-        ],
-        "warning": "Ne pas deposer une offre automatiquement. Le DCE, les pieces et le chiffrage doivent etre valides par un humain."
-      },
-      "followUps": [
-        {
-          "label": "J+1",
-          "date": "2026-10-29",
-          "action": "Verifier reception ou ouvrir profil acheteur officiel"
-        },
-        {
-          "label": "J+3",
-          "date": "2026-10-31",
-          "action": "Relancer si aucune reponse et deadline compatible"
-        },
-        {
-          "label": "J+7",
-          "date": "2026-11-04",
-          "action": "Decision go/no-go ou classement"
-        }
-      ]
-    },
-    {
       "id": "ao-26-103580",
       "sourceId": "26-103580",
       "type": "response",
@@ -98,7 +26,7 @@
       "object": "Travaux d'aménagement d'un plateau de bureaux au R+2 des locaux Orchidée de la CACEM",
       "lot": "Plomberie (travaux), Cloison, faux plafond, Menuiserie, Peinture (travaux)",
       "deadline": "2026-11-13",
-      "daysUntilDeadline": 17,
+      "daysUntilDeadline": 16,
       "priority": "high",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103580",
@@ -142,17 +70,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-10-31",
+          "date": "2026-11-01",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-11-04",
+          "date": "2026-11-05",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -165,7 +93,7 @@
       "object": "MARTINIQUE (972) – LE LAMENTIN – PAE – Mise à niveau du portail du taxiway MIKE",
       "lot": "Ferronnerie",
       "deadline": "2026-11-17",
-      "daysUntilDeadline": 21,
+      "daysUntilDeadline": 20,
       "priority": "high",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-100766",
@@ -214,17 +142,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-10-31",
+          "date": "2026-11-01",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-11-04",
+          "date": "2026-11-05",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -237,7 +165,7 @@
       "object": "MARTINIQUE (972) – Fort-de-France – Fort Saint-Louis – Rénovation du pavillon « La Motte Picquet »",
       "lot": "Bâtiment",
       "deadline": "2026-11-19",
-      "daysUntilDeadline": 23,
+      "daysUntilDeadline": 22,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103522",
@@ -286,17 +214,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-10-31",
+          "date": "2026-11-01",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-11-04",
+          "date": "2026-11-05",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -309,7 +237,7 @@
       "object": "Mission de maîtrise d'oeuvre pour les travaux de réfection et de rénovation des équipements exploités par la SOGES",
       "lot": "Maîtrise d'oeuvre",
       "deadline": "2026-11-20",
-      "daysUntilDeadline": 24,
+      "daysUntilDeadline": 23,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-102178",
@@ -358,17 +286,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-10-31",
+          "date": "2026-11-01",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-11-04",
+          "date": "2026-11-05",
           "action": "Decision go/no-go ou classement"
         }
       ]

@@ -1,7 +1,7 @@
 {
   "source": "BOAMP / DILA API ouverte",
   "sourceUrl": "https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/api/",
-  "generatedAt": "2026-10-28T16:05:48.344Z",
+  "generatedAt": "2026-10-29T16:10:24.033Z",
   "department": "972",
   "keywords": [
     "menuiserie",
@@ -20,8 +20,8 @@
     "rénovation",
     "second oeuvre"
   ],
-  "totalCount": 5,
-  "count": 5,
+  "totalCount": 4,
+  "count": 4,
   "items": [
     {
       "source": "BOAMP / DILA API ouverte",
@@ -74,32 +74,6 @@
         "buyerProfileUrl": ""
       },
       "notes": "Descripteurs : Bâtiment | Type marche : Travaux | Procedure : Procédure Ouverte | Email acheteur : mohamed.abdelghani@intradef.gouv.fr"
-    },
-    {
-      "source": "BOAMP / DILA API ouverte",
-      "sourceId": "26-102184",
-      "organism": "DID FdF",
-      "platform": "BOAMP",
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-102184",
-      "object": "MARTINIQUE (972) - LE LAMENTIN - Pôle aéronautique Etatique (PAE) - Etudes géotechniques préalables à la rénovation du taxiway MIKE et l'hélistation",
-      "lot": "Revêtements de sols, Sondage (travaux)",
-      "deadline": "2026-10-28",
-      "publishedAt": "2026-10-22",
-      "commune": "Martinique",
-      "visitRequired": "A verifier dans le DCE",
-      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
-      "score": 6,
-      "priority": "medium",
-      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
-      "contact": {
-        "email": "mohamed.abdelghani@intradef.gouv.fr",
-        "phone": "+569 596 39 52 64",
-        "contactName": "",
-        "buyerCity": "",
-        "buyerPostalCode": "",
-        "buyerProfileUrl": "https://www.marches-publics.gouv.fr/entreprise"
-      },
-      "notes": "Descripteurs : Revêtements de sols, Sondage (travaux) | Type marche : Services | Procedure : Procédure Ouverte | Email acheteur : mohamed.abdelghani@intradef.gouv.fr | Tel acheteur : +569 596 39 52 64 | Profil acheteur : https://www.marches-publics.gouv.fr/entreprise"
     },
     {
       "source": "BOAMP / DILA API ouverte",
