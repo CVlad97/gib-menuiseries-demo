@@ -1,14 +1,14 @@
 {
   "source": "GIB prospecting automation queue",
-  "generatedAt": "2026-10-29T16:10:24.234Z",
-  "tenderFeedGeneratedAt": "2026-10-29T16:10:24.033Z",
+  "generatedAt": "2026-10-30T15:57:39.627Z",
+  "tenderFeedGeneratedAt": "2026-10-30T15:57:39.454Z",
   "summary": {
-    "totalTenderRows": 4,
-    "uniqueQueueItems": 4,
-    "emailReady": 3,
-    "phoneReady": 1,
+    "totalTenderRows": 5,
+    "uniqueQueueItems": 5,
+    "emailReady": 4,
+    "phoneReady": 2,
     "urgent": 0,
-    "manualSubmissionRequired": 4
+    "manualSubmissionRequired": 5
   },
   "compliance": [
     "Utiliser uniquement les contacts publies ou fournis volontairement.",
@@ -26,7 +26,7 @@
       "object": "Travaux d'aménagement d'un plateau de bureaux au R+2 des locaux Orchidée de la CACEM",
       "lot": "Plomberie (travaux), Cloison, faux plafond, Menuiserie, Peinture (travaux)",
       "deadline": "2026-11-13",
-      "daysUntilDeadline": 16,
+      "daysUntilDeadline": 15,
       "priority": "high",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103580",
@@ -70,17 +70,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-10-30",
+          "date": "2026-10-31",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-11-01",
+          "date": "2026-11-02",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-11-05",
+          "date": "2026-11-06",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -93,7 +93,7 @@
       "object": "MARTINIQUE (972) – LE LAMENTIN – PAE – Mise à niveau du portail du taxiway MIKE",
       "lot": "Ferronnerie",
       "deadline": "2026-11-17",
-      "daysUntilDeadline": 20,
+      "daysUntilDeadline": 19,
       "priority": "high",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-100766",
@@ -142,17 +142,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-10-30",
+          "date": "2026-10-31",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-11-01",
+          "date": "2026-11-02",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-11-05",
+          "date": "2026-11-06",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -165,7 +165,7 @@
       "object": "MARTINIQUE (972) – Fort-de-France – Fort Saint-Louis – Rénovation du pavillon « La Motte Picquet »",
       "lot": "Bâtiment",
       "deadline": "2026-11-19",
-      "daysUntilDeadline": 22,
+      "daysUntilDeadline": 21,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103522",
@@ -214,17 +214,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-10-30",
+          "date": "2026-10-31",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-11-01",
+          "date": "2026-11-02",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-11-05",
+          "date": "2026-11-06",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -237,7 +237,7 @@
       "object": "Mission de maîtrise d'oeuvre pour les travaux de réfection et de rénovation des équipements exploités par la SOGES",
       "lot": "Maîtrise d'oeuvre",
       "deadline": "2026-11-20",
-      "daysUntilDeadline": 23,
+      "daysUntilDeadline": 22,
       "priority": "medium",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-102178",
@@ -286,17 +286,89 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-10-30",
+          "date": "2026-10-31",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-11-01",
+          "date": "2026-11-02",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-11-05",
+          "date": "2026-11-06",
+          "action": "Decision go/no-go ou classement"
+        }
+      ]
+    },
+    {
+      "id": "ao-26-105391",
+      "sourceId": "26-105391",
+      "type": "response",
+      "organism": "Ville de Ducos (972)",
+      "object": "Travaux de réhabilitation du hall des sports Louis Joseph Dogue",
+      "lot": "Menuiserie, Couverture, Démolition, Revêtements de sols",
+      "deadline": "2026-12-02",
+      "daysUntilDeadline": 34,
+      "priority": "high",
+      "score": 8,
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-105391",
+      "contact": {
+        "email": "commandepublique@mairie-ducos.fr",
+        "phone": "+33596771818",
+        "name": "",
+        "profile": "https://www.marches-securises.fr"
+      },
+      "automation": {
+        "emailReady": true,
+        "phoneReady": true,
+        "whatsappReady": true,
+        "officialSubmission": "manual_required",
+        "duplicateGuard": "commandepublique@mairie-ducos.fr|ville de ducos (972)|travaux de rehabilitation du hall des sports louis joseph dogue"
+      },
+      "email": {
+        "to": "commandepublique@mairie-ducos.fr",
+        "subject": "Demande DCE / qualification lot - Ville de Ducos (972) - 26-105391",
+        "body": "Bonjour,\n\nNous vous contactons pour GIB Menuiseries Services, entreprise basee a Ducos en Martinique, au sujet de la consultation suivante :\n- Organisme : Ville de Ducos (972)\n- Objet : Travaux de réhabilitation du hall des sports Louis Joseph Dogue\n- Reference : 26-105391\n- Date limite : 2026-12-02\n\nNous souhaitons verifier si un lot menuiserie, fermeture, cloture, garde-corps ou ouvrage associe correspond a notre activite.\n\nPouvez-vous nous confirmer le lien DCE/profil acheteur a utiliser, ainsi que les modalites officielles pour poser une question ou deposer une reponse si le lot est pertinent ?\n\nPresentation GIB :\nSite : https://www.gibmenuiseries.fr\nInstagram : https://www.instagram.com/gibmenuiseries/\nFlyer : https://cvlad97.github.io/gib-menuiseries-demo/media/gib/flyers/pub3.jpeg\n\nContact commercial : Vladimir Claveau\nWhatsApp : +596 696 65 35 89\nEmail : gibmenuiseriesservices@gmail.com\nZone Industrielle Cocotte, derriere Lapeyre, Ducos, Martinique\n\nCordialement,\nGIB Menuiseries Services",
+        "mailto": "mailto:commandepublique@mairie-ducos.fr?subject=Demande+DCE+%2F+qualification+lot+-+Ville+de+Ducos+%28972%29+-+26-105391&body=Bonjour%2C%0A%0ANous+vous+contactons+pour+GIB+Menuiseries+Services%2C+entreprise+basee+a+Ducos+en+Martinique%2C+au+sujet+de+la+consultation+suivante+%3A%0A-+Organisme+%3A+Ville+de+Ducos+%28972%29%0A-+Objet+%3A+Travaux+de+r%C3%A9habilitation+du+hall+des+sports+Louis+Joseph+Dogue%0A-+Reference+%3A+26-105391%0A-+Date+limite+%3A+2026-12-02%0A%0ANous+souhaitons+verifier+si+un+lot+menuiserie%2C+fermeture%2C+cloture%2C+garde-corps+ou+ouvrage+associe+correspond+a+notre+activite.%0A%0APouvez-vous+nous+confirmer+le+lien+DCE%2Fprofil+acheteur+a+utiliser%2C+ainsi+que+les+modalites+officielles+pour+poser+une+question+ou+deposer+une+reponse+si+le+lot+est+pertinent+%3F%0A%0APresentation+GIB+%3A%0ASite+%3A+https%3A%2F%2Fwww.gibmenuiseries.fr%0AInstagram+%3A+https%3A%2F%2Fwww.instagram.com%2Fgibmenuiseries%2F%0AFlyer+%3A+https%3A%2F%2Fcvlad97.github.io%2Fgib-menuiseries-demo%2Fmedia%2Fgib%2Fflyers%2Fpub3.jpeg%0A%0AContact+commercial+%3A+Vladimir+Claveau%0AWhatsApp+%3A+%2B596+696+65+35+89%0AEmail+%3A+gibmenuiseriesservices%40gmail.com%0AZone+Industrielle+Cocotte%2C+derriere+Lapeyre%2C+Ducos%2C+Martinique%0A%0ACordialement%2C%0AGIB+Menuiseries+Services"
+      },
+      "whatsapp": {
+        "to": "+596 696 65 35 89",
+        "body": "AO GIB a traiter\nOrganisme : Ville de Ducos (972)\nObjet : Travaux de réhabilitation du hall des sports Louis Joseph Dogue\nDeadline : 2026-12-02\nScore : 8/10\nEmail : commandepublique@mairie-ducos.fr\nTel : +33 596771818\nLien : https://www.boamp.fr/pages/avis/?q=idweb:26-105391\nAction : verifier DCE, identifier lot, preparer go/no-go.",
+        "url": "https://wa.me/596696653589?text=AO%20GIB%20a%20traiter%0AOrganisme%20%3A%20Ville%20de%20Ducos%20(972)%0AObjet%20%3A%20Travaux%20de%20r%C3%A9habilitation%20du%20hall%20des%20sports%20Louis%20Joseph%20Dogue%0ADeadline%20%3A%202026-12-02%0AScore%20%3A%208%2F10%0AEmail%20%3A%20commandepublique%40mairie-ducos.fr%0ATel%20%3A%20%2B33%20596771818%0ALien%20%3A%20https%3A%2F%2Fwww.boamp.fr%2Fpages%2Favis%2F%3Fq%3Didweb%3A26-105391%0AAction%20%3A%20verifier%20DCE%2C%20identifier%20lot%2C%20preparer%20go%2Fno-go."
+      },
+      "call": {
+        "phone": "+33596771818",
+        "script": "Bonjour, je vous appelle pour GIB Menuiseries Services a Ducos.\nNous avons repere votre consultation : Travaux de réhabilitation du hall des sports Louis Joseph Dogue.\nNous souhaitons verifier si un lot concerne les menuiseries, fermetures, clotures, garde-corps, portails, volets ou ouvrages associes.\nPouvez-vous me confirmer le bon lien DCE/profil acheteur et la procedure officielle pour les questions ?\nNous passerons uniquement par le canal prevu dans le reglement de consultation.",
+        "telUrl": "tel:+33596771818"
+      },
+      "dossier": {
+        "status": "to_prepare",
+        "checklist": [
+          "Ouvrir avis BOAMP et profil acheteur",
+          "Telecharger RC, CCTP, DPGF/BPU, AE, CCAP et annexes",
+          "Verifier date limite, visite obligatoire, questions autorisees",
+          "Identifier lot menuiserie/fermeture/cloture/garde-corps",
+          "Decision go/no-go : capacite, delai, references, pieces administratives",
+          "Preparer DC1/DC2, attestation assurance, Kbis, RIB, memoire technique",
+          "Chiffrer le lot pertinent et preparer une question technique si besoin"
+        ],
+        "warning": "Ne pas deposer une offre automatiquement. Le DCE, les pieces et le chiffrage doivent etre valides par un humain."
+      },
+      "followUps": [
+        {
+          "label": "J+1",
+          "date": "2026-10-31",
+          "action": "Verifier reception ou ouvrir profil acheteur officiel"
+        },
+        {
+          "label": "J+3",
+          "date": "2026-11-02",
+          "action": "Relancer si aucune reponse et deadline compatible"
+        },
+        {
+          "label": "J+7",
+          "date": "2026-11-06",
           "action": "Decision go/no-go ou classement"
         }
       ]
