@@ -1,7 +1,7 @@
 {
   "source": "BOAMP / DILA API ouverte",
   "sourceUrl": "https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/api/",
-  "generatedAt": "2026-11-03T17:06:00.064Z",
+  "generatedAt": "2026-11-04T17:18:07.987Z",
   "department": "972",
   "keywords": [
     "menuiserie",
@@ -20,9 +20,35 @@
     "rénovation",
     "second oeuvre"
   ],
-  "totalCount": 5,
-  "count": 5,
+  "totalCount": 6,
+  "count": 6,
   "items": [
+    {
+      "source": "BOAMP / DILA API ouverte",
+      "sourceId": "26-107239",
+      "organism": "GPMLM",
+      "platform": "BOAMP",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-107239",
+      "object": "Maintenance préventive et corrective des portes automatiques du port de Fort de France",
+      "lot": "Porte automatique, portail",
+      "deadline": "2026-12-07",
+      "publishedAt": "2026-11-04",
+      "commune": "Martinique",
+      "visitRequired": "A verifier dans le DCE",
+      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
+      "score": 8,
+      "priority": "high",
+      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
+      "contact": {
+        "email": "c.sabino@martinique.port.fr",
+        "phone": "+33 596590052",
+        "contactName": "Monsieur Christophe SABINO",
+        "buyerCity": "FORT DE FRANCE",
+        "buyerPostalCode": "97200",
+        "buyerProfileUrl": "https://www.antilles-legales.fr"
+      },
+      "notes": "Descripteurs : Porte automatique, portail | Type marche : Travaux | Procedure : Procédure Ouverte | Email acheteur : c.sabino@martinique.port.fr | Tel acheteur : +33 596590052 | Profil acheteur : https://www.antilles-legales.fr"
+    },
     {
       "source": "BOAMP / DILA API ouverte",
       "sourceId": "26-105391",
