@@ -1,7 +1,7 @@
 {
   "source": "BOAMP / DILA API ouverte",
   "sourceUrl": "https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/api/",
-  "generatedAt": "2026-11-06T16:48:03.906Z",
+  "generatedAt": "2026-11-09T19:51:36.638Z",
   "department": "972",
   "keywords": [
     "menuiserie",
@@ -20,9 +20,35 @@
     "rénovation",
     "second oeuvre"
   ],
-  "totalCount": 6,
-  "count": 6,
+  "totalCount": 7,
+  "count": 7,
   "items": [
+    {
+      "source": "BOAMP / DILA API ouverte",
+      "sourceId": "26-108597",
+      "organism": "COMMUNE DE SAINT LAURENT DU MARONI",
+      "platform": "BOAMP",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-108597",
+      "object": "RESTAURATION GÉNÉRALE DE LA MAISON DU RECEVEUR DES DOUANES A SAINT-LAURENT-DU-MARONI - GUYANE",
+      "lot": "Peinture (travaux), Electricité (travaux), Menuiserie, Charpente",
+      "deadline": "2026-12-14",
+      "publishedAt": "2026-11-06",
+      "commune": "Martinique",
+      "visitRequired": "A verifier dans le DCE",
+      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
+      "score": 8,
+      "priority": "high",
+      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
+      "contact": {
+        "email": "j.ariste@saintlaurentdumaroni.fr",
+        "phone": "+33 594340300",
+        "contactName": "ARISTE John",
+        "buyerCity": "Saint-Laurent Du Maroni",
+        "buyerPostalCode": "97320",
+        "buyerProfileUrl": "https://saintlaurentdumaroni.e-marchespublics.com/pack/annonce_marche_public_9027_1192198.html"
+      },
+      "notes": "Descripteurs : Peinture (travaux), Electricité (travaux), Menuiserie, Charpente | Type marche : Travaux | Procedure : Procédure Ouverte | Email acheteur : j.ariste@saintlaurentdumaroni.fr | Tel acheteur : +33 594340300 | Profil acheteur : https://saintlaurentdumaroni.e-marchespublics.com/pack/annonce_marche_public_9027_1192198.html"
+    },
     {
       "source": "BOAMP / DILA API ouverte",
       "sourceId": "26-107239",
