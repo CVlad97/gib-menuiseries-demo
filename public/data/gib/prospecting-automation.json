@@ -1,7 +1,7 @@
 {
   "source": "GIB prospecting automation queue",
-  "generatedAt": "2026-11-11T17:12:04.643Z",
-  "tenderFeedGeneratedAt": "2026-11-11T17:12:04.431Z",
+  "generatedAt": "2026-11-12T17:37:32.256Z",
+  "tenderFeedGeneratedAt": "2026-11-12T17:37:32.135Z",
   "summary": {
     "totalTenderRows": 7,
     "uniqueQueueItems": 7,
@@ -26,7 +26,7 @@
       "object": "Travaux d'aménagement d'un plateau de bureaux au R+2 des locaux Orchidée de la CACEM",
       "lot": "Plomberie (travaux), Cloison, faux plafond, Menuiserie, Peinture (travaux)",
       "deadline": "2026-11-13",
-      "daysUntilDeadline": 3,
+      "daysUntilDeadline": 2,
       "priority": "urgent",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103580",
@@ -70,17 +70,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-11-12",
+          "date": "2026-11-13",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-11-14",
+          "date": "2026-11-15",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-11-18",
+          "date": "2026-11-19",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -93,7 +93,7 @@
       "object": "MARTINIQUE (972) – LE LAMENTIN – PAE – Mise à niveau du portail du taxiway MIKE",
       "lot": "Ferronnerie",
       "deadline": "2026-11-17",
-      "daysUntilDeadline": 7,
+      "daysUntilDeadline": 6,
       "priority": "urgent",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-100766",
@@ -142,17 +142,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-11-12",
+          "date": "2026-11-13",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-11-14",
+          "date": "2026-11-15",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-11-18",
+          "date": "2026-11-19",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -165,7 +165,7 @@
       "object": "MARTINIQUE (972) – Fort-de-France – Fort Saint-Louis – Rénovation du pavillon « La Motte Picquet »",
       "lot": "Bâtiment",
       "deadline": "2026-11-19",
-      "daysUntilDeadline": 9,
+      "daysUntilDeadline": 8,
       "priority": "urgent",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103522",
@@ -214,17 +214,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-11-12",
+          "date": "2026-11-13",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-11-14",
+          "date": "2026-11-15",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-11-18",
+          "date": "2026-11-19",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -237,7 +237,7 @@
       "object": "Mission de maîtrise d'oeuvre pour les travaux de réfection et de rénovation des équipements exploités par la SOGES",
       "lot": "Maîtrise d'oeuvre",
       "deadline": "2026-11-20",
-      "daysUntilDeadline": 10,
+      "daysUntilDeadline": 9,
       "priority": "urgent",
       "score": 6,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-102178",
@@ -286,17 +286,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-11-12",
+          "date": "2026-11-13",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-11-14",
+          "date": "2026-11-15",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-11-18",
+          "date": "2026-11-19",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -309,7 +309,7 @@
       "object": "Travaux de réhabilitation du hall des sports Louis Joseph Dogue",
       "lot": "Menuiserie, Couverture, Démolition, Revêtements de sols",
       "deadline": "2026-12-02",
-      "daysUntilDeadline": 22,
+      "daysUntilDeadline": 21,
       "priority": "high",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-105391",
@@ -358,17 +358,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-11-12",
+          "date": "2026-11-13",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-11-14",
+          "date": "2026-11-15",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-11-18",
+          "date": "2026-11-19",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -381,7 +381,7 @@
       "object": "Maintenance préventive et corrective des portes automatiques du port de Fort de France",
       "lot": "Porte automatique, portail",
       "deadline": "2026-12-07",
-      "daysUntilDeadline": 27,
+      "daysUntilDeadline": 26,
       "priority": "high",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-107239",
@@ -430,17 +430,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-11-12",
+          "date": "2026-11-13",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-11-14",
+          "date": "2026-11-15",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-11-18",
+          "date": "2026-11-19",
           "action": "Decision go/no-go ou classement"
         }
       ]
@@ -453,7 +453,7 @@
       "object": "RESTAURATION GÉNÉRALE DE LA MAISON DU RECEVEUR DES DOUANES A SAINT-LAURENT-DU-MARONI - GUYANE",
       "lot": "Peinture (travaux), Electricité (travaux), Menuiserie, Charpente",
       "deadline": "2026-12-14",
-      "daysUntilDeadline": 34,
+      "daysUntilDeadline": 33,
       "priority": "high",
       "score": 8,
       "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-108597",
@@ -502,17 +502,17 @@
       "followUps": [
         {
           "label": "J+1",
-          "date": "2026-11-12",
+          "date": "2026-11-13",
           "action": "Verifier reception ou ouvrir profil acheteur officiel"
         },
         {
           "label": "J+3",
-          "date": "2026-11-14",
+          "date": "2026-11-15",
           "action": "Relancer si aucune reponse et deadline compatible"
         },
         {
           "label": "J+7",
-          "date": "2026-11-18",
+          "date": "2026-11-19",
           "action": "Decision go/no-go ou classement"
         }
       ]
