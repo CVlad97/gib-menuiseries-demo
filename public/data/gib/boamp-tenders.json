@@ -1,7 +1,7 @@
 {
   "source": "BOAMP / DILA API ouverte",
   "sourceUrl": "https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/api/",
-  "generatedAt": "2026-11-12T17:37:32.135Z",
+  "generatedAt": "2026-11-13T17:14:50.185Z",
   "department": "972",
   "keywords": [
     "menuiserie",
@@ -20,8 +20,8 @@
     "rénovation",
     "second oeuvre"
   ],
-  "totalCount": 7,
-  "count": 7,
+  "totalCount": 6,
+  "count": 6,
   "items": [
     {
       "source": "BOAMP / DILA API ouverte",
@@ -100,32 +100,6 @@
         "buyerProfileUrl": "https://www.marches-securises.fr"
       },
       "notes": "Descripteurs : Menuiserie, Couverture, Démolition, Revêtements de sols | Type marche : Travaux | Procedure : Procédure Ouverte | Email acheteur : commandepublique@mairie-ducos.fr | Tel acheteur : +33 596771818 | Profil acheteur : https://www.marches-securises.fr"
-    },
-    {
-      "source": "BOAMP / DILA API ouverte",
-      "sourceId": "26-103580",
-      "organism": "CACEM - Communauté d'Agglomération Centre Martinique",
-      "platform": "BOAMP",
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-103580",
-      "object": "Travaux d'aménagement d'un plateau de bureaux au R+2 des locaux Orchidée de la CACEM",
-      "lot": "Plomberie (travaux), Cloison, faux plafond, Menuiserie, Peinture (travaux)",
-      "deadline": "2026-11-13",
-      "publishedAt": "2026-10-23",
-      "commune": "Martinique",
-      "visitRequired": "A verifier dans le DCE",
-      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
-      "score": 8,
-      "priority": "high",
-      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
-      "contact": {
-        "email": "",
-        "phone": "",
-        "contactName": "Direction des achats",
-        "buyerCity": "Fort de france cedex martinique",
-        "buyerPostalCode": "97204",
-        "buyerProfileUrl": "https://www.achatpublic.com/sdm/ent/gen/ent_detail.do?PCSLID=CSL_2026_TGz15a29HN"
-      },
-      "notes": "Descripteurs : Plomberie (travaux), Cloison, faux plafond, Menuiserie, Peinture (travaux) | Type marche : Travaux | Procedure : Procédure Ouverte | Profil acheteur : https://www.achatpublic.com/sdm/ent/gen/ent_detail.do?PCSLID=CSL_2026_TGz15a29HN"
     },
     {
       "source": "BOAMP / DILA API ouverte",
