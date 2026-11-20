@@ -1,7 +1,7 @@
 {
   "source": "BOAMP / DILA API ouverte",
   "sourceUrl": "https://boamp-datadila.opendatasoft.com/explore/dataset/boamp/api/",
-  "generatedAt": "2026-11-19T18:19:16.541Z",
+  "generatedAt": "2026-11-20T17:50:35.727Z",
   "department": "972",
   "keywords": [
     "menuiserie",
@@ -23,6 +23,32 @@
   "totalCount": 4,
   "count": 4,
   "items": [
+    {
+      "source": "BOAMP / DILA API ouverte",
+      "sourceId": "26-113099",
+      "organism": "Université des Antilles",
+      "platform": "BOAMP",
+      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-113099",
+      "object": "OPC POUR LES TRAVAUX DE RENOVATION LOURDE ENERGETIQUE DU BÂTIMENT S DU CAMPUS DE SCHOELCHER EN MARTINIQUE",
+      "lot": "Mission d'ordonnancement, pilotage, coordination (OPC)",
+      "deadline": "2026-12-16",
+      "publishedAt": "2026-11-20",
+      "commune": "Martinique",
+      "visitRequired": "A verifier dans le DCE",
+      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
+      "score": 6,
+      "priority": "medium",
+      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
+      "contact": {
+        "email": "correspondre@aws-france.com",
+        "phone": "0590483218",
+        "contactName": "",
+        "buyerCity": "POINTE A PITRE",
+        "buyerPostalCode": "97157",
+        "buyerProfileUrl": "http://agysoft.marches-publics.info"
+      },
+      "notes": "Descripteurs : Mission d'ordonnancement, pilotage, coordination (OPC) | Type marche : Services | Procedure : Procédure Adaptée | Email acheteur : correspondre@aws-france.com | Tel acheteur : 0590483218 | Profil acheteur : http://agysoft.marches-publics.info"
+    },
     {
       "source": "BOAMP / DILA API ouverte",
       "sourceId": "26-108597",
@@ -100,32 +126,6 @@
         "buyerProfileUrl": "https://www.marches-securises.fr"
       },
       "notes": "Descripteurs : Menuiserie, Couverture, Démolition, Revêtements de sols | Type marche : Travaux | Procedure : Procédure Ouverte | Email acheteur : commandepublique@mairie-ducos.fr | Tel acheteur : +33 596771818 | Profil acheteur : https://www.marches-securises.fr"
-    },
-    {
-      "source": "BOAMP / DILA API ouverte",
-      "sourceId": "26-102178",
-      "organism": "SPL SOGES",
-      "platform": "BOAMP",
-      "url": "https://www.boamp.fr/pages/avis/?q=idweb:26-102178",
-      "object": "Mission de maîtrise d'oeuvre pour les travaux de réfection et de rénovation des équipements exploités par la SOGES",
-      "lot": "Maîtrise d'oeuvre",
-      "deadline": "2026-11-20",
-      "publishedAt": "2026-10-20",
-      "commune": "Martinique",
-      "visitRequired": "A verifier dans le DCE",
-      "documents": "Avis BOAMP. Telecharger le DCE sur le profil acheteur indique.",
-      "score": 6,
-      "priority": "medium",
-      "nextAction": "Ouvrir l avis BOAMP, identifier le profil acheteur, telecharger le DCE et verifier les lots menuiserie.",
-      "contact": {
-        "email": "boris.petricien@soges972.fr",
-        "phone": "+33 596555544",
-        "contactName": "",
-        "buyerCity": "SAINTE-LUCE",
-        "buyerPostalCode": "97228",
-        "buyerProfileUrl": "https://www.marches-securises.fr"
-      },
-      "notes": "Descripteurs : Maîtrise d'oeuvre | Type marche : Services | Procedure : Procédure Adaptée | Email acheteur : boris.petricien@soges972.fr | Tel acheteur : +33 596555544 | Profil acheteur : https://www.marches-securises.fr"
     }
   ]
 }
